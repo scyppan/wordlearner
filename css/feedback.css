@@ -1,0 +1,109 @@
+.feedback-container {
+    display: flex;
+    width: 100%;
+    min-height: 370px;
+    background: #f7fafc;
+}
+.feedback-quizlist-panel {
+    width: 19%;
+    min-width: 110px;
+    background: #55586a;
+    color: #fff;
+    padding: 0.7em 0.3em 0.7em 0.8em;
+    border-right: 1px solid #dac6c6;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-quiz-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.feedback-quiz-listitem {
+    font-size: 0.93em;
+    padding: 0.28em 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.08em;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.14s, color 0.14s;
+}
+.feedback-quiz-listitem:hover,
+.feedback-quiz-listitem.active {
+    background: #e2d1c8;
+    color: #382a20;
+}
+.feedback-empty {
+    color: #fff;
+    padding: 1em 1em;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.95em;
+}
+.feedback-table-panel {
+    flex: 1.4;
+    min-width: 0;
+    padding: 10px 8px 10px 20px;
+    background: #f9fafd;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-table {
+    width: 99%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(80,40,40,0.04);
+    font-size: 0.97em;
+}
+.feedback-table th, .feedback-table td {
+    padding: 0.26em 0.42em;
+    text-align: left;
+    border-bottom: 1px solid #e1e2e2;
+    font-size: 0.97em;
+}
+.feedback-table th {
+    background: #e2d2c8;
+    font-weight: bold;
+    font-size: 0.97em;
+}
+.feedback-table tr:last-child td {
+    border-bottom: none;
+}
+.feedback-row {
+    cursor: pointer;
+    transition: background 0.12s;
+}
+.feedback-row:hover {
+    background: #f4e5e5;
+}
+.feedback-status {
+    text-align: center;
+}
+
+.feedback-correct   { color: #2db142; font-size: 1.17em; font-weight: bold; }
+.feedback-incorrect { color: #e49999; font-size: 1.17em; font-weight: bold; }
+.feedback-partial   { color: #c7ae5e; font-size: 1.17em; font-weight: bold; }
+.feedback-untested  { color: #a4a4a5; font-size: 1.17em; font-weight: bold; }
+
+.feedback-word-panel {
+    width: 24%;
+    min-width: 120px;
+    background: #e7e7e7;
+    color: #24292f;
+    padding: 1em 0.6em 1em 0.6em;
+    border-left: 1px solid #dac6c6;
+    font-size: 0.96em;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-word-panel h3 {
+    font-size: 1.05em;
+    color: #934c2a;
+    margin-bottom: 0.45em;
+    margin-top: 0;
+}
+
