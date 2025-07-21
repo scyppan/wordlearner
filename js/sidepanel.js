@@ -3,7 +3,7 @@ function initsidepanel() {
       const app = document.getElementById('app')
   app.innerHTML = `
     <aside class="sidepanel">
-      <ul><li>Words</li><li>Quiz</li><li>temp</li></ul>
+      <ul><li>Words</li><li>Quiz</li><li>Data</li></ul>
     </aside>
     <main class="maincontent"></main>
   `;
@@ -15,7 +15,7 @@ function initsidepanel() {
       switch (view) {
         case 'words': renderwords(); break
         case 'quiz': renderquiz(); break
-        case 'confidence': renderconfidence(); break
+        case 'data': renderdata(); break
       }
     })
   })
@@ -29,6 +29,6 @@ function renderquiz() {
   document.querySelector('.maincontent').textContent = 'quiz view'
 }
 
-function renderrenderconfidencetemp() {
-  document.querySelector('.maincontent').textContent = 'temp view'
+function renderdata() {
+  document.querySelector('.maincontent').textContent = 'data view'
 }
