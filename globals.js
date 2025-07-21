@@ -60,3 +60,5 @@ let wordsData = [
     sentences: ['เขามาถึงแล้วเมื่อครู่']
   }
 ];
+
+let quizzes =[];
