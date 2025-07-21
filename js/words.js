@@ -1,17 +1,20 @@
-// words.js
 function renderwords() {
   const main = document.querySelector('.maincontent');
   main.innerHTML = '';
-  main.append(createWordsContainer());
 
-  // wire up autocomplete
+  main.append(
+    createWordsContainer(),
+    createWordDetailsPanel()
+  );
+
+  // immediately hide it
+  document.querySelector('.word-details').classList.add('hidden');
+
   createAutocomplete(
     '.word-search',
     wordsData,
     { onSelect: showworddetails, maxItems: 10 }
   );
-
-  // now wire UX helpers
   wireSelectAllOnFocus('.word-search');
   wireAltSFocus('.word-search');
 }
@@ -46,3 +49,4 @@ function populateWordList(data) {
     list.appendChild(li)
   })
 }
+

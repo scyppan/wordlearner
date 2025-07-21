@@ -171,6 +171,9 @@ function createWordDetailsPanel() {
 }
 
 function showworddetails(w) {
+ document.querySelector('.word-details').classList.remove('hidden');
+
+
   // inline‐editable fields
   const scriptEl = document.querySelector('.word-script');
   const romanEl  = document.querySelector('.word-romanization');
@@ -181,7 +184,7 @@ function showworddetails(w) {
 
   // confidence rating
   const ratingWidget = document.querySelector('.confidence-rating');
-    ratingWidget.reset();console.log(w);
+    ratingWidget.reset();
     ratingWidget.setRating(w.confidence);
 
   // other fields
