@@ -1,47 +1,69 @@
-
-function showworddetails(w) {
-  setWordScript(w.word);
-  setRomanization(w.romanization);
-  setConfidence(w.confidence);
-  setType(w.type);
-  setPos(w.pos);
-  setDefinition(w.definition);
-  setNotes(w.notes);
+// Factory for inline‐editable labels
+function createInlineEditableSpan(className) {
+    var span = document.createElement('span');
+    span.className = className + ' inline-label';
+    span.contentEditable = true;
+    span.setAttribute('tabindex', 0);
+    span.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            span.blur();
+        }
+    });
+    return span;
 }
 
+// Field factories
 function createScriptElement() {
-  var span = document.createElement('span');
-  span.className = 'word-script';
-  span.contentEditable = true;
-  span.style.cursor = 'text';
-  return span;
+    return createInlineEditableSpan('word-script');
 }
 
 function createRomanizationElement() {
-  var span = document.createElement('span');
-  span.className = 'word-romanization';
-  span.style.marginLeft = '0.5em';
-  return span;
+    var span = createInlineEditableSpan('word-romanization');
+    span.style.marginLeft = '0.75em';
+    return span;
 }
 
-function createConfidenceInput() {
-  var input = document.createElement('input');
-  input.type = 'number';
-  input.min = '0';
-  input.max = '10';
-  input.step = '0.1';
-  input.className = 'word-confidence-input';
-  input.style.marginLeft = '0.5em';
-  return input;
-}
+function createConfidenceRating(max = 10) {
+    const container = document.createElement('div');
+    container.className = 'confidence-rating';
+    container.dataset.max = max;
 
-function createHeaderSection() {
-  var header = document.createElement('div');
-  header.className = 'word-header';
-  header.appendChild(createScriptElement());
-  header.appendChild(createRomanizationElement());
-  header.appendChild(createConfidenceInput());
-  return header;
+    // hidden input
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.className = 'word-confidence-input';
+    container.appendChild(input);
+
+    // build circles
+    const circles = [];
+    for (let i = 1; i <= max; i++) {
+        const circle = document.createElement('span');
+        circle.className = 'confidence-circle';
+        circle.dataset.value = i;
+        circle.addEventListener('click', () => container.setRating(i));
+        container.appendChild(circle);
+        circles.push(circle);
+    }
+
+    // clear all fills
+    container.reset = function () {
+        input.value = '';
+        circles.forEach(c => c.classList.remove('filled'));
+    };
+
+    // apply a rating and fire onChange
+    container.setRating = function (val) {
+        input.value = val;
+        circles.forEach(c =>
+            c.classList.toggle('filled', Number(c.dataset.value) <= val)
+        );
+        if (typeof container.onChange === 'function') {
+            container.onChange(val);
+        }
+    };
+
+    return container;
 }
 
 function createTypeSelect() {
@@ -57,103 +79,126 @@ function createTypeSelect() {
 }
 
 function createPosInput() {
-  var input = document.createElement('input');
-  input.type = 'text';
-  input.className = 'word-pos-input';
-  return input;
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'word-pos-input';
+    return input;
 }
 
+// Definition section factory (no inline styles)
+function createDefinitionSection() {
+  var section = document.createElement('div');
+  section.className = 'word-definition-section';
+
+  var label = document.createElement('label');
+  label.className = 'definition-label';
+  label.textContent = 'Definition:';
+  section.appendChild(label);
+
+  var textarea = document.createElement('textarea');
+  textarea.className = 'word-definition-input';
+  textarea.rows = 3;
+  section.appendChild(textarea);
+
+  return section;
+}
+
+// Notes section factory (no inline styles)
+function createNotesSection() {
+  var section = document.createElement('div');
+  section.className = 'word-notes-section';
+
+  var label = document.createElement('label');
+  label.className = 'notes-label';
+  label.textContent = 'Notes:';
+  section.appendChild(label);
+
+  var textarea = document.createElement('textarea');
+  textarea.className = 'word-notes-input';
+  textarea.rows = 2;
+  section.appendChild(textarea);
+
+  return section;
+}
+
+// Meta section factory, only Part of Speech
 function createMetaSection() {
   var meta = document.createElement('div');
   meta.className = 'word-meta';
-  meta.style.marginTop = '0.5em';
 
+  // Type dropdown
   var typeLabel = document.createElement('label');
-  typeLabel.textContent = 'Type: ';
-  typeLabel.appendChild(createTypeSelect());
+  typeLabel.className = 'meta-label';
+  typeLabel.textContent = 'Content Type:';
+  var typeSelect = createTypeSelect();
+  typeLabel.appendChild(typeSelect);
   meta.appendChild(typeLabel);
 
+  // Part of Speech
   var posLabel = document.createElement('label');
-  posLabel.textContent = ' Part of speech: ';
-  posLabel.appendChild(createPosInput());
+  posLabel.className = 'meta-label';
+  posLabel.textContent = 'Part of Speech: ';
+  
+  var posInput = createPosInput();
+  posLabel.appendChild(posInput);
   meta.appendChild(posLabel);
 
   return meta;
 }
 
-function createDefinitionSection() {
-  var label = document.createElement('label');
-  label.textContent = 'Definition:';
-  label.style.display = 'block';
-  label.style.marginTop = '0.5em';
+function createHeaderSection() {
+    var header = document.createElement('div');
+    header.className = 'word-header';
+    header.style.display = 'flex';
+    header.style.alignItems = 'baseline';
+    header.style.gap = '0.75em';
 
-  var textarea = document.createElement('textarea');
-  textarea.className = 'word-definition-input';
-  textarea.rows = 3;
-  textarea.style.width = '100%';
-  label.appendChild(textarea);
+    header.appendChild(createScriptElement());
+    header.appendChild(createRomanizationElement());
+    header.appendChild(createConfidenceRating(10));
 
-  return label;
+    return header;
 }
-
-function createNotesSection() {
-  var label = document.createElement('label');
-  label.textContent = 'Notes:';
-  label.style.display = 'block';
-  label.style.marginTop = '0.5em';
-
-  var textarea = document.createElement('textarea');
-  textarea.className = 'word-notes-input';
-  textarea.rows = 2;
-  textarea.style.width = '100%';
-  label.appendChild(textarea);
-
-  return label;
-}
-
-// panel builder
 
 function createWordDetailsPanel() {
-  var detail = document.createElement('div');
-  detail.className = 'word-details';
-  detail.appendChild(createHeaderSection());
-  detail.appendChild(createMetaSection());
-  detail.appendChild(createDefinitionSection());
-  detail.appendChild(createNotesSection());
-  return detail;
+    var detail = document.createElement('div');
+    detail.className = 'word-details';
+    detail.appendChild(createHeaderSection());
+    detail.appendChild(createMetaSection());
+    detail.appendChild(createDefinitionSection());
+    detail.appendChild(createNotesSection());
+    return detail;
 }
 
-function setWordScript(text) {
-  var el = document.querySelector('.word-script');
-  if (el) el.textContent = text || '';
+function showworddetails(w) {
+  // inline‐editable fields
+  const scriptEl = document.querySelector('.word-script');
+  const romanEl  = document.querySelector('.word-romanization');
+  scriptEl.textContent = w.word || '';
+  romanEl.textContent  = w.romanization || '';
+  scriptEl.onblur    = () => { w.word = scriptEl.textContent.trim(); };
+  romanEl.onblur     = () => { w.romanization = romanEl.textContent.trim(); };
+
+  // confidence rating
+  const ratingWidget = document.querySelector('.confidence-rating');
+    ratingWidget.reset();console.log(w);
+    ratingWidget.setRating(w.confidence);
+
+  // other fields
+  const typeSelect = document.querySelector('.word-type-select');
+  typeSelect.value    = w.type || '';
+  typeSelect.onchange = () => { w.type = typeSelect.value; };
+
+  const posInput = document.querySelector('.word-pos-input');
+  posInput.value      = w.pos || '';
+  posInput.onchange   = () => { w.pos = posInput.value; };
+
+  const defArea = document.querySelector('.word-definition-input');
+  defArea.value       = w.definition || '';
+  defArea.onchange    = () => { w.definition = defArea.value; };
+
+  const notesArea = document.querySelector('.word-notes-input');
+  notesArea.value     = w.notes || '';
+  notesArea.onchange  = () => { w.notes = notesArea.value; };
 }
 
-function setRomanization(text) {
-  var el = document.querySelector('.word-romanization');
-  if (el) el.textContent = text || '';
-}
-
-function setConfidence(value) {
-  var el = document.querySelector('.word-confidence-input');
-  if (el) el.value = value == null ? '' : value;
-}
-
-function setType(value) {
-  var el = document.querySelector('.word-type-select');
-  if (el) el.value = value || '';
-}
-
-function setPos(value) {
-  var el = document.querySelector('.word-pos-input');
-  if (el) el.value = value || '';
-}
-
-function setDefinition(text) {
-  var el = document.querySelector('.word-definition-input');
-  if (el) el.value = text || '';
-}
-
-function setNotes(text) {
-  var el = document.querySelector('.word-notes-input');
-  if (el) el.value = text || '';
-}

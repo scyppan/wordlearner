@@ -1,0 +1,133 @@
+.inline-label {
+  border-bottom: 1px dashed transparent;
+  cursor: text;
+}
+
+.inline-label:hover {
+  border-bottom-color: #ccc;
+}
+
+.inline-label:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+
+.word-script {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.word-romanization {
+ margin-right: 0.5em;
+}
+
+.confidence-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.confidence-circle {
+  width: 1.25rem;             /* bumped size */
+  height: 1.25rem;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  background-color: #888;      /* default (unfilled) */
+  cursor: pointer;
+}
+
+.confidence-circle.filled {
+  background: linear-gradient(135deg, #0d4116, #65b676);
+}
+
+.confidence-circle.large {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Meta section layout */
+.word-meta {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;  /* center elems vertically */
+  gap: 1rem;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.word-type-select,
+.word-pos-input {
+  padding: 0.25em 0.5em;
+  line-height: 1.4;       /* match typical font height */
+  font-size: 1em;
+  height: auto;           /* let height be governed by line-height + padding */
+  box-sizing: border-box;
+}
+
+/* Type dropdown styling */
+.meta-label select.word-type-select {
+  padding: 0.25em 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Part of Speech input styling */
+.word-pos-input {
+  padding: 0.25em 0.5em;
+  line-height: 1.2;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Definition & Notes sections labels */
+.word-definition-section label,
+.word-notes-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+/* Definition & Notes textareas */
+.word-definition-input,
+.word-notes-input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 0.75em;
+}
+
+.word-details {
+  overflow: visible;
+}
+
+/* prettier inputs, selects, textareas in the details panel */
+.word-details input,
+.word-details select,
+.word-details textarea {
+  background-color: #fcfcfc;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.word-details input:hover,
+.word-details select:hover {
+  background-color: #f9f9f9;
+}
+
+.word-details input:focus,
+.word-details select:focus,
+.word-details textarea:focus {
+  background-color: #f0f8ff;
+  border-color: #66a2ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100,150,255,0.3);
+}

@@ -46,22 +46,3 @@ function populateWordList(data) {
     list.appendChild(li)
   })
 }
-
-function showworddetails(w) {
-  var scriptEl       = document.querySelector('.word-script');
-  var romanEl        = document.querySelector('.word-romanization');
-  var confInput      = document.querySelector('.word-confidence-input');
-  var typeSelect     = document.querySelector('.word-type-select');
-  var posInput       = document.querySelector('.word-pos-input');
-  var defArea        = document.querySelector('.word-definition-input');
-  var notesArea      = document.querySelector('.word-notes-input');
-
-  scriptEl.textContent       = w.word || '';
-  romanEl.textContent        = w.romanization || '';
-  confInput.value            = (w.confidence != null ? w.confidence : '');
-  typeSelect.value           = w.type || '';
-  posInput.value             = w.pos || '';
-  defArea.value              = w.definition || '';
-  notesArea.value            = w.notes || '';
-}
-

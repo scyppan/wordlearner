@@ -1,7 +1,7 @@
-const wordsData = [
+let wordsData = [
   {
     word: 'บ้าน',
-    confidence: 0.8,
+    confidence: 1,
     romanization: 'bâan',
     type: 'content',
     pos: 'noun',
@@ -13,7 +13,7 @@ const wordsData = [
   },
   {
     word: 'กิน',
-    confidence: 0.75,
+    confidence: 5,
     romanization: 'gin',
     type: 'content',
     pos: 'verb',
@@ -25,7 +25,7 @@ const wordsData = [
   },
   {
     word: 'น้ำ',
-    confidence: 0.7,
+    confidence: 7,
     romanization: 'náam',
     type: 'content',
     pos: 'noun',
@@ -37,7 +37,7 @@ const wordsData = [
   },
   {
     word: 'เรียน',
-    confidence: 0.65,
+    confidence: 3,
     romanization: 'rián',
     type: 'content',
     pos: 'verb',
@@ -49,7 +49,7 @@ const wordsData = [
   },
   {
     word: 'แล้ว',
-    confidence: 0.6,
+    confidence: 2,
     romanization: 'láew',
     type: 'functionary',
     pos: 'particle',
