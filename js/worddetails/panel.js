@@ -75,15 +75,39 @@ function showworddetails(w) {
     };
   }
 
-
   // inline‐editable
   panel.querySelector('.word-script').textContent = w.word || '';
   panel.querySelector('.word-romanization').textContent = w.romanization || '';
   panel.querySelector('.word-script').onblur = function () {
-    w.word = this.textContent.trim();
+    var newWord = this.textContent.trim();
+
+    if (!newWord) {
+      // Prevent blank entries
+      this.textContent = w.word || '';
+      return;
+    }
+
+    // Allow "ตัวยึดตำแหน่ง" repeats, but number them; for all others, number if needed
+    var isPlaceholder = newWord.startsWith('ตัวยึดตำแหน่ง');
+    var base = isPlaceholder ? 'ตัวยึดตำแหน่ง' : newWord;
+    var count = 1;
+    // Ignore self when checking for existing words
+    wordsData.forEach(function (entry) {
+      if (entry !== w && (entry.word || '').split(/[0-9]+$/)[0] === base) count++;
+    });
+
+    if (count > 1) {
+      newWord = base + count;
+      this.textContent = newWord;
+    }
+
+    w.word = newWord;
+    refreshWordList();
   };
+
   panel.querySelector('.word-romanization').onblur = function () {
     w.romanization = this.textContent.trim();
+    refreshWordList();
   };
 
   // confidence
@@ -105,6 +129,7 @@ function showworddetails(w) {
   panel.querySelector('.word-definition-input').value = w.definition || '';
   panel.querySelector('.word-definition-input').onchange = function () {
     w.definition = this.value;
+    refreshWordList();
   };
   panel.querySelector('.word-notes-input').value = w.notes || '';
   panel.querySelector('.word-notes-input').onchange = function () {
@@ -139,11 +164,6 @@ function deleteword(w) {
   if (panel) {
     panel.classList.add('hidden');
   }
-  // Refresh the autocomplete list
-  var searchInput = document.querySelector('.word-search');
-  if (searchInput) {
-    // Triggers re-filtering and re-rendering with updated wordsData
-    var event = new Event('input', { bubbles: true });
-    searchInput.dispatchEvent(event);
-  }
+  
+  refreshWordList();
 }

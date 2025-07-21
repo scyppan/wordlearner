@@ -80,3 +80,31 @@
 .word-list .thai {
   font-weight: bold;
 }
+
+.add-word-btn {
+  background: #5b665a;
+  color: #fff;
+  border: none;
+  border-radius: 30%;
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-left: 0.4em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, box-shadow 0.15s;
+  box-shadow: 0 1px 3px rgba(80,120,60,0.08);
+  outline: none;
+}
+
+.add-word-btn:hover,
+.add-word-btn:focus {
+  background: #485746;
+}
+
+.add-word-btn:active {
+  background: #495e46;
+}
