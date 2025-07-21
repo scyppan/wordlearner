@@ -1,0 +1,82 @@
+/* override maincontent to use full flex width */
+.maincontent {
+  flex: 1;
+  width: auto;
+}
+
+/* inside words view */
+.words-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.words-sidebar {
+  width: 40%;
+  flex: none;
+  padding: 1rem;
+}
+
+.word-details {
+  flex: 1;
+  padding: 1rem;
+  background-color: #cfd8e6;
+}
+
+.word-search {
+  width: 85%;
+  margin: 3px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  color: #a2caa5;
+  font-weight: bolder;
+}
+
+.word-search:focus {
+  outline: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.word-search::placeholder {
+  color: #cedbbf;
+  font-style: italic;
+}
+
+/* style the word-list */
+.word-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.word-list li {
+  cursor: pointer;
+  padding: 0.5em;
+  margin-bottom: 0.3em;
+  border-radius: 4px;
+  
+}
+
+.word-list li:hover{
+  background-color: #373b46 !important;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+/* alternate very subtle backgrounds */
+.word-list li:nth-child(odd) {
+  background-color: #d4b6b6;
+}
+
+.word-list li:nth-child(even) {
+  background-color: #c9b1b1;
+}
+
+/* bold the Thai script */
+.word-list .thai {
+  font-weight: bold;
+}

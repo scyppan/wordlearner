@@ -1,0 +1,30 @@
+.sidepanel {
+  width: 15%;
+  background-color: #380808;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bolder;
+}
+
+.sidepanel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidepanel li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #d8c5c5;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidepanel li:hover {
+    
+  background: #f0f4f8;
+  color: #000;
+}
