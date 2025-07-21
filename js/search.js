@@ -11,10 +11,9 @@ function createAutocomplete(inputSelector, dataArray, options) {
   var input = document.querySelector(inputSelector);
   var list  = document.querySelector(options.suggestionsContainer || '.word-list');
   var selectedIndex = -1;
-  var maxItems      = options.maxItems || 10;
 
   // Initial render: show all entries
-  renderList(dataArray.slice(0, maxItems));
+  renderList(dataArray);
 
   // Bind events
   input.addEventListener('input', onInput);
@@ -22,7 +21,7 @@ function createAutocomplete(inputSelector, dataArray, options) {
   input.addEventListener('blur', function() {
     // on blur, restore full list
     setTimeout(function() {
-      renderList(dataArray.slice(0, maxItems));
+      renderList(dataArray);
     }, 100);
   });
 
@@ -39,7 +38,7 @@ function createAutocomplete(inputSelector, dataArray, options) {
               || def.indexOf(term)   !== -1;
         });
 
-    renderList(matches.slice(0, maxItems));
+    renderList(matches);
   }
 
   function renderList(items) {
@@ -93,7 +92,7 @@ function createAutocomplete(inputSelector, dataArray, options) {
   const maxItems = options.maxItems || 10;
 
   input.addEventListener('input', onInput);
-  renderList(dataArray.slice(0, maxItems));
+  renderList(dataArray);
 
   function onInput() {
     const term = normalize(input.value.trim());
@@ -105,7 +104,7 @@ function createAutocomplete(inputSelector, dataArray, options) {
           const def   = (item.definition  || '').toLowerCase();
           return thai.includes(term) || roman.includes(term) || def.includes(term);
         });
-    renderList(matches.slice(0, maxItems));
+    renderList(matches);
   }
 
   function renderList(items) {
