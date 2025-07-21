@@ -39,14 +39,5 @@ function createWordsSidebar() {
   return sidebar
 }
 
-function populateWordList(data) {
-  const list = document.querySelector('.word-list')
-  list.innerHTML = ''
-  data.forEach(w => {
-    const li = document.createElement('li')
-    li.textContent = w.word
-    li.addEventListener('click', () => showworddetails(w))
-    list.appendChild(li)
-  })
-}
+
 

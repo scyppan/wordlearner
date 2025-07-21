@@ -8,7 +8,6 @@ function initsidepanel() {
     <main class="maincontent"></main>
   `;
 
-
   const items = document.querySelectorAll('.sidepanel li')
   items.forEach(item => {
     item.addEventListener('click', () => {

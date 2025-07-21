@@ -131,3 +131,151 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(100,150,255,0.3);
 }
+
+.word-advancement-section {
+  margin: 0.5em 0;
+  padding: 0.5em 0.6em;
+  background: #f8f8f5;
+  border-radius: 7px;
+  border: 1px solid #e0e0dc;
+  box-shadow: 0 1px 3px rgba(100,100,80,0.05);
+}
+
+.advancement-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4em;
+}
+
+.advancement-header h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  margin-right: 0.5em;
+  line-height: 1.1;
+  flex: none;
+}
+
+.advancement-add {
+  background: #59b84a;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.advancement-add:hover {
+  background: #418d35;
+}
+
+.advancement-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advancement-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25em;
+  padding: 0.1em 0;
+}
+
+.advancement-item:last-child {
+  margin-bottom: 0;
+}
+
+.advancement-item span,
+.advancement-item .word-shortphrases-item,
+.advancement-item .word-longphrases-item,
+.advancement-item .word-sentences-item {
+  display: inline-block;
+  min-width: 48px;
+  padding: 0.12em 0.45em;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-right: 0.35em;
+  font-size: 0.95em;
+}
+
+.advancement-item span:focus {
+  outline: 2px solid #59b84a;
+  background: #e7ffe5;
+}
+
+.advancement-del {
+  background: #db5050;
+  color: #fff;
+  font-size: 0.93em;
+  border: none;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.13s;
+}
+
+.advancement-del:hover {
+  background: #ad3838;
+}
+
+/* Optional: make confidence rating circles smaller if you use them nearby */
+.confidence-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.23em;
+  margin: 0.4em 0;
+}
+
+.confidence-circle {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  background: #e5e5e5;
+  margin: 0 0.03em;
+  border: 1px solid #b0b0af;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.15s, border 0.15s;
+}
+
+.confidence-circle.filled {
+  background: #59b84a;
+  border-color: #59b84a;
+}
+
+.confidence-circle:hover {
+  background: #77c95e;
+  border-color: #5da44b;
+}
+
+.word-delete-btn {
+  display: block;
+  background: #d94f4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.97em;
+  padding: 0.35em 1.1em;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.word-delete-btn:hover {
+  background: #ad3838;
+}
