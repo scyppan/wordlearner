@@ -1,4 +1,4 @@
-.maincontent table {
+#maincontent table {
   border-collapse: separate;
   border-spacing: 0;
   margin: 1.2em auto 0 auto;
@@ -11,28 +11,28 @@
   border: 1px solid #a4b2c8;
 }
 
-.maincontent th, .maincontent td {
+#maincontent th, #maincontent td {
   border: none;
   padding: 0.37em 0.85em;
   text-align: center;
 }
 
-.maincontent th {
+#maincontent th {
   background: #e5f2ff;
   font-weight: bold;
   letter-spacing: 0.02em;
   font-size: 1em;
 }
 
-.maincontent tr:nth-child(odd) td {
+#maincontent tr:nth-child(odd) td {
   background: #f2f6fa;
 }
 
-.maincontent tr:nth-child(even) td {
+#maincontent tr:nth-child(even) td {
   background: #eaf0f6;
 }
 
-.maincontent td:first-child {
+#maincontent td:first-child {
   background: #e2e5eb;
   font-weight: bold;
   color: #3a3a3a;
@@ -41,7 +41,7 @@
 }
 
 /* Modern input styling */
-.maincontent input[type="number"] {
+#maincontent input[type="number"] {
   background: #f1e5e5;
   border: 1.1px solid #c4a9a9;
   border-radius: 6px;
@@ -57,7 +57,7 @@
   display: block;
 }
 
-.maincontent input[type="number"]:focus {
+#maincontent input[type="number"]:focus {
   border: 1.1px solid #37687c;
   background: #f8fff2;
   box-shadow: 0 1.2px 6px rgba(90,180,110,0.11);

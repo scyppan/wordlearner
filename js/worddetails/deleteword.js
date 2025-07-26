@@ -9,7 +9,6 @@
 //---------
 
 function createdeletewordbutton(word) {
-    console.log("deleteeee");
     var delbtn = document.createElement('button');
     delbtn.type = 'button';
     delbtn.id = 'word-delete-btn';

@@ -285,3 +285,24 @@
   white-space: pre-wrap;
   word-break: break-word;
 }
+
+.word-delete-btn {
+  background-color: #584a4a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.25em 0.9em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.16s, box-shadow 0.13s;
+  box-shadow: 0 1px 2.5px rgba(70,30,30,0.10);
+  margin-left: 0.6em;
+}
+
+.word-delete-btn:hover,
+.word-delete-btn:focus {
+  background-color: #645252;
+  outline: none;
+  color: #fff;
+}

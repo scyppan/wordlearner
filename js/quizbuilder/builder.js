@@ -1,28 +1,36 @@
-let quizBuilderTitle = '';
-let quizBuilderInputs = {};
+//---------
+//GLOBAL VARIABLES (MODULE STATE)
+//---------
+
+let quizbuildertitle = '';
+let quizbuilderinputs = {};
+
+//---------
+//ENTRY FUNCTION
+//---------
 
 function renderquizbuilder() {
-    const main = document.querySelector('.maincontent');
-    main.innerHTML = '';
+    clearmaincontent();
+    var main = document.getElementById('maincontent');
 
     // ---- TITLE SECTION ----
-    const titleDiv = document.createElement('div');
-    titleDiv.className = 'quizbuilder-title-block';
+    var titlediv = document.createElement('div');
+    titlediv.className = 'quizbuilder-title-block';
 
-    const label = document.createElement('label');
+    var label = document.createElement('label');
     label.textContent = 'Quiz Title: ';
     label.setAttribute('for', 'quizbuilder-title');
     label.style.fontWeight = 'bold';
 
-    const input = document.createElement('input');
+    var input = document.createElement('input');
     input.type = 'text';
     input.id = 'quizbuilder-title';
     input.className = 'quizbuilder-title-input';
-    input.value = quizBuilderTitle || getDefaultQuizTitle();
+    input.value = quizbuildertitle || getdefaultquiztitle();
     input.autocomplete = 'off';
 
     input.addEventListener('input', function () {
-        quizBuilderTitle = input.value;
+        quizbuildertitle = input.value;
     });
 
     input.addEventListener('focus', function () {
@@ -30,50 +38,48 @@ function renderquizbuilder() {
     });
 
     label.appendChild(input);
-    titleDiv.appendChild(label);
-    main.appendChild(titleDiv);
+    titlediv.appendChild(label);
+    main.appendChild(titlediv);
 
     // ---- TABLE SECTION ----
-    const table = document.createElement('table');
+    var table = document.createElement('table');
     table.className = 'quizbuilder-table';
 
-    // Header row
-    const headerRow = document.createElement('tr');
-    const firstHeader = document.createElement('th');
-    firstHeader.textContent = 'Confidence';
-    headerRow.appendChild(firstHeader);
+    var headerrow = document.createElement('tr');
+    var firstheader = document.createElement('th');
+    firstheader.textContent = 'Confidence';
+    headerrow.appendChild(firstheader);
 
-    const colNames = ['Word', 'Short Phrase', 'Long Phrase', 'Sentence'];
-    colNames.forEach(name => {
-        const th = document.createElement('th');
-        th.textContent = name;
-        headerRow.appendChild(th);
-    });
-    table.appendChild(headerRow);
+    var colnames = ['Word', 'Short Phrase', 'Long Phrase', 'Sentence'];
+    var i;
+    for (i = 0; i < colnames.length; i++) {
+        var th = document.createElement('th');
+        th.textContent = colnames[i];
+        headerrow.appendChild(th);
+    }
+    table.appendChild(headerrow);
 
-    // Rows: 0-10
-    for (let conf = 0; conf <= 10; conf++) {
-        const tr = document.createElement('tr');
-        const confCell = document.createElement('td');
-        confCell.textContent = conf === 0 ? 'None/0' : conf;
-        if (conf === 0) confCell.className = 'confidence-zero';
-        tr.appendChild(confCell);
+    for (var conf = 0; conf <= 10; conf++) {
+        var tr = document.createElement('tr');
+        var confcell = document.createElement('td');
+        confcell.textContent = conf === 0 ? 'None/0' : conf;
+        if (conf === 0) confcell.className = 'confidence-zero';
+        tr.appendChild(confcell);
 
-        for (let col = 0; col < colNames.length; col++) {
-            const td = document.createElement('td');
-            const inputBox = document.createElement('input');
-            inputBox.type = 'number';
-            inputBox.min = 0;
-            inputBox.max = 99;
-            inputBox.className = 'quiz-num-input';
-            inputBox.dataset.confidence = conf;
-            inputBox.dataset.type = colNames[col].replace(' ', '').toLowerCase();
+        for (var col = 0; col < colnames.length; col++) {
+            var td = document.createElement('td');
+            var inputbox = document.createElement('input');
+            inputbox.type = 'number';
+            inputbox.min = 0;
+            inputbox.max = 99;
+            inputbox.className = 'quiz-num-input';
+            inputbox.dataset.confidence = conf;
+            inputbox.dataset.type = colnames[col].replace(' ', '').toLowerCase();
 
-            // Restore value if present
-            const key = conf + '-' + inputBox.dataset.type;
-            inputBox.value = quizBuilderInputs[key] !== undefined ? quizBuilderInputs[key] : 0;
+            var key = conf + '-' + inputbox.dataset.type;
+            inputbox.value = typeof quizbuilderinputs[key] !== 'undefined' ? quizbuilderinputs[key] : 0;
 
-            td.appendChild(inputBox);
+            td.appendChild(inputbox);
             tr.appendChild(td);
         }
         table.appendChild(tr);
@@ -82,141 +88,150 @@ function renderquizbuilder() {
     main.appendChild(table);
 
     // ---- TOTALS SECTION ----
-    const totalsLabel = document.createElement('div');
-    totalsLabel.className = 'quizbuilder-totals';
-    main.appendChild(totalsLabel);
+    var totalslabel = document.createElement('div');
+    totalslabel.className = 'quizbuilder-totals';
+    main.appendChild(totalslabel);
 
     // ---- BUILD BUTTON SECTION ----
-    const btn = document.createElement('button');
+    var btn = document.createElement('button');
     btn.className = 'quizbuilder-build-btn';
     btn.textContent = 'Build Quiz';
     btn.onclick = function () {
-        let quizTitle = input.value.trim();
-        if (!quizTitle) {
+        var quiztitle = input.value.trim();
+        if (!quiztitle) {
             alert('Quiz title required');
             input.focus();
             return;
         }
-        let quiz = buildQuiz(quizTitle, quizBuilderInputs, wordsData);
+        var quiz = buildquiz(quiztitle, quizbuilderinputs, wordsdata);
         quizzes.push(quiz);
-        alert("Quiz built and stored! (" + quiz.items.length + " items)");
+        alert('Quiz built and stored! (' + quiz.items.length + ' items)');
 
-        // First, try to match "Quiz YY.MM.DD.###" and increment
-        let re = /^Quiz \d{2}\.\d{2}\.\d{2}\.(\d{3})$/;
-        let match = quizTitle.match(re);
+        var re = /^Quiz \d{2}\.\d{2}\.\d{2}\.(\d{3})$/;
+        var match = quiztitle.match(re);
         if (match) {
-            let n = parseInt(match[1], 10) + 1;
-            let prefix = quizTitle.slice(0, quizTitle.lastIndexOf('.') + 1);
-            input.value = prefix + String(n).padStart(3, '0');
-            quizBuilderTitle = input.value; // keep global in sync
+            var n = parseint(match[1], 10) + 1;
+            var prefix = quiztitle.slice(0, quiztitle.lastIndexOf('.') + 1);
+            input.value = prefix + string(n).padStart(3, '0');
+            quizbuildertitle = input.value;
             return;
         }
 
-        // Otherwise, increment any integer at the end of the string (with optional whitespace)
         re = /(.*?)(\d+)\s*$/;
-        match = quizTitle.match(re);
+        match = quiztitle.match(re);
         if (match) {
-            let base = match[1];
-            let n = parseInt(match[2], 10) + 1;
+            var base = match[1];
+            var n = parseint(match[2], 10) + 1;
             input.value = base + n;
-            quizBuilderTitle = input.value; // keep global in sync
+            quizbuildertitle = input.value;
         }
     };
-
     main.appendChild(btn);
 
     // ---- AVAILABILITY/DISABLING ----
-    const avail = getQuizItemAvailability(wordsData);
-    applyQuizInputLimits(main, avail);
+    var avail = getquizitemavailability(wordsdata);
+    applyquizinputlimits(main, avail);
 
     // ---- TOTALS/STATE RESTORE ----
-    function updateTotalsAndStore() {
-        let shortTotal = 0, longTotal = 0, sentTotal = 0, wordTotal = 0;
-        main.querySelectorAll('input[type="number"]').forEach(inp => {
-            const type = inp.dataset.type;
-            const conf = inp.dataset.confidence;
-            const key = conf + '-' + type;
-            const val = parseInt(inp.value, 10) || 0;
-            quizBuilderInputs[key] = val;
-            if (type === 'shortphrase') shortTotal += val;
-            if (type === 'longphrase') longTotal += val;
-            if (type === 'sentence') sentTotal += val;
-            if (type === 'word') wordTotal += val;
-        });
-        const total = shortTotal + longTotal + sentTotal + wordTotal;
-        totalsLabel.textContent =
-            `Total Words: ${wordTotal}   |   Short Phrases: ${shortTotal}   |   Long Phrases: ${longTotal}   |   Sentences: ${sentTotal}   |   All Items: ${total}`;
+    function updatetotalsandstore() {
+        var shorttotal = 0, longtotal = 0, senttotal = 0, wordtotal = 0;
+        var allinputs = main.querySelectorAll('input[type="number"]');
+        var i;
+        for (i = 0; i < allinputs.length; i++) {
+            var inp = allinputs[i];
+            var type = inp.dataset.type;
+            var conf = inp.dataset.confidence;
+            var key = conf + '-' + type;
+            var val = parseint(inp.value, 10) || 0;
+            quizbuilderinputs[key] = val;
+            if (type === 'shortphrase') shorttotal += val;
+            if (type === 'longphrase') longtotal += val;
+            if (type === 'sentence') senttotal += val;
+            if (type === 'word') wordtotal += val;
+        }
+        var total = shorttotal + longtotal + senttotal + wordtotal;
+        totalslabel.textContent =
+            'Total Words: ' + wordtotal +
+            '   |   Short Phrases: ' + shorttotal +
+            '   |   Long Phrases: ' + longtotal +
+            '   |   Sentences: ' + senttotal +
+            '   |   All Items: ' + total;
     }
 
-    main.querySelectorAll('input[type="number"]').forEach(inp => {
-        inp.addEventListener('input', updateTotalsAndStore);
-    });
+    var allinputs = main.querySelectorAll('input[type="number"]');
+    for (i = 0; i < allinputs.length; i++) {
+        allinputs[i].addEventListener('input', updatetotalsandstore);
+    }
 
-    updateTotalsAndStore(); // Initial display & storage
+    updatetotalsandstore();
 }
 
-// 1. Helper: normalize column/type names
-function normalizeType(str) {
-    str = str.replace(/\s+/g, '').toLowerCase();
-    if (str === 'shortphrases') return 'shortphrase';
-    if (str === 'longphrases') return 'longphrase';
-    if (str === 'sentences') return 'sentence';
-    return str;
+//---------
+//MAJOR FUNCTIONS
+//---------
+
+function buildquiz(quiztitle, quizinputs, wordsdata) {
+    // Assumes this function is available elsewhere in your codebase,
+    // if not, provide its implementation as required.
+    return window.buildquiz(quiztitle, quizinputs, wordsdata);
 }
 
-// 2. Returns availability map by type and confidence
-function getQuizItemAvailability(wordsData) {
-    // Types to count
-    const types = ['word', 'shortphrase', 'longphrase', 'sentence'];
-    // Map: { type: {confidence: count, ...}, ... }
-    const availability = {};
-    types.forEach(type => availability[type] = {});
+function getquizitemavailability(wordsdata) {
+    var types = ['word', 'shortphrase', 'longphrase', 'sentence'];
+    var availability = {};
+    var i, j;
+    for (i = 0; i < types.length; i++) {
+        availability[types[i]] = {};
+    }
 
-    wordsData.forEach(wordObj => {
-        const conf = Number(wordObj.confidence) || 0;
+    for (i = 0; i < wordsdata.length; i++) {
+        var wordobj = wordsdata[i];
+        var conf = number(wordobj.confidence) || 0;
 
-        // Word itself (only count if non-empty)
-        if (wordObj.word && String(wordObj.word).trim() !== '') {
+        if (wordobj.word && string(wordobj.word).trim() !== '') {
             availability.word[conf] = (availability.word[conf] || 0) + 1;
         }
-
-        // Short phrases (only count non-empty)
-        if (Array.isArray(wordObj.shortphrases)) {
-            const count = wordObj.shortphrases.filter(p => p && String(p).trim() !== '').length;
+        if (arrayisarray(wordobj.shortphrases)) {
+            var count = 0;
+            for (j = 0; j < wordobj.shortphrases.length; j++) {
+                var p = wordobj.shortphrases[j];
+                if (p && string(p).trim() !== '') count++;
+            }
             availability.shortphrase[conf] = (availability.shortphrase[conf] || 0) + count;
         }
-
-        // Long phrases (only count non-empty)
-        if (Array.isArray(wordObj.longphrases)) {
-            const count = wordObj.longphrases.filter(p => p && String(p).trim() !== '').length;
+        if (arrayisarray(wordobj.longphrases)) {
+            var count = 0;
+            for (j = 0; j < wordobj.longphrases.length; j++) {
+                var p = wordobj.longphrases[j];
+                if (p && string(p).trim() !== '') count++;
+            }
             availability.longphrase[conf] = (availability.longphrase[conf] || 0) + count;
         }
-
-        // Sentences (only count non-empty)
-        if (Array.isArray(wordObj.sentences)) {
-            const count = wordObj.sentences.filter(s => s && String(s).trim() !== '').length;
+        if (arrayisarray(wordobj.sentences)) {
+            var count = 0;
+            for (j = 0; j < wordobj.sentences.length; j++) {
+                var s = wordobj.sentences[j];
+                if (s && string(s).trim() !== '') count++;
+            }
             availability.sentence[conf] = (availability.sentence[conf] || 0) + count;
         }
-    });
+    }
 
-    // Fill gaps with zeros (conf 0-10)
-    for (let conf = 0; conf <= 10; conf++) {
-        types.forEach(type => {
+    for (var conf = 0; conf <= 10; conf++) {
+        for (i = 0; i < types.length; i++) {
+            var type = types[i];
             if (!(conf in availability[type])) availability[type][conf] = 0;
-        });
+        }
     }
 
     return availability;
 }
 
-// 3. Applies max/disabled/greyed logic to all table inputs
-function applyQuizInputLimits(mainElem, availability) {
-    // mainElem: container holding the inputs (e.g. document.querySelector('.maincontent'))
-
-    mainElem.querySelectorAll('input[type="number"]').forEach(inp => {
-        const conf = Number(inp.dataset.confidence);
-        const type = normalizeType(inp.dataset.type);
-        const avail = availability[type]?.[conf] ?? 0;
+function applyquizinputlimits(mainelem, availability) {
+    mainelem.querySelectorAll('input[type="number"]').forEach(function(inp) {
+        var conf = Number(inp.dataset.confidence);
+        var type = normalizetype(inp.dataset.type);
+        var avail = availability[type]?.[conf] ?? 0;
 
         inp.max = avail;
 
@@ -228,22 +243,54 @@ function applyQuizInputLimits(mainElem, availability) {
             inp.disabled = false;
             inp.classList.remove('quizbuilder-disabled');
         }
+
+        inp.oninput = function handleinputevent() {
+            if (Number(inp.value) > avail) inp.value = avail;
+            if (Number(inp.value) < 0) inp.value = 0;
+        };
     });
 }
 
-function getDefaultQuizTitle() {
-    const now = new Date();
-    const yy = String(now.getFullYear()).slice(2);
-    const mm = String(now.getMonth() + 1).padStart(2, '0');
-    const dd = String(now.getDate()).padStart(2, '0');
-    let seq = 1;
-    // Check existing quizzes for today’s sequence
-    const prefix = `Quiz ${yy}.${mm}.${dd}.`;
-    quizzes.forEach(q => {
-        if (q.title && q.title.startsWith(prefix)) {
-            const n = Number(q.title.slice(prefix.length));
+//---------
+//HELPER FUNCTIONS
+//---------
+
+function normalizetype(str) {
+    str = string(str).replace(/\s+/g, '').toLowerCase();
+    if (str === 'shortphrases') return 'shortphrase';
+    if (str === 'longphrases') return 'longphrase';
+    if (str === 'sentences') return 'sentence';
+    return str;
+}
+
+function getdefaultquiztitle() {
+    var seq = 0;
+    var prefix = 'Quiz ';
+    for (var i = 0; i < quizzes.length; i++) {
+        var q = quizzes[i];
+        if (q.title && q.title.indexOf(prefix) === 0) {
+            var n = Number(q.title.slice(prefix.length));
             if (!isNaN(n) && n >= seq) seq = n + 1;
         }
-    });
-    return `${prefix}${String(seq).padStart(3, '0')}`;
+    }
+    return prefix + seq;
 }
+
+function string(val) {
+    return String(val);
+}
+function number(val) {
+    return Number(val);
+}
+function arrayisarray(val) {
+    return Array.isArray(val);
+}
+function parseint(val, base) {
+    return parseInt(val, base);
+}
+
+//---------
+//IMMEDIATE FUNCTIONS
+//---------
+
+// none (renderquizbuilder() is called from main.js)

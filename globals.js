@@ -126,14 +126,5 @@ let quizzes = [
       { "itemNumber": 24, "thai": "น้ำ", "item": "ฉันดื่มน้ำเย็น", "state": "not tested" },
       { "itemNumber": 25, "thai": "น้ำ", "item": "ฉันชอบดื่มน้ำ", "state": "not tested" }
     ]
-  },
-  {
-    "title": "Quiz 1",
-    "items": [
-      { "itemNumber": 1, "thai": "บ้าน", "item": "บ้าน", "state": "not tested" },
-      { "itemNumber": 2, "thai": "บ้าน", "item": "ที่บ้าน", "state": "not tested" },
-      { "itemNumber": 3, "thai": "บ้าน", "item": "บ้านฉัน", "state": "not tested" },
-      { "itemNumber": 4, "thai": "บ้าน", "item": "ฉันอยู่ที่บ้าน", "state": "not tested" }
-    ]
   }
 ];

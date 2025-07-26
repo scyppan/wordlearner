@@ -1,70 +1,109 @@
-function buildQuiz(quizTitle, quizBuilderInputs, wordsData) {
-  let quizItems = [];
-  let itemNumber = 1;
+//---------
+//GLOBAL VARIABLES (MODULE STATE)
+//---------
 
-  for (let conf = 0; conf <= 10; conf++) {
-    ['word', 'shortphrase', 'longphrase', 'sentence'].forEach(type => {
-      const key = `${conf}-${type}`;
-      let needed = quizBuilderInputs[key] || 0;
-      if (!needed) return;
+// none needed for this module
 
-      // Gather all valid candidates for this type and confidence
-      let candidates = [];
-      wordsData.forEach(wordObj => {
-        if ((Number(wordObj.confidence) || 0) !== conf) return;
+//---------
+//ENTRY FUNCTION
+//---------
 
-        // Word (must be non-empty)
-        if (type === 'word') {
-          if (wordObj.word && String(wordObj.word).trim() !== '') {
-            candidates.push({ thai: wordObj.word, item: wordObj.word });
-          }
-        }
-        // Short phrases
-        if (type === 'shortphrase' && Array.isArray(wordObj.shortphrases)) {
-          wordObj.shortphrases.forEach(phrase => {
-            if (phrase && String(phrase).trim() !== '') {
-              candidates.push({ thai: wordObj.word, item: phrase });
+function buildquiz(quiztitle, quizbuilderinputs, wordsdata) {
+    var quizitems = [];
+    var itemnumber = 1;
+
+    for (var conf = 0; conf <= 10; conf++) {
+        var types = ['word', 'shortphrase', 'longphrase', 'sentence'];
+        for (var t = 0; t < types.length; t++) {
+            var type = types[t];
+            var key = conf + '-' + type;
+            var needed = quizbuilderinputs[key] || 0;
+            if (!needed) continue;
+
+            var candidates = [];
+            for (var w = 0; w < wordsdata.length; w++) {
+                var wordobj = wordsdata[w];
+                if ((Number(wordobj.confidence) || 0) !== conf) continue;
+
+                // Single word
+                if (type === 'word') {
+                    if (wordobj.word && String(wordobj.word).trim() !== '') {
+                        candidates.push({ thai: wordobj.word, item: wordobj.word });
+                    }
+                }
+
+                // Short phrases
+                if (type === 'shortphrase' && Array.isArray(wordobj.shortphrases)) {
+                    for (var sp = 0; sp < wordobj.shortphrases.length; sp++) {
+                        var phrase = wordobj.shortphrases[sp];
+                        if (phrase && String(phrase.thai).trim() !== '') {
+                            candidates.push({ thai: wordobj.word, item: phrase.thai });
+                        }
+                    }
+                }
+
+                // Long phrases
+                if (type === 'longphrase' && Array.isArray(wordobj.longphrases)) {
+                    for (var lp = 0; lp < wordobj.longphrases.length; lp++) {
+                        var phrase = wordobj.longphrases[lp];
+                        if (phrase && String(phrase.thai).trim() !== '') {
+                            candidates.push({ thai: wordobj.word, item: phrase.thai });
+                        }
+                    }
+                }
+
+                // Sentences
+                if (type === 'sentence' && Array.isArray(wordobj.sentences)) {
+                    for (var se = 0; se < wordobj.sentences.length; se++) {
+                        var sentence = wordobj.sentences[se];
+                        if (sentence && String(sentence.thai).trim() !== '') {
+                            candidates.push({ thai: wordobj.word, item: sentence.thai });
+                        }
+                    }
+                }
             }
-          });
-        }
-        // Long phrases
-        if (type === 'longphrase' && Array.isArray(wordObj.longphrases)) {
-          wordObj.longphrases.forEach(phrase => {
-            if (phrase && String(phrase).trim() !== '') {
-              candidates.push({ thai: wordObj.word, item: phrase });
+
+            shufflearray(candidates);
+
+            // Add up to needed items
+            for (var c = 0; c < Math.min(needed, candidates.length); c++) {
+                quizitems.push({
+                    itemnumber: itemnumber++,
+                    thai: candidates[c].thai,
+                    item: candidates[c].item,
+                    state: 'not tested'
+                });
             }
-          });
         }
-        // Sentences
-        if (type === 'sentence' && Array.isArray(wordObj.sentences)) {
-          wordObj.sentences.forEach(sentence => {
-            if (sentence && String(sentence).trim() !== '') {
-              candidates.push({ thai: wordObj.word, item: sentence });
-            }
-          });
-        }
-      });
+    }
 
-      // Shuffle the candidates array
-      for (let i = candidates.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
-      }
-
-      // Select up to needed (only non-empty items included above)
-      candidates.slice(0, needed).forEach(obj => {
-        quizItems.push({
-          itemNumber: itemNumber++,
-          thai: obj.thai,
-          item: obj.item,
-          state: 'not tested'
-        });
-      });
-    });
-  }
-
-  return {
-    title: quizTitle,
-    items: quizItems
-  };
+    return {
+        title: quiztitle,
+        items: quizitems
+    };
 }
+
+//---------
+//MAJOR FUNCTIONS
+//---------
+
+function shufflearray(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
+//---------
+//HELPER FUNCTIONS
+//---------
+
+// none needed
+
+//---------
+//IMMEDIATE FUNCTIONS
+//---------
+
+// none — buildquiz() is called from other code
