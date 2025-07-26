@@ -1,4 +1,4 @@
-.sidepanel {
+#sidepanel {
   width: 15%;
   background-color: #380808;
   border-right: 1px solid #e0e0e0;
@@ -10,14 +10,14 @@
   font-weight: bolder;
 }
 
-.sidepanel ul {
+#sidepanel ul {
 
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sidepanel li {
+#sidepanel li {
   margin-bottom: .85rem;
   border-radius: 3px;
   cursor: pointer;
@@ -25,7 +25,7 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.sidepanel li:hover {
+#sidepanel li:hover {
     
   background: #f0f4f8;
   color: #000;

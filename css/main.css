@@ -16,3 +16,8 @@ html, body, #app {
 .hidden{
     display:none;
 }
+
+#maincontent {
+  flex: 1;
+  width: auto;
+}

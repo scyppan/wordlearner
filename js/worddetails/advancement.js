@@ -1,87 +1,103 @@
-// requires createInlineEditableSpan from details/tools
+//---------
+//GLOBAL VARIABLES (MODULE STATE)
+//---------
 
-// Factory for a repeatable section (short phrases, long phrases, sentences)
-function createRepeatableSection(sectionKey, displayName) {
-  var values = [];
-  var onChangeCallback = null;
+// none; this module only constructs the bare DOM structure
 
-  // root container
-  var container = document.createElement('div');
-  container.className = 'word-advancement-section ' + sectionKey;
+//---------
+//ENTRY FUNCTION
+//---------
 
-  // header with title + “+” button
-  var header = document.createElement('div');
-  header.className = 'advancement-header';
+function createadvancementsection() {
+    // The ONLY externally callable function in this module.
+    // Returns a container plus references for each triple‐field table.
+    var container = document.createElement('div');
+    container.className = 'advancement-sections';
 
-  var title = document.createElement('h3');
-  title.textContent = displayName;
-  header.appendChild(title);
+    var shortsec = createrepeatablesectiontable('shortphrases', 'Short Phrases');
+    var longsec  = createrepeatablesectiontable('longphrases',  'Long Phrases');
+    var sentsec  = createrepeatablesectiontable('sentences',    'Sentences');
 
-  var addBtn = document.createElement('button');
-  addBtn.type = 'button';
-  addBtn.className = 'advancement-add';
-  addBtn.textContent = '+';
-  header.appendChild(addBtn);
+    container.appendChild(shortsec.container);
+    container.appendChild(longsec.container);
+    container.appendChild(sentsec.container);
 
-  container.appendChild(header);
-
-  // list
-  var list = document.createElement('ul');
-  list.className = 'advancement-list';
-  container.appendChild(list);
-
-  // click “+” → append empty entry + re‑render
-  addBtn.addEventListener('click', function() {
-    values.push('');
-    render();
-    if (onChangeCallback) onChangeCallback(values);
-  });
-
-  function render() {
-    list.innerHTML = '';
-    values.forEach(function(val, idx) {
-      var li = document.createElement('li');
-      li.className = 'advancement-item';
-
-      // inline‑editable span
-      var span = createInlineEditableSpan(sectionKey + '-item');
-      span.textContent = val;
-      span.onblur = function() {
-        values[idx] = span.textContent.trim();
-        if (onChangeCallback) onChangeCallback(values);
-      };
-      li.appendChild(span);
-
-      // delete “–” button
-      var del = document.createElement('button');
-      del.type = 'button';
-      del.className = 'advancement-del';
-      del.textContent = '-';
-      del.addEventListener('click', function() {
-        values.splice(idx, 1);
-        render();
-        if (onChangeCallback) onChangeCallback(values);
-      });
-      li.appendChild(del);
-
-      list.appendChild(li);
-    });
-  }
-
-  // externally set the array and update UI
-  function setValue(arr) {
-    values = Array.isArray(arr) ? arr.slice() : [];
-    render();
-  }
-
-  // register callback when user edits/adds/deletes
-  function onChange(fn) {
-    onChangeCallback = fn;
-  }
-
-  return {
-    container: container,
-    setValue: setValue,
-    onChange: onChange
-  };
+    return {
+        container: container,
+        shortsec: shortsec,
+        longsec: longsec,
+        sentsec: sentsec
+    };
 }
+
+//---------
+//MAJOR FUNCTIONS (PRIVATE)
+//---------
+
+function createrepeatablesectiontable(sectionkey, displayname) {
+    var container = document.createElement('div');
+    container.className = 'word-advancement-section ' + sectionkey;
+
+    // header with title + add button (no data logic)
+    var header = document.createElement('div');
+    header.className = 'advancement-header';
+    var title = document.createElement('h3');
+    title.textContent = displayname;
+    header.appendChild(title);
+
+    var addbtn = document.createElement('button');
+    addbtn.type = 'button';
+    addbtn.className = 'advancement-add';
+    addbtn.textContent = '+';
+    header.appendChild(addbtn);
+
+    container.appendChild(header);
+
+    // table skeleton
+    var table = document.createElement('table');
+    table.className = 'advancement-table';
+
+    var thead = document.createElement('thead');
+    var thr = document.createElement('tr');
+    ['thai', 'romanization', 'english', ''].forEach(function(col) {
+        var th = document.createElement('th');
+        if (col) th.textContent = col;
+        thr.appendChild(th);
+    });
+    thead.appendChild(thr);
+    table.appendChild(thead);
+
+    var tbody = document.createElement('tbody');
+    table.appendChild(tbody);
+    container.appendChild(table);
+
+    // expose only DOM references; external code will fill rows and wire events
+    return {
+        container: container,
+        addbtn: addbtn,
+        tbody: tbody
+    };
+}
+
+//---------
+//HELPER FUNCTIONS (EXTERNAL)
+//---------
+
+function createinlineeditablespan(classname) {
+    var span = document.createElement('span');
+    span.className = classname + ' inline-label';
+    span.contentEditable = true;
+    span.setAttribute('tabindex', '0');
+    span.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            span.blur();
+        }
+    });
+    return span;
+}
+
+//---------
+//IMMEDIATE FUNCTIONS
+//---------
+// (none; only createadvancementsection is called externally)
