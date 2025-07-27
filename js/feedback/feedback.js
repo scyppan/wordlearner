@@ -28,6 +28,7 @@ function renderfeedback() {
 
     if (quizzes.length > 0) {
         renderfeedbackquiztable(quizzes.length-1, quiztablepanel, worddetailspanel);
+        highlightquizinlist(quizzes.length-1);
     }
 }
 
@@ -70,6 +71,7 @@ function createfeedbackquizclickhandler(i) {
     return function () {
         selectedquizindex = i;
         selectedrowindex = null;
+        highlightquizinlist(selectedquizindex);
         renderselectedquizonly();
     };
 }
@@ -251,7 +253,16 @@ function renderfeedbackworddetails(item, worddetailspanel) {
 //HELPER FUNCTIONS
 //---------
 
-// none needed (relies on createworddetailspanel and showworddetails from elsewhere)
+function highlightquizinlist(index) {
+    var list = document.querySelectorAll('.feedback-quiz-listitem');
+    for (var i = 0; i < list.length; i++) {
+        if (i === index) {
+            list[i].classList.add('selected');
+        } else {
+            list[i].classList.remove('selected');
+        }
+    }
+}
 
 //---------
 //IMMEDIATE FUNCTIONS
