@@ -3,6 +3,7 @@
 //---------
 
 var selectedquizindex = null;
+var selectedrowindex = null;
 
 //---------
 //ENTRY FUNCTION
@@ -69,6 +70,7 @@ function createfeedbackquizlistpanel() {
 function createfeedbackquizclickhandler(i) {
     return function () {
         selectedquizindex = i;
+        selectedrowindex = null;  // <--- reset row selection when quiz changes
         renderfeedback();
     };
 }
@@ -126,7 +128,25 @@ function renderfeedbackquiztable(quizindex, quiztablepanel, worddetailspanel) {
         var tr = document.createElement('tr');
         tr.className = 'feedback-row';
         tr.tabIndex = 0;
-        tr.addEventListener('click', createfeedbackitemclickhandler(item));
+
+        // Highlight selected row
+        if (i === selectedrowindex) {
+            tr.classList.add('selected');
+        }
+
+        // This closure will set selectedrowindex and re-render table on click
+        tr.addEventListener('click', (function(rowidx, quizidx){
+            return function() {
+                selectedrowindex = rowidx;
+                renderfeedbackquiztable(quizidx, quiztablepanel, worddetailspanel);
+                // Optionally, show word details as before:
+                let container = document.getElementById('feedback-word-panel');
+                container.innerHTML = '';
+                container.appendChild(opendetailspanel());
+                var w = wordsdata.find(function (it) { return it.word === item.thai; });
+                showworddetails(w);
+            };
+        })(i, quizindex));
 
         // Number
         var tdnum = document.createElement('td');

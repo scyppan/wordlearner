@@ -74,12 +74,14 @@ margin-top:20px;
   transition: background 0.13s, opacity 0.14s, border 0.14s, box-shadow 0.16s;
 }
 
- .feedback-row:hover{
-    opacity: 1;
-    box-shadow: 0 2px 30px rgba(112, 82, 82, 0.1);
- }
+.feedback-row.selected:hover {
+  /* Optionally tweak but don't override the border for selected */
+  background: #dbfaed;
+  border-left: 4px solid #41c984;
+  color: #224136;
+}
 
-.feedback-row:hover td{
+.feedback-row:hover td {
   background-color: rgba(220, 50, 47, .1) !important;
 }
 
@@ -91,11 +93,13 @@ margin-top:20px;
     width: 30%;
     margin-left: 3px;
   }
+
   #feedback-word-panel {
     margin-left: 18px;
     margin-top:20px;
     width:100%;
   }
+
   .feedback-quiz-listitem {
     font-size: .80em;
     margin-left: 3px;
@@ -114,4 +118,26 @@ margin-top:20px;
 .feedback-quiz-listitem:focus {
   background: #f0f7ff;
   color: #253f58;
+}
+
+.feedback-row.selected,
+.feedback-row.selected:focus {
+  background: #e0f2e9 !important;
+  color: #224136;
+  font-weight: bold;
+  /* Fake a border around the whole row */
+  box-shadow:
+    0 2px 0 0 #41c984,   /* bottom */
+    0 -2px 0 0 #41c984,  /* top */
+    2px 0 0 0 #41c984,   /* right */
+    -2px 0 0 0 #41c984;  /* left */
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-row:focus {
+  background: #f0f7ff;
+  color: #253f58;
+  box-shadow: 0 0 0 2px #7fe2b6 inset;
 }
