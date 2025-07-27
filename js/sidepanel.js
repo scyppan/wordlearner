@@ -36,6 +36,7 @@ function createasidepanel() {
         { label: 'quiz builder', action: renderquizbuilder },
         { label: 'quiz mode',    action: renderquizmode    },
         { label: 'feedback',     action: renderfeedback    },
+        { label: 'progress',     action: renderprogress    },
         { label: 'data',         action: renderdata        }
     ]
 

@@ -1,3132 +1,3302 @@
 [
   {
-    "word": "กำลัง",
-    "confidence": 6,
-    "romanization": "gamlang",
-    "type": "functionary",
-    "pos": "aspect marker",
-    "definition": "in the middle of / -ing",
-    "notes": "Used before verbs to indicate ongoing action",
-    "shortphrases": ["กำลังกิน", "กำลังเรียน"],
-    "longphrases": ["ฉันกำลังกินข้าวอยู่", "เขากำลังดูทีวี"],
-    "sentences": ["ฉันกำลังกินข้าวตอนนี้", "พวกเขากำลังเล่นฟุตบอล"]
+    "word": "คุณ",
+    "confidence": 1,
+    "romanization": "khun",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "you (formal/polite)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "คุณครับ",
+        "romanization": "khun kráp",
+        "english": "you (male polite)"
+      },
+      {
+        "thai": "คุณค่ะ",
+        "romanization": "khun kâ",
+        "english": "you (female polite)"
+      },
+      {
+        "thai": "คุณล่ะ",
+        "romanization": "khun lâ",
+        "english": "and you?"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณชื่ออะไร",
+        "romanization": "khun chûue à-rai",
+        "english": "what is your name?"
+      },
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai-dee măi",
+        "english": "are you well?"
+      },
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "láew khun lâ",
+        "english": "and you?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณชื่ออะไรคะ",
+        "romanization": "khun chûue à-rai ká",
+        "english": "what is your name? (female polite)"
+      },
+      {
+        "thai": "คุณสบายดีไหมครับ",
+        "romanization": "khun sà-baai-dee măi kráp",
+        "english": "are you well? (male polite)"
+      },
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      }
+    ]
   },
   {
-    "word": "เลย",
-    "confidence": 6,
-    "romanization": "luy",
-    "type": "functionary",
-    "pos": "particle / conjunction",
-    "definition": "so / thus / as a result",
-    "notes": "Often comes after a reason or result",
-    "shortphrases": ["ไม่มาเลย", "ไปเลย"],
-    "longphrases": ["ฉันเหนื่อยเลยนอนเร็ว", "ฝนตกเลยไม่ได้ไป"],
-    "sentences": ["เขาไม่ตอบเลยกลับบ้าน", "ฉันหิวเลยกินข้าวทันที"]
-  },
-  {
-    "word": "สวย",
-    "confidence": 6,
-    "romanization": "sŭai",
+    "word": "สบาย",
+    "confidence": 1,
+    "romanization": "sà-baai",
     "type": "content",
     "pos": "adjective",
-    "definition": "beautiful",
+    "definition": "well, comfortable",
     "notes": "",
-    "shortphrases": ["ผู้หญิงสวย", "ดอกไม้สวย"],
-    "longphrases": ["เธอเป็นคนสวยมาก", "ฉันชอบชุดนี้เพราะสวย"],
-    "sentences": ["ผู้หญิงคนนั้นสวยมาก", "สถานที่นี้สวยจริงๆ"]
+    "shortphrases": [
+      {
+        "thai": "สบายดี",
+        "romanization": "sà-baai-dee",
+        "english": "well"
+      },
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "not well/unwell"
+      },
+      {
+        "thai": "กำลังสบาย",
+        "romanization": "kamlang sà-baai",
+        "english": "feeling well/comfortable"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chăn sà-baai-dee kâ",
+        "english": "I'm well (female)"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "pôm mâi sà-baai kráp",
+        "english": "I'm not well (male)"
+      },
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai-dee măi",
+        "english": "are you well?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันสบายดีค่ะ ขอบคุณ",
+        "romanization": "chăn sà-baai-dee kâ khàawp khun",
+        "english": "I'm well, thank you (female)"
+      },
+      {
+        "thai": "ผมไม่สบายครับ วันนี้",
+        "romanization": "pôm mâi sà-baai kráp wan née",
+        "english": "I'm not well today (male)"
+      },
+      {
+        "thai": "คุณสบายดีไหมคะ",
+        "romanization": "khun sà-baai-dee măi ká",
+        "english": "are you well? (female polite)"
+      }
+    ]
   },
   {
-    "word": "มัน",
-    "confidence": 6,
-    "romanization": "munn",
-    "type": "functionary",
+    "word": "ดี",
+    "confidence": 1,
+    "romanization": "dee",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "good, well",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดีมาก",
+        "romanization": "dee mâak",
+        "english": "very good"
+      },
+      {
+        "thai": "ดูดี",
+        "romanization": "doo dee",
+        "english": "looks good"
+      },
+      {
+        "thai": "ยินดี",
+        "romanization": "yin-dee",
+        "english": "glad/pleased"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้ดูดีจริง ๆ",
+        "romanization": "wan née doo dee jing jing",
+        "english": "today looks really good"
+      },
+      {
+        "thai": "คุณดูดีมาก",
+        "romanization": "khun doo dee mâak",
+        "english": "you look very good"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จัก",
+        "romanization": "yin-dee têe dâai rúu-jàk",
+        "english": "nice to meet you"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "ผมรู้สึกดีมากครับ",
+        "romanization": "pôm rúu-sùek dee mâak kráp",
+        "english": "I feel very good (male polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักครับ",
+        "romanization": "yin-dee têe dâai rúu-jàk kráp",
+        "english": "nice to meet you (male polite)"
+      }
+    ]
+  },
+  {
+    "word": "ไหม",
+    "confidence": 1,
+    "romanization": "măi",
+    "type": "function",
+    "pos": "question particle",
+    "definition": "question particle (yes/no)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ไหมคะ",
+        "romanization": "măi ká",
+        "english": "question particle (female polite)"
+      },
+      {
+        "thai": "ไหมครับ",
+        "romanization": "măi kráp",
+        "english": "question particle (male polite)"
+      },
+      {
+        "thai": "รู้จักไหม",
+        "romanization": "rúu-jàk măi",
+        "english": "do you know?"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai-dee măi",
+        "english": "are you well?"
+      },
+      {
+        "thai": "รู้จักเจนไหม",
+        "romanization": "rúu-jàk Jane măi",
+        "english": "do you know Jane?"
+      },
+      {
+        "thai": "คุณชื่ออะไรไหม",
+        "romanization": "khun chûue à-rai măi",
+        "english": "is your name...?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณสบายดีไหมคะ",
+        "romanization": "khun sà-baai-dee măi ká",
+        "english": "are you well? (female polite)"
+      },
+      {
+        "thai": "คุณรู้จักเจนไหมครับ",
+        "romanization": "khun rúu-jàk Jane măi kráp",
+        "english": "do you know Jane? (male polite)"
+      },
+      {
+        "thai": "คุณชื่ออะไรไหมคะ",
+        "romanization": "khun chûue à-rai măi ká",
+        "english": "is your name...? (female polite)"
+      }
+    ]
+  },
+  {
+    "word": "ผม",
+    "confidence": 1,
+    "romanization": "pôm",
+    "type": "content",
     "pos": "pronoun",
-    "definition": "it",
-    "notes": "Used for animals or objects; informal and sometimes rude for people",
-    "shortphrases": ["มันมา", "มันกิน"],
-    "longphrases": ["มันชอบกินข้าวมาก", "ฉันไม่ชอบมันเลย"],
-    "sentences": ["มันน่ารักมากเลยนะ", "ฉันเห็นมันที่ตลาด"]
+    "definition": "I, me (male speaker)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ผมสบายดี",
+        "romanization": "pôm sà-baai-dee",
+        "english": "I'm well (male)"
+      },
+      {
+        "thai": "ผมกินแล้ว",
+        "romanization": "pôm gin láew",
+        "english": "I've eaten (male)"
+      },
+      {
+        "thai": "ผมชื่อ",
+        "romanization": "pôm chûue",
+        "english": "my name is (male)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "pôm sà-baai-dee kráp",
+        "english": "I'm well (male polite)"
+      },
+      {
+        "thai": "ผมชื่อนนท์ครับ",
+        "romanization": "pôm chûue Non kráp",
+        "english": "My name is Non (male polite)"
+      },
+      {
+        "thai": "ผมกินแล้วครับ",
+        "romanization": "pôm gin láew kráp",
+        "english": "I've eaten (male polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมสบายดีครับ ขอบคุณ",
+        "romanization": "pôm sà-baai-dee kráp khàawp khun",
+        "english": "I'm well, thank you (male polite)"
+      },
+      {
+        "thai": "ผมชื่อนนท์ครับ ยินดีที่ได้รู้จัก",
+        "romanization": "pôm chûue Non kráp yin-dee têe dâai rúu-jàk",
+        "english": "My name is Non, nice to meet you (male polite)"
+      },
+      {
+        "thai": "ผมกินแล้วครับ ขอบคุณ",
+        "romanization": "pôm gin láew kráp khàawp khun",
+        "english": "I've eaten, thank you (male polite)"
+      }
+    ]
   },
   {
-    "word": "ว่า",
-    "confidence": 6,
-    "romanization": "wâa",
-    "type": "functionary",
-    "pos": "conjunction",
-    "definition": "that (used in reported speech)",
-    "notes": "Introduces quoted or reported speech",
-    "shortphrases": ["บอกว่า", "คิดว่า"],
-    "longphrases": ["ฉันบอกว่าเขามาแล้ว", "เธอคิดว่าเขาจะมา"],
-    "sentences": ["เขาพูดว่าฉันสวย", "ครูบอกว่าวันนี้ไม่มีเรียน"]
+    "word": "ครับ",
+    "confidence": 1,
+    "romanization": "kráp",
+    "type": "function",
+    "pos": "particle",
+    "definition": "polite particle (male speaker)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ครับ",
+        "romanization": "kráp",
+        "english": "yes/sir (male polite)"
+      },
+      {
+        "thai": "ใช่ครับ",
+        "romanization": "châi kráp",
+        "english": "yes (male polite)"
+      },
+      {
+        "thai": "ขอบคุณครับ",
+        "romanization": "khàawp khun kráp",
+        "english": "thank you (male polite)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "สบายดีครับ",
+        "romanization": "sà-baai-dee kráp",
+        "english": "I'm well (male polite)"
+      },
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักครับ",
+        "romanization": "yin-dee têe dâai rúu-jàk kráp",
+        "english": "nice to meet you (male polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมสบายดีครับ ขอบคุณ",
+        "romanization": "pôm sà-baai-dee kráp khàawp khun",
+        "english": "I'm well, thank you (male polite)"
+      },
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักครับ",
+        "romanization": "yin-dee têe dâai rúu-jàk kráp",
+        "english": "nice to meet you (male polite)"
+      }
+    ]
   },
-{
-  "word": "ต้นมะม่วง",
-  "confidence": 5,
-  "romanization": "dtôn má-mûang",
-  "type": "content",
-  "pos": "noun",
-  "definition": "mango tree",
-  "notes": "ต้น = plant/tree; มะม่วง = mango",
-  "shortphrases": ["ต้นมะม่วงใหญ่", "มะม่วงบนต้น"],
-  "longphrases": ["ฉันเห็นต้นมะม่วงสูงมาก", "ต้นมะม่วงอยู่หลังบ้านฉัน"],
-  "sentences": ["พ่อปลูกต้นมะม่วงในสวน", "ฉันเก็บมะม่วงจากต้นมะม่วง"]
-},
-{
-  "word": "ทำงาน",
-  "confidence": 5,
-  "romanization": "tam ngaan",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to work",
-  "notes": "",
-  "shortphrases": ["ทำงานหนัก", "เริ่มทำงาน"],
-  "longphrases": ["ฉันต้องไปทำงานตอนเช้า", "เขาทำงานทุกวันไม่มีหยุด"],
-  "sentences": ["พวกเขากำลังทำงานอยู่ตอนนี้", "ฉันไม่อยากทำงานวันนี้เลย"]
-},
-
-{
-  "word": "น้ำ",
-  "confidence": 4,
-  "romanization": "náam",
-  "type": "content",
-  "pos": "noun",
-  "definition": "water (already known)",
-  "notes": "",
-  "shortphrases": ["น้ำเย็น", "น้ำเปล่า"],
-  "longphrases": ["ฉันดื่มน้ำหลังออกกำลังกาย", "น้ำในแก้วนี้เย็นมาก"],
-  "sentences": ["ฉันชอบดื่มน้ำตอนเช้า", "เขาขอน้ำหนึ่งแก้ว"]
-},
-{
-  "word": "เหรอ",
-  "confidence": 4,
-  "romanization": "rǒr",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "question particle (really?)",
-  "notes": "Used to express mild surprise or seek clarification",
-  "shortphrases": ["จริงเหรอ", "ไปเหรอ"],
-  "longphrases": ["เธอชอบเขาเหรอจริงๆ", "วันนี้ไม่มาเหรอ"],
-  "sentences": ["เธอเรียนภาษาจีนเหรอ", "เขาไปเที่ยวคนเดียวเหรอ"]
-},
-{
-  "word": "ยินดีด้วย",
-  "confidence": 4,
-  "romanization": "yin-dii dûay",
-  "type": "functionary",
-  "pos": "expression",
-  "definition": "congratulations",
-  "notes": "Used to express happiness for someone’s success",
-  "shortphrases": ["ยินดีด้วยนะ", "ดีใจด้วย"],
-  "longphrases": ["ขอแสดงความยินดีด้วยครับ", "ยินดีด้วยกับความสำเร็จของคุณ"],
-  "sentences": ["ยินดีด้วยที่ได้งานใหม่", "ยินดีด้วยกับผลสอบของเธอ"]
-},
-{
-  "word": "ผมกินได้ไหม",
-  "confidence": 4,
-  "romanization": "phŏm gin dâai măi",
-  "type": "",
-  "pos": "question",
-  "definition": "Can I eat?",
-  "notes": "Used by males; polite inquiry",
-  "shortphrases": ["กินได้ไหม", "ผมขอกินได้ไหม"],
-  "longphrases": ["ผมกินอันนี้ได้ไหมครับ", "ผมกินเค้กชิ้นนี้ได้ไหม"],
-  "sentences": ["ขอถามหน่อยว่าผมกินได้ไหม", "ผมกินได้ไหมถ้ายังไม่ได้จ่าย"]
-},
-{
-  "word": "ทะเล",
-  "confidence": 4,
-  "romanization": "ta-lay",
-  "type": "content",
-  "pos": "noun",
-  "definition": "ocean / sea",
-  "notes": "",
-  "shortphrases": ["ไปทะเล", "ทะเลสวย"],
-  "longphrases": ["ฉันอยากไปเที่ยวทะเล", "เรานั่งเล่นที่ชายทะเล"],
-  "sentences": ["ครอบครัวฉันไปทะเลทุกปี", "ทะเลวันนี้คลื่นแรงมาก"]
-},
-{
-  "word": "อังกฤษ",
-  "confidence": 4,
-  "romanization": "ang-grìt",
-  "type": "content",
-  "pos": "noun",
-  "definition": "English",
-  "notes": "Can refer to language or the country depending on context",
-  "shortphrases": ["ภาษาอังกฤษ", "คนอังกฤษ"],
-  "longphrases": ["ฉันเรียนภาษาอังกฤษทุกวัน", "เขามาจากประเทศอังกฤษ"],
-  "sentences": ["คุณพูดอังกฤษได้ไหม", "ฉันสอนภาษาอังกฤษที่โรงเรียน"]
-},
-{
-  "word": "ไฟ",
-  "confidence": 4,
-  "romanization": "fai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "electricity / light / fire",
-  "notes": "Can mean fire, electric light, or power depending on context",
-  "shortphrases": ["เปิดไฟ", "ไฟดับ"],
-  "longphrases": ["ไฟในห้องนั่งเล่นสว่างดี", "เขาเปิดไฟตอนกลางคืน"],
-  "sentences": ["ฉันกลัวเวลาที่ไฟดับ", "เปิดไฟให้หน่อยได้ไหม"]
-}
-,
-{
-  "word": "ตก",
-  "confidence": 3,
-  "romanization": "tok",
-  "type": "content",
-  "pos": "verb",
-  "definition": "fall",
-  "notes": "",
-  "shortphrases": ["ฝนตก", "ตกจากโต๊ะ"],
-  "longphrases": ["ฝนตกหนักมากวันนี้", "เขาตกจากเก้าอี้เมื่อกี้"],
-  "sentences": ["ฝนตกตลอดวันเลย", "ระวังอย่าตกจากบันไดนะ"]
-},
-{
-  "word": "เริ่ม",
-  "confidence": 3,
-  "romanization": "rêrm",
-  "type": "content",
-  "pos": "verb",
-  "definition": "begin",
-  "notes": "",
-  "shortphrases": ["เริ่มเรียน", "เริ่มงาน"],
-  "longphrases": ["เราเริ่มเรียนภาษาไทยวันนี้", "เขาจะเริ่มงานใหม่พรุ่งนี้"],
-  "sentences": ["ฉันจะเริ่มทำอาหารตอนนี้", "คุณพร้อมที่จะเริ่มหรือยัง"]
-},
-{
-  "word": "เหนื่อย",
-  "confidence": 3,
-  "romanization": "nùeai",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "tired",
-  "notes": "",
-  "shortphrases": ["เหนื่อยมาก", "รู้สึกเหนื่อย"],
-  "longphrases": ["วันนี้ฉันเหนื่อยมากเลย", "เขาทำงานทั้งวันจนเหนื่อย"],
-  "sentences": ["พ่อดูเหนื่อยหลังกลับจากทำงาน", "ฉันเหนื่อยเลยอยากพักผ่อน"]
-},
-{
-  "word": "เรียก",
-  "confidence": 3,
-  "romanization": "rîak",
-  "type": "content",
-  "pos": "verb",
-  "definition": "call (out)",
-  "notes": "",
-  "shortphrases": ["เรียกชื่อ", "เรียกเขา"],
-  "longphrases": ["แม่เรียกฉันมากินข้าว", "เขาเรียกแท็กซี่อยู่ข้างถนน"],
-  "sentences": ["ช่วยเรียกเขาให้ฉันหน่อย", "ครูเรียกนักเรียนเข้าห้อง"]
-},
-{
-  "word": "เจอ",
-  "confidence": 3,
-  "romanization": "jer",
-  "type": "content",
-  "pos": "verb",
-  "definition": "find (already known, but relevant)",
-  "notes": "",
-  "shortphrases": ["เจอเขา", "เจอแล้ว"],
-  "longphrases": ["ฉันเจอเขาที่ตลาดวันนี้", "เจอหนังสือที่หายแล้ว"],
-  "sentences": ["ฉันไม่เจอเขาที่บ้านเลย", "เขาเจอกุญแจที่หายไปแล้ว"]
-},
-{
-  "word": "ใช่",
-  "confidence": 3,
-  "romanization": "châi",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "yes / correct (already known)",
-  "notes": "",
-  "shortphrases": ["ใช่แล้ว", "ใช่ไหม"],
-  "longphrases": ["ใช่แล้วฉันคือคนที่โทรมา", "เขาคือเพื่อนเธอใช่ไหม"],
-  "sentences": ["ใช่ ฉันเป็นครูภาษาอังกฤษ", "ที่เธอพูดมาใช่หมดเลย"]
-},
-{
-  "word": "ตอนนี้",
-  "confidence": 3,
-  "romanization": "dtaawn-níi",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "now",
-  "notes": "",
-  "shortphrases": ["ทำตอนนี้", "อยู่ตอนนี้"],
-  "longphrases": ["ฉันกำลังกินข้าวตอนนี้", "ตอนนี้ฝนกำลังตกหนัก"],
-  "sentences": ["ตอนนี้ฉันอยู่ที่ร้านกาแฟ", "เธอทำอะไรอยู่ตอนนี้"]
-},
-{
-  "word": "จะ",
-  "confidence": 3,
-  "romanization": "jà",
-  "type": "functionary",
-  "pos": "auxiliary verb",
-  "definition": "will",
-  "notes": "",
-  "shortphrases": ["จะไป", "จะกิน"],
-  "longphrases": ["ฉันจะไปเที่ยวทะเล", "พรุ่งนี้เขาจะมาหาฉัน"],
-  "sentences": ["คุณจะทำอะไรวันพรุ่งนี้", "เธอจะกลับบ้านเมื่อไร"]
-},
-{
-  "word": "ด้วย",
-  "confidence": 3,
-  "romanization": "dûay",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "also",
-  "notes": "",
-  "shortphrases": ["ฉันด้วย", "ไปด้วยกัน"],
-  "longphrases": ["ฉันจะไปด้วยได้ไหม", "ขอกินข้าวด้วยได้ไหม"],
-  "sentences": ["เขาจะมาที่นี่ด้วย", "เธอเรียนภาษาไทยด้วยใช่ไหม"]
-},
-{
-  "word": "ดื่ม",
-  "confidence": 3,
-  "romanization": "dʉ̀ʉm",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to drink",
-  "notes": "",
-  "shortphrases": ["ดื่มน้ำ", "ดื่มกาแฟ"],
-  "longphrases": ["เขาชอบดื่มกาแฟตอนเช้า", "ฉันดื่มน้ำเยอะทุกวัน"],
-  "sentences": ["เขาไม่ดื่มกาแฟตอนกลางคืน", "แม่บอกให้ฉันดื่มน้ำมากๆ"]
-},
-{
-  "word": "ยา",
-  "confidence": 3,
-  "romanization": "yaa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "medicine",
-  "notes": "",
-  "shortphrases": ["กินยา", "ซื้อยา"],
-  "longphrases": ["หมอให้ฉันกินยาทุกวัน", "ฉันต้องซื้อยาที่ร้านขายยา"],
-  "sentences": ["กินยาตามที่หมอสั่งนะ", "เขาลืมกินยาตอนเช้า"]
-},
-{
-  "word": "หัว",
-  "confidence": 3,
-  "romanization": "hŭa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "head",
-  "notes": "",
-  "shortphrases": ["ปวดหัว", "หัวโต๊ะ"],
-  "longphrases": ["วันนี้ฉันปวดหัวมากเลย", "เขานั่งอยู่ที่หัวโต๊ะ"],
-  "sentences": ["เขาเจ็บหัวเพราะตกจากจักรยาน", "หมวกใบนี้เล็กเกินไปสำหรับหัวฉัน"]
-},
-{
-  "word": "เยอะ",
-  "confidence": 2,
-  "romanization": "yur",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "a lot",
-  "notes": "",
-  "shortphrases": ["คนเยอะ", "งานเยอะ"],
-  "longphrases": ["วันนี้คนเยอะมาก", "งานเยอะจนทำไม่ทัน"],
-  "sentences": ["ฉันมีเพื่อนเยอะมาก", "ที่นี่คนเยอะผิดปกติ"]
-},
-{
-  "word": "กลัว",
-  "confidence": 2,
-  "romanization": "glua",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "afraid",
-  "notes": "",
-  "shortphrases": ["กลัวผี", "กลัวความสูง"],
-  "longphrases": ["ฉันกลัวความมืด", "เขากลัวหมาใหญ่"],
-  "sentences": ["เธอกลัวแมงมุมมาก", "เด็กๆกลัวฟ้าร้อง"]
-},
-{
-  "word": "ตอนบ่าย",
-  "confidence": 2,
-  "romanization": "dtaawn-bàai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "afternoon",
-  "notes": "",
-  "shortphrases": ["ตอนบ่ายวันนี้", "วันจันทร์ตอนบ่าย"],
-  "longphrases": ["จะไปซื้อของตอนบ่าย", "ฉันนอนพักตอนบ่าย"],
-  "sentences": ["ตอนบ่ายฉันกินข้าว", "ประชุมตอนบ่ายสองโมง"]
-},
-{
-  "word": "อีก",
-  "confidence": 2,
-  "romanization": "ìik",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "again / another",
-  "notes": "",
-  "shortphrases": ["อีกครั้ง", "อีกอัน"],
-  "longphrases": ["ขออีกหน่อยได้ไหม", "ฉันอยากดูอีกครั้ง"],
-  "sentences": ["ขออีกแก้วน้ำหน่อย", "อยากอ่านซ้ำอีกครั้ง"]
-},
-{
-  "word": "อายุ",
-  "confidence": 2,
-  "romanization": "aa-yú",
-  "type": "content",
-  "pos": "noun",
-  "definition": "age",
-  "notes": "",
-  "shortphrases": ["อายุเท่าไร", "อายุเยอะ"],
-  "longphrases": ["เขามีอายุสามสิบปี", "อายุของฉันยังน้อย"],
-  "sentences": ["คุณอายุเท่าไรครับ", "เด็กคนนี้อายุหกขวบ"]
-},
-{
-  "word": "แล้ว",
-  "confidence": 2,
-  "romanization": "láew",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "already / then",
-  "notes": "",
-  "shortphrases": ["กินแล้ว", "ไปแล้ว"],
-  "longphrases": ["ฉันกินข้าวแล้วค่ะ", "เขาไปโรงเรียนแล้ว"],
-  "sentences": ["ฝนหยุดแล้ววันนี้", "ฉันนอนแล้ว"]
-},
-{
-  "word": "เสมอ",
-  "confidence": 2,
-  "romanization": "sà-mǒe",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "always",
-  "notes": "",
-  "shortphrases": ["คิดถึงเสมอ", "เจอเสมอ"],
-  "longphrases": ["ฉันคิดถึงเธอเสมอ", "เขามาสายเสมอ"],
-  "sentences": ["ฉันรักเธอเสมอ", "ฝนตกเสมอฤดูนี้"]
-},
-{
-  "word": "และ",
-  "confidence": 2,
-  "romanization": "láe",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "and",
-  "notes": "",
-  "shortphrases": ["ครูและนักเรียน", "ข้าวและแกง"],
-  "longphrases": ["ฉันและเพื่อนไปเที่ยว", "เขากับเธอและฉัน"],
-  "sentences": ["ฉันชอบกาแฟและชา", "เขาเรียนและทำงาน"]
-},
-{
-  "word": "สวย",
-  "confidence": 2,
-  "romanization": "sŭai",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "beautiful",
-  "notes": "",
-  "shortphrases": ["สวยมาก", "เห็นสวย"],
-  "longphrases": ["ดอกไม้นี้สวยจริงๆ", "เธอดูสวยมากวันนี้"],
-  "sentences": ["ภาพในหนังสือสวยจัง", "ทะเลที่นี่สวยมาก"]
-},
-{
-  "word": "ทั้ง",
-  "confidence": 2,
-  "romanization": "táng",
-  "type": "functionary",
-  "pos": "determiner",
-  "definition": "both / all",
-  "notes": "",
-  "shortphrases": ["ทั้งสอง", "ทั้งหมด"],
-  "longphrases": ["ทั้งฉันและเธอ", "กินทั้งหมดเลย"],
-  "sentences": ["ทั้งวันฝนตก", "เขาและฉันทั้งคู่"]
-},
-{
-  "word": "เรียก",
-  "confidence": 2,
-  "romanization": "rîak",
-  "type": "content",
-  "pos": "verb",
-  "definition": "call",
-  "notes": "",
-  "shortphrases": ["เรียกชื่อ", "เรียกพี่"],
-  "longphrases": ["แม่เรียกฉันกินข้าว", "เขาเรียกแท็กซี่"],
-  "sentences": ["ฉันเรียกให้เขาหยุด", "ครูเรียกนักเรียน"]
-},
-{
-  "word": "ได้ไหม",
-  "confidence": 2,
-  "romanization": "dâai-mǎi",
-  "type": "functionary",
-  "pos": "question",
-  "definition": "can (I)?",
-  "notes": "",
-  "shortphrases": ["กินได้ไหม", "เข้าได้ไหม"],
-  "longphrases": ["ฉันกินได้ไหมครับ", "เข้าไปได้ไหม"],
-  "sentences": ["ขอใช้โทรศัพท์ได้ไหม", "ฉันถามว่าอ่านได้ไหม"]
-},
-{
-  "word": "ได้",
-  "confidence": 2,
-  "romanization": "dâai",
-  "type": "functionary",
-  "pos": "modal verb",
-  "definition": "can / get",
-  "notes": "",
-  "shortphrases": ["ช่วยได้", "ดูได้"],
-  "longphrases": ["ฉันทำได้แล้ว", "คุณดูได้ที่นี่"],
-  "sentences": ["เขาอ่านหนังสือได้", "ฉันขอใช้ได้ไหม"]
-},
-{
-  "word": "ถ้ำ",
-  "confidence": 2,
-  "romanization": "thâm",
-  "type": "content",
-  "pos": "noun",
-  "definition": "cave",
-  "notes": "",
-  "shortphrases": ["ถ้ำใหญ่", "เข้าไปถ้ำ"],
-  "longphrases": ["เราไปเที่ยวถ้ำกัน", "ถ้ำนี้มืดมาก"],
-  "sentences": ["ฉันกลัวเข้าไปในถ้ำ", "นักปีนเขาเข้าไปถ้ำ"]
-},
-{
-  "word": "กาแฟ",
-  "confidence": 2,
-  "romanization": "gaa-fae",
-  "type": "content",
-  "pos": "noun",
-  "definition": "coffee",
-  "notes": "",
-  "shortphrases": ["ดื่มกาแฟ", "ร้านกาแฟ"],
-  "longphrases": ["ฉันชอบดื่มกาแฟร้อน", "เราไปร้านกาแฟกัน"],
-  "sentences": ["กาแฟแก้วนี้อร่อยมาก", "ฉันไม่มีเวลาไปซื้อกาแฟ"]
-},
-{
-  "word": "หนาว",
-  "confidence": 2,
-  "romanization": "năao",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "cold",
-  "notes": "",
-  "shortphrases": ["อากาศหนาว", "หนาวมาก"],
-  "longphrases": ["วันนี้อากาศหนาวจัง", "ฉันใส่เสื้อกันหนาว"],
-  "sentences": ["ฉันรู้สึกหนาวมาก", "บ้านนี้หนาวเวลากลางคืน"]
-},
-{
-  "word": "มา",
-  "confidence": 2,
-  "romanization": "maa",
-  "type": "content",
-  "pos": "verb",
-  "definition": "come",
-  "notes": "",
-  "shortphrases": ["มาแล้ว", "มาเร็ว"],
-  "longphrases": ["เขามาถึงแล้ว", "ฉันมาไม่ทันรถ"],
-  "sentences": ["เธอมาเรียนสาย", "พวกเขายังไม่มา"]
-},
-{
-  "word": "ร้องไห้",
-  "confidence": 2,
-  "romanization": "rórng-hâi",
-  "type": "content",
-  "pos": "verb",
-  "definition": "cry",
-  "notes": "",
-  "shortphrases": ["ร้องไห้ดัง", "ร้องไห้เงียบ"],
-  "longphrases": ["เด็กน้อยร้องไห้ไห้", "เธอร้องไห้อยู่คนเดียว"],
-  "sentences": ["ฉันเห็นเขาร้องไห้", "เธอร้องไห้เพราะเสียใจ"]
-},
-{
-  "word": "ทำ",
-  "confidence": 2,
-  "romanization": "tham",
-  "type": "content",
-  "pos": "verb",
-  "definition": "do / make",
-  "notes": "",
-  "shortphrases": ["ทำงาน", "ทำอาหาร"],
-  "longphrases": ["ฉันทำการบ้านทุกวัน", "เขาทำเค้กอร่อยมาก"],
-  "sentences": ["เธอกำลังทำงานอยู่", "ฉันทำเสร็จแล้ว"]
-},
-{
-  "word": "รู้ไหม",
-  "confidence": 2,
-  "romanization": "rúu-mǎi",
-  "type": "functionary",
-  "pos": "question",
-  "definition": "do you know?",
-  "notes": "",
-  "shortphrases": ["รู้ไหมว่า", "คุณรู้ไหม"],
-  "longphrases": ["คุณรู้ไหมว่านี่อะไร", "เธอรู้ไหมเขามาแล้ว"],
-  "sentences": ["เธอรู้ไหมวันนี้วันอะไร", "ฉันถามว่าเธอรู้ไหม"]
-},
-{
-  "word": "กิน",
-  "confidence": 2,
-  "romanization": "gin",
-  "type": "content",
-  "pos": "verb",
-  "definition": "eat",
-  "notes": "",
-  "shortphrases": ["กินข้าว", "กินผลไม้"],
-  "longphrases": ["ฉันกินข้าวกับเพื่อน", "เขากินขนมอร่อย"],
-  "sentences": ["คุณกินข้าวหรือยัง", "เด็กๆกำลังกินข้าว"]
-},
-{
-  "word": "แปด",
-  "confidence": 2,
-  "romanization": "bpàet",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "eight",
-  "notes": "",
-  "shortphrases": ["เลขแปด", "แปดโมง"],
-  "longphrases": ["ฉันตื่นตอนแปดโมง", "เขาอายุแปดขวบ"],
-  "sentences": ["เธอเกิดวันที่แปด", "มีแปดคนในกลุ่ม"]
-},
-{
-  "word": "ห้า",
-  "confidence": 2,
-  "romanization": "hâa",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "five",
-  "notes": "",
-  "shortphrases": ["เลขห้า", "ห้าโมง"],
-  "longphrases": ["ฉันกลับห้าทุ่ม", "เขามีห้ากล่อง"],
-  "sentences": ["มีห้าคนมาที่นี่", "เราเรียนห้ามองกลอง"]
-},
-{
-  "word": "อาหาร",
-  "confidence": 2,
-  "romanization": "aa-hǎan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "food",
-  "notes": "",
-  "shortphrases": ["อาหารอร่อย", "อาหารไทย"],
-  "longphrases": ["ฉันชอบอาหารไทย", "ร้านอาหารใกล้บ้าน"],
-  "sentences": ["พวกเขากินอาหารเช้า", "เขาซื้ออาหารที่ตลาด"]
-},
-{
-  "word": "เพื่อ",
-  "confidence": 2,
-  "romanization": "phûuea",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "for",
-  "notes": "",
-  "shortphrases": ["เพื่อคุณ", "เพื่อเรียน"],
-  "longphrases": ["ฉันทำเพื่อครอบครัว", "เขาเรียนเพื่ออนาคต"],
-  "sentences": ["ฉันซื้อของเพื่อแม่", "เขาทำงานเพื่อเงิน"]
-},
-{
-  "word": "สี่",
-  "confidence": 2,
-  "romanization": "sìi",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "four",
-  "notes": "",
-  "shortphrases": ["เลขสี่", "สี่โมงเย็น"],
-  "longphrases": ["ฉันถึงบ้านสี่โมง", "มีสี่คนในทีม"],
-  "sentences": ["เขาตื่นสี่ทุ่ม", "ฉันรอจนถึงสี่โมง"]
-},
-{
-  "word": "วันศุกร์",
-  "confidence": 2,
-  "romanization": "wan-sùk",
-  "type": "content",
-  "pos": "noun",
-  "definition": "Friday",
-  "notes": "",
-  "shortphrases": ["วันศุกร์นี้", "คืนวันศุกร์"],
-  "longphrases": ["เจอกันวันศุกร์หน้า", "ฉันว่างวันศุกร์นี้"],
-  "sentences": ["วันศุกร์ฉันไม่ทำงาน", "เราจะไปเที่ยววันศุกร์"]
-},
-{
-  "word": "เพื่อน",
-  "confidence": 2,
-  "romanization": "phûean",
-  "type": "content",
-  "pos": "noun",
-  "definition": "friend",
-  "notes": "",
-  "shortphrases": ["เพื่อนใหม่", "เพื่อนสนิท"],
-  "longphrases": ["ฉันเจอเพื่อนเก่าเมื่อวาน", "เขามีกลุ่มเพื่อนมากมาย"],
-  "sentences": ["เพื่อนฉันชื่อสมชาย", "เราไปเที่ยวกับเพื่อน"]
-},
-{
-  "word": "เกม",
-  "confidence": 2,
-  "romanization": "gem",
-  "type": "content",
-  "pos": "noun",
-  "definition": "game",
-  "notes": "",
-  "shortphrases": ["เล่นเกม", "เกมใหม่"],
-  "longphrases": ["พวกเขาเล่นเกมด้วยกัน", "ฉันชอบเกมนี้มาก"],
-  "sentences": ["เด็กๆชอบเล่นเกม", "เราซื้อเกมใหม่เมื่อวาน"]
-}
-,
-{
-  "word": "ให้",
-  "confidence": 2,
-  "romanization": "hâi",
-  "type": "content",
-  "pos": "verb",
-  "definition": "give",
-  "notes": "",
-  "shortphrases": ["ให้ฉัน", "ให้เขา"],
-  "longphrases": ["ให้ของขวัญกับเพื่อน", "แม่ให้เงินลูกทุกเดือน"],
-  "sentences": ["ฉันให้ของขวัญเขาแล้ว", "คุณให้หนังสือฉันได้ไหม"]
-},
-{
-  "word": "ไป",
-  "confidence": 2,
-  "romanization": "bpai",
-  "type": "content",
-  "pos": "verb",
-  "definition": "go",
-  "notes": "",
-  "shortphrases": ["ไปไหน", "ไปก่อน"],
-  "longphrases": ["ฉันจะไปตลาดตอนเช้า", "พวกเขาไปโรงเรียนทุกวัน"],
-  "sentences": ["เธอไปกับใครวันนี้", "เราไปปาร์ตี้เมื่อคืน"]
-},
-{
-  "word": "ไปหา",
-  "confidence": 2,
-  "romanization": "bpai-hǎa",
-  "type": "content",
-  "pos": "verb",
-  "definition": "go find",
-  "notes": "",
-  "shortphrases": ["ไปหาตำรวจ", "ไปหาเพื่อน"],
-  "longphrases": ["ฉันจะไปหาแม่ที่บ้าน", "เขาไปหาอาจารย์หลังเลิกเรียน"],
-  "sentences": ["เธอไปหาคุณหมอหรือยัง", "เราไปหากุญแจที่ห้อง"]
-},
-{
-  "word": "ดี",
-  "confidence": 2,
-  "romanization": "dii",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "good",
-  "notes": "",
-  "shortphrases": ["ดีมาก", "ดีจัง"],
-  "longphrases": ["หนังเรื่องนี้ดีมาก", "อากาศวันนี้ดีจริงๆ"],
-  "sentences": ["คุณทำงานได้ดีมาก", "อาหารที่นี่อร่อยดี"]
-},
-{
-  "word": "เขา",
-  "confidence": 2,
-  "romanization": "khăo",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "he / she",
-  "notes": "",
-  "shortphrases": ["เขามา", "เขาไป"],
-  "longphrases": ["เขาเรียนภาษาอังกฤษ", "ฉันรู้จักเขามาตั้งนาน"],
-  "sentences": ["เขากำลังกินข้าวอยู่", "เราพบเขาที่ตลาด"]
-},
-{
-  "word": "หัว",
-  "confidence": 2,
-  "romanization": "hŭa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "head",
-  "notes": "",
-  "shortphrases": ["ปวดหัว", "หัวโต๊ะ"],
-  "longphrases": ["เขานั่งอยู่ที่หัวโต๊ะ", "ฉันใส่หมวกที่หัว"],
-  "sentences": ["ฉันปวดหัวมากเลย", "เด็กวิ่งชนหัวโต๊ะ"]
-},
-{
-  "word": "ปวดหัว",
-  "confidence": 2,
-  "romanization": "bpùat-hŭa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "headache",
-  "notes": "",
-  "shortphrases": ["ปวดหัวมาก", "มีอาการปวดหัว"],
-  "longphrases": ["ฉันเป็นปวดหัวตั้งแต่เช้า", "เขากินยาแก้ปวดหัวแล้ว"],
-  "sentences": ["ปวดหัวจังวันนี้", "เธอมีปวดหัวไหม"]
-},
-{
-  "word": "ได้ยิน",
-  "confidence": 2,
-  "romanization": "dâi-yin",
-  "type": "content",
-  "pos": "verb",
-  "definition": "hear",
-  "notes": "",
-  "shortphrases": ["ได้ยินเสียง", "ไม่ได้ยิน"],
-  "longphrases": ["ฉันได้ยินเสียงเพลง", "เขาไม่ได้ยินเสียงคนเรียก"],
-  "sentences": ["คุณได้ยินฉันไหม", "เด็กๆไม่ได้ยินเสียงระฆัง"]
-},
-{
-  "word": "ได้ยินว่า",
-  "confidence": 2,
-  "romanization": "dâi-yin-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "heard that",
-  "notes": "",
-  "shortphrases": ["ได้ยินว่าเธอ", "ได้ยินว่าเขา"],
-  "longphrases": ["ฉันได้ยินว่าเขามาแล้ว", "เธอได้ยินว่ามีงานเลี้ยง"],
-  "sentences": ["คุณได้ยินว่าฝนจะตกไหม", "ฉันได้ยินว่าเธอจะลาออก"]
-},
-{
-  "word": "บ้าน",
-  "confidence": 2,
-  "romanization": "bâan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "house/home",
-  "notes": "",
-  "shortphrases": ["ที่บ้าน", "บ้านฉัน"],
-  "longphrases": ["ฉันอยู่ที่บ้านทุกวัน", "เราไปบ้านเพื่อนเมื่อวาน"],
-  "sentences": ["ฉันกลับบ้านตอนเย็น", "เขาทำงานที่บ้าน"]
-},
-{
-  "word": "กี่",
-  "confidence": 2,
-  "romanization": "gìi",
-  "type": "functionary",
-  "pos": "question marker",
-  "definition": "how many",
-  "notes": "",
-  "shortphrases": ["กี่คน", "กี่โมง"],
-  "longphrases": ["คุณมาที่นี่กี่โมง", "มีกี่คนในห้องนี้"],
-  "sentences": ["วันนี้มีงานกี่งาน", "เธอซื้อกี่ชิ้น"]
-},
-{
-  "word": "หิว",
-  "confidence": 2,
-  "romanization": "hǐw",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "hungry",
-  "notes": "",
-  "shortphrases": ["หิวมาก", "หิวข้าว"],
-  "longphrases": ["ฉันหิวข้าวมากเลย", "เด็กๆหิวขนม"],
-  "sentences": ["คุณหิวไหม", "เธอหิวตั้งแต่เช้า"]
-},
-{
-  "word": "ผม",
-  "confidence": 2,
-  "romanization": "phǒm",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "I (male)",
-  "notes": "",
-  "shortphrases": ["ผมมา", "ผมไป"],
-  "longphrases": ["ผมชื่อสมชายครับ", "ผมเรียนภาษาไทยทุกวัน"],
-  "sentences": ["ผมรักภาษาไทย", "ผมหิวมากเลยครับ"]
-},
-{
-  "word": "ในใจ",
-  "confidence": 2,
-  "romanization": "nai-jai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "in the heart",
-  "notes": "",
-  "shortphrases": ["อยู่ในใจ", "คิดในใจ"],
-  "longphrases": ["เธออยู่ในใจฉันเสมอ", "ฉันพูดในใจเบาๆ"],
-  "sentences": ["ความทรงจำอยู่ในใจ", "ฉันเก็บเธอไว้ในใจ"]
-},
-{
-  "word": "ต่างหาก",
-  "confidence": 2,
-  "romanization": "dtàang-hàak",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "instead / separate",
-  "notes": "",
-  "shortphrases": ["ไม่ใช่...ต่างหาก", "เอา...ต่างหาก"],
-  "longphrases": ["ฉันไม่ทำงานต่างหาก", "เขาเดิมทำงานต่างหาก"],
-  "sentences": ["ฉันไม่ไปต่างหาก", "นั่นต่างหากที่ฉันต้องการ"]
-},
-{
-  "word": "ใจดี",
-  "confidence": 2,
-  "romanization": "jai-dii",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "kind",
-  "notes": "",
-  "shortphrases": ["ใจดีมาก", "คนใจดี"],
-  "longphrases": ["ครูของฉันใจดีมาก", "เพื่อนฉันใจดีเสมอ"],
-  "sentences": ["เธอเป็นคนใจดี", "เขาช่วยฉันเพราะใจดี"]
-},
-{
-  "word": "รู้",
-  "confidence": 2,
-  "romanization": "rúu",
-  "type": "content",
-  "pos": "verb",
-  "definition": "know",
-  "notes": "",
-  "shortphrases": ["รู้ไหม", "รู้แล้ว"],
-  "longphrases": ["ฉันรู้เรื่องทั้งหมดแล้ว", "คุณรู้ไหมวันนี้วันอะไร"],
-  "sentences": ["เขารู้คำตอบทุกข้อ", "เธอรู้ความจริงหรือยัง"]
-},
-{
-  "word": "ภาษา",
-  "confidence": 2,
-  "romanization": "phaa-sǎa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "language",
-  "notes": "",
-  "shortphrases": ["ภาษาไทย", "ภาษาอังกฤษ"],
-  "longphrases": ["ฉันเรียนภาษาไทยทุกวัน", "เขาสนใจภาษาใหม่ๆ"],
-  "sentences": ["คุณพูดภาษาอะไร", "เธอเรียนภาษาอังกฤษ"]
-},
-{
-  "word": "ให้เจอ",
-  "confidence": 2,
-  "romanization": "hâi-jer",
-  "type": "content",
-  "pos": "verb",
-  "definition": "let (someone) find",
-  "notes": "",
-  "shortphrases": ["ให้เจอฉัน", "ให้เจอเขา"],
-  "longphrases": ["แม่ให้เจอเพื่อนใหม่", "เขาให้เจอของขวัญ"],
-  "sentences": ["ฉันให้เจอเขาที่ร้าน", "เธอให้เจอของสารในกล่อง"]
-},
-{
-  "word": "ชอบ",
-  "confidence": 2,
-  "romanization": "chôp",
-  "type": "content",
-  "pos": "verb",
-  "definition": "like",
-  "notes": "",
-  "shortphrases": ["ชอบมาก", "ชอบกิน"],
-  "longphrases": ["ฉันชอบเพลงนี้มาก", "เขาชอบเล่นฟุตบอล"],
-  "sentences": ["คุณชอบอะไร", "เราชอบร้านนี้"]
-},
-{
-  "word": "ฟัง",
-  "confidence": 2,
-  "romanization": "fang",
-  "type": "content",
-  "pos": "verb",
-  "definition": "listen",
-  "notes": "",
-  "shortphrases": ["ฟังเพลง", "ฟังเสียง"],
-  "longphrases": ["ฉันชอบฟังเพลงทุกวัน", "เขาฟังวิทยุตอนเช้า"],
-  "sentences": ["คุณฟังชัดไหม", "เด็กๆฟังครูพูด"]
-},
-{
-  "word": "ฟังเพลง",
-  "confidence": 2,
-  "romanization": "fang-phleeng",
-  "type": "content",
-  "pos": "verb",
-  "definition": "listen to music",
-  "notes": "",
-  "shortphrases": ["ฟังเพลงนี้", "ชอบฟังเพลง"],
-  "longphrases": ["ฉันชอบฟังเพลงไทย", "เขาฟังเพลงตอนทำงาน"],
-  "sentences": ["เธอฟังเพลงอะไร", "เราไปฟังเพลงด้วยกัน"]
-},
-{
-  "word": "อยู่",
-  "confidence": 2,
-  "romanization": "yùu",
-  "type": "content",
-  "pos": "verb",
-  "definition": "live / be at a place",
-  "notes": "",
-  "shortphrases": ["อยู่บ้าน", "อยู่ที่ทำงาน"],
-  "longphrases": ["ฉันอยู่กรุงเทพฯ", "เขาอยู่ต่างจังหวัด"],
-  "sentences": ["คุณอยู่ที่ไหน", "เด็กๆอยู่โรงเรียน"]
-},
-{
-  "word": "ผู้ชาย",
-  "confidence": 2,
-  "romanization": "phûu-chaai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "man",
-  "notes": "",
-  "shortphrases": ["ผู้ชายคนนั้น", "ผู้ชายน่ากลัว"],
-  "longphrases": ["เขาเป็นผู้ชายใจดี", "ผู้ชายคนนี้สูงมาก"],
-  "sentences": ["ผู้ชายคนนั้นกำลังวิ่ง", "ฉันเห็นผู้ชายที่ตลาด"]
-},
-{
-  "word": "ต้นมะม่วง",
-  "confidence": 2,
-  "romanization": "dtôn má-mûang",
-  "type": "content",
-  "pos": "noun",
-  "definition": "mango tree",
-  "notes": "",
-  "shortphrases": ["ต้นมะม่วงใหญ่", "มะม่วงบนต้น"],
-  "longphrases": ["ฉันเห็นต้นมะม่วงสูงมาก", "ต้นมะม่วงอยู่หลังบ้าน"],
-  "sentences": ["พ่อปลูกต้นมะม่วงในสวน", "ฉันเก็บมะม่วงจากต้นมะม่วง"]
-},
-{
-  "word": "เจอ",
-  "confidence": 2,
-  "romanization": "jer",
-  "type": "content",
-  "pos": "verb",
-  "definition": "meet",
-  "notes": "",
-  "shortphrases": ["เจอเพื่อน", "เจอกัน"],
-  "longphrases": ["ฉันเจอเขาที่ร้านกาแฟ", "เราเจอกันเมื่อวานนี้"],
-  "sentences": ["เธอจะเจอใครบ้างวันนี้", "พวกเขาเจอกันทุกสัปดาห์"]
-},
-{
-  "word": "ความทรงจำ",
-  "confidence": 2,
-  "romanization": "khwaam-song-jam",
-  "type": "content",
-  "pos": "noun",
-  "definition": "memory",
-  "notes": "",
-  "shortphrases": ["ความทรงจำดี", "ความทรงจำแย่"],
-  "longphrases": ["ความทรงจำ childhood ยังชัดเจน", "ภาพนั้นอยู่ในความทรงจำฉัน"],
-  "sentences": ["ฉันมีความทรงจำดีๆมากมาย", "ความทรงจำเก่าเริ่มเลือนลาง"]
-},
-{
-  "word": "เมนู",
-  "confidence": 2,
-  "romanization": "mee-nuu",
-  "type": "content",
-  "pos": "noun",
-  "definition": "menu",
-  "notes": "",
-  "shortphrases": ["เมนูอาหาร", "เมนูเครื่องดื่ม"],
-  "longphrases": ["ร้านนี้มีเมนูหลากหลาย", "กรุณาเลือกจากเมนูด้านนี้"],
-  "sentences": ["เมนูนี้ราคาแพงไป", "ฉันเปิดดูเมนูแล้ว"]
-},
-{
-  "word": "นึกถึง",
-  "confidence": 2,
-  "romanization": "núek-thǔeng",
-  "type": "content",
-  "pos": "verb",
-  "definition": "miss / recall",
-  "notes": "",
-  "shortphrases": ["นึกถึงเธอ", "นึกถึงบ้าน"],
-  "longphrases": ["ฉันนึกถึงเพื่อนเก่าเสมอ", "เวลาที่เหงาฉันนึกถึงบ้าน"],
-  "sentences": ["ฉันนึกถึงวันวาน", "เขานึกถึงเรื่องนั้นบ่อยๆ"]
-},
-{
-  "word": "ต้อง",
-  "confidence": 2,
-  "romanization": "tâwng",
-  "type": "functionary",
-  "pos": "auxiliary verb",
-  "definition": "must",
-  "notes": "",
-  "shortphrases": ["ต้องไป", "ต้องทำ"],
-  "longphrases": ["ฉันต้องไปทำงาน", "เขาต้องอ่านหนังสือให้จบ"],
-  "sentences": ["คุณต้องทำการบ้านก่อน", "เราต้องรีบออกไป"]
-}
-,
-{
-  "word": "ใกล้ ๆ",
-  "confidence": 2,
-  "romanization": "glâi-glâi",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "nearby",
-  "notes": "",
-  "shortphrases": ["อยู่ใกล้ๆ", "มาใกล้ๆ"],
-  "longphrases": ["บ้านฉันอยู่ใกล้ๆ ตลาด", "ร้านกาแฟอยู่ใกล้ๆ บ้านฉัน"],
-  "sentences": ["เธอช่วยมานั่งใกล้ๆ ฉัน", "สถานีรถไฟอยู่ใกล้ๆ ที่นี่"]
-},
-{
-  "word": "ต่อไป",
-  "confidence": 2,
-  "romanization": "dtàaw-bpai",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "next / continue",
-  "notes": "",
-  "shortphrases": ["ต่อไปเลย", "และต่อไป"],
-  "longphrases": ["เราจะทำเรื่องนี้ต่อไป", "หลังจากนี้ต่อไปจะง่ายขึ้น"],
-  "sentences": ["เรียนเสร็จแล้วต่อไปทำงาน", "ต่อไปฉันจะเดินทางต่างประเทศ"]
-},
-{
-  "word": "คืน",
-  "confidence": 2,
-  "romanization": "kuen",
-  "type": "content",
-  "pos": "noun",
-  "definition": "night",
-  "notes": "",
-  "shortphrases": ["คืนนี้", "ทุกคืน"],
-  "longphrases": ["คืนนี้ฉันนอนเร็ว", "เขาทำงานทุกคืน"],
-  "sentences": ["คืนนี้มีฝนตก", "ฉันอ่านหนังสือทุกคืน"]
-},
-{
-  "word": "ตอนกลางคืน",
-  "confidence": 2,
-  "romanization": "dtaawn-glaang-khuuen",
-  "type": "content",
-  "pos": "noun phrase",
-  "definition": "nighttime",
-  "notes": "",
-  "shortphrases": ["ตอนกลางคืนนี้", "ตอนกลางคืนมืด"],
-  "longphrases": ["ฉันตื่นกลางดึกตอนกลางคืน", "เขาเรียนหนังสือตอนกลางคืน"],
-  "sentences": ["ตอนกลางคืนฉันอ่านหนังสือ", "ฝนตกหนักตอนกลางคืน"]
-},
-{
-  "word": "เก้า",
-  "confidence": 2,
-  "romanization": "gâo",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "nine",
-  "notes": "",
-  "shortphrases": ["เก้าโมง", "เลขเก้า"],
-  "longphrases": ["ฉันตื่นเก้าโมงเช้า", "มีเก้าคนในทีม"],
-  "sentences": ["วันนี้วันที่เก้าของเดือน", "เธอซื้อเก้าชิ้น"]
-},
-{
-  "word": "ไม่",
-  "confidence": 2,
-  "romanization": "mâi",
-  "type": "functionary",
-  "pos": "negation",
-  "definition": "not",
-  "notes": "",
-  "shortphrases": ["ไม่ใช่", "ไม่รู้"],
-  "longphrases": ["ฉันไม่ชอบอาหารรสเผ็ด", "เขาไม่ได้มาโรงเรียนวันนี้"],
-  "sentences": ["ฉันไม่กินเนื้อสัตว์", "เธอไม่เข้าใจคำถาม"]
-},
-{
-  "word": "ไม่ใช่",
-  "confidence": 2,
-  "romanization": "mâi-châi",
-  "type": "functionary",
-  "pos": "phrase",
-  "definition": "not correct",
-  "notes": "",
-  "shortphrases": ["ไม่ใช่เลย", "ไม่ใช่ผม"],
-  "longphrases": ["นี่ไม่ใช่สิ่งที่ฉันต้องการ", "เขาไม่ใช่นักเรียนคนนี้"],
-  "sentences": ["ฉันบอกว่าไม่ใช่", "นั่นไม่ใช่คำตอบ"]
-},
-{
-  "word": "ตอนนี้",
-  "confidence": 2,
-  "romanization": "dtaawn-níi",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "now",
-  "notes": "",
-  "shortphrases": ["ตอนนี้เลย", "เดี๋ยวตอนนี้"],
-  "longphrases": ["ฉันกำลังทำงานตอนนี้", "ฝนกำลังตกตอนนี้"],
-  "sentences": ["ตอนนี้ฉันอยู่ที่บ้าน", "เธอออกไปตอนนี้หรือยัง"]
-},
-{
-  "word": "หนึ่ง",
-  "confidence": 2,
-  "romanization": "nùeng",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "one",
-  "notes": "",
-  "shortphrases": ["หนึ่งอัน", "หนึ่งคน"],
-  "longphrases": ["ฉันขอหนึ่งแก้วน้ำ", "มีหนึ่งคนในห้อง"],
-  "sentences": ["ฉันมีหนึ่งคำถาม", "เธอเดินหนึ่งกิโลเมตร"]
-},
-{
-  "word": "ตัวเอง",
-  "confidence": 2,
-  "romanization": "dtua-eng",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "oneself",
-  "notes": "",
-  "shortphrases": ["ฉันตัวเอง", "ทำตัวเอง"],
-  "longphrases": ["ฉันทำเองตัวเอง", "เขาต้องดูแลตัวเอง"],
-  "sentences": ["อย่าทำร้ายตัวเอง", "ฉันภูมิใจในตัวเอง"]
-},
-{
-  "word": "คน",
-  "confidence": 2,
-  "romanization": "khon",
-  "type": "content",
-  "pos": "noun",
-  "definition": "person",
-  "notes": "",
-  "shortphrases": ["คนนี้", "หลายคน"],
-  "longphrases": ["คนไทยมาจากทุกจังหวัด", "มีคนมากมายในงาน"],
-  "sentences": ["คนนั้นเป็นเพื่อนฉัน", "มีสามคนในกลุ่ม"]
-},
-{
-  "word": "พิซซ่า",
-  "confidence": 2,
-  "romanization": "phít-sâa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "pizza",
-  "notes": "",
-  "shortphrases": ["สั่งพิซซ่า", "กินพิซซ่า"],
-  "longphrases": ["ฉันสั่งพิซซ่าสำหรับมื้อเย็น", "เขาชอบพิซซ่าหน้าชีส"],
-  "sentences": ["วันนี้กินพิซซ่าไหม", "พิซซ่าอร่อยมาก"]
-},
-{
-  "word": "เล่น",
-  "confidence": 2,
-  "romanization": "lên",
-  "type": "content",
-  "pos": "verb",
-  "definition": "play",
-  "notes": "",
-  "shortphrases": ["เล่นเกม", "เล่นกีฬา"],
-  "longphrases": ["เด็กๆชอบเล่นที่สนาม", "เขาเล่นฟุตบอลกับเพื่อน"],
-  "sentences": ["เราจะไปเล่นกันไหม", "ฉันชอบเล่นเปียโน"]
-},
-{
-  "word": "ฝน",
-  "confidence": 2,
-  "romanization": "fǒn",
-  "type": "content",
-  "pos": "noun",
-  "definition": "rain",
-  "notes": "",
-  "shortphrases": ["ฝนตก", "ช่วงฝน"],
-  "longphrases": ["ฝนตกหนักวันหยุดนี้", "ฉันชอบเสียงฝนตก"],
-  "sentences": ["อย่าลืมนำร่ม ฝนจะตก", "วันนี้ไม่มีฝนเลย"]
-},
-{
-  "word": "จำ",
-  "confidence": 2,
-  "romanization": "jam",
-  "type": "content",
-  "pos": "verb",
-  "definition": "remember",
-  "notes": "",
-  "shortphrases": ["จำได้", "จำไม่ได้"],
-  "longphrases": ["ฉันจำเหตุการณ์นั้นได้ชัดเจน", "เขาจำชื่อฉันไม่ได้"],
-  "sentences": ["คุณจำฉันได้ไหม", "ฉันจำวันเกิดเขาได้"]
-},
-{
-  "word": "พัก",
-  "confidence": 2,
-  "romanization": "phák",
-  "type": "content",
-  "pos": "verb",
-  "definition": "rest",
-  "notes": "",
-  "shortphrases": ["พักผ่อน", "พักสักครู่"],
-  "longphrases": ["ฉันพักหลังจากทำงานหนัก", "เขากำลังพักที่บ้าน"],
-  "sentences": ["เราควรพักบ้างนะ", "เธอพักพอหรือยัง"]
-},
-{
-  "word": "กลับ",
-  "confidence": 2,
-  "romanization": "glàp",
-  "type": "content",
-  "pos": "verb",
-  "definition": "return",
-  "notes": "",
-  "shortphrases": ["กลับบ้าน", "กลับมา"],
-  "longphrases": ["ฉันกลับบ้านตอนเย็น", "เขากลับมาจากต่างประเทศ"],
-  "sentences": ["เธอกลับหรือยัง", "พวกเขากลับด้วยกัน"]
-},
-{
-  "word": "ข้าว",
-  "confidence": 2,
-  "romanization": "khâao",
-  "type": "content",
-  "pos": "noun",
-  "definition": "rice",
-  "notes": "",
-  "shortphrases": ["ข้าวสวย", "กินข้าว"],
-  "longphrases": ["ฉันชอบกินข้าวเหนียว", "เขาทำกับข้าวกินกับข้าว"],
-  "sentences": ["แม่ทำข้าวให้ฉัน", "เราแบ่งข้าวกัน"]
-},
-{
-  "word": "ใช่ไหม",
-  "confidence": 2,
-  "romanization": "châi-mǎi",
-  "type": "functionary",
-  "pos": "question",
-  "definition": "right?",
-  "notes": "",
-  "shortphrases": ["ใช่ไหมล่ะ", "จริงใช่ไหม"],
-  "longphrases": ["วันนี้อากาศดีใช่ไหม", "เธอมีเวลาใช่ไหม"],
-  "sentences": ["คุณมาสายใช่ไหม", "มันอร่อยใช่ไหม"]
-},
-{
-  "word": "พูดว่า",
-  "confidence": 2,
-  "romanization": "phûut-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "say that",
-  "notes": "",
-  "shortphrases": ["ครูพูดว่า", "เขาพูดว่า"],
-  "longphrases": ["แม่พูดว่าให้กินยา", "เขาพูดว่ามีงานเลี้ยง"],
-  "sentences": ["ฉันได้ยินเขาพูดว่า", "เธอพูดว่ารู้แล้ว"]
-},
-{
-  "word": "ค้นหา",
-  "confidence": 2,
-  "romanization": "khón-hǎa",
-  "type": "content",
-  "pos": "verb",
-  "definition": "search",
-  "notes": "",
-  "shortphrases": ["ค้นหาข้อมูล", "ค้นหาในเน็ต"],
-  "longphrases": ["ฉันกำลังค้นหาหนังสือเล่มนี้", "เขาใช้กูเกิลค้นหาข้อมูล"],
-  "sentences": ["คุณค้นหาอะไรอยู่", "เธอค้นหาในห้อง"]
-},
-{
-  "word": "หา",
-  "confidence": 2,
-  "romanization": "hǎa",
-  "type": "content",
-  "pos": "verb",
-  "definition": "search / visit",
-  "notes": "",
-  "shortphrases": ["หาเพื่อน", "หาของ"],
-  "longphrases": ["ฉันหาโทรศัพท์ไม่เจอ", "เขาไปหาแฟนที่บ้าน"],
-  "sentences": ["เธอหาอะไรอยู่", "เราไปหาคุณพ่อ"]
-},
-{
-  "word": "เห็นว่า",
-  "confidence": 2,
-  "romanization": "hěn-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "see that",
-  "notes": "",
-  "shortphrases": ["ฉันเห็นว่า", "เธอเห็นว่า"],
-  "longphrases": ["ฉันเห็นว่าเขามาสาย", "เธอเห็นว่าเป็นเรื่องสำคัญ"],
-  "sentences": ["คุณเห็นว่าเป็นอย่างไร", "เธอเห็นว่าต้องรีบไป"]
-},
-{
-  "word": "เจ็ด",
-  "confidence": 2,
-  "romanization": "jèt",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "seven",
-  "notes": "",
-  "shortphrases": ["เจ็ดโมง", "เลขเจ็ด"],
-  "longphrases": ["ฉันตื่นเจ็ดโมงเช้า", "มีเจ็ดคนในกลุ่ม"],
-  "sentences": ["วันนี้วันที่เจ็ด", "เธอซื้อเจ็ดชิ้น"]
-},
-{
-  "word": "นั่ง",
-  "confidence": 2,
-  "romanization": "nâng",
-  "type": "content",
-  "pos": "verb",
-  "definition": "sit",
-  "notes": "",
-  "shortphrases": ["นั่งลง", "นั่งพัก"],
-  "longphrases": ["ฉันนั่งบนเก้าอี้", "เด็กๆนั่่งเรียนอยู่"],
-  "sentences": ["โปรดนั่งตามที่นั่ง", "เขานั่งเงียบๆ"]
-},
-{
-  "word": "หก",
-  "confidence": 2,
-  "romanization": "hòk",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "six",
-  "notes": "",
-  "shortphrases": ["หกโมง", "เลขหก"],
-  "longphrases": ["ฉันถึงหกโมงเย็น", "มีหกคนในห้อง"],
-  "sentences": ["เธอเกิดวันที่หก", "วันนี้หกโมงตรง"]
-},
-{
-  "word": "เสียใจ",
-  "confidence": 2,
-  "romanization": "sǐia-jai",
-  "type": "content",
-  "pos": "verb/adjective",
-  "definition": "sorry / regret",
-  "notes": "",
-  "shortphrases": ["เสียใจมาก", "ต้องเสียใจ"],
-  "longphrases": ["ฉันเสียใจที่ทำแบบนั้น", "เขาต้องเสียใจในภายหลัง"],
-  "sentences": ["ฉันเสียใจจริงๆ", "เธอเสียใจแต่ไม่พูดออกมา"]
-},
-{
-  "word": "พูด",
-  "confidence": 2,
-  "romanization": "pood",
-  "type": "content",
-  "pos": "verb",
-  "definition": "speak",
-  "notes": "",
-  "shortphrases": ["พูดคุย", "พูดจา"],
-  "longphrases": ["ฉันชอบพูดคุยกับเธอ", "เขาพูดภาษาอังกฤษได้ดี"],
-  "sentences": ["เธอพูดช้าๆ ได้ไหม", "เขาพูดเสียงดัง"]
-},
-{
-  "word": "ยัง",
-  "confidence": 2,
-  "romanization": "yang",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "still / yet",
-  "notes": "",
-  "shortphrases": ["ยังไม่", "ยังคง"],
-  "longphrases": ["ฉันยังเรียนไม่จบ", "เขายังทำงานที่นั่น"],
-  "sentences": ["เธอยังอยู่ไหม", "ยังไม่มีใครตอบ"]
-},
-{
-  "word": "ร้าน",
-  "confidence": 2,
-  "romanization": "ráan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "store",
-  "notes": "",
-  "shortphrases": ["ร้านกาแฟ", "ร้านหนังสือ"],
-  "longphrases": ["ร้านนี้เปิดตลอดวัน", "ฉันไปซื้อของที่ร้าน"],
-  "sentences": ["ร้านใกล้ๆ ปิดเร็ว", "เขาทำงานในร้านนั้น"]
-}
-
-,
-{
-  "word": "เรียน",
-  "confidence": 2,
-  "romanization": "riian",
-  "type": "content",
-  "pos": "verb",
-  "definition": "study",
-  "notes": "",
-  "shortphrases": ["เรียนภาษา", "เรียนหนังสือ"],
-  "longphrases": ["ฉันเรียนภาษาไทยทุกวัน", "เขาเรียนหนังสือที่มหาวิทยาลัย"],
-  "sentences": ["ฉันกำลังเรียนภาษาอังกฤษ", "เธอเรียนหนักเพื่อสอบ"]
-},
-{
-  "word": "สิบ",
-  "confidence": 2,
-  "romanization": "sìp",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "ten",
-  "notes": "",
-  "shortphrases": ["สิบคน", "สิบโมง"],
-  "longphrases": ["ฉันตื่นสิบโมงเช้า", "มีสิบคนในกลุ่ม"],
-  "sentences": ["วันนี้วันที่สิบ", "เธอซื้อสิบชิ้น"]
-},
-{
-  "word": "ไทย",
-  "confidence": 2,
-  "romanization": "thai",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "Thai",
-  "notes": "",
-  "shortphrases": ["คนไทย", "ภาษาไทย"],
-  "longphrases": ["ฉันเป็นคนไทย", "เขาพูดภาษาไทยได้"],
-  "sentences": ["ครูของฉันเป็นคนไทย", "เธอชอบวัฒนธรรมไทย"]
-},
-{
-  "word": "ภาษาไทย",
-  "confidence": 2,
-  "romanization": "phaa-sǎa-thai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "Thai language",
-  "notes": "",
-  "shortphrases": ["เรียนภาษาไทย", "พูดภาษาไทย"],
-  "longphrases": ["ฉันเรียนภาษาไทยทุกวัน", "เขาพูดภาษาไทยคล่อง"],
-  "sentences": ["ฉันชอบเรียนภาษาไทย", "เธอใช้ภาษาไทยได้ดี"]
-},
-{
-  "word": "ว่า",
-  "confidence": 2,
-  "romanization": "wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "that (quote)",
-  "notes": "",
-  "shortphrases": ["บอกว่า", "คิดว่า"],
-  "longphrases": ["ฉันบอกว่าเธอสวย", "เขาคิดว่าจะมา"],
-  "sentences": ["ครูพูดว่าวันพรุ่งนี้ไม่มีเรียน", "เธอคิดว่าฉันผิดไหม"]
-},
-{
-  "word": "ที่",
-  "confidence": 2,
-  "romanization": "thîi",
-  "type": "functionary",
-  "pos": "relative pronoun",
-  "definition": "that / which",
-  "notes": "",
-  "shortphrases": ["ที่นี่", "ที่ไหน"],
-  "longphrases": ["บ้านที่ฉันอยู่", "สถานที่ที่สวยงาม"],
-  "sentences": ["หนังสือที่ฉันอ่านอยู่ดี", "นั่นคือคนที่ฉันรู้จัก"]
-},
-{
-  "word": "วันนั้น",
-  "confidence": 2,
-  "romanization": "wan-nán",
-  "type": "content",
-  "pos": "noun phrase",
-  "definition": "that day",
-  "notes": "",
-  "shortphrases": ["วันนั้นไม่มา", "วันนั้นเย็นมาก"],
-  "longphrases": ["วันนั้นฉันไปตลาด", "เราจดจำวันนั้นได้ดี"],
-  "sentences": ["ฉันจำวันนั้นได้แม่น", "วันนั้นฝนตกหนัก"]
-},
-{
-  "word": "พวกเขา",
-  "confidence": 2,
-  "romanization": "phûuak-khăo",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "they",
-  "notes": "",
-  "shortphrases": ["พวกเขามา", "พวกเขาไป"],
-  "longphrases": ["พวกเขากำลังทำงาน", "ฉันรู้จักพวกเขามานาน"],
-  "sentences": ["พวกเขาชอบเล่นฟุตบอล", "พวกเขาไปเที่ยวด้วยกัน"]
-},
-{
-  "word": "คิด",
-  "confidence": 2,
-  "romanization": "kít",
-  "type": "content",
-  "pos": "verb",
-  "definition": "think",
-  "notes": "",
-  "shortphrases": ["คิดว่า", "คิดถึง"],
-  "longphrases": ["ฉันคิดถึงเธอเสมอ", "เขาคิดว่าจะสำเร็จ"],
-  "sentences": ["คุณคิดอย่างไร", "เธอคิดว่าสถานการณ์ดีขึ้น"]
-},
-{
-  "word": "คิดว่า",
-  "confidence": 2,
-  "romanization": "kít-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "think that",
-  "notes": "",
-  "shortphrases": ["ฉันคิดว่า", "เขาคิดว่าจะ"],
-  "longphrases": ["ฉันคิดว่าเธอเก่ง", "เขาคิดว่าจะชนะ"],
-  "sentences": ["ครูคิดว่านักเรียนตั้งใจเรียน", "เธอคิดว่าฉันควรไป"]
-},
-{
-  "word": "นี่",
-  "confidence": 2,
-  "romanization": "nîi",
-  "type": "functionary",
-  "pos": "demonstrative",
-  "definition": "this",
-  "notes": "",
-  "shortphrases": ["ที่นี่", "อันนี้"],
-  "longphrases": ["หนังสือเล่มนี้ดีมาก", "สถานที่นี้สวยงาม"],
-  "sentences": ["นี่คือของฉัน", "เธอชอบอันนี้ไหม"]
-},
-{
-  "word": "เวลานี้",
-  "confidence": 2,
-  "romanization": "way-laa-níi",
-  "type": "functionary",
-  "pos": "noun phrase",
-  "definition": "this time",
-  "notes": "",
-  "shortphrases": ["ในเวลานี้", "เวลานี้สำคัญ"],
-  "longphrases": ["ในเวลานี้ฉันวุ่นวาย", "เวลานี้ยังไม่สาย"],
-  "sentences": ["เวลานี้ฉันกำลังอ่านหนังสือ", "นี่คือเวลานี้ที่ดีที่สุด"]
-},
-{
-  "word": "สาม",
-  "confidence": 2,
-  "romanization": "sǎam",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "three",
-  "notes": "",
-  "shortphrases": ["สามคน", "สามโมง"],
-  "longphrases": ["ฉันไปถึงสามโมง", "มีสามคนในกลุ่ม"],
-  "sentences": ["วันนี้วันที่สามของเดือน", "เธอซื้อสามชิ้น"]
-},
-{
-  "word": "เวลา",
-  "confidence": 2,
-  "romanization": "way-laa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "time",
-  "notes": "",
-  "shortphrases": ["กี่เวลา", "เวลามาก"],
-  "longphrases": ["เวลาไม่พอสำหรับงานนี้", "ฉันไม่มีเวลาไปเที่ยว"],
-  "sentences": ["คุณมีเวลาเหลือไหม", "เวลาผ่านไปเร็วมาก"]
-},
-{
-  "word": "เหนื่อย",
-  "confidence": 2,
-  "romanization": "nùeai",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "tired",
-  "notes": "",
-  "shortphrases": ["เหนื่อยมาก", "รู้สึกเหนื่อย"],
-  "longphrases": ["วันนี้ฉันเหนื่อยมาก", "หลังวิ่งฉันเหนื่อยจนหอบ"],
-  "sentences": ["ฉันรู้สึกเหนื่อยตลอดวัน", "เธอดูเหนื่อยนะพักบ้าง"]
-},
-{
-  "word": "เป็น",
-  "confidence": 2,
-  "romanization": "bpen",
-  "type": "functionary",
-  "pos": "copula",
-  "definition": "to be / become something",
-  "notes": "",
-  "shortphrases": ["เป็นเพื่อน", "เป็นครู"],
-  "longphrases": ["ฉันเป็นนักเรียน", "เขาเป็นหมอที่ดี"],
-  "sentences": ["เธอเป็นคนใจดี", "นี่เป็นปัญหาที่ยาก"]
-},
-{
-  "word": "ด้วยกัน",
-  "confidence": 2,
-  "romanization": "dûuai-gan",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "together",
-  "notes": "",
-  "shortphrases": ["ไปด้วยกัน", "ทำด้วยกัน"],
-  "longphrases": ["เราไปเที่ยวด้วยกัน", "พวกเขาทำงานด้วยกัน"],
-  "sentences": ["ฉันกับเธอด้วยกัน", "ครอบครัวฉันอยู่ด้วยกัน"]
-},
-{
-  "word": "สอง",
-  "confidence": 2,
-  "romanization": "sǎawng",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "two",
-  "notes": "",
-  "shortphrases": ["สองคน", "สองโมง"],
-  "longphrases": ["ฉันมีสองแก้วน้ำ", "เขามีสองรถ"],
-  "sentences": ["วันนี้วันที่สอง", "เธอซื้อสองชิ้น"]
-},
-{
-  "word": "ใต้",
-  "confidence": 2,
-  "romanization": "dtâi",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "under",
-  "notes": "",
-  "shortphrases": ["ใต้โต๊ะ", "ใต้ต้นไม้"],
-  "longphrases": ["แมวอยู่ใต้โต๊ะ", "เธอซ่อนใต้เตียง"],
-  "sentences": ["ใส่หมวกใต้หมอน", "หนังสืออยู่ใต้หนังสือพิมพ์"]
-},
-{
-  "word": "เข้าใจ",
-  "confidence": 2,
-  "romanization": "kâo-jai",
-  "type": "content",
-  "pos": "verb",
-  "definition": "understand",
-  "notes": "",
-  "shortphrases": ["เข้าใจไหม", "เข้าใจแล้ว"],
-  "longphrases": ["ฉันเข้าใจบทเรียนนี้", "เธอเข้าใจสถานการณ์"],
-  "sentences": ["คุณเข้าใจฉันไหม", "เขาพูดช้าๆ ฉันเข้าใจ"]
-},
-{
-  "word": "เข้าใจว่า",
-  "confidence": 2,
-  "romanization": "kâo-jai-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "understand that",
-  "notes": "",
-  "shortphrases": ["ฉันเข้าใจว่า", "เธอเข้าใจว่า"],
-  "longphrases": ["ฉันเข้าใจว่าเธอรู้แล้ว", "เขาเข้าใจว่าต้องรีบ"],
-  "sentences": ["เธอเข้าใจว่าฉันกำลังยุ่ง", "เขาเข้าใจว่าเป็นเรื่องสำคัญ"]
-},
-{
-  "word": "มาก",
-  "confidence": 2,
-  "romanization": "mâak",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "very",
-  "notes": "",
-  "shortphrases": ["มากเลย", "ดีมาก"],
-  "longphrases": ["ฉันชอบมากเลย", "หนังสือเล่มนี้ดีมาก"],
-  "sentences": ["ขอบคุณมากครับ", "ฉันมีความสุขมาก"]
-},
-{
-  "word": "เดิน",
-  "confidence": 2,
-  "romanization": "dern",
-  "type": "content",
-  "pos": "verb",
-  "definition": "walk",
-  "notes": "",
-  "shortphrases": ["เดินเร็ว", "เดินช้า"],
-  "longphrases": ["ฉันเดินไปโรงเรียน", "เธอเดินเล่นในสวน"],
-  "sentences": ["เราเดินด้วยกัน", "เขาเดินในสวนสาธารณะ"]
-},
-{
-  "word": "อยาก",
-  "confidence": 2,
-  "romanization": "yàak",
-  "type": "functionary",
-  "pos": "auxiliary verb",
-  "definition": "want",
-  "notes": "",
-  "shortphrases": ["อยากกิน", "อยากไป"],
-  "longphrases": ["ฉันอยากกินข้าว", "เขาอยากไปเที่ยว"],
-  "sentences": ["คุณอยากทำอะไร", "เด็กๆอยากเล่นกัน"]
-},
-{
-  "word": "น้ำ",
-  "confidence": 2,
-  "romanization": "náam",
-  "type": "content",
-  "pos": "noun",
-  "definition": "water",
-  "notes": "",
-  "shortphrases": ["น้ำเย็น", "น้ำร้อน"],
-  "longphrases": ["ฉันดื่มน้ำทุกวัน", "น้ำในแก้วนี้อร่อย"],
-  "sentences": ["เธอให้ฉันน้ำไหม", "ฉันไม่มีน้ำดื่ม"]
-},
-{
-  "word": "อะไร",
-  "confidence": 2,
-  "romanization": "à-rai",
-  "type": "functionary",
-  "pos": "question marker",
-  "definition": "what",
-  "notes": "",
-  "shortphrases": ["คืออะไร", "ทำอะไร"],
-  "longphrases": ["นี่คืออะไรที่แปลก", "คุณกำลังทำอะไรอยู่"],
-  "sentences": ["เธอพูดว่าอะไร", "ฉันไม่รู้ว่าอะไรดี"]
-},
-{
-  "word": "เมื่อไหร่",
-  "confidence": 2,
-  "romanization": "mûea-rài",
-  "type": "functionary",
-  "pos": "question marker",
-  "definition": "when",
-  "notes": "",
-  "shortphrases": ["เมื่อไหร่จะไป", "คุณมาเมื่อไหร่"],
-  "longphrases": ["คุณจะกลับเมื่อไหร่", "เธอมาถึงเมื่อไหร่"],
-  "sentences": ["เธอจะไปเมื่อไหร่", "ฉันไม่รู้เมื่อไหร่"]
-},
-{
-  "word": "จะ",
-  "confidence": 2,
-  "romanization": "jà",
-  "type": "functionary",
-  "pos": "auxiliary verb",
-  "definition": "will",
-  "notes": "",
-  "shortphrases": ["จะไป", "จะทำ"],
-  "longphrases": ["ฉันจะไปเที่ยว", "พรุ่งนี้เขาจะมา"],
-  "sentences": ["คุณจะทำอะไร", "เธอจะกลับบ้านเมื่อไร"]
-},
-{
-  "word": "กับ",
-  "confidence": 2,
-  "romanization": "gàp",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "with",
-  "notes": "",
-  "shortphrases": ["กับฉัน", "กับเพื่อน"],
-  "longphrases": ["ฉันไปกับเพื่อน", "เขามากับแม่"],
-  "sentences": ["คุณมากับใคร", "เธออยู่กับฉันไหม"]
-},
-{
-  "word": "ด้วย",
-  "confidence": 2,
-  "romanization": "dûuai",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "also",
-  "notes": "",
-  "shortphrases": ["ฉันด้วย", "ไปด้วยกัน"],
-  "longphrases": ["เราจะไปด้วยกัน", "เขากินด้วยกัน"],
-  "sentences": ["เธอมาเที่ยวด้วยกัน", "ฉันด้วย"]
-}
-,
-{
-  "word": "ปี",
-  "confidence": 2,
-  "romanization": "bpii",
-  "type": "content",
-  "pos": "noun",
-  "definition": "year",
-  "notes": "",
-  "shortphrases": ["ปีหน้า", "ปีนี้"],
-  "longphrases": ["สวัสดีปีใหม่", "ปีนี้ฉันโตขึ้น"],
-  "sentences": ["ฉันเกิดปีพุทธศักราชสองพันห้า", "ปีหน้าจะสำเร็จการศึกษา"]
-},
-{
-  "word": "ใช่",
-  "confidence": 2,
-  "romanization": "châi",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "yes / correct",
-  "notes": "",
-  "shortphrases": ["ใช่เลย", "ใช่ไหม"],
-  "longphrases": ["ใช่ฉันทำถูกต้องแล้ว", "นี่ใช่สิ่งที่เธอต้องการ"],
-  "sentences": ["ใช่ ฉันชอบมันมาก", "เธอตอบใช่หรือไม่ใช่"]
-},
-{
-  "word": "คุณ",
-  "confidence": 2,
-  "romanization": "khun",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "you",
-  "notes": "",
-  "shortphrases": ["ขอบคุณครับ", "คุณชื่ออะไร"],
-  "longphrases": ["คุณเป็นใครมาจากไหน", "ขอบคุณสำหรับของขวัญคุณ"],
-  "sentences": ["คุณมาจากประเทศไทยใช่ไหม", "ฉันถามคุณว่าทำอะไรอยู่"]
-},
-{
-  "word": "ศูนย์",
-  "confidence": 2,
-  "romanization": "sǔun",
-  "type": "content",
-  "pos": "numeral",
-  "definition": "zero",
-  "notes": "",
-  "shortphrases": ["ศูนย์องศา", "ศูนย์บาท"],
-  "longphrases": ["คะแนนเต็มยี่สิบศูนย์", "อุณหภูมิศูนย์องศาน้ำแข็ง"],
-  "sentences": ["เขาได้ศูนย์คะแนนในการทดสอบ", "ศูนย์นี้สำคัญในคณิตศาสตร์"]
-},
-{
-  "word": "เลย",
-  "confidence": 2,
-  "romanization": "luy",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "at all / intensifier",
-  "notes": "",
-  "shortphrases": ["ไม่เลย", "ดีเลย"],
-  "longphrases": ["ฉันไม่หิวเลย", "ดีใจเลยที่เจอเธอ"],
-  "sentences": ["ฉันไม่รู้เลยเรื่องนี้", "เขามาเลยไม่ต้องรอ"]
-},
-{
-  "word": "ไหม",
-  "confidence": 2,
-  "romanization": "măi",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "question particle",
-  "notes": "",
-  "shortphrases": ["ไปไหม", "กินไหม"],
-  "longphrases": ["เธอไปเที่ยวไหมคืนนี้", "คุณกินข้าวไหมตอนนี้"],
-  "sentences": ["คุณเข้าใจไหม", "เขามาหรือยังไหม"]
-},
-{
-  "word": "กลัว",
-  "confidence": 2,
-  "romanization": "glua",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "afraid / scared",
-  "notes": "",
-  "shortphrases": ["กลัวผี", "กลัวความมืด"],
-  "longphrases": ["ฉันกลัวหมาตัวใหญ่", "เขากลัวแมงมุมมาก"],
-  "sentences": ["เด็กน้อยกลัวเสียงฟ้าร้อง", "เธอกลัวขึ้นรถเมล์คนเดียว"]
-},
-{
-  "word": "แล้ว",
-  "confidence": 2,
-  "romanization": "láew",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "already / then",
-  "notes": "",
-  "shortphrases": ["กินแล้ว", "ไปแล้ว"],
-  "longphrases": ["ฉันทำงานเสร็จแล้ว", "เขาไปตั้งแต่เช้าแล้ว"],
-  "sentences": ["ฝนหยุดตกแล้ว", "ฉันนอนแล้วไม่ตื่น"]
-},
-{
-  "word": "เสมอ",
-  "confidence": 2,
-  "romanization": "sà-mĕr",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "always",
-  "notes": "",
-  "shortphrases": ["เสมอไป", "คิดถึงเสมอ"],
-  "longphrases": ["ฉันรักเธอเสมอ", "เขามาสายเสมอ"],
-  "sentences": ["เธอคิดถึงบ้านเสมอ", "ฝนตกเสมอฤดูนี้"]
-},
-{
-  "word": "สวย",
-  "confidence": 2,
-  "romanization": "sŭay",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "beautiful",
-  "notes": "",
-  "shortphrases": ["สวยมาก", "เห็นสวย"],
-  "longphrases": ["ดอกไม้สวยมากจริงๆ", "เธอสวยในชุดนี้"],
-  "sentences": ["สถานที่นี้สวยจัง", "ฉันเห็นทะเลสวยมาก"]
-},
-{
-  "word": "เริ่ม",
-  "confidence": 2,
-  "romanization": "rêrm",
-  "type": "content",
-  "pos": "verb",
-  "definition": "begin / start",
-  "notes": "",
-  "shortphrases": ["เริ่มต้น", "เริ่มงาน"],
-  "longphrases": ["เราเริ่มเรียนภาษาไทย", "เขาเริ่มทำโครงการใหม่"],
-  "sentences": ["ฉันจะเริ่มตอนพรุ่งนี้", "พวกเขาเริ่มประชุมแล้ว"]
-},
-{
-  "word": "ได้",
-  "confidence": 2,
-  "romanization": "dâai",
-  "type": "functionary",
-  "pos": "modal verb",
-  "definition": "can / able to",
-  "notes": "",
-  "shortphrases": ["ดูได้", "ช่วยได้"],
-  "longphrases": ["ฉันทำได้สำเร็จแล้ว", "คุณดูได้ที่นี่"],
-  "sentences": ["เขาอ่านหนังสือได้", "แม่ช่วยลูกได้เสมอ"]
-},
-{
-  "word": "หนาว",
-  "confidence": 2,
-  "romanization": "năao",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "cold",
-  "notes": "",
-  "shortphrases": ["อากาศหนาว", "หนาวจัง"],
-  "longphrases": ["คืนนี้อากาศหนาวมาก", "เขาใส่เสื้อกันหนาว"],
-  "sentences": ["ฉันรู้สึกหนาวทุกคืน", "บ้านนี้หนาวเวลากลางคืน"]
-},
-{
-  "word": "ภาษาอังกฤษ",
-  "confidence": 2,
-  "romanization": "paa-sǎa ang-grìt",
-  "type": "content",
-  "pos": "noun",
-  "definition": "English language",
-  "notes": "",
-  "shortphrases": ["เรียนภาษาอังกฤษ", "พูดอังกฤษ"],
-  "longphrases": ["ฉันเรียนภาษาอังกฤษทุกวัน", "เขาพูดภาษาอังกฤษคล่อง"],
-  "sentences": ["ครูสอนภาษาอังกฤษเก่ง", "เธอเข้าใจภาษาอังกฤษดี"]
-},
-{
-  "word": "ทุกครั้ง",
-  "confidence": 2,
-  "romanization": "túk-kráng",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "every time",
-  "notes": "",
-  "shortphrases": ["ทุกครั้งที่", "จำได้ทุกครั้ง"],
-  "longphrases": ["ฉันดีใจทุกครั้งที่เจอเธอ", "เขาทำสำเร็จทุกครั้ง"],
-  "sentences": ["เธอร้องไห้ทุกครั้ง", "ฉันตื่นเต้นทุกครั้งที่สอบ"]
-},
-{
-  "word": "คล่อง",
-  "confidence": 2,
-  "romanization": "klông",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "fluent",
-  "notes": "",
-  "shortphrases": ["พูดคล่อง", "คล่องตัว"],
-  "longphrases": ["เขาพูดไทยคล่องมาก", "ฉันคล่องแคล่วในการเต้น"],
-  "sentences": ["เธอเขียนตัวหนังสือคล่อง", "นักเรียนพูดคล่องทุกคน"]
-},
-{
-  "word": "เพื่อน",
-  "confidence": 2,
-  "romanization": "phûean",
-  "type": "content",
-  "pos": "noun",
-  "definition": "friend",
-  "notes": "",
-  "shortphrases": ["เพื่อนสนิท", "เพื่อนใหม่"],
-  "longphrases": ["ฉันไปเที่ยวกับเพื่อน", "เขาเจอเพื่อนเก่าเมื่อวาน"],
-  "sentences": ["เพื่อนฉันชื่อสมชาย", "เราแบ่งขนมให้เพื่อน"]
-},
-{
-  "word": "สนุก",
-  "confidence": 2,
-  "romanization": "sà-nùk",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "fun",
-  "notes": "",
-  "shortphrases": ["สนุกมาก", "สนุกจัง"],
-  "longphrases": ["งานเลี้ยงสนุกมากจริงๆ", "เด็กๆเล่นเกมสนุก"],
-  "sentences": ["เรามีเวลาสนุกด้วยกัน", "เธอสนุกกับการเต้น"]
-},
-{
-  "word": "ไป",
-  "confidence": 2,
-  "romanization": "bpai",
-  "type": "content",
-  "pos": "verb",
-  "definition": "go",
-  "notes": "",
-  "shortphrases": ["ไปไหน", "ไปก่อน"],
-  "longphrases": ["ฉันจะไปโรงเรียน", "พวกเขาไปเที่ยวทะเล"],
-  "sentences": ["เธอไปกับใคร", "เราไปเดินเล่นกัน"]
-}
-,
-{
-  "word": "เขา",
-  "confidence": 2,
-  "romanization": "khăo",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "he / she / they",
-  "notes": "",
-  "shortphrases": ["เขามา", "เขาไป"],
-  "longphrases": ["เขากำลังอ่านหนังสือ", "ฉันรู้จักเขามานาน"],
-  "sentences": ["เขากินข้าวอยู่", "เราพบเขาที่ตลาด"]
-},
-{
-  "word": "กำลัง",
-  "confidence": 2,
-  "romanization": "gam-lang",
-  "type": "functionary",
-  "pos": "aspect marker",
-  "definition": "in the process of",
-  "notes": "",
-  "shortphrases": ["กำลังกิน", "กำลังเรียน"],
-  "longphrases": ["ฉันกำลังกินข้าวอยู่", "เขากำลังดูทีวีตอนนี้"],
-  "sentences": ["เด็กๆกำลังกินขนม", "เขากำลังเขียนหนังสือ"]
-},
-{
-  "word": "รู้",
-  "confidence": 2,
-  "romanization": "rúu",
-  "type": "content",
-  "pos": "verb",
-  "definition": "know",
-  "notes": "",
-  "shortphrases": ["รู้แล้ว", "รู้ไหม"],
-  "longphrases": ["ฉันรู้ความจริงแล้ว", "คุณรู้ไหมวันนี้วันอะไร"],
-  "sentences": ["เขารู้คำตอบทุกข้อ", "เธอรู้เรื่องนี้หรือยัง"]
-},
-{
-  "word": "รัก",
-  "confidence": 2,
-  "romanization": "rák",
-  "type": "content",
-  "pos": "verb",
-  "definition": "love",
-  "notes": "",
-  "shortphrases": ["รักมาก", "รักเธอ"],
-  "longphrases": ["ฉันรักภาษาไทย", "เขารักครอบครัวของเขา"],
-  "sentences": ["เธอรักสัตว์เลี้ยง", "พวกเขารักกันเสมอ"]
-},
-{
-  "word": "ต่อไป",
-  "confidence": 2,
-  "romanization": "dtàaw-bpai",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "next / onward",
-  "notes": "",
-  "shortphrases": ["ต่อไปเลย", "แล้วต่อไป"],
-  "longphrases": ["เราจะทำต่อไปจนสำเร็จ", "หลังจากนี้ต่อไปง่ายขึ้น"],
-  "sentences": ["เรียนเสร็จแล้วต่อไปทำงาน", "ต่อไปฉันจะเดินทาง"]
-},
-{
-  "word": "ไม่",
-  "confidence": 2,
-  "romanization": "mâi",
-  "type": "functionary",
-  "pos": "negation",
-  "definition": "not / no",
-  "notes": "",
-  "shortphrases": ["ไม่ใช่", "ไม่รู้"],
-  "longphrases": ["ฉันไม่ชอบอาหารเผ็ด", "เขาไม่ได้มาเรียนวันนี้"],
-  "sentences": ["ฉันไม่กินเนื้อสัตว์", "เธอไม่เข้าใจคำถาม"]
-},
-{
-  "word": "ตัวเอง",
-  "confidence": 2,
-  "romanization": "dtua-eng",
-  "type": "functionary",
-  "pos": "pronoun",
-  "definition": "oneself",
-  "notes": "",
-  "shortphrases": ["ดูแลตัวเอง", "รักตัวเอง"],
-  "longphrases": ["เธอต้องดูแลตัวเองให้ดี", "ฉันภูมิใจในตัวเอง"],
-  "sentences": ["อย่าทำร้ายตัวเอง", "ฉันทำเองตัวเอง"]
-},
-{
-  "word": "วางแผน",
-  "confidence": 2,
-  "romanization": "waang-păen",
-  "type": "content",
-  "pos": "verb",
-  "definition": "plan",
-  "notes": "",
-  "shortphrases": ["วางแผนเที่ยว", "วางแผนงาน"],
-  "longphrases": ["เราวางแผนไปเที่ยวพรุ่งนี้", "เขาวางแผนโครงการใหม่"],
-  "sentences": ["ฉันวางแผนเรียนภาษา", "เธอวางแผนดีมาก"]
-},
-{
-  "word": "ฝน",
-  "confidence": 2,
-  "romanization": "fǒn",
-  "type": "content",
-  "pos": "noun",
-  "definition": "rain",
-  "notes": "",
-  "shortphrases": ["ฝนตก", "ช่วงฝน"],
-  "longphrases": ["ฝนตกหนักวันหยุดนี้", "ฉันชอบเสียงฝนตก"],
-  "sentences": ["อย่าลืมนำร่ม ฝนจะตก", "วันนี้ไม่มีฝนเลย"]
-},
-{
-  "word": "จริงๆ",
-  "confidence": 2,
-  "romanization": "jing-jing",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "really / truly",
-  "notes": "",
-  "shortphrases": ["จริงๆนะ", "แล้วจริงๆ"],
-  "longphrases": ["ฉันชอบจริงๆเลย", "เขาตั้งใจจริงๆในการเรียน"],
-  "sentences": ["เธอจริงๆหรือเปล่า", "ฉันรักเธอจริงๆ"]
-},
-{
-  "word": "จำ",
-  "confidence": 2,
-  "romanization": "jam",
-  "type": "content",
-  "pos": "verb",
-  "definition": "remember",
-  "notes": "",
-  "shortphrases": ["จำได้", "จำไม่ได้"],
-  "longphrases": ["ฉันจำเหตุการณ์นั้นได้ชัดเจน", "เขาจำชื่อฉันไม่ได้"],
-  "sentences": ["คุณจำฉันได้ไหม", "ฉันจำวันเกิดเขาได้"]
-},
-{
-  "word": "ทะเล",
-  "confidence": 2,
-  "romanization": "ta-lay",
-  "type": "content",
-  "pos": "noun",
-  "definition": "sea",
-  "notes": "",
-  "shortphrases": ["ไปทะเล", "ทะเลสวย"],
-  "longphrases": ["ฉันอยากไปทะเลมาก", "เรานั่งเล่นที่ชายทะเล"],
-  "sentences": ["ครอบครัวฉันไปทะเลทุกปี", "ทะเลวันนี้คลื่นแรงมาก"]
-},
-{
-  "word": "พูด",
-  "confidence": 2,
-  "romanization": "pôot",
-  "type": "content",
-  "pos": "verb",
-  "definition": "speak",
-  "notes": "",
-  "shortphrases": ["พูดคุย", "พูดจา"],
-  "longphrases": ["เขาพูดภาษาอังกฤษได้ดี", "ฉันชอบพูดคุยกับเพื่อน"],
-  "sentences": ["เธอพูดชัดไหม", "เขาพูดเสียงดัง"]
-},
-{
-  "word": "เรียน",
-  "confidence": 2,
-  "romanization": "riian",
-  "type": "content",
-  "pos": "verb",
-  "definition": "study / learn",
-  "notes": "",
-  "shortphrases": ["เรียนหนังสือ", "เรียนภาษาไทย"],
-  "longphrases": ["ฉันเรียนภาษาไทยทุกวัน", "เขาเรียนหนักเพื่อสอบ"],
-  "sentences": ["ฉันกำลังกำลังเรียนอยู่", "เธอเรียนเสร็จแล้ว"]
-},
-{
-  "word": "ภาษาไทย",
-  "confidence": 2,
-  "romanization": "phaa-sǎa tai",
-  "type": "content",
-  "pos": "noun",
-  "definition": "Thai language",
-  "notes": "",
-  "shortphrases": ["เรียนภาษาไทย", "พูดภาษาไทย"],
-  "longphrases": ["ฉันเรียนภาษาไทยทุกวัน", "เขาพูดภาษาไทยคล่อง"],
-  "sentences": ["ฉันชอบเรียนภาษาไทย", "เธอใช้ภาษาไทยได้ดี"]
-},
-{
-  "word": "สถานที่นี้",
-  "confidence": 2,
-  "romanization": "sa-thăan-tîi níi",
-  "type": "content",
-  "pos": "noun phrase",
-  "definition": "this place",
-  "notes": "",
-  "shortphrases": ["ที่นี่", "สถานที่นี้สวย"],
-  "longphrases": ["สถานที่นี้เหมาะสำหรับพักผ่อน", "ฉันชอบสถานที่นี้มาก"],
-  "sentences": ["สถานที่นี้เงียบสงบ", "เรามาพักที่สถานที่นี้"]
-},
-{
-  "word": "กิน",
-  "confidence": 2,
-  "romanization": "gin",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to eat",
-  "notes": "",
-  "shortphrases": ["กินข้าว", "กินผลไม้"],
-  "longphrases": ["ฉันกินข้าวกับเพื่อน", "เขากินขนมอร่อย"],
-  "sentences": ["คุณกินข้าวหรือยัง", "เด็กๆกำลังกินข้าว"]
-},
-{
-  "word": "หา",
-  "confidence": 2,
-  "romanization": "hǎa",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to look for / visit",
-  "notes": "",
-  "shortphrases": ["หาเพื่อน", "หาของ"],
-  "longphrases": ["ฉันหาโทรศัพท์ไม่เจอ", "เขาไปหาแฟนที่บ้าน"],
-  "sentences": ["เธอหาอะไรอยู่", "เราไปหาคุณพ่อ"]
-},
-{
-  "word": "ด้วยกัน",
-  "confidence": 2,
-  "romanization": "dûuai gan",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "together",
-  "notes": "",
-  "shortphrases": ["ไปด้วยกัน", "ทำด้วยกัน"],
-  "longphrases": ["เราไปเที่ยวด้วยกัน", "พวกเขาทำงานด้วยกัน"],
-  "sentences": ["ฉันกับเธอด้วยกัน", "ครอบครัวเรายุ่ด้วยกัน"]
-},
-{
-  "word": "มาก",
-  "confidence": 2,
-  "romanization": "mâak",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "very / much",
-  "notes": "",
-  "shortphrases": ["มากเลย", "ดีมาก"],
-  "longphrases": ["ฉันชอบมากเลย", "หนังสือเล่มนี้ดีมาก"],
-  "sentences": ["ขอบคุณมากครับ", "ฉันมีความสุขมาก"]
-},
-{
-  "word": "อยาก",
-  "confidence": 2,
-  "romanization": "yàak",
-  "type": "functionary",
-  "pos": "auxiliary verb",
-  "definition": "want",
-  "notes": "",
-  "shortphrases": ["อยากกิน", "อยากไป"],
-  "longphrases": ["ฉันอยากกินข้าว", "เขาอยากไปเที่ยว"],
-  "sentences": ["คุณอยากทำอะไร", "เด็กๆอยากเล่นกัน"]
-},
-{
-  "word": "น้ำ",
-  "confidence": 2,
-  "romanization": "náam",
-  "type": "content",
-  "pos": "noun",
-  "definition": "water",
-  "notes": "",
-  "shortphrases": ["น้ำเย็น", "น้ำร้อน"],
-  "longphrases": ["ฉันดื่มน้ำทุกวัน", "น้ำในแก้วนี้อร่อย"],
-  "sentences": ["เธอให้ฉันน้ำไหม", "ฉันไม่มีน้ำดื่ม"]
-},
-{
-  "word": "ตื่น",
-  "confidence": 2,
-  "romanization": "tuen",
-  "type": "content",
-  "pos": "verb",
-  "definition": "wake up",
-  "notes": "",
-  "shortphrases": ["ตื่นเช้า", "ตื่นสาย"],
-  "longphrases": ["ฉันตื่นตอนหกโมงเช้า", "เขาตื่นสายทุกวัน"],
-  "sentences": ["เธอตื่นหรือยัง", "เด็กๆตื่นเต้นมาก"]
-},
-{
-  "word": "ตก",
-  "confidence": 2,
-  "romanization": "tok",
-  "type": "content",
-  "pos": "verb",
-  "definition": "fall",
-  "notes": "",
-  "shortphrases": ["ฝนตก", "ตกจากโต๊ะ"],
-  "longphrases": ["ฝนตกหนักวันนี้", "เขาตกจากจักรยาน"],
-  "sentences": ["ระวังอย่าตกจากบันได", "ใบไม้ตกเต็มพื้น"]
-},
-{
-  "word": "ดู",
-  "confidence": 2,
-  "romanization": "duu",
-  "type": "content",
-  "pos": "verb",
-  "definition": "watch / look",
-  "notes": "",
-  "shortphrases": ["ดูหนัง", "ดูทีวี"],
-  "longphrases": ["ฉันดูหนังที่โรงภาพยนตร์", "เขาดูทีวีตอนเย็น"],
-  "sentences": ["เธอดูทีวีหรือยัง", "เด็กๆดูการ์ตูน"]
-},
-{
-  "word": "รับ",
-  "confidence": 2,
-  "romanization": "rúb",
-  "type": "content",
-  "pos": "verb",
-  "definition": "receive / accept",
-  "notes": "",
-  "shortphrases": ["รับของ", "รับเงิน"],
-  "longphrases": ["ฉันรับพัสดุจากไปรษณีย์", "เขารับงานใหม่แล้ว"],
-  "sentences": ["เธอรับของขวัญไหม", "ผมรับแล้วขอบคุณครับ"]
-},
-{
-  "word": "ดื่ม",
-  "confidence": 2,
-  "romanization": "dʉ̀ʉm",
-  "type": "content",
-  "pos": "verb",
-  "definition": "drink",
-  "notes": "",
-  "shortphrases": ["ดื่มน้ำ", "ดื่มกาแฟ"],
-  "longphrases": ["ฉันดื่มชาร้อนทุกเช้า", "เขาชอบดื่มน้ำเย็น"],
-  "sentences": ["เธอดื่มน้ำไหม", "เด็กๆดื่มนมก่อนนอน"]
-},
-{
-  "word": "ร้าน",
-  "confidence": 2,
-  "romanization": "ráan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "shop / store",
-  "notes": "",
-  "shortphrases": ["ร้านกาแฟ", "ร้านหนังสือ"],
-  "longphrases": ["ฉันไปซื้อของที่ร้านนี้", "เขาทำงานในร้านอาหาร"],
-  "sentences": ["ร้านใกล้ๆ ปิดเร็ว", "เราเจอกันที่ร้าน"]
-},
-{
-  "word": "เห็นด้วย",
-  "confidence": 2,
-  "romanization": "hěn dûay",
-  "type": "content",
-  "pos": "verb",
-  "definition": "agree",
-  "notes": "",
-  "shortphrases": ["เห็นด้วยไหม", "เห็นด้วยกับ"],
-  "longphrases": ["ฉันเห็นด้วยกับข้อเสนอ", "เขาเห็นด้วยกับแผนนี้"],
-  "sentences": ["คุณเห็นด้วยไหม", "พวกเขาเห็นด้วยกันเสมอ"]
-},
-{
-  "word": "อากาศ",
-  "confidence": 2,
-  "romanization": "aa-gàat",
-  "type": "content",
-  "pos": "noun",
-  "definition": "weather",
-  "notes": "",
-  "shortphrases": ["อากาศดี", "อากาศร้อน"],
-  "longphrases": ["อากาศวันนี้ร้อนมาก", "เขาชอบอากาศหนาว"],
-  "sentences": ["ฉันชอบอากาศเย็น", "ฝนทำให้อากาศสดชื่น"]
-},
-{
-  "word": "บ้าน",
-  "confidence": 2,
-  "romanization": "bâan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "home / house",
-  "notes": "",
-  "shortphrases": ["ที่บ้าน", "บ้านฉัน"],
-  "longphrases": ["ฉันอยู่ที่บ้านทุกวัน", "เราไปบ้านเพื่อนเมื่อวาน"],
-  "sentences": ["ฉันกลับบ้านตอนเย็น", "เขาทำงานที่บ้าน"]
-}
-,
-{
-  "word": "เพลง",
-  "confidence": 2,
-  "romanization": "phleeng",
-  "type": "content",
-  "pos": "noun",
-  "definition": "song / music",
-  "notes": "",
-  "shortphrases": ["ฟังเพลง", "เพลงใหม่"],
-  "longphrases": ["ฉันชอบฟังเพลงไทย", "เขาแต่งเพลงขึ้นใหม่"],
-  "sentences": ["เพลงนี้ไพเราะมาก", "เราไปฟังเพลงด้วยกัน"]
-},
-{
-  "word": "กาแฟ",
-  "confidence": 2,
-  "romanization": "gaa-fae",
-  "type": "content",
-  "pos": "noun",
-  "definition": "coffee",
-  "notes": "",
-  "shortphrases": ["ดื่มกาแฟ", "ร้านกาแฟ"],
-  "longphrases": ["ฉันชอบดื่มกาแฟร้อน", "เรานั่งคุยที่ร้านกาแฟ"],
-  "sentences": ["กาแฟแก้วนี้เข้มข้น", "เธอซื้อกาแฟกลับบ้าน"]
-},
-{
-  "word": "วันนั้น",
-  "confidence": 2,
-  "romanization": "wan-nán",
-  "type": "content",
-  "pos": "noun phrase",
-  "definition": "that day",
-  "notes": "",
-  "shortphrases": ["วันนั้นเราไป", "วันนั้นอากาศดี"],
-  "longphrases": ["ฉันจำวันนั้นได้แม่น", "วันนั้นเราเจอกันครั้งแรก"],
-  "sentences": ["วันนั้นฝนตกหนัก", "เขาพูดอะไรในวันนั้น"]
-},
-{
-  "word": "หรือเปล่า",
-  "confidence": 2,
-  "romanization": "rǔue-bplàao",
-  "type": "functionary",
-  "pos": "question phrase",
-  "definition": "or not?",
-  "notes": "",
-  "shortphrases": ["ใช่หรือเปล่า", "ไปหรือเปล่า"],
-  "longphrases": ["คุณเข้าใจหรือเปล่า", "เขามาหรือเปล่าเมื่อวาน"],
-  "sentences": ["ฝนจะตกหรือเปล่า", "เธอชอบเขาหรือเปล่า"]
-},
-{
-  "word": "ดี",
-  "confidence": 2,
-  "romanization": "dii",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "good / okay",
-  "notes": "",
-  "shortphrases": ["ดีมาก", "ดีจัง"],
-  "longphrases": ["หนังเรื่องนี้ดีมากจริงๆ", "อากาศวันนี้ดีสบาย"],
-  "sentences": ["คุณทำงานได้ดี", "อาหารที่นี่อร่อยดี"]
-},
-{
-  "word": "ใกล้ๆ",
-  "confidence": 2,
-  "romanization": "glâi-glâi",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "nearby",
-  "notes": "",
-  "shortphrases": ["อยู่ใกล้ๆ", "มาใกล้ๆ"],
-  "longphrases": ["ร้านหนังสืออยู่ใกล้ๆนี้", "บ้านฉันอยู่ใกล้ๆตลาด"],
-  "sentences": ["เธอนั่งใกล้ๆฉันหน่อย", "สถานีรถไฟอยู่ใกล้ๆ"]
-},
-{
-  "word": "ร้องไห้",
-  "confidence": 2,
-  "romanization": "rórng-hâi",
-  "type": "content",
-  "pos": "verb",
-  "definition": "cry",
-  "notes": "",
-  "shortphrases": ["ร้องไห้ดัง", "ร้องไห้เงียบ"],
-  "longphrases": ["เด็กน้อยร้องไห้อยู่คนเดียว", "เธอร้องไห้เพราะเสียใจ"],
-  "sentences": ["ฉันเห็นเขาร้องไห้", "เธอร้องไห้กลางฝน"]
-},
-{
-  "word": "นึกถึง",
-  "confidence": 2,
-  "romanization": "núek-thǔeng",
-  "type": "content",
-  "pos": "verb",
-  "definition": "recall / remember fondly",
-  "notes": "",
-  "shortphrases": ["นึกถึงเธอ", "นึกถึงบ้าน"],
-  "longphrases": ["ฉันนึกถึงเพื่อนเก่าเสมอ", "เวลาที่เหงาฉันนึกถึงบ้าน"],
-  "sentences": ["เธอนึกถึงฉันไหม", "เขานึกถึงเรื่องเก่าๆ"]
-},
-{
-  "word": "บอก",
-  "confidence": 2,
-  "romanization": "bàawk",
-  "type": "content",
-  "pos": "verb",
-  "definition": "say / tell",
-  "notes": "",
-  "shortphrases": ["บอกว่า", "บอกฉัน"],
-  "longphrases": ["แม่บอกให้ฉันกินยา", "เขาบอกว่าจะมาเย็นนี้"],
-  "sentences": ["ฉันบอกความจริงแล้ว", "เธอบอกว่าไม่เป็นไร"]
-},
-{
-  "word": "ถ้ำ",
-  "confidence": 2,
-  "romanization": "thâm",
-  "type": "content",
-  "pos": "noun",
-  "definition": "cave",
-  "notes": "",
-  "shortphrases": ["ถ้ำใหญ่", "เข้าไปถ้ำ"],
-  "longphrases": ["เราไปสำรวจถ้ำกัน", "ถ้ำนี้มืดและลึกมาก"],
-  "sentences": ["ฉันกลัวเข้าไปในถ้ำ", "นักท่องเที่ยวเข้าไปถ้ำวันนี้"]
-},
-{
-  "word": "อยู่",
-  "confidence": 2,
-  "romanization": "yùu",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to be in a location",
-  "notes": "",
-  "shortphrases": ["อยู่บ้าน", "อยู่ที่ทำงาน"],
-  "longphrases": ["ฉันอยู่กรุงเทพฯตอนนี้", "เขาอยู่ต่างจังหวัด"],
-  "sentences": ["คุณอยู่ที่ไหน", "เด็กๆอยู่ในห้องเรียน"]
-},
-{
-  "word": "เสมอ",
-  "confidence": 2,
-  "romanization": "sà-mǒe",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "always",
-  "notes": "",
-  "shortphrases": ["คิดถึงเสมอ", "ทำเสมอ"],
-  "longphrases": ["ฉันคิดถึงเธอเสมอ", "เขามาสายเสมอ"],
-  "sentences": ["ฝนตกเสมอฤดูนี้", "ฉันรักเธอเสมอ"]
-},
-{
-  "word": "ให้เจอ",
-  "confidence": 2,
-  "romanization": "hâi-jer",
-  "type": "content",
-  "pos": "verb",
-  "definition": "make (someone) find",
-  "notes": "",
-  "shortphrases": ["ให้เจอฉัน", "ให้เจอเขา"],
-  "longphrases": ["แม่ให้เจอเพื่อนใหม่", "เขาให้เจอของขวัญ"],
-  "sentences": ["ฉันให้เจอเขาที่ร้าน", "เธอให้เจอข้อมูลสำคัญ"]
-},
-{
-  "word": "พูด",
-  "confidence": 2,
-  "romanization": "pood",
-  "type": "content",
-  "pos": "verb",
-  "definition": "speak",
-  "notes": "",
-  "shortphrases": ["พูดคุย", "พูดจา"],
-  "longphrases": ["ฉันชอบพูดคุยกับเพื่อน", "เขาพูดภาษาอังกฤษได้ดี"],
-  "sentences": ["เธอพูดชัดไหม", "เขาพูดเสียงดัง"]
-},
-{
-  "word": "รู้จัก",
-  "confidence": 2,
-  "romanization": "rúu jàk",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to know",
-  "notes": "",
-  "shortphrases": ["รู้จักกัน", "ใครรู้จัก"],
-  "longphrases": ["ฉันรู้จักเธอมาตั้งนาน", "เขารู้จักเพื่อนใหม่แล้ว"],
-  "sentences": ["คุณรู้จักเขาไหม", "เธอรู้จักเพลงนี้หรือเปล่า"]
-},
-{
-  "word": "ฟัง",
-  "confidence": 2,
-  "romanization": "fang",
-  "type": "content",
-  "pos": "verb",
-  "definition": "listen",
-  "notes": "",
-  "shortphrases": ["ฟังเพลง", "ฟังเสียง"],
-  "longphrases": ["ฉันชอบฟังเพลงทุกวัน", "เขาฟังวิทยุตอนเช้า"],
-  "sentences": ["เธอฟังชัดไหม", "เด็กๆฟังครูพูด"]
-},
-{
-  "word": "ทะเลสาบ",
-  "confidence": 2,
-  "romanization": "ta-lay sàap",
-  "type": "content",
-  "pos": "noun",
-  "definition": "lake",
-  "notes": "",
-  "shortphrases": ["ริมทะเลสาบ", "เที่ยวทะเลสาบ"],
-  "longphrases": ["เราไปปิกนิกที่ทะเลสาบ", "ทะเลสาบนี้น้ำใสและเย็น"],
-  "sentences": ["ทะเลสาบสวยมาก", "ฉันตกปลาที่ทะเลสาบ"]
-},
-{
-  "word": "เพราะ",
-  "confidence": 2,
-  "romanization": "phró",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "because",
-  "notes": "",
-  "shortphrases": ["เพราะฉัน", "เพราะว่า"],
-  "longphrases": ["ฉันมาสายเพราะรถติด", "เขาทำงานหนักเพราะครอบครัว"],
-  "sentences": ["เธอพักเพราะเหนื่อย", "ฉันร้องไห้เพราะฝนตก"]
-},
-{
-  "word": "เพราะว่า",
-  "confidence": 2,
-  "romanization": "phró wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "because (that)",
-  "notes": "",
-  "shortphrases": ["เพราะว่าใช่ไหม", "เพราะว่าเขา"],
-  "longphrases": ["ฉันไปสายเพราะว่ารถเสีย", "เขาเศร้าเพราะว่าคิดถึงบ้าน"],
-  "sentences": ["ฉันดีใจเพราะว่าเธอมา", "เธอไม่ไปเพราะว่าเหนื่อย"]
-},
-{
-  "word": "ประเทศ",
-  "confidence": 2,
-  "romanization": "prà-thêt",
-  "type": "content",
-  "pos": "noun",
-  "definition": "country",
-  "notes": "",
-  "shortphrases": ["ประเทศไทย", "ต่างประเทศ"],
-  "longphrases": ["ฉันอยากเที่ยวต่างประเทศ", "เขามาจากประเทศญี่ปุ่น"],
-  "sentences": ["ประเทศนี้สวยงามมาก", "เธอรักประเทศของเธอ"]
-},
-{
-  "word": "คน",
-  "confidence": 2,
-  "romanization": "khon",
-  "type": "content",
-  "pos": "noun",
-  "definition": "person / people",
-  "notes": "",
-  "shortphrases": ["คนนี้", "หลายคน"],
-  "longphrases": ["คนไทยมาจากทุกจังหวัด", "มีคนมากมายในงาน"],
-  "sentences": ["คนนั้นเป็นเพื่อนฉัน", "มีสามคนในกลุ่ม"]
-},{
-  "word": "ที่นี่",
-  "confidence": 2,
-  "romanization": "thîi nîi",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "here",
-  "notes": "",
-  "shortphrases": ["อยู่ที่นี่", "ตรงนี้ที่นี่"],
-  "longphrases": ["ฉันอยากอยู่ที่นี่นานๆ", "ร้านนี้ตั้งอยู่ที่นี่"],
-  "sentences": ["คุณมาที่นี่หรือยัง", "เด็กๆเล่นที่นี่"]
-},
-{
-  "word": "เปิด",
-  "confidence": 2,
-  "romanization": "bpèrt",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to open",
-  "notes": "",
-  "shortphrases": ["เปิดประตู", "เปิดไฟ"],
-  "longphrases": ["กรุณาเปิดหน้าต่างหน่อย", "เขาเปิดร้านตอนเช้า"],
-  "sentences": ["เธอเปิดหนังสือแล้ว", "ฉันเปิดคอมพิวเตอร์"]
-},
-{
-  "word": "ปิด",
-  "confidence": 2,
-  "romanization": "bpìt",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to close",
-  "notes": "",
-  "shortphrases": ["ปิดไฟ", "ปิดประตู"],
-  "longphrases": ["อย่าลืมปิดประตูหลังออกไป", "เขาปิดร้านตอนสองทุ่ม"],
-  "sentences": ["ฉันปิดหน้าต่างแล้ว", "เธอปิดผ้าม่าน"]
-},
-{
-  "word": "เข้าใจ",
-  "confidence": 2,
-  "romanization": "khâo jai",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to understand",
-  "notes": "",
-  "shortphrases": ["เข้าใจไหม", "เข้าใจแล้ว"],
-  "longphrases": ["ฉันเข้าใจบทเรียนนี้", "เธอเข้าใจสถานการณ์ทั้งหมด"],
-  "sentences": ["คุณเข้าใจฉันไหม", "เขาพูดช้าๆ ฉันเข้าใจ"]
-},
-{
-  "word": "ร้าน",
-  "confidence": 2,
-  "romanization": "ráan",
-  "type": "content",
-  "pos": "noun",
-  "definition": "shop",
-  "notes": "",
-  "shortphrases": ["ร้านกาแฟ", "ร้านหนังสือ"],
-  "longphrases": ["ฉันไปซื้อของที่ร้านนี้", "เขาทำงานในร้านอาหาร"],
-  "sentences": ["ร้านใกล้ๆ ปิดเร็ว", "เราเจอกันที่ร้าน"]
-},
-{
-  "word": "และ",
-  "confidence": 2,
-  "romanization": "láe",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "and",
-  "notes": "",
-  "shortphrases": ["ข้าวและแกง", "ครูและนักเรียน"],
-  "longphrases": ["ฉันและเพื่อนไปเที่ยว", "เขาเรียนและทำงาน"],
-  "sentences": ["ฉันชอบชาและกาแฟ", "เขามาที่นี่และกลับบ้าน"]
-}
-,
-{
-  "word": "เพลง",
-  "confidence": 1,
-  "romanization": "phleeng",
-  "type": "content",
-  "pos": "noun",
-  "definition": "song",
-  "notes": "",
-  "shortphrases": ["ฟังเพลง", "เพลงโปรด"],
-  "longphrases": ["ฉันชอบเพลงนี้มาก", "เขาแต่งเพลงขึ้นใหม่"],
-  "sentences": ["เราจะไปฟังเพลงด้วยกัน", "เพลงนี้ไพเราะจริงๆ"]
-},
-{
-  "word": "บอก",
-  "confidence": 1,
-  "romanization": "bàawk",
-  "type": "content",
-  "pos": "verb",
-  "definition": "tell",
-  "notes": "",
-  "shortphrases": ["บอกว่า", "บอกฉัน"],
-  "longphrases": ["แม่บอกให้กินยา", "เขาบอกว่ามันง่าย"],
-  "sentences": ["ฉันบอกความจริงแก่เธอ", "เธอบอกว่ารักฉันเสมอ"]
-},
-{
-  "word": "ตรง",
-  "confidence": 1,
-  "romanization": "dtrong",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "straight / exact",
-  "notes": "",
-  "shortphrases": ["ตรงนี้", "ตรงกลาง"],
-  "longphrases": ["เดินตรงไปที่ตลาด", "คำตอบตรงกับคำถาม"],
-  "sentences": ["เขาตรงไปยังบ้านฉัน", "คำแปลต้องตรงที่สุด"]
-},
-{
-  "word": "ริม",
-  "confidence": 1,
-  "romanization": "rim",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "edge / by",
-  "notes": "",
-  "shortphrases": ["ริมทะเล", "ริมถนน"],
-  "longphrases": ["นั่งริมแม่น้ำเงียบๆ", "ร้านกาแฟริมถนนใหญ่"],
-  "sentences": ["ฉันนั่งริมระเบียงบ้าน", "เด็กเล่นริมชายหาด"]
-},
-{
-  "word": "หรือ",
-  "confidence": 1,
-  "romanization": "rǔue",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "or",
-  "notes": "",
-  "shortphrases": ["ใช่หรือ", "ไปหรือ"],
-  "longphrases": ["คุณจะกินหรือไม่กิน", "เธอไปหรือเขียนงานก่อน"],
-  "sentences": ["คุณชอบชา หรือ กาแฟ", "เธอจะมา หรือ ไม่มา"]
-},
-{
-  "word": "เปล่า",
-  "confidence": 1,
-  "romanization": "bplàao",
-  "type": "functionary",
-  "pos": "particle",
-  "definition": "empty / yes-no?",
-  "notes": "",
-  "shortphrases": ["ใช่เปล่า", "หมดเปล่า"],
-  "longphrases": ["คุณเข้าใจเปล่าครับ", "กล่องนี้เปล่าหรือมีของ"],
-  "sentences": ["คุณเหนื่อย เปล่า ?", "บ้านนี้เปล่าหรือมีคนอยู่"]
-},
-{
-  "word": "ถาม",
-  "confidence": 1,
-  "romanization": "thăam",
-  "type": "content",
-  "pos": "verb",
-  "definition": "ask",
-  "notes": "",
-  "shortphrases": ["ถามว่า", "ถามเขา"],
-  "longphrases": ["ฉันถามครูเรื่องภาษา", "เขาถามฉันว่าทำไม"],
-  "sentences": ["ฉันอยากถามคำถามสำคัญ", "เธอถามฉันด้วยความสงสัย"]
-},
-{
-  "word": "ของ",
-  "confidence": 1,
-  "romanization": "khǎwng",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "of",
-  "notes": "",
-  "shortphrases": ["ของฉัน", "ของคุณ"],
-  "longphrases": ["หนังสือของฉันอยู่บนโต๊ะ", "ของขวัญสำหรับเธอ"],
-  "sentences": ["ฉันชอบกลิ่นของดอกไม้", "ราคา ของ หนังสือ เท่าไร"]
-},
-{
-  "word": "เรื่อง",
-  "confidence": 1,
-  "romanization": "rûueang",
-  "type": "content",
-  "pos": "noun",
-  "definition": "story",
-  "notes": "",
-  "shortphrases": ["เรื่องนี้", "เรื่องเล่า"],
-  "longphrases": ["หนังสือเรื่องนี้น่าสนใจ", "เขาเล่าเรื่องผีให้ฟัง"],
-  "sentences": ["ฉันชอบเรื่องตลกจริงๆ", "เรื่องนั้นทำให้ฉันกลัว"]
-},
-{
-  "word": "ยุ่ง",
-  "confidence": 1,
-  "romanization": "yûng",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "busy",
-  "notes": "",
-  "shortphrases": ["ยุ่งมาก", "ยุ่งอยู่"],
-  "longphrases": ["ฉันยุ่งกับงานหลายชิ้น", "เขายุ่งจนลืมกินข้าว"],
-  "sentences": ["เธอยุ่งหรือยังว่างบ้าง", "วันนี้ฉันยุ่งมากจริงๆ"]
-},
-{
-  "word": "คง",
-  "confidence": 1,
-  "romanization": "khong",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "probably",
-  "notes": "",
-  "shortphrases": ["คงใช่", "คงไม่"],
-  "longphrases": ["คงต้องรออีกหน่อย", "เขาคงมาสายวันนี้"],
-  "sentences": ["ฉันคงจะไปงานนั้น", "ฝนคงตกพรุ่งนี้"]
-},
-{
-  "word": "หลบ",
-  "confidence": 1,
-  "romanization": "lòp",
-  "type": "content",
-  "pos": "verb",
-  "definition": "hide",
-  "notes": "",
-  "shortphrases": ["หลบฝน", "หลบอยู่"],
-  "longphrases": ["เด็กวิ่งไปหลบฝนใต้ต้นไม้", "เขาหลบหลังตึกใหญ่"],
-  "sentences": ["เธอหลบฉันอยู่ที่ไหน", "พวกเขาหลบภัยในถ้ำ"]
-},
-{
-  "word": "ทาง",
-  "confidence": 1,
-  "romanization": "thaang",
-  "type": "content",
-  "pos": "noun",
-  "definition": "way / path",
-  "notes": "",
-  "shortphrases": ["ทางเดิน", "ทางออก"],
-  "longphrases": ["ทางเดินในสวนสวย", "เขาหาทางออกไม่เจอ"],
-  "sentences": ["เราควรหา ทาง ที่ปลอดภัย", "เด็กเดินตามทางเล็กๆ"]
-},
-{
-  "word": "แม้ว่า",
-  "confidence": 1,
-  "romanization": "máe-wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "even though",
-  "notes": "",
-  "shortphrases": ["แม้ว่าใช่", "แม้ว่าไม่"],
-  "longphrases": ["แม้ว่าเหนื่อย ฉันยังสู้", "แม้ว่าเธอไม่มา ฉันก็ยัง"],
-  "sentences": ["ฉันไป แม้ว่า ฝนตก", "เขายังยิ้ม แม้ว่า เหนื่อย"]
-},
-{
-  "word": "ไม่เข้าใจ",
-  "confidence": 1,
-  "romanization": "mâi-kâo-jai",
-  "type": "functionary",
-  "pos": "phrase",
-  "definition": "don’t understand",
-  "notes": "",
-  "shortphrases": ["ฉันไม่เข้าใจ", "ไม่เข้าใจเลย"],
-  "longphrases": ["ฉันไม่เข้าใจบทเรียนวันนี้", "เขาไม่เข้าใจคำถามง่ายๆ"],
-  "sentences": ["เธอพูดช้าๆ ฉันไม่เข้าใจ", "ครูอธิบายแล้ว แต่ฉันไม่เข้าใจ"]
-},
-{
-  "word": "ว่ายน้ำ",
-  "confidence": 1,
-  "romanization": "wâai-náam",
-  "type": "content",
-  "pos": "verb",
-  "definition": "swim",
-  "notes": "",
-  "shortphrases": ["ว่ายน้ำเร็ว", "ว่ายน้ำเป็น"],
-  "longphrases": ["ฉันว่ายน้ำในสระทุกวัน", "เขาว่ายน้ำแข่งได้ดี"],
-  "sentences": ["ฉันชอบว่ายน้ำทะเล", "เด็กๆฝึกว่ายน้ำสารพัดท่า"]
-},
-{
-  "word": "ครั้งหน้า",
-  "confidence": 1,
-  "romanization": "khráng nâa",
-  "type": "content",
-  "pos": "noun phrase",
-  "definition": "next time",
-  "notes": "",
-  "shortphrases": ["ครั้งหน้าเจอกัน", "ครั้งหน้าสำหรับเธอ"],
-  "longphrases": ["คราวนี้พลาด ครั้งหน้าไม่พลาด", "เจอกัน ครั้งหน้า ที่ตลาด"],
-  "sentences": ["ครั้งหน้าฉันจะเตรียมดีขึ้น", "ครั้งหน้ามาให้ตรงเวลา"]
-},
-{
-  "word": "ไข่เจียว",
-  "confidence": 1,
-  "romanization": "khài-jiao",
-  "type": "content",
-  "pos": "noun",
-  "definition": "omelet",
-  "notes": "",
-  "shortphrases": ["ไข่เจียวกรอบ", "ไข่เจียวนุ่ม"],
-  "longphrases": ["ฉันทำไข่เจียวกินเอง", "แม่ทำไข่เจียวให้กิน"],
-  "sentences": ["ฉันชอบไข่เจียวเมืองนอก", "เธออยากกินไข่เจียวไหม"]
-},
-{
-  "word": "ขอ",
-  "confidence": 1,
-  "romanization": "khǎw",
-  "type": "functionary",
-  "pos": "verb",
-  "definition": "request / ask",
-  "notes": "",
-  "shortphrases": ["ขอถาม", "ขอให้"],
-  "longphrases": ["ขอให้โชคดีตลอดไป", "ฉันขอถามคำถามหนึ่ง"],
-  "sentences": ["ขอร้องอย่าทำแบบนั้น", "ขอให้เธอมีความสุข"]
-},
-{
-  "word": "ช่วย",
-  "confidence": 1,
-  "romanization": "chûai",
-  "type": "functionary",
-  "pos": "verb",
-  "definition": "help",
-  "notes": "",
-  "shortphrases": ["ช่วยด้วย", "ช่วยฉัน"],
-  "longphrases": ["เธอช่วยฉันด้วยได้ไหม", "เขาช่วยแม่ทำงานบ้าน"],
-  "sentences": ["คุณช่วยยกของหน่อย", "ช่วยฉันทำการบ้านด้วย"]
-},
-{
-  "word": "ดังนั้น",
-  "confidence": 1,
-  "romanization": "dang-nán",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "therefore",
-  "notes": "",
-  "shortphrases": ["ดังนั้นจึง", "และดังนั้น"],
-  "longphrases": ["ฝนตก ดังนั้น เราอยู่บ้าน", "งานเสร็จ ดังนั้น พักผ่อน"],
-  "sentences": ["ไม่มีเงิน ดังนั้น ฉันรอ", "เธอสาย ดังนั้น ฉันไปก่อน"]
-},
-{
-  "word": "นอกจาก",
-  "confidence": 1,
-  "romanization": "nâawk-jàak",
-  "type": "functionary",
-  "pos": "preposition",
-  "definition": "besides / except",
-  "notes": "",
-  "shortphrases": ["นอกจากฉัน", "นอกจากเธอ"],
-  "longphrases": ["นอกจากงาน ฉันไม่มีเวลาอื่น", "เขาเก่งนอกจากเรียนยังเล่นกีฬา"],
-  "sentences": ["นอกจากฝน ยังมีลมแรง", "ฉันว่างนอกจากวันอังคาร"]
-},
-{
-  "word": "เข้า",
-  "confidence": 1,
-  "romanization": "kâo",
-  "type": "content",
-  "pos": "verb",
-  "definition": "enter",
-  "notes": "",
-  "shortphrases": ["เข้าไป", "เข้าใจ"],
-  "longphrases": ["เขาเข้าโรงเรียนตอนเช้า", "ฉันเข้าไปในบ้านเธอ"],
-  "sentences": ["โปรดเข้าไปก่อนที่ฝนจะตก", "เด็กวิ่งเข้าไปในสนาม"]
-},
-{
-  "word": "เสร็จ",
-  "confidence": 1,
-  "romanization": "sèt",
-  "type": "functionary",
-  "pos": "adjective",
-  "definition": "finished",
-  "notes": "",
-  "shortphrases": ["เสร็จแล้ว", "เสร็จเร็ว"],
-  "longphrases": ["งานนี้เสร็จทันเวลา", "เขาเสร็จการบ้านเรียบร้อย"],
-  "sentences": ["ฉันเสร็จงานแล้ว", "เธอเสร็จสอบเมื่อวาน"]
-},
-
-{
-  "word": "ยัง",
-  "confidence": 1,
-  "romanization": "yang",
-  "type": "functionary",
-  "pos": "adverb",
-  "definition": "yet / still",
-  "notes": "",
-  "shortphrases": ["ยังไม่", "ยังอยู่"],
-  "longphrases": ["ฉันยังไม่ได้กินข้าว", "เขายังไม่กลับบ้าน"],
-  "sentences": ["คุณยังอยู่ใช่ไหม", "ฝนยังตกอยู่ข้างนอก"]
-},
-{
-  "word": "เสร็จงาน",
-  "confidence": 1,
-  "romanization": "sèt ngaan",
-  "type": "content",
-  "pos": "verb phrase",
-  "definition": "finish work",
-  "notes": "",
-  "shortphrases": ["เสร็จงานแล้ว", "เสร็จงานคืนนี้"],
-  "longphrases": ["ฉันจะโทรหาหลังเสร็จงาน", "เขาพักผ่อนหลังเสร็จงาน"],
-  "sentences": ["เมื่อฉันเสร็จงานจะไปหาเธอ", "เธอเสร็จงานดึกหรือยัง"]
-},
-{
-  "word": "ใจดี",
-  "confidence": 1,
-  "romanization": "jai dii",
-  "type": "content",
-  "pos": "adjective",
-  "definition": "kind, generous",
-  "notes": "",
-  "shortphrases": ["ใจดีมาก", "คนใจดี"],
-  "longphrases": ["ครูของฉันใจดีเสมอ", "เพื่อนฉันใจดีช่วยเหลือ"],
-  "sentences": ["เธอเป็นคนใจดีมาก", "เขาช่วยเพราะใจดี"]
-},
-{
-  "word": "ไปเที่ยว",
-  "confidence": 1,
-  "romanization": "bpai thîao",
-  "type": "content",
-  "pos": "verb",
-  "definition": "to go out / hang out",
-  "notes": "",
-  "shortphrases": ["ไปเที่ยวทะเล", "ไปเที่ยวด้วยกัน"],
-  "longphrases": ["ฉันชวนเพื่อนไปเที่ยว", "เขาไปเที่ยวต่างจังหวัด"],
-  "sentences": ["พรุ่งนี้เราจะไปเที่ยว", "เธอไปเที่ยวบ่อยไหม"]
-},
-{
-  "word": "เวลา",
-  "confidence": 1,
-  "romanization": "wee-laa",
-  "type": "content",
-  "pos": "noun",
-  "definition": "time",
-  "notes": "",
-  "shortphrases": ["มีเวลา", "หมดเวลา"],
-  "longphrases": ["ฉันไม่มีเวลาเหลือ", "เขามีเวลาแค่สิบนาที"],
-  "sentences": ["คุณมีเวลาไหม", "เวลาหมดแล้ว"]
-},
-{
-  "word": "คิดว่า",
-  "confidence": 1,
-  "romanization": "khít wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "think that",
-  "notes": "",
-  "shortphrases": ["ฉันคิดว่า", "คุณคิดว่า"],
-  "longphrases": ["ฉันคิดว่าเธอสวย", "เขาคิดว่าจะสำเร็จ"],
-  "sentences": ["คุณคิดว่าอย่างไร", "เธอคิดว่าดีไหม"]
-},
-{
-  "word": "พูดว่า",
-  "confidence": 1,
-  "romanization": "phûut wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "say / speak that",
-  "notes": "",
-  "shortphrases": ["ครูพูดว่า", "เขาพูดว่า"],
-  "longphrases": ["แม่พูดว่าให้กินยา", "เขาพูดว่าจะมา"],
-  "sentences": ["ฉันได้ยินเขาพูดว่า", "เธอพูดว่ารักฉัน"]
-},
-{
-  "word": "รู้ว่า",
-  "confidence": 1,
-  "romanization": "rúu wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "know that",
-  "notes": "",
-  "shortphrases": ["ฉันรู้ว่า", "คุณรู้ว่า"],
-  "longphrases": ["ฉันรู้ว่าเธอมาแล้ว", "เขารู้ว่าไม่มีใครอยู่"],
-  "sentences": ["คุณรู้ว่าเขาทำอะไร", "เธอรู้ว่าฉันรออยู่"]
-},
-{
-  "word": "เห็นว่า",
-  "confidence": 1,
-  "romanization": "hěn wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "see that",
-  "notes": "",
-  "shortphrases": ["ฉันเห็นว่า", "เธอเห็นว่า"],
-  "longphrases": ["ฉันเห็นว่าเขามาสาย", "เธอเห็นว่าเป็นเรื่องสำคัญ"],
-  "sentences": ["คุณเห็นว่าโอเคไหม", "เขาเห็นว่าฉันผิด"]
-},
-{
-  "word": "เข้าใจว่า",
-  "confidence": 1,
-  "romanization": "khâo jai wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "understand that",
-  "notes": "",
-  "shortphrases": ["ฉันเข้าใจว่า", "คุณเข้าใจว่า"],
-  "longphrases": ["ฉันเข้าใจว่าเธอรู้แล้ว", "เขาเข้าใจว่าจะล่าช้า"],
-  "sentences": ["เธอเข้าใจว่าฉันยุ่งไหม", "เขาเข้าใจว่าต้องรีบ"]
-},
-{
-  "word": "ได้ยินว่า",
-  "confidence": 1,
-  "romanization": "dâi yin wâa",
-  "type": "functionary",
-  "pos": "conjunction",
-  "definition": "hear that",
-  "notes": "",
-  "shortphrases": ["ฉันได้ยินว่า", "คุณได้ยินว่า"],
-  "longphrases": ["ฉันได้ยินว่าเธอจะลาออก", "เขาได้ยินว่าฝนจะตก"],
-  "sentences": ["คุณได้ยินว่ามีข่าวไหม", "ฉันได้ยินว่าเขาเก่งมาก"]
-},
-{
-  "word": "ลืมว่า",
-  "confidence": 1,
-  "romanization": "leuum wâa",
-  "type": "functionary",
-  "pos": "phrase",
-  "definition": "forget that",
-  "notes": "",
-  "shortphrases": ["ฉันลืมว่า", "คุณลืมว่า"],
-  "longphrases": ["ฉันลืมว่าเธอนัดเวลาไหน", "เขาลืมว่าเขาเคยเจอฉัน"],
-  "sentences": ["เธอลืมว่าต้องจ่ายเงินไหม", "ฉันลืมว่าเธอชื่ออะไร"]
-},
-{
-  "word": "ดูว่า",
-  "confidence": 1,
-  "romanization": "duu wâa",
-  "type": "functionary",
-  "pos": "phrase",
-  "definition": "look that",
-  "notes": "",
-  "shortphrases": ["ดูว่ามี", "ดูว่าเขา"],
-  "longphrases": ["ดูว่ารถติดหรือไม่", "ดูว่าเพื่อนมาไหม"],
-  "sentences": ["ฉันจะดูว่าฝนหยุดหรือยัง", "เธอดูว่าต้องใช้เวลานาน"]
-},
-{
-  "word": "เขียนว่า",
-  "confidence": 1,
-  "romanization": "khǐian wâa",
-  "type": "functionary",
-  "pos": "phrase",
-  "definition": "write that",
-  "notes": "",
-  "shortphrases": ["เขียนว่า...", "เอกสารเขียนว่า"],
-  "longphrases": ["จดหมายเขียนว่าอย่าลืมส่ง", "บนป้ายเขียนว่าเข้าทางนี้"],
-  "sentences": ["ฉันเขียนว่า “สวัสดี” บนการ์ด", "เขียนว่าให้มาถึงก่อนเวลา"]
+  {
+    "word": "ฉัน",
+    "confidence": 1,
+    "romanization": "chăn",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "I, me (female or general, informal)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ฉันสบายดี",
+        "romanization": "chăn sà-baai-dee",
+        "english": "I'm well (female)"
+      },
+      {
+        "thai": "ฉันชื่อ",
+        "romanization": "chăn chûue",
+        "english": "my name is (female)"
+      },
+      {
+        "thai": "ฉันก็",
+        "romanization": "chăn gôr",
+        "english": "I also"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chăn sà-baai-dee kâ",
+        "english": "I'm well (female polite)"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ",
+        "romanization": "chăn chûue May kâ",
+        "english": "My name is May (female polite)"
+      },
+      {
+        "thai": "ฉันก็สบายดีค่ะ",
+        "romanization": "chăn gôr sà-baai-dee kâ",
+        "english": "I'm also well (female polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันก็สบายดีค่ะ ขอบคุณ",
+        "romanization": "chăn gôr sà-baai-dee kâ khàawp khun",
+        "english": "I'm also well, thank you (female polite)"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ ยินดีที่ได้รู้จัก",
+        "romanization": "chăn chûue May kâ yin-dee têe dâai rúu-jàk",
+        "english": "My name is May, nice to meet you (female polite)"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ ขอบคุณ",
+        "romanization": "chăn chûue May kâ khàawp khun",
+        "english": "My name is May, thank you (female polite)"
+      }
+    ]
+  },
+  {
+    "word": "ค่ะ",
+    "confidence": 1,
+    "romanization": "kâ",
+    "type": "function",
+    "pos": "particle",
+    "definition": "polite particle (female speaker)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ค่ะ",
+        "romanization": "kâ",
+        "english": "yes/ending (female polite)"
+      },
+      {
+        "thai": "ใช่ค่ะ",
+        "romanization": "châi kâ",
+        "english": "yes (female polite)"
+      },
+      {
+        "thai": "ขอบคุณค่ะ",
+        "romanization": "khàawp khun kâ",
+        "english": "thank you (female polite)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "สบายดีค่ะ",
+        "romanization": "sà-baai-dee kâ",
+        "english": "I'm well (female polite)"
+      },
+      {
+        "thai": "คุณชื่ออะไรคะ",
+        "romanization": "khun chûue à-rai ká",
+        "english": "what is your name? (female polite)"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ",
+        "romanization": "chăn chûue May kâ",
+        "english": "my name is May (female polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันสบายดีค่ะ ขอบคุณ",
+        "romanization": "chăn sà-baai-dee kâ khàawp khun",
+        "english": "I'm well, thank you (female polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk kâ",
+        "english": "nice to meet you (female polite)"
+      },
+      {
+        "thai": "ขอบคุณค่ะ สวัสดีค่ะ",
+        "romanization": "khàawp khun kâ sà-wàt-dee kâ",
+        "english": "thank you, goodbye (female polite)"
+      }
+    ]
+  },
+  {
+    "word": "ก็",
+    "confidence": 1,
+    "romanization": "gôr",
+    "type": "function",
+    "pos": "conjunction/particle",
+    "definition": "also, as well, just, even",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ก็ได้",
+        "romanization": "gôr dâai",
+        "english": "okay/can do"
+      },
+      {
+        "thai": "ฉันก็",
+        "romanization": "chăn gôr",
+        "english": "I also"
+      },
+      {
+        "thai": "ก็เหมือนกัน",
+        "romanization": "gôr mǔean gan",
+        "english": "me too/same here"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันก็สบายดีค่ะ",
+        "romanization": "chăn gôr sà-baai-dee kâ",
+        "english": "I'm also well (female polite)"
+      },
+      {
+        "thai": "ผมก็รู้จัก",
+        "romanization": "pôm gôr rúu-jàk",
+        "english": "I also know"
+      },
+      {
+        "thai": "คุณก็ทำได้",
+        "romanization": "khun gôr tam dâai",
+        "english": "you can do it too"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันก็สบายดีค่ะ ขอบคุณ",
+        "romanization": "chăn gôr sà-baai-dee kâ khàawp khun",
+        "english": "I'm also well, thank you (female polite)"
+      },
+      {
+        "thai": "ผมก็สบายดีครับ",
+        "romanization": "pôm gôr sà-baai-dee kráp",
+        "english": "I'm also well (male polite)"
+      },
+      {
+        "thai": "คุณก็รู้จักเจนใช่ไหม",
+        "romanization": "khun gôr rúu-jàk Jane châi măi",
+        "english": "you also know Jane, right?"
+      }
+    ]
+  },
+  {
+    "word": "ไม่",
+    "confidence": 1,
+    "romanization": "mâi",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "not, no",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ไม่รู้",
+        "romanization": "mâi rúu",
+        "english": "don't know"
+      },
+      {
+        "thai": "ไม่ใช่",
+        "romanization": "mâi châi",
+        "english": "not/incorrect"
+      },
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "unwell/not well"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมไม่รู้ครับ",
+        "romanization": "pôm mâi rúu kráp",
+        "english": "I don't know (male polite)"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chăn mâi sà-baai kâ",
+        "english": "I'm not well (female polite)"
+      },
+      {
+        "thai": "ไม่ใช่ครับ",
+        "romanization": "mâi châi kráp",
+        "english": "no (male polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมไม่สบายครับ วันนี้",
+        "romanization": "pôm mâi sà-baai kráp wan née",
+        "english": "I'm not well today (male polite)"
+      },
+      {
+        "thai": "ฉันไม่รู้ค่ะ ขอโทษ",
+        "romanization": "chăn mâi rúu kâ khăaw-thôot",
+        "english": "I don't know, sorry (female polite)"
+      },
+      {
+        "thai": "ไม่ใช่ค่ะ ขอโทษนะคะ",
+        "romanization": "mâi châi kâ khăaw-thôot ná ká",
+        "english": "no, sorry (female polite)"
+      }
+    ]
+  },
+  {
+    "word": "แล้ว",
+    "confidence": 1,
+    "romanization": "láew",
+    "type": "function",
+    "pos": "adverb/particle",
+    "definition": "already, then, and",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณ",
+        "romanization": "láew khun",
+        "english": "and you?"
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "english": "already eaten"
+      },
+      {
+        "thai": "แล้วไง",
+        "romanization": "láew ngai",
+        "english": "so what?"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      },
+      {
+        "thai": "ผมกินแล้วครับ",
+        "romanization": "pôm gin láew kráp",
+        "english": "I've eaten (male polite)"
+      },
+      {
+        "thai": "แล้วเจอกัน",
+        "romanization": "láew jer gan",
+        "english": "see you later"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      },
+      {
+        "thai": "ผมกินแล้วครับ ขอบคุณ",
+        "romanization": "pôm gin láew kráp khàawp khun",
+        "english": "I've eaten, thank you (male polite)"
+      },
+      {
+        "thai": "แล้วเจอกันใหม่",
+        "romanization": "láew jer gan mài",
+        "english": "see you again"
+      }
+    ]
+  },
+  {
+    "word": "กิน",
+    "confidence": 1,
+    "romanization": "gin",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to eat",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "กินข้าว",
+        "romanization": "gin khâao",
+        "english": "eat rice (eat a meal)"
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "english": "have eaten"
+      },
+      {
+        "thai": "ไม่กิน",
+        "romanization": "mâi gin",
+        "english": "not eat"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมกินแล้วครับ",
+        "romanization": "pôm gin láew kráp",
+        "english": "I've eaten (male polite)"
+      },
+      {
+        "thai": "คุณกินข้าวหรือยัง",
+        "romanization": "khun gin khâao rĕu yang",
+        "english": "have you eaten yet?"
+      },
+      {
+        "thai": "กินข้าวแล้ว",
+        "romanization": "gin khâao láew",
+        "english": "already ate (the meal)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมกินแล้วครับ ขอบคุณ",
+        "romanization": "pôm gin láew kráp khàawp khun",
+        "english": "I've eaten, thank you (male polite)"
+      },
+      {
+        "thai": "คุณกินข้าวหรือยังคะ",
+        "romanization": "khun gin khâao rĕu yang ká",
+        "english": "have you eaten yet? (female polite)"
+      },
+      {
+        "thai": "ฉันไม่กินข้าวเช้า",
+        "romanization": "chăn mâi gin khâao cháo",
+        "english": "I don't eat breakfast (female)"
+      }
+    ]
+  },
+  {
+    "word": "กำลัง",
+    "confidence": 1,
+    "romanization": "kamlang",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "in the process of, currently (present continuous marker)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "กำลังกิน",
+        "romanization": "kamlang gin",
+        "english": "eating (right now)"
+      },
+      {
+        "thai": "กำลังดู",
+        "romanization": "kamlang doo",
+        "english": "watching (right now)"
+      },
+      {
+        "thai": "กำลังทำ",
+        "romanization": "kamlang tam",
+        "english": "doing (right now)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันกำลังกินข้าว",
+        "romanization": "chăn kamlang gin khâao",
+        "english": "I'm eating (female)"
+      },
+      {
+        "thai": "ผมกำลังดูทีวี",
+        "romanization": "pôm kamlang doo thee-wee",
+        "english": "I'm watching TV (male)"
+      },
+      {
+        "thai": "คุณกำลังทำอะไร",
+        "romanization": "khun kamlang tam à-rai",
+        "english": "What are you doing?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ตอนนี้ฉันกำลังกินข้าวค่ะ",
+        "romanization": "dtaawn née chăn kamlang gin khâao kâ",
+        "english": "Right now, I'm eating (female polite)"
+      },
+      {
+        "thai": "ผมกำลังเรียนภาษาไทยครับ",
+        "romanization": "pôm kamlang rian phaa-săa thai kráp",
+        "english": "I'm studying Thai (male polite)"
+      },
+      {
+        "thai": "คุณกำลังดูอะไรอยู่",
+        "romanization": "khun kamlang doo à-rai yùu",
+        "english": "What are you watching?"
+      }
+    ]
+  },
+  {
+    "word": "ชื่อ",
+    "confidence": 1,
+    "romanization": "chûue",
+    "type": "content",
+    "pos": "noun/verb",
+    "definition": "name; to be called",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ชื่ออะไร",
+        "romanization": "chûue à-rai",
+        "english": "what's (the) name?"
+      },
+      {
+        "thai": "ชื่อเมย์",
+        "romanization": "chûue May",
+        "english": "name is May"
+      },
+      {
+        "thai": "ชื่อคุณ",
+        "romanization": "chûue khun",
+        "english": "your name"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณชื่ออะไร",
+        "romanization": "khun chûue à-rai",
+        "english": "what is your name?"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ",
+        "romanization": "chăn chûue May kâ",
+        "english": "my name is May (female polite)"
+      },
+      {
+        "thai": "ผมชื่อนนท์ครับ",
+        "romanization": "pôm chûue Non kráp",
+        "english": "my name is Non (male polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณชื่ออะไรคะ",
+        "romanization": "khun chûue à-rai ká",
+        "english": "what is your name? (female polite)"
+      },
+      {
+        "thai": "ฉันชื่อเมย์ค่ะ ยินดีที่ได้รู้จัก",
+        "romanization": "chăn chûue May kâ yin-dee têe dâai rúu-jàk",
+        "english": "my name is May, nice to meet you (female polite)"
+      },
+      {
+        "thai": "ผมชื่อนนท์ครับ ยินดีที่ได้รู้จัก",
+        "romanization": "pôm chûue Non kráp yin-dee têe dâai rúu-jàk",
+        "english": "my name is Non, nice to meet you (male polite)"
+      }
+    ]
+  },
+  {
+    "word": "ยินดี",
+    "confidence": 1,
+    "romanization": "yin-dee",
+    "type": "content",
+    "pos": "adjective/phrase",
+    "definition": "glad, pleased",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ยินดีค่ะ",
+        "romanization": "yin-dee kâ",
+        "english": "glad/pleased (female polite)"
+      },
+      {
+        "thai": "ยินดีครับ",
+        "romanization": "yin-dee kráp",
+        "english": "glad/pleased (male polite)"
+      },
+      {
+        "thai": "ยินดีด้วย",
+        "romanization": "yin-dee dûay",
+        "english": "congratulations"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยินดีที่ได้รู้จัก",
+        "romanization": "yin-dee têe dâai rúu-jàk",
+        "english": "nice to meet you"
+      },
+      {
+        "thai": "ยินดีต้อนรับ",
+        "romanization": "yin-dee dtâawn-ráp",
+        "english": "welcome"
+      },
+      {
+        "thai": "ยินดีด้วยนะคะ",
+        "romanization": "yin-dee dûay ná ká",
+        "english": "congratulations (female polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ยินดีที่ได้รู้จักค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk kâ",
+        "english": "nice to meet you (female polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักครับ",
+        "romanization": "yin-dee têe dâai rúu-jàk kráp",
+        "english": "nice to meet you (male polite)"
+      },
+      {
+        "thai": "ขอบคุณ ยินดีด้วยนะคะ",
+        "romanization": "khàawp khun yin-dee dûay ná ká",
+        "english": "thank you, congratulations (female polite)"
+      }
+    ]
+  },
+  {
+    "word": "ที่",
+    "confidence": 1,
+    "romanization": "têe",
+    "type": "function",
+    "pos": "preposition/particle",
+    "definition": "at, that, which",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ที่บ้าน",
+        "romanization": "têe bâan",
+        "english": "at home"
+      },
+      {
+        "thai": "ที่นี่",
+        "romanization": "têe nîi",
+        "english": "here"
+      },
+      {
+        "thai": "ที่ไหน",
+        "romanization": "têe năi",
+        "english": "where"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยินดีที่ได้รู้จัก",
+        "romanization": "yin-dee têe dâai rúu-jàk",
+        "english": "nice to meet you"
+      },
+      {
+        "thai": "ที่บ้านของฉัน",
+        "romanization": "têe bâan khăawng chăn",
+        "english": "at my home"
+      },
+      {
+        "thai": "ที่ทำงาน",
+        "romanization": "têe tam-ngaan",
+        "english": "at work"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "เราพบกันที่บ้าน",
+        "romanization": "rao phóp gan têe bâan",
+        "english": "we meet at home"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk kâ",
+        "english": "nice to meet you (female polite)"
+      },
+      {
+        "thai": "ที่นี่ดีมาก",
+        "romanization": "têe nîi dee mâak",
+        "english": "it's very nice here"
+      }
+    ]
+  },
+  {
+    "word": "ได้",
+    "confidence": 1,
+    "romanization": "dâai",
+    "type": "function",
+    "pos": "verb/auxiliary",
+    "definition": "can, to get, to receive, to be able to",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ได้ครับ",
+        "romanization": "dâai kráp",
+        "english": "can do (male polite)"
+      },
+      {
+        "thai": "ไม่ได้",
+        "romanization": "mâi dâai",
+        "english": "cannot"
+      },
+      {
+        "thai": "ทำได้",
+        "romanization": "tam dâai",
+        "english": "can do"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยินดีที่ได้รู้จัก",
+        "romanization": "yin-dee têe dâai rúu-jàk",
+        "english": "nice to meet you"
+      },
+      {
+        "thai": "ผมทำได้ครับ",
+        "romanization": "pôm tam dâai kráp",
+        "english": "I can do it (male polite)"
+      },
+      {
+        "thai": "คุณได้กินข้าวหรือยัง",
+        "romanization": "khun dâai gin khâao rĕu yang",
+        "english": "have you eaten yet?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมทำได้ครับ ขอบคุณ",
+        "romanization": "pôm tam dâai kráp khàawp khun",
+        "english": "I can do it, thank you (male polite)"
+      },
+      {
+        "thai": "ยินดีที่ได้รู้จักค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk kâ",
+        "english": "nice to meet you (female polite)"
+      },
+      {
+        "thai": "ผมไม่ได้กินข้าวเช้า",
+        "romanization": "pôm mâi dâai gin khâao cháo",
+        "english": "I couldn't eat breakfast (male polite)"
+      }
+    ]
+  },
+  {
+    "word": "รู้จัก",
+    "confidence": 1,
+    "romanization": "rúu-jàk",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to know (someone), to be acquainted with",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "รู้จักไหม",
+        "romanization": "rúu-jàk măi",
+        "english": "do you know?"
+      },
+      {
+        "thai": "ไม่รู้จัก",
+        "romanization": "mâi rúu-jàk",
+        "english": "don't know (someone)"
+      },
+      {
+        "thai": "รู้จักกัน",
+        "romanization": "rúu-jàk gan",
+        "english": "know each other"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยินดีที่ได้รู้จัก",
+        "romanization": "yin-dee têe dâai rúu-jàk",
+        "english": "nice to meet you"
+      },
+      {
+        "thai": "คุณรู้จักเจนไหม",
+        "romanization": "khun rúu-jàk Jane măi",
+        "english": "do you know Jane?"
+      },
+      {
+        "thai": "ผมไม่รู้จักครับ",
+        "romanization": "pôm mâi rúu-jàk kráp",
+        "english": "I don't know (male polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ยินดีที่ได้รู้จักค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk kâ",
+        "english": "nice to meet you (female polite)"
+      },
+      {
+        "thai": "คุณรู้จักเจนไหมครับ",
+        "romanization": "khun rúu-jàk Jane măi kráp",
+        "english": "do you know Jane? (male polite)"
+      },
+      {
+        "thai": "เราไม่รู้จักกันมาก่อน",
+        "romanization": "rao mâi rúu-jàk gan maa gòn",
+        "english": "we didn't know each other before"
+      }
+    ]
+  },
+  {
+    "word": "สวัสดี",
+    "confidence": 1,
+    "romanization": "sà-wàt-dee",
+    "type": "content",
+    "pos": "interjection",
+    "definition": "hello, hi",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "สวัสดีค่ะ",
+        "romanization": "sà-wàt-dee kâ",
+        "english": "hello (female polite)"
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "romanization": "sà-wàt-dee kráp",
+        "english": "hello (male polite)"
+      },
+      {
+        "thai": "สวัสดีตอนเช้า",
+        "romanization": "sà-wàt-dee dtaawn cháo",
+        "english": "good morning"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "สวัสดีค่ะ ยินดีที่ได้รู้จัก",
+        "romanization": "sà-wàt-dee kâ yin-dee têe dâai rúu-jàk",
+        "english": "hello, nice to meet you (female polite)"
+      },
+      {
+        "thai": "สวัสดีครับ ทุกคน",
+        "romanization": "sà-wàt-dee kráp túk kon",
+        "english": "hello everyone (male polite)"
+      },
+      {
+        "thai": "สวัสดีตอนเย็น",
+        "romanization": "sà-wàt-dee dtaawn yen",
+        "english": "good evening"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "สวัสดีค่ะ ยินดีที่ได้รู้จัก",
+        "romanization": "sà-wàt-dee kâ yin-dee têe dâai rúu-jàk",
+        "english": "hello, nice to meet you (female polite)"
+      },
+      {
+        "thai": "สวัสดีครับ วันนี้อากาศดี",
+        "romanization": "sà-wàt-dee kráp wan née aa-gàat dee",
+        "english": "hello, today is nice (male polite)"
+      },
+      {
+        "thai": "สวัสดีตอนเช้าครับ",
+        "romanization": "sà-wàt-dee dtaawn cháo kráp",
+        "english": "good morning (male polite)"
+      }
+    ]
+  },
+  {
+    "word": "ล่ะ",
+    "confidence": 1,
+    "romanization": "lâ",
+    "type": "function",
+    "pos": "particle",
+    "definition": "question particle (used for return questions: 'and...?', 'what about...?')",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "คุณล่ะ",
+        "romanization": "khun lâ",
+        "english": "and you?"
+      },
+      {
+        "thai": "แล้วล่ะ",
+        "romanization": "láew lâ",
+        "english": "already (emphatic/what about...)"
+      },
+      {
+        "thai": "เธอล่ะ",
+        "romanization": "thoe lâ",
+        "english": "and you? (informal/female)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "láew khun lâ",
+        "english": "and you?"
+      },
+      {
+        "thai": "ฉันล่ะ",
+        "romanization": "chăn lâ",
+        "english": "and me?"
+      },
+      {
+        "thai": "เขาล่ะ",
+        "romanization": "khăo lâ",
+        "english": "what about him/her?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "แล้วคุณล่ะครับ",
+        "romanization": "láew khun lâ kráp",
+        "english": "and you? (male polite)"
+      },
+      {
+        "thai": "ฉันล่ะ จะทำยังไงดี",
+        "romanization": "chăn lâ ja tam yang ngai dee",
+        "english": "and me, what should I do?"
+      },
+      {
+        "thai": "เขาล่ะ ชื่ออะไร",
+        "romanization": "khăo lâ chûue à-rai",
+        "english": "and him, what's his name?"
+      }
+    ]
+  },
+  {
+    "word": "วัน",
+    "confidence": 1,
+    "romanization": "wan",
+    "type": "content",
+    "pos": "noun",
+    "definition": "day",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "วันนี้",
+        "romanization": "wan née",
+        "english": "today"
+      },
+      {
+        "thai": "วันดี",
+        "romanization": "wan dee",
+        "english": "good day"
+      },
+      {
+        "thai": "วันไหน",
+        "romanization": "wan năi",
+        "english": "which day"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้คุณดูดี",
+        "romanization": "wan née khun doo dee",
+        "english": "today you look good"
+      },
+      {
+        "thai": "วันนีดีมาก",
+        "romanization": "wan née dee mâak",
+        "english": "today is very good"
+      },
+      {
+        "thai": "วันไหนว่าง",
+        "romanization": "wan năi wâang",
+        "english": "which day is free?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "romanization": "wan née aa-gàat dee mâak",
+        "english": "the weather is very nice today"
+      },
+      {
+        "thai": "คุณว่างวันไหน",
+        "romanization": "khun wâang wan năi",
+        "english": "which day are you free?"
+      }
+    ]
+  },
+  {
+    "word": "นี้",
+    "confidence": 1,
+    "romanization": "née",
+    "type": "function",
+    "pos": "determiner",
+    "definition": "this (used to indicate something close by, or the current one)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "วันนี้",
+        "romanization": "wan née",
+        "english": "today"
+      },
+      {
+        "thai": "อันนี้",
+        "romanization": "an née",
+        "english": "this one"
+      },
+      {
+        "thai": "ตอนนี้",
+        "romanization": "dtaawn née",
+        "english": "right now"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้คุณดูดี",
+        "romanization": "wan née khun doo dee",
+        "english": "today you look good"
+      },
+      {
+        "thai": "ตอนนี้ฉันสบายดี",
+        "romanization": "dtaawn née chăn sà-baai-dee",
+        "english": "right now, I'm well"
+      },
+      {
+        "thai": "อันนี้คืออะไร",
+        "romanization": "an née kheu à-rai",
+        "english": "what is this?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "ตอนนี้ผมหิวมาก",
+        "romanization": "dtaawn née pôm hĭw mâak",
+        "english": "right now I'm very hungry (male)"
+      },
+      {
+        "thai": "อันนี้ใช่ไหม",
+        "romanization": "an née châi măi",
+        "english": "is this it?"
+      }
+    ]
+  },
+  {
+    "word": "ดู",
+    "confidence": 1,
+    "romanization": "doo",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to look, to watch, to see",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดูดี",
+        "romanization": "doo dee",
+        "english": "looks good"
+      },
+      {
+        "thai": "ดูหนัง",
+        "romanization": "doo năng",
+        "english": "watch a movie"
+      },
+      {
+        "thai": "ดูทีวี",
+        "romanization": "doo thee-wee",
+        "english": "watch TV"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณดูดีมาก",
+        "romanization": "khun doo dee mâak",
+        "english": "you look very good"
+      },
+      {
+        "thai": "กำลังดูทีวี",
+        "romanization": "kamlang doo thee-wee",
+        "english": "watching TV (right now)"
+      },
+      {
+        "thai": "วันนี้ดูดีจริง ๆ",
+        "romanization": "wan née doo dee jing jing",
+        "english": "today looks really good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "ฉันกำลังดูหนังอยู่",
+        "romanization": "chăn kamlang doo năng yùu",
+        "english": "I'm watching a movie (female)"
+      },
+      {
+        "thai": "ผมดูทีวีทุกวัน",
+        "romanization": "pôm doo thee-wee túk wan",
+        "english": "I watch TV every day (male)"
+      }
+    ]
+  },
+  {
+    "word": "ดี",
+    "confidence": 1,
+    "romanization": "dee",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "good, well",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดีมาก",
+        "romanization": "dee mâak",
+        "english": "very good"
+      },
+      {
+        "thai": "ดูดี",
+        "romanization": "doo dee",
+        "english": "looks good"
+      },
+      {
+        "thai": "วันดี",
+        "romanization": "wan dee",
+        "english": "good day"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้ดูดีจริง ๆ",
+        "romanization": "wan née doo dee jing jing",
+        "english": "today looks really good"
+      },
+      {
+        "thai": "คุณดูดีมาก",
+        "romanization": "khun doo dee mâak",
+        "english": "you look very good"
+      },
+      {
+        "thai": "อากาศดีมาก",
+        "romanization": "aa-gàat dee mâak",
+        "english": "the weather is very nice"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "ผมรู้สึกดีมากครับ",
+        "romanization": "pôm rúu-sùek dee mâak kráp",
+        "english": "I feel very good (male polite)"
+      },
+      {
+        "thai": "วันดี ๆ แบบนี้หายาก",
+        "romanization": "wan dee dee bàep née hăa yâak",
+        "english": "a good day like this is rare"
+      }
+    ]
+  },
+  {
+    "word": "จริง ๆ",
+    "confidence": 1,
+    "romanization": "jing jing",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "really, truly, actually",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดีจริง ๆ",
+        "romanization": "dee jing jing",
+        "english": "really good"
+      },
+      {
+        "thai": "เก่งจริง ๆ",
+        "romanization": "gèng jing jing",
+        "english": "really skilled"
+      },
+      {
+        "thai": "หิวจริง ๆ",
+        "romanization": "hĭw jing jing",
+        "english": "really hungry"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้ดูดีจริง ๆ",
+        "romanization": "wan née doo dee jing jing",
+        "english": "today looks really good"
+      },
+      {
+        "thai": "คุณเก่งจริง ๆ",
+        "romanization": "khun gèng jing jing",
+        "english": "you are really skilled"
+      },
+      {
+        "thai": "อร่อยจริง ๆ",
+        "romanization": "a-ròi jing jing",
+        "english": "really delicious"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "อาหารจานนี้อร่อยจริง ๆ",
+        "romanization": "aa-hăan jaan née a-ròi jing jing",
+        "english": "this dish is really delicious"
+      },
+      {
+        "thai": "คุณเก่งจริง ๆ นะ",
+        "romanization": "khun gèng jing jing ná",
+        "english": "you are really skilled"
+      }
+    ]
+  },
+  {
+    "word": "เก่ง",
+    "confidence": 1,
+    "romanization": "gèng",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "skilled, clever, good at",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เก่งมาก",
+        "romanization": "gèng mâak",
+        "english": "very skilled"
+      },
+      {
+        "thai": "เก่งจริง ๆ",
+        "romanization": "gèng jing jing",
+        "english": "really skilled"
+      },
+      {
+        "thai": "คุณเก่ง",
+        "romanization": "khun gèng",
+        "english": "you are skilled"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณเก่งมาก",
+        "romanization": "khun gèng mâak",
+        "english": "you are very skilled"
+      },
+      {
+        "thai": "คุณเก่งจริง ๆ",
+        "romanization": "khun gèng jing jing",
+        "english": "you are really good at this"
+      },
+      {
+        "thai": "เก่งมากเลย",
+        "romanization": "gèng mâak loei",
+        "english": "so talented"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณเก่งมากจริง ๆ",
+        "romanization": "khun gèng mâak jing jing",
+        "english": "you are really very skilled"
+      },
+      {
+        "thai": "เขาเก่งมากค่ะ",
+        "romanization": "khăo gèng mâak kâ",
+        "english": "she/he is very skilled (female polite)"
+      },
+      {
+        "thai": "เด็กคนนี้เก่งจริง ๆ",
+        "romanization": "dèk khon née gèng jing jing",
+        "english": "this child is really clever"
+      }
+    ]
+  },
+  {
+    "word": "มาก",
+    "confidence": 1,
+    "romanization": "mâak",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "very, much, a lot",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดีมาก",
+        "romanization": "dee mâak",
+        "english": "very good"
+      },
+      {
+        "thai": "เก่งมาก",
+        "romanization": "gèng mâak",
+        "english": "very skilled"
+      },
+      {
+        "thai": "มากจริง ๆ",
+        "romanization": "mâak jing jing",
+        "english": "so much, really a lot"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ขอบคุณมากครับ",
+        "romanization": "khàawp khun mâak kráp",
+        "english": "thank you very much (male polite)"
+      },
+      {
+        "thai": "อากาศดีมาก",
+        "romanization": "aa-gàat dee mâak",
+        "english": "the weather is very nice"
+      },
+      {
+        "thai": "วันนี้สนุกมาก",
+        "romanization": "wan née sà-nùk mâak",
+        "english": "today is very fun"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีมาก",
+        "romanization": "wan née khun doo dee mâak",
+        "english": "today you look very good"
+      },
+      {
+        "thai": "ขอบคุณมากค่ะ",
+        "romanization": "khàawp khun mâak kâ",
+        "english": "thank you very much (female polite)"
+      },
+      {
+        "thai": "ผมหิวมากครับ",
+        "romanization": "pôm hĭw mâak kráp",
+        "english": "I am very hungry (male polite)"
+      }
+    ]
+  },
+  {
+    "word": "หิว",
+    "confidence": 1,
+    "romanization": "hĭw",
+    "type": "content",
+    "pos": "adjective/verb",
+    "definition": "hungry",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "หิวข้าว",
+        "romanization": "hĭw khâao",
+        "english": "hungry (for rice/meal)"
+      },
+      {
+        "thai": "หิวมาก",
+        "romanization": "hĭw mâak",
+        "english": "very hungry"
+      },
+      {
+        "thai": "หิวจริง ๆ",
+        "romanization": "hĭw jing jing",
+        "english": "really hungry"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมหิวมากครับ",
+        "romanization": "pôm hĭw mâak kráp",
+        "english": "I'm very hungry (male polite)"
+      },
+      {
+        "thai": "ฉันหิวข้าวค่ะ",
+        "romanization": "chăn hĭw khâao kâ",
+        "english": "I'm hungry (female polite)"
+      },
+      {
+        "thai": "ตอนนี้หิวข้าว",
+        "romanization": "dtaawn née hĭw khâao",
+        "english": "hungry right now"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมหิวมากครับ อยากกินข้าว",
+        "romanization": "pôm hĭw mâak kráp yàak gin khâao",
+        "english": "I'm very hungry, want to eat (male polite)"
+      },
+      {
+        "thai": "ตอนนี้ฉันหิวข้าวค่ะ",
+        "romanization": "dtaawn née chăn hĭw khâao kâ",
+        "english": "right now, I'm hungry (female polite)"
+      },
+      {
+        "thai": "คุณหิวไหม",
+        "romanization": "khun hĭw măi",
+        "english": "are you hungry?"
+      }
+    ]
+  },
+  {
+    "word": "อะไร",
+    "confidence": 1,
+    "romanization": "à-rai",
+    "type": "function",
+    "pos": "pronoun/question word",
+    "definition": "what",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "อะไรนะ",
+        "romanization": "à-rai ná",
+        "english": "what? (spoken)"
+      },
+      {
+        "thai": "ชื่ออะไร",
+        "romanization": "chûue à-rai",
+        "english": "what name?"
+      },
+      {
+        "thai": "อะไรดี",
+        "romanization": "à-rai dee",
+        "english": "what is good?"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณชื่ออะไร",
+        "romanization": "khun chûue à-rai",
+        "english": "what is your name?"
+      },
+      {
+        "thai": "คุณกำลังทำอะไร",
+        "romanization": "khun kamlang tam à-rai",
+        "english": "what are you doing?"
+      },
+      {
+        "thai": "อันนี้คืออะไร",
+        "romanization": "an née kheu à-rai",
+        "english": "what is this?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณชื่ออะไรคะ",
+        "romanization": "khun chûue à-rai ká",
+        "english": "what is your name? (female polite)"
+      },
+      {
+        "thai": "คุณกำลังทำอะไรอยู่",
+        "romanization": "khun kamlang tam à-rai yùu",
+        "english": "what are you doing?"
+      },
+      {
+        "thai": "อันนี้คืออะไร",
+        "romanization": "an née kheu à-rai",
+        "english": "what is this?"
+      }
+    ]
+  },
+  {
+    "word": "เช่นกัน",
+    "confidence": 1,
+    "romanization": "chên-gan",
+    "type": "function",
+    "pos": "phrase",
+    "definition": "as well, too, likewise, same here",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เช่นกันค่ะ",
+        "romanization": "chên-gan kâ",
+        "english": "me too (female polite)"
+      },
+      {
+        "thai": "เช่นกันครับ",
+        "romanization": "chên-gan kráp",
+        "english": "me too (male polite)"
+      },
+      {
+        "thai": "ดีใจเช่นกัน",
+        "romanization": "dee jai chên-gan",
+        "english": "happy as well"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยินดีเช่นกันค่ะ",
+        "romanization": "yin-dee chên-gan kâ",
+        "english": "nice to meet you too (female polite)"
+      },
+      {
+        "thai": "ยินดีเช่นกันครับ",
+        "romanization": "yin-dee chên-gan kráp",
+        "english": "nice to meet you too (male polite)"
+      },
+      {
+        "thai": "ขอบคุณเช่นกัน",
+        "romanization": "khàawp khun chên-gan",
+        "english": "thank you too"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ยินดีที่ได้รู้จักเช่นกันค่ะ",
+        "romanization": "yin-dee têe dâai rúu-jàk chên-gan kâ",
+        "english": "nice to meet you too (female polite)"
+      },
+      {
+        "thai": "ขอบคุณเช่นกันครับ",
+        "romanization": "khàawp khun chên-gan kráp",
+        "english": "thank you as well (male polite)"
+      },
+      {
+        "thai": "ดีใจที่ได้เจอคุณเช่นกัน",
+        "romanization": "dee jai têe dâai jer khun chên-gan",
+        "english": "happy to see you too"
+      }
+    ]
+  },
+  {
+    "word": "อากาศ",
+    "confidence": 1,
+    "romanization": "aa-gàat",
+    "type": "content",
+    "pos": "noun",
+    "definition": "weather",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "อากาศดี",
+        "romanization": "aa-gàat dee",
+        "english": "nice weather"
+      },
+      {
+        "thai": "อากาศร้อน",
+        "romanization": "aa-gàat ráawn",
+        "english": "hot weather"
+      },
+      {
+        "thai": "อากาศเย็น",
+        "romanization": "aa-gàat yen",
+        "english": "cool weather"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "romanization": "wan née aa-gàat dee mâak",
+        "english": "the weather is very nice today"
+      },
+      {
+        "thai": "อากาศดีจริง ๆ",
+        "romanization": "aa-gàat dee jing jing",
+        "english": "the weather is really nice"
+      },
+      {
+        "thai": "อากาศไม่ดี",
+        "romanization": "aa-gàat mâi dee",
+        "english": "the weather is not good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "romanization": "wan née aa-gàat dee mâak",
+        "english": "the weather is very nice today"
+      },
+      {
+        "thai": "อากาศดีมากครับ",
+        "romanization": "aa-gàat dee mâak kráp",
+        "english": "the weather is very nice (male polite)"
+      },
+      {
+        "thai": "อากาศวันนี้เย็นมาก",
+        "romanization": "aa-gàat wan née yen mâak",
+        "english": "the weather today is very cool"
+      }
+    ]
+  },
+  {
+    "word": "ตอนนี้",
+    "confidence": 1,
+    "romanization": "dtaawn née",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "right now, at this moment",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ตอนนี้ดี",
+        "romanization": "dtaawn née dee",
+        "english": "right now is good"
+      },
+      {
+        "thai": "ตอนนี้หิว",
+        "romanization": "dtaawn née hĭw",
+        "english": "hungry right now"
+      },
+      {
+        "thai": "ตอนนี้สบายดี",
+        "romanization": "dtaawn née sà-baai-dee",
+        "english": "well right now"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ตอนนี้ฉันกำลังกินข้าวค่ะ",
+        "romanization": "dtaawn née chăn kamlang gin khâao kâ",
+        "english": "right now, I'm eating (female polite)"
+      },
+      {
+        "thai": "ตอนนี้ผมหิวมาก",
+        "romanization": "dtaawn née pôm hĭw mâak",
+        "english": "right now I'm very hungry (male)"
+      },
+      {
+        "thai": "ตอนนี้อากาศดีมาก",
+        "romanization": "dtaawn née aa-gàat dee mâak",
+        "english": "the weather is very nice right now"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ตอนนี้ฉันสบายดีค่ะ",
+        "romanization": "dtaawn née chăn sà-baai-dee kâ",
+        "english": "right now, I'm well (female polite)"
+      },
+      {
+        "thai": "ตอนนี้ผมหิวมากครับ",
+        "romanization": "dtaawn née pôm hĭw mâak kráp",
+        "english": "right now I'm very hungry (male polite)"
+      },
+      {
+        "thai": "ตอนนี้คุณอยู่ที่ไหน",
+        "romanization": "dtaawn née khun yùu têe năi",
+        "english": "where are you right now?"
+      }
+    ]
+  },
+  {
+    "word": "อันนี้",
+    "confidence": 1,
+    "romanization": "an née",
+    "type": "function",
+    "pos": "pronoun",
+    "definition": "this one",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "อันนี้ดี",
+        "romanization": "an née dee",
+        "english": "this one is good"
+      },
+      {
+        "thai": "อันนี้มาก",
+        "romanization": "an née mâak",
+        "english": "this one a lot"
+      },
+      {
+        "thai": "อันนี้ใช่ไหม",
+        "romanization": "an née châi măi",
+        "english": "is this it?"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "อันนี้คืออะไร",
+        "romanization": "an née kheu à-rai",
+        "english": "what is this?"
+      },
+      {
+        "thai": "อันนี้ดีมาก",
+        "romanization": "an née dee mâak",
+        "english": "this one is very good"
+      },
+      {
+        "thai": "อันนี้ใช่ไหมคะ",
+        "romanization": "an née châi măi ká",
+        "english": "is this it? (female polite)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "อันนี้ดีมากจริง ๆ",
+        "romanization": "an née dee mâak jing jing",
+        "english": "this one is really very good"
+      },
+      {
+        "thai": "อันนี้คืออะไรครับ",
+        "romanization": "an née kheu à-rai kráp",
+        "english": "what is this? (male polite)"
+      },
+      {
+        "thai": "อันนี้ไม่ดีเท่าไหร่",
+        "romanization": "an née mâi dee tâo rài",
+        "english": "this one is not so good"
+      }
+    ]
+  },
+  {
+    "word": "ดีใจ",
+    "confidence": 1,
+    "romanization": "dee jai",
+    "type": "content",
+    "pos": "adjective/verb",
+    "definition": "happy, glad",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ดีใจมาก",
+        "romanization": "dee jai mâak",
+        "english": "very happy"
+      },
+      {
+        "thai": "ดีใจเช่นกัน",
+        "romanization": "dee jai chên-gan",
+        "english": "happy as well"
+      },
+      {
+        "thai": "ดีใจจริง ๆ",
+        "romanization": "dee jai jing jing",
+        "english": "really happy"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ดีใจที่ได้เจอคุณ",
+        "romanization": "dee jai têe dâai jer khun",
+        "english": "happy to see you"
+      },
+      {
+        "thai": "ดีใจมากวันนี้",
+        "romanization": "dee jai mâak wan née",
+        "english": "very happy today"
+      },
+      {
+        "thai": "ดีใจที่ได้รู้จัก",
+        "romanization": "dee jai têe dâai rúu-jàk",
+        "english": "happy to know/meet you"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ดีใจเช่นกันค่ะ",
+        "romanization": "dee jai chên-gan kâ",
+        "english": "happy as well (female polite)"
+      },
+      {
+        "thai": "ดีใจที่ได้เจอคุณเช่นกัน",
+        "romanization": "dee jai têe dâai jer khun chên-gan",
+        "english": "happy to see you too"
+      },
+      {
+        "thai": "ผมดีใจมากวันนี้",
+        "romanization": "pôm dee jai mâak wan née",
+        "english": "I'm very happy today (male)"
+      }
+    ]
+  },
+  {
+    "word": "เจอ",
+    "confidence": 1,
+    "romanization": "jer",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to meet, to see",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เจอคุณ",
+        "romanization": "jer khun",
+        "english": "see you"
+      },
+      {
+        "thai": "เจอวันนี้",
+        "romanization": "jer wan née",
+        "english": "meet today"
+      },
+      {
+        "thai": "เจอกัน",
+        "romanization": "jer gan",
+        "english": "see each other"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ดีใจที่ได้เจอคุณ",
+        "romanization": "dee jai têe dâai jer khun",
+        "english": "happy to see you"
+      },
+      {
+        "thai": "แล้วเจอกันใหม่",
+        "romanization": "láew jer gan mài",
+        "english": "see you again"
+      },
+      {
+        "thai": "หวังว่าจะได้เจอคุณ",
+        "romanization": "wǎng wâa jà dâai jer khun",
+        "english": "hope to see you"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ดีใจที่ได้เจอคุณเช่นกัน",
+        "romanization": "dee jai têe dâai jer khun chên-gan",
+        "english": "happy to see you too"
+      },
+      {
+        "thai": "แล้วเจอกันใหม่ครับ",
+        "romanization": "láew jer gan mài kráp",
+        "english": "see you again (male polite)"
+      },
+      {
+        "thai": "อยากเจอคุณอีก",
+        "romanization": "yàak jer khun èek",
+        "english": "want to see you again"
+      }
+    ]
+  },
+  {
+    "word": "วันนี้",
+    "confidence": 1,
+    "romanization": "wan née",
+    "type": "content",
+    "pos": "noun/phrase",
+    "definition": "today",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "วันนี้ดี",
+        "romanization": "wan née dee",
+        "english": "today is good"
+      },
+      {
+        "thai": "วันนี้มาก",
+        "romanization": "wan née mâak",
+        "english": "today (a lot/very)"
+      },
+      {
+        "thai": "วันนี้คุณ",
+        "romanization": "wan née khun",
+        "english": "you today"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้ดูดีจริง ๆ",
+        "romanization": "wan née doo dee jing jing",
+        "english": "today looks really good"
+      },
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "romanization": "wan née aa-gàat dee mâak",
+        "english": "the weather is very nice today"
+      },
+      {
+        "thai": "วันนี้คุณดูดี",
+        "romanization": "wan née khun doo dee",
+        "english": "today you look good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้คุณดูดีจริง ๆ",
+        "romanization": "wan née khun doo dee jing jing",
+        "english": "today you look really good"
+      },
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "romanization": "wan née aa-gàat dee mâak",
+        "english": "the weather is very nice today"
+      },
+      {
+        "thai": "ผมมีความสุขมากวันนี้",
+        "romanization": "pôm mee khwaam sùk mâak wan née",
+        "english": "I'm very happy today (male)"
+      }
+    ]
+  },
+  {
+    "word": "จะ",
+    "confidence": 1,
+    "romanization": "jà",
+    "type": "function",
+    "pos": "auxiliary verb",
+    "definition": "will, shall (future marker)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "จะไป",
+        "romanization": "jà bpai",
+        "english": "will go"
+      },
+      {
+        "thai": "จะกิน",
+        "romanization": "jà gin",
+        "english": "will eat"
+      },
+      {
+        "thai": "จะทำ",
+        "romanization": "jà tam",
+        "english": "will do"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันจะไปบ้าน",
+        "romanization": "chăn jà bpai bâan",
+        "english": "I will go home"
+      },
+      {
+        "thai": "จะกินข้าว",
+        "romanization": "jà gin khâao",
+        "english": "will eat (a meal)"
+      },
+      {
+        "thai": "จะดูหนัง",
+        "romanization": "jà doo năng",
+        "english": "will watch a movie"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พรุ่งนี้ฉันจะไปบ้าน",
+        "romanization": "phrûng-níi chăn jà bpai bâan",
+        "english": "Tomorrow I will go home"
+      },
+      {
+        "thai": "วันนี้จะกินข้าวกับคุณ",
+        "romanization": "wan née jà gin khâao gàp khun",
+        "english": "Today I will eat with you"
+      },
+      {
+        "thai": "ฉันจะดูทีวีตอนนี้",
+        "romanization": "chăn jà doo thee-wee dtaawn née",
+        "english": "I will watch TV right now"
+      }
+    ]
+  },
+  {
+    "word": "ก่อน",
+    "confidence": 1,
+    "romanization": "gòn",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "before",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "มาก่อน",
+        "romanization": "maa gòn",
+        "english": "before"
+      },
+      {
+        "thai": "กินก่อน",
+        "romanization": "gin gòn",
+        "english": "eat before"
+      },
+      {
+        "thai": "มาก่อนแล้ว",
+        "romanization": "maa gòn láew",
+        "english": "already came before"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "เราไม่รู้จักกันมาก่อน",
+        "romanization": "rao mâi rúu-jàk gan maa gòn",
+        "english": "we didn't know each other before"
+      },
+      {
+        "thai": "กินข้าวก่อนแล้วเจอกัน",
+        "romanization": "gin khâao gòn láew jer gan",
+        "english": "eat first, then see you"
+      },
+      {
+        "thai": "ผมมาก่อนวันนี้",
+        "romanization": "pôm maa gòn wan née",
+        "english": "I came before today"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมมาก่อนแล้วเจอคุณวันนี้",
+        "romanization": "pôm maa gòn láew jer khun wan née",
+        "english": "I came before and saw you today"
+      },
+      {
+        "thai": "ฉันกินข้าวมาก่อนตอนนี้สบายดี",
+        "romanization": "chăn gin khâao maa gòn dtaawn née sà-baai-dee",
+        "english": "I ate before, now I am well"
+      },
+      {
+        "thai": "คุณกินก่อนแล้วจะดูทีวี",
+        "romanization": "khun gin gòn láew jà doo thee-wee",
+        "english": "You eat first, then will watch TV"
+      }
+    ]
+  },
+  {
+    "word": "มา",
+    "confidence": 1,
+    "romanization": "maa",
+    "type": "content",
+    "pos": "verb",
+    "definition": "come",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "มาก่อน",
+        "romanization": "maa gòn",
+        "english": "came before"
+      },
+      {
+        "thai": "มาแล้ว",
+        "romanization": "maa láew",
+        "english": "already came"
+      },
+      {
+        "thai": "มาวันนี้",
+        "romanization": "maa wan née",
+        "english": "come today"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมมาแล้ววันนี้",
+        "romanization": "pôm maa láew wan née",
+        "english": "I came today"
+      },
+      {
+        "thai": "คุณจะมาวันนี้",
+        "romanization": "khun jà maa wan née",
+        "english": "You will come today"
+      },
+      {
+        "thai": "มาก่อนแล้วกินข้าว",
+        "romanization": "maa gòn láew gin khâao",
+        "english": "come before and eat"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมมาก่อนแล้วเจอคุณ",
+        "romanization": "pôm maa gòn láew jer khun",
+        "english": "I came before and saw you"
+      },
+      {
+        "thai": "ฉันจะมาวันนี้กับคุณ",
+        "romanization": "chăn jà maa wan née gàp khun",
+        "english": "I will come today with you"
+      },
+      {
+        "thai": "คุณมาแล้วจะกินข้าว",
+        "romanization": "khun maa láew jà gin khâao",
+        "english": "You came and will eat"
+      }
+    ]
+  },
+  {
+    "word": "คน",
+    "confidence": 1,
+    "romanization": "khon",
+    "type": "content",
+    "pos": "noun",
+    "definition": "person",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ทุกคน",
+        "romanization": "túk khon",
+        "english": "everyone"
+      },
+      {
+        "thai": "คนดี",
+        "romanization": "khon dee",
+        "english": "good person"
+      },
+      {
+        "thai": "คนนี้",
+        "romanization": "khon née",
+        "english": "this person"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณเป็นคนดี",
+        "romanization": "khun bpen khon dee",
+        "english": "you are a good person"
+      },
+      {
+        "thai": "คนมาก่อน",
+        "romanization": "khon maa gòn",
+        "english": "the person came before"
+      },
+      {
+        "thai": "ทุกคนสบายดี",
+        "romanization": "túk khon sà-baai-dee",
+        "english": "everyone is well"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้ทุกคนดีใจมาก",
+        "romanization": "wan née túk khon dee jai mâak",
+        "english": "today everyone is very happy"
+      },
+      {
+        "thai": "ผมเจอคนดีวันนี้",
+        "romanization": "pôm jer khon dee wan née",
+        "english": "I met a good person today"
+      },
+      {
+        "thai": "ทุกคนมาก่อนแล้ว",
+        "romanization": "túk khon maa gòn láew",
+        "english": "everyone came before"
+      }
+    ]
+  },
+  {
+    "word": "ทุก",
+    "confidence": 1,
+    "romanization": "túk",
+    "type": "function",
+    "pos": "adjective/determiner",
+    "definition": "every",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ทุกวัน",
+        "romanization": "túk wan",
+        "english": "every day"
+      },
+      {
+        "thai": "ทุกคน",
+        "romanization": "túk khon",
+        "english": "everyone"
+      },
+      {
+        "thai": "ทุกบ้าน",
+        "romanization": "túk bâan",
+        "english": "every house"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ทุกคนสบายดี",
+        "romanization": "túk khon sà-baai-dee",
+        "english": "everyone is well"
+      },
+      {
+        "thai": "ผมกินข้าวทุกวัน",
+        "romanization": "pôm gin khâao túk wan",
+        "english": "I eat every day"
+      },
+      {
+        "thai": "ทุกบ้านดี",
+        "romanization": "túk bâan dee",
+        "english": "every house is good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมดูทีวีทุกวัน",
+        "romanization": "pôm doo thee-wee túk wan",
+        "english": "I watch TV every day"
+      },
+      {
+        "thai": "ทุกคนดีใจวันนี้",
+        "romanization": "túk khon dee jai wan née",
+        "english": "everyone is happy today"
+      },
+      {
+        "thai": "ทุกบ้านสบายดีมาก",
+        "romanization": "túk bâan sà-baai-dee mâak",
+        "english": "every house is very comfortable"
+      }
+    ]
+  },
+  {
+    "word": "หวัง",
+    "confidence": 1,
+    "romanization": "wǎng",
+    "type": "content",
+    "pos": "verb",
+    "definition": "hope",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "หวังดี",
+        "romanization": "wǎng dee",
+        "english": "hope (is) good"
+      },
+      {
+        "thai": "หวังมาก",
+        "romanization": "wǎng mâak",
+        "english": "hope a lot"
+      },
+      {
+        "thai": "หวังว่า",
+        "romanization": "wǎng wâa",
+        "english": "hope that"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "หวังว่าดีใจ",
+        "romanization": "wǎng wâa dee jai",
+        "english": "hope (to be) happy"
+      },
+      {
+        "thai": "หวังว่าจะเจอคุณ",
+        "romanization": "wǎng wâa jà jer khun",
+        "english": "hope to see you"
+      },
+      {
+        "thai": "หวังว่าทุกคนดี",
+        "romanization": "wǎng wâa túk khon dee",
+        "english": "hope everyone is good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมหัวใจดีหวังมาก",
+        "romanization": "pôm hua jai dee wǎng mâak",
+        "english": "I hope a lot (with good heart)"
+      },
+      {
+        "thai": "หวังว่าคุณจะสบายดี",
+        "romanization": "wǎng wâa khun jà sà-baai-dee",
+        "english": "hope you will be well"
+      },
+      {
+        "thai": "ทุกคนหวังว่าวันนี้ดี",
+        "romanization": "túk khon wǎng wâa wan née dee",
+        "english": "everyone hopes today is good"
+      }
+    ]
+  },
+  {
+    "word": "อยาก",
+    "confidence": 1,
+    "romanization": "yàak",
+    "type": "content",
+    "pos": "verb",
+    "definition": "want",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "อยากกิน",
+        "romanization": "yàak gin",
+        "english": "want to eat"
+      },
+      {
+        "thai": "อยากเจอ",
+        "romanization": "yàak jer",
+        "english": "want to see"
+      },
+      {
+        "thai": "อยากดีใจ",
+        "romanization": "yàak dee jai",
+        "english": "want to be happy"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมอยากกินข้าว",
+        "romanization": "pôm yàak gin khâao",
+        "english": "I want to eat"
+      },
+      {
+        "thai": "อยากเจอคุณ",
+        "romanization": "yàak jer khun",
+        "english": "want to see you"
+      },
+      {
+        "thai": "อยากสบายดี",
+        "romanization": "yàak sà-baai-dee",
+        "english": "want to be well"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมอยากเจอคุณวันนี้",
+        "romanization": "pôm yàak jer khun wan née",
+        "english": "I want to see you today"
+      },
+      {
+        "thai": "ฉันอยากกินข้าวตอนนี้",
+        "romanization": "chăn yàak gin khâao dtaawn née",
+        "english": "I want to eat right now"
+      },
+      {
+        "thai": "ทุกคนอยากดีใจมาก",
+        "romanization": "túk khon yàak dee jai mâak",
+        "english": "everyone wants to be very happy"
+      }
+    ]
+  },
+  {
+    "word": "อีก",
+    "confidence": 1,
+    "romanization": "èek",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "again, more",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "อีกครั้ง",
+        "romanization": "èek kráng",
+        "english": "again (one more time)"
+      },
+      {
+        "thai": "อีกมาก",
+        "romanization": "èek mâak",
+        "english": "much more"
+      },
+      {
+        "thai": "เจออีก",
+        "romanization": "jer èek",
+        "english": "see again"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "อยากเจอคุณอีก",
+        "romanization": "yàak jer khun èek",
+        "english": "want to see you again"
+      },
+      {
+        "thai": "กินอีกครั้ง",
+        "romanization": "gin èek kráng",
+        "english": "eat again"
+      },
+      {
+        "thai": "ดีใจอีก",
+        "romanization": "dee jai èek",
+        "english": "happy again"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันอยากกินข้าวอีก",
+        "romanization": "chăn yàak gin khâao èek",
+        "english": "I want to eat more"
+      },
+      {
+        "thai": "เจอคุณอีกครั้งวันนี้",
+        "romanization": "jer khun èek kráng wan née",
+        "english": "see you again today"
+      },
+      {
+        "thai": "ผมดีใจอีกมาก",
+        "romanization": "pôm dee jai èek mâak",
+        "english": "I am happy again, a lot"
+      }
+    ]
+  },
+  {
+    "word": "บ้าน",
+    "confidence": 1,
+    "romanization": "bâan",
+    "type": "content",
+    "pos": "noun",
+    "definition": "house, home",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ที่บ้าน",
+        "romanization": "têe bâan",
+        "english": "at home"
+      },
+      {
+        "thai": "บ้านดี",
+        "romanization": "bâan dee",
+        "english": "good house"
+      },
+      {
+        "thai": "บ้านนี้",
+        "romanization": "bâan née",
+        "english": "this house"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "บ้านฉันดี",
+        "romanization": "bâan chăn dee",
+        "english": "my house is good"
+      },
+      {
+        "thai": "ทุกบ้านดี",
+        "romanization": "túk bâan dee",
+        "english": "every house is good"
+      },
+      {
+        "thai": "จะไปบ้าน",
+        "romanization": "jà bpai bâan",
+        "english": "will go home"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมจะไปบ้านวันนี้",
+        "romanization": "pôm jà bpai bâan wan née",
+        "english": "I will go home today"
+      },
+      {
+        "thai": "ที่บ้านทุกคนดีใจ",
+        "romanization": "têe bâan túk khon dee jai",
+        "english": "at home everyone is happy"
+      },
+      {
+        "thai": "บ้านนี้สบายดีมาก",
+        "romanization": "bâan née sà-baai-dee mâak",
+        "english": "this house is very comfortable"
+      }
+    ]
+  },
+  {
+    "word": "ทำ",
+    "confidence": 1,
+    "romanization": "tam",
+    "type": "content",
+    "pos": "verb",
+    "definition": "do, make",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ทำอะไร",
+        "romanization": "tam à-rai",
+        "english": "do what"
+      },
+      {
+        "thai": "ทำดี",
+        "romanization": "tam dee",
+        "english": "do well"
+      },
+      {
+        "thai": "ทำมาก",
+        "romanization": "tam mâak",
+        "english": "do a lot"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณทำได้",
+        "romanization": "khun tam dâai",
+        "english": "you can do (it)"
+      },
+      {
+        "thai": "กำลังทำข้าว",
+        "romanization": "kamlang tam khâao",
+        "english": "making rice"
+      },
+      {
+        "thai": "ทำบ้านดี",
+        "romanization": "tam bâan dee",
+        "english": "make the house good"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้ฉันจะทำข้าว",
+        "romanization": "wan née chăn jà tam khâao",
+        "english": "today I will make rice"
+      },
+      {
+        "thai": "คุณทำดีมาก",
+        "romanization": "khun tam dee mâak",
+        "english": "you did very well"
+      },
+      {
+        "thai": "ตอนนี้ผมกำลังทำบ้าน",
+        "romanization": "dtaawn née pôm kamlang tam bâan",
+        "english": "right now I am working on the house"
+      }
+    ]
+  },
+  {
+    "word": "ว่าง",
+    "confidence": 1,
+    "romanization": "wâang",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "free, available",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ว่างไหม",
+        "romanization": "wâang măi",
+        "english": "are you free?"
+      },
+      {
+        "thai": "ว่างวันไหน",
+        "romanization": "wâang wan năi",
+        "english": "which day is free?"
+      },
+      {
+        "thai": "ตอนนี้ว่าง",
+        "romanization": "dtaawn née wâang",
+        "english": "free right now"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณว่างวันไหน",
+        "romanization": "khun wâang wan năi",
+        "english": "which day are you free?"
+      },
+      {
+        "thai": "ตอนนี้ว่างมาก",
+        "romanization": "dtaawn née wâang mâak",
+        "english": "right now very free"
+      },
+      {
+        "thai": "วันนี้ว่าง",
+        "romanization": "wan née wâang",
+        "english": "today is free"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมว่างวันนี้",
+        "romanization": "pôm wâang wan née",
+        "english": "I am free today"
+      },
+      {
+        "thai": "ทุกคนว่างตอนนี้",
+        "romanization": "túk khon wâang dtaawn née",
+        "english": "everyone is free right now"
+      },
+      {
+        "thai": "คุณจะว่างเมื่อไหร่",
+        "romanization": "khun jà wâang mûea rài",
+        "english": "when will you be free?"
+      }
+    ]
+  },
+  {
+    "word": "ขอโทษ",
+    "confidence": 1,
+    "romanization": "khăaw-thôot",
+    "type": "content",
+    "pos": "phrase",
+    "definition": "sorry, excuse me",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ขอโทษค่ะ",
+        "romanization": "khăaw-thôot kâ",
+        "english": "sorry (female polite)"
+      },
+      {
+        "thai": "ขอโทษครับ",
+        "romanization": "khăaw-thôot kráp",
+        "english": "sorry (male polite)"
+      },
+      {
+        "thai": "ขอโทษนะ",
+        "romanization": "khăaw-thôot ná",
+        "english": "sorry (friendly)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ขอโทษมาก",
+        "romanization": "khăaw-thôot mâak",
+        "english": "very sorry"
+      },
+      {
+        "thai": "ขอโทษทุกคน",
+        "romanization": "khăaw-thôot túk khon",
+        "english": "sorry everyone"
+      },
+      {
+        "thai": "ขอโทษอีกครั้ง",
+        "romanization": "khăaw-thôot èek kráng",
+        "english": "sorry again"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ขอโทษค่ะ ฉันไม่รู้",
+        "romanization": "khăaw-thôot kâ chăn mâi rúu",
+        "english": "sorry, I don't know (female)"
+      },
+      {
+        "thai": "ขอโทษครับ ผมมาแล้ว",
+        "romanization": "khăaw-thôot kráp pôm maa láew",
+        "english": "sorry, I came already (male)"
+      },
+      {
+        "thai": "ขอโทษทุกคนวันนี้",
+        "romanization": "khăaw-thôot túk khon wan née",
+        "english": "sorry everyone today"
+      }
+    ]
+  },
+  {
+    "word": "ยัง",
+    "confidence": 1,
+    "romanization": "yang",
+    "type": "function",
+    "pos": "adverb",
+    "definition": "yet, still",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "หรือยัง",
+        "romanization": "rĕu yang",
+        "english": "yet?"
+      },
+      {
+        "thai": "ยังดี",
+        "romanization": "yang dee",
+        "english": "still good"
+      },
+      {
+        "thai": "ยังไม่",
+        "romanization": "yang mâi",
+        "english": "not yet"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณกินข้าวหรือยัง",
+        "romanization": "khun gin khâao rĕu yang",
+        "english": "have you eaten yet?"
+      },
+      {
+        "thai": "วันนี้ยังดี",
+        "romanization": "wan née yang dee",
+        "english": "today is still good"
+      },
+      {
+        "thai": "ผมยังไม่กิน",
+        "romanization": "pôm yang mâi gin",
+        "english": "I haven't eaten yet"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณกินข้าวหรือยังคะ",
+        "romanization": "khun gin khâao rĕu yang ká",
+        "english": "have you eaten yet? (female polite)"
+      },
+      {
+        "thai": "วันนี้ยังไม่ดี",
+        "romanization": "wan née yang mâi dee",
+        "english": "today is not good yet"
+      },
+      {
+        "thai": "ผมยังไม่เจอคุณ",
+        "romanization": "pôm yang mâi jer khun",
+        "english": "I haven't seen you yet"
+      }
+    ]
+  },
+  {
+    "word": "เป็น",
+    "confidence": 1,
+    "romanization": "bpen",
+    "type": "function",
+    "pos": "verb",
+    "definition": "to be (is/are/am)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เป็นคน",
+        "romanization": "bpen khon",
+        "english": "is a person"
+      },
+      {
+        "thai": "เป็นดี",
+        "romanization": "bpen dee",
+        "english": "is good"
+      },
+      {
+        "thai": "เป็นบ้าน",
+        "romanization": "bpen bâan",
+        "english": "is a house"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "เป็นคนดี",
+        "romanization": "bpen khon dee",
+        "english": "is a good person"
+      },
+      {
+        "thai": "เป็นบ้านดี",
+        "romanization": "bpen bâan dee",
+        "english": "is a good house"
+      },
+      {
+        "thai": "คุณเป็นคนดี",
+        "romanization": "khun bpen khon dee",
+        "english": "you are a good person"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ทุกคนเป็นคนดี",
+        "romanization": "túk khon bpen khon dee",
+        "english": "everyone is a good person"
+      },
+      {
+        "thai": "บ้านนี้เป็นบ้านดี",
+        "romanization": "bâan née bpen bâan dee",
+        "english": "this house is a good house"
+      },
+      {
+        "thai": "ผมเป็นคนที่บ้าน",
+        "romanization": "pôm bpen khon têe bâan",
+        "english": "I am a person at home"
+      }
+    ]
+  },
+  {
+    "word": "กับ",
+    "confidence": 1,
+    "romanization": "gàp",
+    "type": "function",
+    "pos": "preposition",
+    "definition": "with, and",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "กับคุณ",
+        "romanization": "gàp khun",
+        "english": "with you"
+      },
+      {
+        "thai": "กับทุกคน",
+        "romanization": "gàp túk khon",
+        "english": "with everyone"
+      },
+      {
+        "thai": "กับบ้าน",
+        "romanization": "gàp bâan",
+        "english": "with the house"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "วันนี้กับคุณ",
+        "romanization": "wan née gàp khun",
+        "english": "today with you"
+      },
+      {
+        "thai": "กินข้าวกับทุกคน",
+        "romanization": "gin khâao gàp túk khon",
+        "english": "eat with everyone"
+      },
+      {
+        "thai": "ฉันจะมาวันนี้กับคุณ",
+        "romanization": "chăn jà maa wan née gàp khun",
+        "english": "I will come today with you"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ผมจะไปบ้านกับคุณ",
+        "romanization": "pôm jà bpai bâan gàp khun",
+        "english": "I will go home with you"
+      },
+      {
+        "thai": "วันนี้กินข้าวกับทุกคน",
+        "romanization": "wan née gin khâao gàp túk khon",
+        "english": "today eat with everyone"
+      },
+      {
+        "thai": "ทุกคนอยู่ที่บ้านกับผม",
+        "romanization": "túk khon yùu têe bâan gàp pôm",
+        "english": "everyone is at home with me"
+      }
+    ]
+  },
+  {
+    "word": "เมื่อไหร่",
+    "confidence": 1,
+    "romanization": "mûea rài",
+    "type": "function",
+    "pos": "question word",
+    "definition": "when",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เมื่อไหร่ดี",
+        "romanization": "mûea rài dee",
+        "english": "when is good"
+      },
+      {
+        "thai": "เมื่อไหร่คุณ",
+        "romanization": "mûea rài khun",
+        "english": "when you"
+      },
+      {
+        "thai": "เมื่อไหร่บ้าน",
+        "romanization": "mûea rài bâan",
+        "english": "when (at) home"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณจะว่างเมื่อไหร่",
+        "romanization": "khun jà wâang mûea rài",
+        "english": "when will you be free?"
+      },
+      {
+        "thai": "เมื่อไหร่ทุกคนมา",
+        "romanization": "mûea rài túk khon maa",
+        "english": "when does everyone come?"
+      },
+      {
+        "thai": "ผมจะกินข้าวเมื่อไหร่",
+        "romanization": "pôm jà gin khâao mûea rài",
+        "english": "when will I eat?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คุณจะมาเมื่อไหร่",
+        "romanization": "khun jà maa mûea rài",
+        "english": "when will you come?"
+      },
+      {
+        "thai": "ทุกคนจะไปบ้านเมื่อไหร่",
+        "romanization": "túk khon jà bpai bâan mûea rài",
+        "english": "when will everyone go home?"
+      },
+      {
+        "thai": "เมื่อไหร่คุณจะว่างอีก",
+        "romanization": "mûea rài khun jà wâang èek",
+        "english": "when will you be free again?"
+      }
+    ]
+  },
+  {
+    "word": "ตอน",
+    "confidence": 1,
+    "romanization": "dtâawn",
+    "type": "function",
+    "pos": "noun",
+    "definition": "time, moment, part (used in 'right now', 'when')",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ตอนนี้",
+        "romanization": "dtâawn née",
+        "english": "right now"
+      },
+      {
+        "thai": "ตอนว่าง",
+        "romanization": "dtâawn wâang",
+        "english": "when (someone is) free"
+      },
+      {
+        "thai": "ตอนกิน",
+        "romanization": "dtâawn gin",
+        "english": "when eating"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ตอนนี้ทุกคนอยู่บ้าน",
+        "romanization": "dtâawn née túk khon yùu bâan",
+        "english": "right now everyone is at home"
+      },
+      {
+        "thai": "ตอนว่างอยากกิน",
+        "romanization": "dtâawn wâang yàak gin",
+        "english": "when free, want to eat"
+      },
+      {
+        "thai": "ตอนกินข้าวกับคุณ",
+        "romanization": "dtâawn gin khâao gàp khun",
+        "english": "when eating with you"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ตอนนี้ผมว่างมาก",
+        "romanization": "dtâawn née pôm wâang mâak",
+        "english": "right now I am very free"
+      },
+      {
+        "thai": "ตอนกินข้าวทุกคนดีใจ",
+        "romanization": "dtâawn gin khâao túk khon dee jai",
+        "english": "when eating, everyone is happy"
+      },
+      {
+        "thai": "ตอนว่างฉันจะไปบ้าน",
+        "romanization": "dtâawn wâang chăn jà bpai bâan",
+        "english": "when free, I will go home"
+      }
+    ]
+  },
+  {
+    "word": "เขา",
+    "confidence": 1,
+    "romanization": "khăo",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "he, she, they (3rd person singular/plural)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เขาดี",
+        "romanization": "khăo dee",
+        "english": "he/she is good"
+      },
+      {
+        "thai": "เขากิน",
+        "romanization": "khăo gin",
+        "english": "he/she eats"
+      },
+      {
+        "thai": "เขามา",
+        "romanization": "khăo maa",
+        "english": "he/she comes"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "เขาเป็นคนดี",
+        "romanization": "khăo bpen khon dee",
+        "english": "he/she is a good person"
+      },
+      {
+        "thai": "เขากินข้าวที่บ้าน",
+        "romanization": "khăo gin khâao têe bâan",
+        "english": "he/she eats at home"
+      },
+      {
+        "thai": "เขาว่างวันนี้",
+        "romanization": "khăo wâang wan née",
+        "english": "he/she is free today"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "เขามาก่อนทุกคน",
+        "romanization": "khăo maa gòn túk khon",
+        "english": "he/she came before everyone"
+      },
+      {
+        "thai": "เขาดีใจมากวันนี้",
+        "romanization": "khăo dee jai mâak wan née",
+        "english": "he/she is very happy today"
+      },
+      {
+        "thai": "ตอนนี้เขาอยู่ที่บ้าน",
+        "romanization": "dtâawn née khăo yùu têe bâan",
+        "english": "right now he/she is at home"
+      }
+    ]
+  },
+  {
+    "word": "นะ",
+    "confidence": 1,
+    "romanization": "ná",
+    "type": "function",
+    "pos": "particle",
+    "definition": "softener particle (makes requests, offers, or statements softer/friendly)",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "ขอโทษนะ",
+        "romanization": "khăaw-thôot ná",
+        "english": "sorry (friendly)"
+      },
+      {
+        "thai": "ดีนะ",
+        "romanization": "dee ná",
+        "english": "good, okay? (soft)"
+      },
+      {
+        "thai": "มากนะ",
+        "romanization": "mâak ná",
+        "english": "very much, okay? (soft)"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ขอโทษทุกคนนะ",
+        "romanization": "khăaw-thôot túk khon ná",
+        "english": "sorry everyone (friendly)"
+      },
+      {
+        "thai": "วันนี้ดีใจมากนะ",
+        "romanization": "wan née dee jai mâak ná",
+        "english": "today I'm very happy, okay?"
+      },
+      {
+        "thai": "คุณกินข้าวนะ",
+        "romanization": "khun gin khâao ná",
+        "english": "please eat, okay?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "วันนี้ทุกคนสบายดีนะ",
+        "romanization": "wan née túk khon sà-baai-dee ná",
+        "english": "everyone is well today, okay?"
+      },
+      {
+        "thai": "ผมว่างตอนนี้นะ",
+        "romanization": "pôm wâang dtâawn née ná",
+        "english": "I'm free right now, okay?"
+      },
+      {
+        "thai": "กินข้าวกับผมนะ",
+        "romanization": "gin khâao gàp pôm ná",
+        "english": "eat with me, okay?"
+      }
+    ]
   }
 ]

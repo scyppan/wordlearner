@@ -1,0 +1,51 @@
+/*----------------------
+  PROGRESS CONTAINER
+----------------------*/
+.progress-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/*----------------------
+  TABLE SHARED STYLES
+----------------------*/
+.progress-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-container th,
+.progress-container td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.progress-container th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.progress-container tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/*----------------------
+  SPECIFIC TABLE CLASSES
+----------------------*/
+.progress-quiz-table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress-confidence-table {
+  max-width: 400px;
+  margin: 0 auto;
+}
