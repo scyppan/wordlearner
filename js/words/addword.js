@@ -20,5 +20,11 @@ function addword() {
 
     wordsdata.push(newWord)
     showworddetails(newWord)
-    refreshWordList(wordsdata);
+    searchbar(document.getElementById('word-list'));
+}
+
+function replacewordlist(){
+
+
+    
 }

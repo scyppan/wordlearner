@@ -10,17 +10,28 @@ function renderdata() {
     var group1 = document.createElement('div');
     group1.className = 'data-actions-group';
 
+    // Import complete word set (will remove all existing words)
     var importBtn = document.createElement('button');
     importBtn.id = 'importDataBtn';
-    importBtn.textContent = 'Import Words from JSON';
+    importBtn.textContent = 'Import complete word set';
+    importBtn.title = 'This will remove all existing words and replace them with the imported set.';
     importBtn.onclick = importfromjson;
 
+    // Import additional words (will add to existing words)
+    var importAdditionalBtn = document.createElement('button');
+    importAdditionalBtn.id = 'importAdditionalDataBtn';
+    importAdditionalBtn.textContent = 'Import additional words into this set';
+    importAdditionalBtn.title = 'This will add new words to the existing word list (duplicates will be skipped).';
+    importAdditionalBtn.onclick = importadditionalwords;
+
+    // Export words
     var exportBtn = document.createElement('button');
     exportBtn.id = 'exportDataBtn';
     exportBtn.textContent = 'Export Words to JSON';
     exportBtn.onclick = exporttojson;
 
     group1.appendChild(importBtn);
+    group1.appendChild(importAdditionalBtn);
     group1.appendChild(exportBtn);
 
     var group2 = document.createElement('div');

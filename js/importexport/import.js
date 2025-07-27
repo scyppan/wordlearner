@@ -1,41 +1,112 @@
 function importfromjson() {
-  var input = document.createElement('input');
-  input.type = 'file';
-  input.accept = '.json,application/json';
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json,application/json';
 
-  input.onchange = function(event) {
-    var file = event.target.files[0];
-    if (!file) return;
+    input.onchange = function(event) {
+        var file = event.target.files[0];
+        if (!file) return;
 
-    var reader = new FileReader();
-    reader.onload = function(e) {
-      try {
-        var arr = JSON.parse(e.target.result);
-        if (!Array.isArray(arr)) throw 0;
-        var keys = [
-          'word', 'confidence', 'romanization', 'type', 'pos',
-          'definition', 'notes', 'shortphrases', 'longphrases', 'sentences'
-        ];
-        for (var i = 0; i < arr.length; i++) {
-          var obj = arr[i];
-          var objKeys = Object.keys(obj);
-          if (
-            objKeys.length !== keys.length ||
-            !keys.every(function (k) { return objKeys.includes(k); })
-          ) {
-            throw 0;
-          }
-        }
-        wordsdata = arr;
-        alert('Import successful!');
-      } catch (e) {
-        alert('Invalid JSON format or structure.');
-      }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                var arr = JSON.parse(e.target.result);
+                if (!Array.isArray(arr)) throw 0;
+                var keys = [
+                    'word', 'confidence', 'romanization', 'type', 'pos',
+                    'definition', 'notes', 'shortphrases', 'longphrases', 'sentences'
+                ];
+                for (var i = 0; i < arr.length; i++) {
+                    var obj = arr[i];
+                    var objkeys = Object.keys(obj);
+                    if (
+                        objkeys.length !== keys.length ||
+                        !keys.every(function(k) { return objkeys.includes(k); })
+                    ) {
+                        throw 0;
+                    }
+                }
+                wordsdata = arr;
+                alert('Import successful! All existing words replaced.');
+            } catch (e) {
+                alert('Invalid JSON format or structure.');
+            }
+        };
+        reader.readAsText(file);
     };
-    reader.readAsText(file);
-  };
 
-  input.click();
+    input.click();
+}
+
+function importadditionalwords() {
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json,application/json';
+
+    input.onchange = function(event) {
+        var file = event.target.files[0];
+        if (!file) return;
+
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                var arr = JSON.parse(e.target.result);
+                if (!Array.isArray(arr)) throw 0;
+                var keys = [
+                    'word', 'confidence', 'romanization', 'type', 'pos',
+                    'definition', 'notes', 'shortphrases', 'longphrases', 'sentences'
+                ];
+                for (var i = 0; i < arr.length; i++) {
+                    var obj = arr[i];
+                    var objkeys = Object.keys(obj);
+                    if (
+                        objkeys.length !== keys.length ||
+                        !keys.every(function(k) { return objkeys.includes(k); })
+                    ) {
+                        throw 0;
+                    }
+                }
+
+                var existingmap = {};
+                wordsdata.forEach(function(w, idx) {
+                    existingmap[w.word] = idx;
+                });
+
+                var added = 0, merged = 0;
+
+                arr.forEach(function(obj) {
+                    if (existingmap.hasOwnProperty(obj.word)) {
+                        // Merge unique shortphrases, longphrases, sentences
+                        var existing = wordsdata[existingmap[obj.word]];
+
+                        ['shortphrases', 'longphrases', 'sentences'].forEach(function(field) {
+                            if (!Array.isArray(existing[field])) existing[field] = [];
+                            if (!Array.isArray(obj[field])) return;
+
+                            // Gather all existing Thai for this section
+                            var existingthai = new Set(existing[field].map(function(e) { return e.thai; }));
+                            obj[field].forEach(function(phrase) {
+                                if (!existingthai.has(phrase.thai)) {
+                                    existing[field].push(phrase);
+                                    merged++;
+                                }
+                            });
+                        });
+                    } else {
+                        wordsdata.push(obj);
+                        added++;
+                    }
+                });
+
+                alert('Added ' + added + ' new words. Merged ' + merged + ' new phrases/sentences into existing words.');
+            } catch (e) {
+                alert('Invalid JSON format or structure.');
+            }
+        };
+        reader.readAsText(file);
+    };
+
+    input.click();
 }
 
 function importquizzes() {
@@ -53,24 +124,24 @@ function importquizzes() {
                 var obj = JSON.parse(e.target.result);
 
                 // Normalize to array
-                var importedQuizzes = Array.isArray(obj) ? obj : [obj];
+                var importedquizzes = Array.isArray(obj) ? obj : [obj];
 
-                var requiredQuizKeys = ['title', 'items'];
-                var requiredItemKeys = ['itemNumber', 'thai', 'item', 'state'];
+                var requiredquizkeys = ['title', 'items'];
+                var requireditemkeys = ['itemnumber', 'thai', 'item', 'state'];
 
                 // Gather all existing titles (set for fast lookup)
-                var existingTitles = quizzes.map(q => q.title);
-                var newTitles = new Set(existingTitles);
+                var existingtitles = quizzes.map(function(q) { return q.title; });
+                var newtitles = new Set(existingtitles);
 
                 // Validation and unique title generation
-                importedQuizzes.forEach(function(quiz, idx) {
+                importedquizzes.forEach(function(quiz) {
                     if (!quiz || typeof quiz !== 'object') throw 0;
 
                     // Quiz must have the required keys
-                    var quizKeys = Object.keys(quiz);
+                    var quizkeys = Object.keys(quiz);
                     if (
-                        quizKeys.length !== 2 ||
-                        !requiredQuizKeys.every(function (k) { return quizKeys.includes(k); })
+                        quizkeys.length !== 2 ||
+                        !requiredquizkeys.every(function(k) { return quizkeys.includes(k); })
                     ) throw 0;
 
                     if (!Array.isArray(quiz.items) || quiz.items.length === 0) throw 0;
@@ -78,35 +149,33 @@ function importquizzes() {
                     // Check all items
                     quiz.items.forEach(function(item) {
                         if (!item || typeof item !== 'object') throw 0;
-                        var itemKeys = Object.keys(item);
+                        var itemkeys = Object.keys(item);
                         if (
-                            itemKeys.length !== 4 ||
-                            !requiredItemKeys.every(function (k) { return itemKeys.includes(k); })
+                            itemkeys.length !== 4 ||
+                            !requireditemkeys.every(function(k) { return itemkeys.includes(k); })
                         ) throw 0;
                     });
 
                     // ---- Rename if duplicate ----
-                    let baseTitle = quiz.title;
-                    let testTitle = baseTitle;
-                    let n = 1;
+                    var basetitle = quiz.title;
+                    var testtitle = basetitle;
+                    var n = 1;
+                    var basenosuffix = basetitle.replace(/\s*\(\d+\)$/, '');
 
-                    // Remove any existing (n) at the end, e.g., 'Quiz 25.07.21.001 (1)' → 'Quiz 25.07.21.001'
-                    let baseNoSuffix = baseTitle.replace(/\s*\(\d+\)$/, '');
-
-                    while (newTitles.has(testTitle)) {
-                        testTitle = baseNoSuffix + ' (' + n + ')';
+                    while (newtitles.has(testtitle)) {
+                        testtitle = basenosuffix + ' (' + n + ')';
                         n++;
                     }
-                    quiz.title = testTitle;
-                    newTitles.add(testTitle); // Reserve it for this batch
+                    quiz.title = testtitle;
+                    newtitles.add(testtitle); // Reserve it for this batch
                 });
 
                 // Add to quizzes array
-                importedQuizzes.forEach(function(q) {
+                importedquizzes.forEach(function(q) {
                     quizzes.push(q);
                 });
 
-                alert('Quiz import successful! Imported ' + importedQuizzes.length + ' quiz' + (importedQuizzes.length > 1 ? 'zes' : '') + '.');
+                alert('Quiz import successful! Imported ' + importedquizzes.length + ' quiz' + (importedquizzes.length > 1 ? 'zes' : '') + '.');
             } catch (e) {
                 alert('Invalid quiz JSON format or structure.');
             }
