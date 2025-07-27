@@ -22,6 +22,7 @@
 }
 
 .quizmode-listitem {
+    
     padding: 0.31em 0.7em;
     border-radius: 5px;
     cursor: pointer;
@@ -170,4 +171,24 @@
 
 .quizsession-bubble:hover {
     opacity: 0.66;
+}
+
+.quiz-delete-btn {
+  background: none;
+  color: #996d6d;
+  border: none;
+  font-weight: bold;
+  font-size: 1.22em;
+  cursor: pointer;
+  margin-left: 1.8em;
+  vertical-align: middle;
+  padding: 0 0.2em;
+  border-radius: 17px;
+  transition: background 0.13s;
+}
+
+.quiz-delete-btn:hover, .quiz-delete-btn:focus {
+  background: #ffeaea;
+  outline: none;
+  
 }

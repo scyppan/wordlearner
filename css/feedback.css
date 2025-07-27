@@ -51,7 +51,7 @@
   text-align: center;
   font-size: 0.80em;
 }
-.feedback-word-panel{
+#feedback-word-panel{
 margin-top:20px;
     width:100%;
 }
@@ -92,7 +92,7 @@ margin-top:20px;
     width: 30%;
     margin-left: 3px;
   }
-  .feedback-word-panel {
+  #feedback-word-panel {
     margin-left: 18px;
     margin-top:20px;
     width:100%;

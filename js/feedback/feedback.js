@@ -1,173 +1,198 @@
-// feedback.js
+//---------
+//GLOBAL VARIABLES (MODULE STATE)
+//---------
+
+// none for this module
+
+//---------
+//ENTRY FUNCTION
+//---------
 
 function renderfeedback() {
-    const main = document.querySelector('.maincontent');
-    main.innerHTML = '';
+    clearmaincontent();
+    var main = document.querySelector('#maincontent');
 
-    // Layout container
-    const container = document.createElement('div');
+    var container = document.createElement('div');
     container.className = 'feedback-container';
 
-    // Panels
-    const quizListPanel = createFeedbackQuizListPanel();
-    const quizTablePanel = createFeedbackTablePanel();
-    const wordDetailsPanel = createFeedbackWordPanel();
+    var quizlistpanel = createfeedbackquizlistpanel();
+    var quiztablepanel = createfeedbacktablepanel();
+    var worddetailspanel = createfeedbackwordpanel();
 
-    // Compose and mount
-    container.appendChild(quizListPanel);
-    container.appendChild(quizTablePanel);
-    container.appendChild(wordDetailsPanel);
+    container.appendChild(quizlistpanel);
+    container.appendChild(quiztablepanel);
+    container.appendChild(worddetailspanel);
     main.appendChild(container);
 
-    // Render first quiz table (if exists)
-    if (quizzes.length > 0) renderFeedbackQuizTable(0, quizTablePanel, wordDetailsPanel);
+    if (quizzes.length > 0) {
+        renderfeedbackquiztable(0, quiztablepanel, worddetailspanel);
+    }
 }
 
-// Left panel: Quiz List
-function createFeedbackQuizListPanel() {
-    const quizListPanel = document.createElement('aside');
-    quizListPanel.className = 'feedback-quizlist-panel';
+//---------
+//MAJOR FUNCTIONS
+//---------
 
-    const quizList = document.createElement('ul');
-    quizList.className = 'feedback-quiz-list';
+function createfeedbackquizlistpanel() {
+    var quizlistpanel = document.createElement('aside');
+    quizlistpanel.className = 'feedback-quizlist-panel';
+
+    var quizlist = document.createElement('ul');
+    quizlist.className = 'feedback-quiz-list';
 
     if (quizzes.length === 0) {
-        const empty = document.createElement('li');
+        var empty = document.createElement('li');
         empty.textContent = 'No quizzes yet';
         empty.className = 'feedback-empty';
-        quizList.appendChild(empty);
+        quizlist.appendChild(empty);
     } else {
-        quizzes.forEach((quiz, i) => {
-            const li = document.createElement('li');
-            li.textContent = quiz.title || `Quiz ${i + 1}`;
+        for (var i = 0; i < quizzes.length; i++) {
+            var quiz = quizzes[i];
+            var li = document.createElement('li');
+            li.textContent = quiz.title || 'Quiz ' + (i + 1);
             li.className = 'feedback-quiz-listitem';
             li.tabIndex = 0;
-            li.addEventListener('click', function () {
-                const quizTablePanel = document.querySelector('.feedback-table-panel');
-                const wordDetailsPanel = document.querySelector('.feedback-word-panel');
-                renderFeedbackQuizTable(i, quizTablePanel, wordDetailsPanel);
-            });
-            quizList.appendChild(li);
-        });
+            li.addEventListener('click', createfeedbackquizclickhandler(i));
+            quizlist.appendChild(li);
+        }
     }
-    quizListPanel.appendChild(quizList);
-    return quizListPanel;
+    quizlistpanel.appendChild(quizlist);
+    return quizlistpanel;
 }
 
-// Middle panel: Quiz Table
-function createFeedbackTablePanel() {
-    const quizTablePanel = document.createElement('section');
-    quizTablePanel.className = 'feedback-table-panel';
+function createfeedbackquizclickhandler(i) {
+    return function() {
+        var quiztablepanel = document.querySelector('.feedback-table-panel');
+        var worddetailspanel = document.querySelector('#feedback-word-panel');
+        renderfeedbackquiztable(i, quiztablepanel, worddetailspanel);
+    };
+}
+
+function createfeedbacktablepanel() {
+    var quiztablepanel = document.createElement('section');
+    quiztablepanel.className = 'feedback-table-panel';
     if (quizzes.length === 0) {
-        quizTablePanel.textContent = 'Select a quiz to review.';
+        quiztablepanel.textContent = 'Select a quiz to review.';
     }
-    return quizTablePanel;
+    return quiztablepanel;
 }
 
-// Right panel: Word Details (using existing modular panel)
-function createFeedbackWordPanel() {
-    const wordDetailsPanel = document.createElement('aside');
-    wordDetailsPanel.className = 'feedback-word-panel';
+function createfeedbackwordpanel() {
+    var worddetailspanel = document.createElement('aside');
+    worddetailspanel.id = 'feedback-word-panel';
 
-    // Placeholder message (visible by default)
-    const placeholder = document.createElement('div');
+    var placeholder = document.createElement('div');
     placeholder.className = 'word-details-placeholder';
     placeholder.textContent = '← Click a quiz item to view details here.';
-    wordDetailsPanel.appendChild(placeholder);
+    worddetailspanel.appendChild(placeholder);
 
-    // Real details panel, hidden by default
-    const detailsPanel = createWordDetailsPanel();
-    detailsPanel.classList.add('hidden');
-    wordDetailsPanel.appendChild(detailsPanel);
+    var detailspanel = opendetailspanel();
 
-    // Expose for internal use
-    wordDetailsPanel._detailsPanel = detailsPanel;
-    wordDetailsPanel._placeholder = placeholder;
-    return wordDetailsPanel;
+    worddetailspanel._detailsPanel = detailspanel;
+    worddetailspanel._placeholder = placeholder;
+    return worddetailspanel;
 }
 
-// Render quiz items table for quizIndex in quizTablePanel, connect to wordDetailsPanel
-function renderFeedbackQuizTable(quizIndex, quizTablePanel, wordDetailsPanel) {
-    quizTablePanel.innerHTML = '';
-    if (wordDetailsPanel && wordDetailsPanel._detailsPanel) {
-        wordDetailsPanel._detailsPanel.classList.add('hidden');
+function renderfeedbackquiztable(quizindex, quiztablepanel, worddetailspanel) {
+    quiztablepanel.innerHTML = '';
+    if (worddetailspanel && worddetailspanel._detailsPanel) {
+        worddetailspanel._detailsPanel.classList.add('hidden');
     }
 
-    const quiz = quizzes[quizIndex];
+    var quiz = quizzes[quizindex];
     if (!quiz) {
-        quizTablePanel.textContent = 'Quiz not found.';
+        quiztablepanel.textContent = 'Quiz not found.';
         return;
     }
 
-    // Table
-    const table = document.createElement('table');
+    var table = document.createElement('table');
     table.className = 'feedback-table';
-    const header = document.createElement('tr');
-    ['#', 'Base Word', 'Prompt', 'Correct?'].forEach(txt => {
-        const th = document.createElement('th');
-        th.textContent = txt;
+    var header = document.createElement('tr');
+    var headers = ['#', 'Base Word', 'Prompt', 'Correct?'];
+    for (var h = 0; h < headers.length; h++) {
+        var th = document.createElement('th');
+        th.textContent = headers[h];
         header.appendChild(th);
-    });
+    }
     table.appendChild(header);
 
-    quiz.items.forEach((item, idx) => {
-        const tr = document.createElement('tr');
+    for (var i = 0; i < quiz.items.length; i++) {
+        var item = quiz.items[i];
+        var tr = document.createElement('tr');
         tr.className = 'feedback-row';
         tr.tabIndex = 0;
-        tr.addEventListener('click', function () {
-            renderFeedbackWordDetails(item, wordDetailsPanel);
-        });
+        tr.addEventListener('click', createfeedbackitemclickhandler(item));
 
         // Number
-        const tdNum = document.createElement('td');
-        tdNum.textContent = item.itemNumber;
-        tr.appendChild(tdNum);
+        var tdnum = document.createElement('td');
+        tdnum.textContent = item.itemnumber;
+        tr.appendChild(tdnum);
 
         // Thai base word
-        const tdThai = document.createElement('td');
-        tdThai.textContent = item.thai;
-        tr.appendChild(tdThai);
+        var tdthai = document.createElement('td');
+        tdthai.textContent = item.thai;
+        tr.appendChild(tdthai);
 
         // Quiz prompt
-        const tdItem = document.createElement('td');
-        tdItem.textContent = item.item;
-        tr.appendChild(tdItem);
+        var tditem = document.createElement('td');
+        tditem.textContent = item.item;
+        tr.appendChild(tditem);
 
         // Correct?
-        const tdCorrect = document.createElement('td');
-        tdCorrect.className = 'feedback-status';
-        let iconHtml = '';
+        var tdcorr = document.createElement('td');
+        tdcorr.className = 'feedback-status';
+        var iconhtml = '';
         if (item.state === 'succeeded') {
-            iconHtml = '<span class="feedback-correct">&#10003;</span>'; // ✔
+            iconhtml = '<span class="feedback-correct">&#10003;</span>'; // ✔
         } else if (item.state === 'failed') {
-            iconHtml = '<span class="feedback-incorrect">&#10007;</span>'; // ✖
+            iconhtml = '<span class="feedback-incorrect">&#10007;</span>'; // ✖
         } else if (item.state === 'partial') {
-            iconHtml = '<span class="feedback-partial">&#9677;</span>'; // ◍
+            iconhtml = '<span class="feedback-partial">&#9677;</span>'; // ◍
         } else {
-            iconHtml = '<span class="feedback-untested">&#9679;</span>'; // ●
+            iconhtml = '<span class="feedback-untested">&#9679;</span>'; // ●
         }
-        tdCorrect.innerHTML = iconHtml;
-        tr.appendChild(tdCorrect);
+        tdcorr.innerHTML = iconhtml;
+        tr.appendChild(tdcorr);
 
         table.appendChild(tr);
-    });
+    }
 
-    quizTablePanel.appendChild(table);
+    quiztablepanel.appendChild(table);
 }
 
-// Show the word details panel for the selected quiz item (using modular panel)
-function renderFeedbackWordDetails(item, wordDetailsPanel) {
-    const detailsPanel = wordDetailsPanel._detailsPanel;
-    const placeholder = wordDetailsPanel._placeholder;
-    // Try to find the word in your main wordsData array
-    let w = wordsData.find(e => e.word === item.thai);
+function createfeedbackitemclickhandler(item) {
+    return function() {
+        let container = document.getElementById('feedback-word-panel');
+        container.innerHTML='';
+        container.appendChild(opendetailspanel());
+        
+        var w = wordsdata.find(function(it) { return it.word === item.thai; });
+        showworddetails(w);
+    };
+}
+
+function renderfeedbackworddetails(item, worddetailspanel) {
+    var detailspanel = worddetailspanel._detailsPanel;
+    var placeholder = worddetailspanel._placeholder;
+    var w = wordsdata.find(function(e) { return e.word === item.thai; });
     if (w) {
         showworddetails(w);
-        detailsPanel.classList.remove('hidden');
+        detailspanel.classList.remove('hidden');
         if (placeholder) placeholder.style.display = 'none';
     } else {
-        detailsPanel.classList.add('hidden');
+        detailspanel.classList.add('hidden');
         if (placeholder) placeholder.style.display = '';
     }
 }
 
+//---------
+//HELPER FUNCTIONS
+//---------
+
+// none needed (relies on createworddetailspanel and showworddetails from elsewhere)
+
+//---------
+//IMMEDIATE FUNCTIONS
+//---------
+
+// none — renderfeedback() is called from main.js or menu

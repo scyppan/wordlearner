@@ -10,7 +10,6 @@
 
 function buildquiz(quiztitle, quizbuilderinputs, wordsdata) {
     var quizitems = [];
-    var itemnumber = 1;
 
     for (var conf = 0; conf <= 10; conf++) {
         var types = ['word', 'shortphrase', 'longphrase', 'sentence'];
@@ -63,18 +62,25 @@ function buildquiz(quiztitle, quizbuilderinputs, wordsdata) {
                 }
             }
 
+            // Only shuffle and pick needed for this group, not number
             shufflearray(candidates);
 
-            // Add up to needed items
             for (var c = 0; c < Math.min(needed, candidates.length); c++) {
                 quizitems.push({
-                    itemnumber: itemnumber++,
                     thai: candidates[c].thai,
                     item: candidates[c].item,
                     state: 'not tested'
                 });
             }
         }
+    }
+
+    // Shuffle all quizitems globally
+    shufflearray(quizitems);
+
+    // Assign item numbers globally
+    for (var i = 0; i < quizitems.length; i++) {
+        quizitems[i].itemnumber = i + 1;
     }
 
     return {

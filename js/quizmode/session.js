@@ -1,4 +1,4 @@
-function renderQuizSession(quizIndex, targetElem) {
+function renderquizsession(quizIndex, targetElem) {
     const target = targetElem || document.querySelector('.maincontent');
     target.innerHTML = '';
 
@@ -33,7 +33,7 @@ function renderQuizSession(quizIndex, targetElem) {
 
         // Number
         const tdNum = document.createElement('td');
-        tdNum.textContent = item.itemNumber;
+        tdNum.textContent = item.itemnumber;
         tr.appendChild(tdNum);
 
         // Item
