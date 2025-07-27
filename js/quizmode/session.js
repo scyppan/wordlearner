@@ -38,7 +38,27 @@ function renderquizsession(quizIndex, targetElem) {
 
         // Item
         const tdItem = document.createElement('td');
-        tdItem.textContent = item.item;
+        tdItem.className = 'quizsession-itemcell';
+
+        const spanText = document.createElement('span');
+        spanText.textContent = item.item;
+        tdItem.appendChild(spanText);
+
+        // Paper icon button
+        const infoBtn = document.createElement('button');
+        infoBtn.type = 'button';
+        infoBtn.className = 'quiz-info-btn';
+        infoBtn.title = 'Show details';
+        infoBtn.setAttribute('aria-label', 'Show details for this item');
+
+        // ← only these two lines are new:
+        infoBtn.dataset.itemIndex = idx;
+        infoBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            showitemprompt(e);
+        });
+
+        tdItem.appendChild(infoBtn);
         tr.appendChild(tdItem);
 
         // Status bubbles
@@ -47,9 +67,9 @@ function renderquizsession(quizIndex, targetElem) {
 
         const states = [
             { state: 'not tested', label: 'Not tested', class: 'bubble-not-tested' },
-            { state: 'failed',     label: 'Failed',     class: 'bubble-failed' },
-            { state: 'partial',    label: 'Partial',    class: 'bubble-partial' },
-            { state: 'succeeded',  label: 'Correct',    class: 'bubble-succeeded' }
+            { state: 'failed', label: 'Failed', class: 'bubble-failed' },
+            { state: 'partial', label: 'Partial', class: 'bubble-partial' },
+            { state: 'succeeded', label: 'Correct', class: 'bubble-succeeded' }
         ];
 
         states.forEach(s => {

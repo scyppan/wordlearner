@@ -135,18 +135,17 @@ function renderfeedbackquiztable(quizindex, quiztablepanel, worddetailspanel) {
         }
 
         // This closure will set selectedrowindex and re-render table on click
-        tr.addEventListener('click', (function(rowidx, quizidx){
-            return function() {
+        tr.addEventListener('click', (function (rowidx, quizidx, clickeditem) {
+            return function () {
                 selectedrowindex = rowidx;
                 renderfeedbackquiztable(quizidx, quiztablepanel, worddetailspanel);
-                // Optionally, show word details as before:
                 let container = document.getElementById('feedback-word-panel');
                 container.innerHTML = '';
                 container.appendChild(opendetailspanel());
-                var w = wordsdata.find(function (it) { return it.word === item.thai; });
+                var w = wordsdata.find(function (it) { return it.word === clickeditem.thai; });
                 showworddetails(w);
             };
-        })(i, quizindex));
+        })(i, quizindex, item));
 
         // Number
         var tdnum = document.createElement('td');
@@ -161,6 +160,37 @@ function renderfeedbackquiztable(quizindex, quiztablepanel, worddetailspanel) {
         // Quiz prompt
         var tditem = document.createElement('td');
         tditem.textContent = item.item;
+
+        // Paper icon button
+        var infobtn = document.createElement('button');
+        infobtn.type = 'button';
+        infobtn.className = 'quiz-info-btn';
+        infobtn.title = 'Show details';
+        infobtn.setAttribute('aria-label', 'Show details for this item');
+
+        // store indexes
+        infobtn.dataset.quizindex = quizindex;
+        infobtn.dataset.itemindex = i;
+
+        // SVG as before
+        infobtn.innerHTML =
+            '<svg width="15" height="15" viewBox="0 0 24 24" fill="none">' +
+            '<path d="M7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4C5 2.89543 5.89543 2 7 2Z" stroke="#666" stroke-width="2"/>' +
+            '<path d="M9 6H15" stroke="#666" stroke-width="2"/>' +
+            '<path d="M9 10H15" stroke="#666" stroke-width="2"/>' +
+            '<path d="M9 14H13" stroke="#666" stroke-width="2"/>' +
+            '</svg>';
+
+        // click handler
+        infobtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var q = parseInt(this.dataset.quizindex, 10);
+            var idx = parseInt(this.dataset.itemindex, 10);
+            var clickeditem = quizzes[q].items[idx];
+            showquizitempopup(clickeditem);
+        });
+
+        tditem.appendChild(infobtn);
         tr.appendChild(tditem);
 
         // Correct?
