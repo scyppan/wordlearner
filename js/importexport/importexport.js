@@ -1,6 +1,6 @@
 function renderdata() {
-    var main = document.querySelector('.maincontent');
-    if (!main) return;
+    clearmaincontent();
+    var main = document.querySelector('#maincontent');
 
     main.innerHTML = '';
 
