@@ -26,7 +26,7 @@ function importfromjson() {
             throw 0;
           }
         }
-        wordsData = arr;
+        wordsdata = arr;
         alert('Import successful!');
       } catch (e) {
         alert('Invalid JSON format or structure.');
