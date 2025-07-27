@@ -8,19 +8,15 @@
 //ENTRY FUNCTION
 //---------
 
-function refreshwordlist() {
+function refreshwordlist(items) {
   var ul = document.getElementById('word-list');
   if (!ul) return;
   ul.innerHTML = '';
-  wordsdata.forEach(function(w) {
-    var li = document.createElement('li');
-    li.textContent = w.word;
-    li.addEventListener('click', function() {
-      showworddetails(w);
-    });
-    ul.appendChild(li);
+  (items || wordsdata).forEach(function(w, idx) {
+    ul.appendChild(buildli(w));
   });
 }
+
 
 //---------
 //MAJOR FUNCTIONS

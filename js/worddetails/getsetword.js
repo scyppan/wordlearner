@@ -40,7 +40,7 @@ function setthaiscript(word) {
 function changethaiscript(val) {
     var word = getwordfromdetailspanel()
     word.word = val
-    refreshwordlist()
+    refreshwordlist(wordsdata)
     setthaiscript(word)
 }
 
@@ -56,7 +56,7 @@ function setromanization(word) {
 function changeromanization(val) {
     var word = getwordfromdetailspanel()
     word.romanization = val
-    refreshwordlist()
+    refreshwordlist(wordsdata)
     setromanization(word)
 }
 
@@ -104,7 +104,7 @@ function setposfromdb(word) {
     // Replace any old handler
     el.oninput = function () {
         word.pos = this.value.trim();
-        refreshwordlist();
+        refreshwordlist(wordsdata);
     };
 }
 
@@ -115,14 +115,14 @@ function setdefinitionfromdb(word) {
     // Replace any old handler
     el.oninput = function () {
         word.definition = this.value;
-        refreshwordlist();
+        refreshwordlist(wordsdata);
     };
 }
 
 function changedefinition(val) {
     var word = getwordfromdetailspanel()
     word.definition = val
-    refreshwordlist()
+    refreshwordlist(wordsdata)
     setdefinitionfromdb(word)
 }
 
@@ -181,7 +181,7 @@ function setshortphrasesfromdb(word) {
       return function() {
         word.shortphrases.splice(r, 1);
         setshortphrasesfromdb(word);
-        refreshwordlist();
+        refreshwordlist(wordsdata);
       };
     })(rowidx);
     tddel.appendChild(delbtn);
@@ -195,7 +195,7 @@ function setshortphrasesfromdb(word) {
     addbtn.onclick = function() {
       word.shortphrases.push({ thai: '', romanization: '', english: '' });
       setshortphrasesfromdb(word);
-      refreshwordlist();
+      refreshwordlist(wordsdata);
     };
   }
 }
@@ -212,7 +212,7 @@ function changeshortphrasecell(word, rowidx, colidx, newvalue) {
   }
 
   word.shortphrases[rowidx][key] = newvalue;
-  refreshwordlist();
+  refreshwordlist(wordsdata);
 }
 
 function setlongphrasesfromdb(word) {
@@ -255,7 +255,7 @@ function setlongphrasesfromdb(word) {
       return function() {
         word.longphrases.splice(r, 1);
         setlongphrasesfromdb(word);
-        refreshwordlist();
+        refreshwordlist(wordsdata);
       };
     })(rowidx);
     tddel.appendChild(delbtn);
@@ -269,7 +269,7 @@ function setlongphrasesfromdb(word) {
     addbtn.onclick = function() {
       word.longphrases.push({ thai: '', romanization: '', english: '' });
       setlongphrasesfromdb(word);
-      refreshwordlist();
+      refreshwordlist(wordsdata);
     };
   }
 }
@@ -286,7 +286,7 @@ function changelongphrasecell(word, rowidx, colidx, newvalue) {
   }
 
   word.longphrases[rowidx][key] = newvalue;
-  refreshwordlist();
+  refreshwordlist(wordsdata);
 }
 
 function setsentencesfromdb(word) {
@@ -329,7 +329,7 @@ function setsentencesfromdb(word) {
       return function() {
         word.sentences.splice(r, 1);
         setsentencesfromdb(word);
-        refreshwordlist();
+        refreshwordlist(wordsdata);
       };
     })(rowidx);
     tddel.appendChild(delbtn);
@@ -343,7 +343,7 @@ function setsentencesfromdb(word) {
     addbtn.onclick = function() {
       word.sentences.push({ thai: '', romanization: '', english: '' });
       setsentencesfromdb(word);
-      refreshwordlist();
+      refreshwordlist(wordsdata);
     };
   }
 }
@@ -360,7 +360,7 @@ function changesentencecell(word, rowidx, colidx, newvalue) {
   }
 
   word.sentences[rowidx][key] = newvalue;
-  refreshwordlist();
+  refreshwordlist(wordsdata);
 }
 
 

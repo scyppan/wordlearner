@@ -10,17 +10,17 @@
 //---------
 
 function searchbar(list) {
-  // 1) find or create the search input
-  var input = document.getElementById('word-search')
+  var input = document.getElementById('word-search');
   if (!input) {
     input = document.createElement('input')
     input.id = 'word-search'
     input.placeholder = 'Search…'
-    createautocomplete(input, list)
-    wireselectallonfocus(input)
-    wirealtsfocus()
+    attachsearchlistener(input)
   }
 
+  createautocomplete(input, list)
+  wireselectallonfocus(input)
+  wirealtsfocus()
   return input
 }
 
@@ -32,6 +32,7 @@ function createautocomplete(input, list) {
   var selectedindex = -1
 
   renderlist(wordsdata)
+  
 
   input.addEventListener('input', oninput)
   input.addEventListener('keydown', handlekey)
@@ -40,29 +41,30 @@ function createautocomplete(input, list) {
   })
 
   function oninput() {
-    var term = normalize(input.value.trim())
+    var term = normalize(input.value.trim()) 
+    console.log(term);
     var matches = term === ''
       ? wordsdata
       : wordsdata.filter(function (item) {
         var thai = (item.word || '').toLowerCase()
         var roman = normalize(item.romanization || '')
         var def = (item.definition || '').toLowerCase()
+        var notes = (item.notes || '').toLowerCase()
         return thai.includes(term)
           || roman.includes(term)
           || def.includes(term)
+          || notes.includes(term)
       })
     renderlist(matches)
   }
 
   function renderlist(items) {
     list.innerHTML = ''
-
-    items.forEach(function (item) {
+    items.forEach(function (item, idx) {
       list.append(buildli(item, input, function () {
         selectedindex = -1
       }))
     })
-
     selectedindex = -1
   }
 
@@ -82,6 +84,17 @@ function createautocomplete(input, list) {
       items[selectedindex].dispatchEvent(new MouseEvent('mousedown'))
       e.preventDefault()
     }
+  }
+
+  function updatehighlight(items) {
+    items.forEach(function (li, idx) {
+      if (idx === selectedindex) {
+        li.classList.add('selected')
+        li.scrollIntoView({ block: 'nearest' })
+      } else {
+        li.classList.remove('selected')
+      }
+    })
   }
 }
 
@@ -110,6 +123,32 @@ function normalize(text) {
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
 }
+
+function attachsearchlistener(input) {
+  input.addEventListener('input', function () {
+    var list = document.getElementById('word-list')
+    if (!list) return
+    var term = normalize(input.value.trim())
+    var matches = term === ''
+      ? wordsdata
+      : wordsdata.filter(function (item) {
+          var thai = (item.word || '').toLowerCase()
+          var roman = normalize(item.romanization || '')
+          var def = (item.definition || '').toLowerCase()
+          var notes = (item.notes || '').toLowerCase()
+          return thai.includes(term)
+            || roman.includes(term)
+            || def.includes(term)
+            || notes.includes(term)
+      })
+    list.innerHTML = ''
+    matches.forEach(function (item) {
+      // Use buildli from your helpers; clearselect can be a no-op if not used
+      list.appendChild(buildli(item, input, function () {}))
+    })
+  })
+}
+
 
 //---------
 //IMMEDIATE FUNCTIONS

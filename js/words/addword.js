@@ -20,5 +20,5 @@ function addword() {
 
     wordsdata.push(newWord)
     showworddetails(newWord)
-    refreshWordList()
+    refreshWordList(wordsdata);
 }

@@ -22,6 +22,7 @@ function buildwordlist() {
     const search = document.createElement('input')
     search.id = 'word-search'
     search.placeholder = 'Search…'
+    attachsearchlistener(search)
     searchRow.append(search)
 
     const addBtn = document.createElement('button')
