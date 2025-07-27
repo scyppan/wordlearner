@@ -1,5 +1,5 @@
 function exporttojson() {
-  var dataStr = JSON.stringify(wordsData, null, 2);
+  var dataStr = JSON.stringify(wordsdata, null, 2);
   var blob = new Blob([dataStr], {type: 'application/json'});
   var url = URL.createObjectURL(blob);
 
