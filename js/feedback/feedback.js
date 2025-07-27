@@ -10,6 +10,7 @@ var selectedrowindex = null;
 //---------
 
 function renderfeedback() {
+    
     clearmaincontent();
     var main = document.querySelector('#maincontent');
 
@@ -26,12 +27,10 @@ function renderfeedback() {
     main.appendChild(container);
 
     if (quizzes.length > 0) {
-        if (selectedquizindex === null || selectedquizindex > quizzes.length - 1) {
-            selectedquizindex = quizzes.length - 1;
-        }
-        renderfeedbackquiztable(selectedquizindex, quiztablepanel, worddetailspanel);
+        renderfeedbackquiztable(quizzes.length-1, quiztablepanel, worddetailspanel);
     }
 }
+
 //---------
 //MAJOR FUNCTIONS
 //---------
@@ -70,9 +69,17 @@ function createfeedbackquizlistpanel() {
 function createfeedbackquizclickhandler(i) {
     return function () {
         selectedquizindex = i;
-        selectedrowindex = null;  // <--- reset row selection when quiz changes
-        renderfeedback();
+        selectedrowindex = null;
+        renderselectedquizonly();
     };
+}
+
+function renderselectedquizonly() {
+    var quiztablepanel = document.querySelector('.feedback-table-panel');
+    var worddetailspanel = document.getElementById('feedback-word-panel');
+    if (quiztablepanel && worddetailspanel && selectedquizindex !== null) {
+        renderfeedbackquiztable(selectedquizindex, quiztablepanel, worddetailspanel);
+    }
 }
 
 function createfeedbacktablepanel() {

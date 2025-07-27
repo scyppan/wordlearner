@@ -1380,66 +1380,6 @@
     ]
   },
   {
-    "word": "ดี",
-    "confidence": 1,
-    "romanization": "dee",
-    "type": "content",
-    "pos": "adjective",
-    "definition": "good, well",
-    "notes": "",
-    "shortphrases": [
-      {
-        "thai": "ดีมาก",
-        "romanization": "dee mâak",
-        "english": "very good"
-      },
-      {
-        "thai": "ดูดี",
-        "romanization": "doo dee",
-        "english": "looks good"
-      },
-      {
-        "thai": "วันดี",
-        "romanization": "wan dee",
-        "english": "good day"
-      }
-    ],
-    "longphrases": [
-      {
-        "thai": "วันนี้ดูดีจริง ๆ",
-        "romanization": "wan née doo dee jing jing",
-        "english": "today looks really good"
-      },
-      {
-        "thai": "คุณดูดีมาก",
-        "romanization": "khun doo dee mâak",
-        "english": "you look very good"
-      },
-      {
-        "thai": "อากาศดีมาก",
-        "romanization": "aa-gàat dee mâak",
-        "english": "the weather is very nice"
-      }
-    ],
-    "sentences": [
-      {
-        "thai": "วันนี้คุณดูดีจริง ๆ",
-        "romanization": "wan née khun doo dee jing jing",
-        "english": "today you look really good"
-      },
-      {
-        "thai": "ผมรู้สึกดีมากครับ",
-        "romanization": "pôm rúu-sùek dee mâak kráp",
-        "english": "I feel very good (male polite)"
-      },
-      {
-        "thai": "วันดี ๆ แบบนี้หายาก",
-        "romanization": "wan dee dee bàep née hăa yâak",
-        "english": "a good day like this is rare"
-      }
-    ]
-  },
-  {
     "word": "จริง ๆ",
     "confidence": 1,
     "romanization": "jing jing",

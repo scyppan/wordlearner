@@ -10,13 +10,13 @@ var progresscontainer = null;
 
 function renderprogress() {
   clearmaincontent();
-  progresscontainer = document.createElement('div');
-  progresscontainer.className = 'progress-container';
+  progresscontainer = document.createElement("div");
+  progresscontainer.className = "progress-container";
 
-  progresscontainer.appendChild(buildquizsummarytable());
   progresscontainer.appendChild(buildconfidencecounttable());
+  progresscontainer.appendChild(buildquizsummarytable());
 
-  document.querySelector('#maincontent').appendChild(progresscontainer);
+  document.querySelector("#maincontent").appendChild(progresscontainer);
 }
 
 //---------
@@ -24,12 +24,14 @@ function renderprogress() {
 //---------
 
 function buildquizsummarytable() {
-  var table = document.createElement('table');
-  table.className = 'progress-quiz-table';
+  var table = document.createElement("table");
+  table.className = "progress-quiz-table";
 
-  var header = document.createElement('tr');
-  ['quiz', 'correct', 'partial', 'incorrect', '% correct'].forEach(function (label) {
-    var th = document.createElement('th');
+  var header = document.createElement("tr");
+  ["quiz", "correct", "partial", "incorrect", "% correct"].forEach(function (
+    label
+  ) {
+    var th = document.createElement("th");
     th.textContent = label;
     header.appendChild(th);
   });
@@ -41,23 +43,24 @@ function buildquizsummarytable() {
     var incorrect = 0;
 
     quiz.items.forEach(function (item) {
-      if (item.state === 'correct') correct++;
-      else if (item.state === 'partial') partial++;
-      else if (item.state === 'incorrect') incorrect++;
+      if (item.state === "succeeded") correct++;
+      else if (item.state === "partial") partial++;
+      else if (item.state === "failed") incorrect++;
     });
 
-    var total = correct + partial + incorrect;
-    var percent = total > 0 ? ((correct / total) * 100).toFixed(1) + '%' : '-';
+    var attempted = correct + partial + incorrect;
+    var percent =
+      attempted > 0 ? ((correct / attempted) * 100).toFixed(1) + "%" : "-";
 
-    var row = document.createElement('tr');
+    var row = document.createElement("tr");
     [
-      quiz.title || 'quiz ' + (i + 1),
+      quiz.title || "quiz " + (i + 1),
       correct,
       partial,
       incorrect,
-      percent
+      percent,
     ].forEach(function (val) {
-      var td = document.createElement('td');
+      var td = document.createElement("td");
       td.textContent = val;
       row.appendChild(td);
     });
@@ -76,28 +79,30 @@ function buildconfidencecounttable() {
     counts[conf]++;
   });
 
-  var table = document.createElement('table');
-  table.className = 'progress-confidence-table';
+  var table = document.createElement("table");
+  table.className = "progress-confidence-table";
 
-  var header = document.createElement('tr');
-  ['confidence', 'count'].forEach(function (label) {
-    var th = document.createElement('th');
+  var header = document.createElement("tr");
+  ["confidence", "count"].forEach(function (label) {
+    var th = document.createElement("th");
     th.textContent = label;
     header.appendChild(th);
   });
   table.appendChild(header);
 
-  Object.keys(counts).sort(function (a, b) {
-    return parseInt(a) - parseInt(b);
-  }).forEach(function (conf) {
-    var row = document.createElement('tr');
-    [conf, counts[conf]].forEach(function (val) {
-      var td = document.createElement('td');
-      td.textContent = val;
-      row.appendChild(td);
+  Object.keys(counts)
+    .sort(function (a, b) {
+      return parseInt(a) - parseInt(b);
+    })
+    .forEach(function (conf) {
+      var row = document.createElement("tr");
+      [conf, counts[conf]].forEach(function (val) {
+        var td = document.createElement("td");
+        td.textContent = val;
+        row.appendChild(td);
+      });
+      table.appendChild(row);
     });
-    table.appendChild(row);
-  });
 
   return table;
 }
