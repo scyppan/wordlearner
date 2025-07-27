@@ -2,7 +2,7 @@
 //GLOBAL VARIABLES (MODULE STATE)
 //---------
 
-// none for this module
+var selectedquizindex = null;
 
 //---------
 //ENTRY FUNCTION
@@ -25,10 +25,12 @@ function renderfeedback() {
     main.appendChild(container);
 
     if (quizzes.length > 0) {
-        renderfeedbackquiztable(0, quiztablepanel, worddetailspanel);
+        if (selectedquizindex === null || selectedquizindex > quizzes.length - 1) {
+            selectedquizindex = quizzes.length - 1;
+        }
+        renderfeedbackquiztable(selectedquizindex, quiztablepanel, worddetailspanel);
     }
 }
-
 //---------
 //MAJOR FUNCTIONS
 //---------
@@ -52,6 +54,10 @@ function createfeedbackquizlistpanel() {
             li.textContent = quiz.title || 'Quiz ' + (i + 1);
             li.className = 'feedback-quiz-listitem';
             li.tabIndex = 0;
+            if (i === selectedquizindex) {
+                console.log('Selected:', i); // <---- DEBUG
+                li.classList.add('selected');
+            }
             li.addEventListener('click', createfeedbackquizclickhandler(i));
             quizlist.appendChild(li);
         }
@@ -61,10 +67,9 @@ function createfeedbackquizlistpanel() {
 }
 
 function createfeedbackquizclickhandler(i) {
-    return function() {
-        var quiztablepanel = document.querySelector('.feedback-table-panel');
-        var worddetailspanel = document.querySelector('#feedback-word-panel');
-        renderfeedbackquiztable(i, quiztablepanel, worddetailspanel);
+    return function () {
+        selectedquizindex = i;
+        renderfeedback();
     };
 }
 
@@ -161,12 +166,12 @@ function renderfeedbackquiztable(quizindex, quiztablepanel, worddetailspanel) {
 }
 
 function createfeedbackitemclickhandler(item) {
-    return function() {
+    return function () {
         let container = document.getElementById('feedback-word-panel');
-        container.innerHTML='';
+        container.innerHTML = '';
         container.appendChild(opendetailspanel());
-        
-        var w = wordsdata.find(function(it) { return it.word === item.thai; });
+
+        var w = wordsdata.find(function (it) { return it.word === item.thai; });
         showworddetails(w);
     };
 }
@@ -174,7 +179,7 @@ function createfeedbackitemclickhandler(item) {
 function renderfeedbackworddetails(item, worddetailspanel) {
     var detailspanel = worddetailspanel._detailsPanel;
     var placeholder = worddetailspanel._placeholder;
-    var w = wordsdata.find(function(e) { return e.word === item.thai; });
+    var w = wordsdata.find(function (e) { return e.word === item.thai; });
     if (w) {
         showworddetails(w);
         detailspanel.classList.remove('hidden');

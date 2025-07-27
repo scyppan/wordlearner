@@ -38,8 +38,7 @@
   overflow: visible;
 }
 
-.feedback-quiz-listitem:hover,
-.feedback-quiz-listitem.active {
+.feedback-quiz-listitem:hover{
   background: #e2d1c8;
   color: #382a20;
 }
@@ -101,4 +100,18 @@ margin-top:20px;
     font-size: .80em;
     margin-left: 3px;
   }
+}
+
+.feedback-quiz-listitem.selected,
+.feedback-quiz-listitem.selected:focus {
+  background: #d2e8ff;
+  color: #253f58;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+}
+
+.feedback-quiz-listitem:focus {
+  background: #f0f7ff;
+  color: #253f58;
 }
