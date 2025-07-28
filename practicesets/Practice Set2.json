@@ -1,0 +1,902 @@
+[
+  {
+    "word": "มัน",
+    "confidence": 1,
+    "romanization": "man",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "it",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "มันดี", "romanization": "man dii", "english": "it’s good" },
+      { "thai": "มันไม่ดี", "romanization": "man mâi dii", "english": "it’s not good" },
+      { "thai": "มันเป็นอะไร", "romanization": "man bpen à-rai", "english": "what is it" }
+    ],
+    "longphrases": [
+      { "thai": "มันดีจริง ๆ", "romanization": "man dii jing jing", "english": "it’s really good" },
+      { "thai": "มันไม่ดีจริง ๆ", "romanization": "man mâi dii jing jing", "english": "it’s really not good" },
+      { "thai": "มันเป็นวันอะไร", "romanization": "man bpen wan à-rai", "english": "what day is it" }
+    ],
+    "sentences": [
+      { "thai": "มันดีวันนี้", "romanization": "man dii wan-née", "english": "it’s good today" },
+      { "thai": "มันไม่ดีวันจันทร์", "romanization": "man mâi dii wan jan-than", "english": "it wasn’t good on Monday" },
+      { "thai": "มันเป็นบ้าน", "romanization": "man bpen bâan", "english": "it’s a home" }
+    ]
+  },
+  {
+    "word": "เรา",
+    "confidence": 1,
+    "romanization": "rao",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "we",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เราอยาก", "romanization": "rao yàak", "english": "we want" },
+      { "thai": "เราเดินทาง", "romanization": "rao dern thaang", "english": "we travel" },
+      { "thai": "เราเล่นเกม", "romanization": "rao lên gem", "english": "we play a game" }
+    ],
+    "longphrases": [
+      { "thai": "เราอยากดูหนัง", "romanization": "rao yàak duu năng", "english": "we want to watch a movie" },
+      { "thai": "เราอยากเดินทางกรุงเทพฯ", "romanization": "rao yàak dern thaang krung thep", "english": "we want to travel to Bangkok" },
+      { "thai": "เราเล่นเกมวันนี้", "romanization": "rao lên gem wan-née", "english": "we play a game today" }
+    ],
+    "sentences": [
+      { "thai": "เราอยากดูหนังคืนนี้", "romanization": "rao yàak duu năng keun-née", "english": "we want to watch a movie tonight" },
+      { "thai": "เราเดินทางพรุ่งนี้", "romanization": "rao dern thaang prûng-née", "english": "we travel tomorrow" },
+      { "thai": "เราเล่นเกมวันอาทิตย์", "romanization": "rao lên gem wan a-thít", "english": "we play a game on Sunday" }
+    ]
+  },
+  {
+    "word": "ตัวเอง",
+    "confidence": 1,
+    "romanization": "tua-eng",
+    "type": "content",
+    "pos": "pronoun",
+    "definition": "oneself",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ตัวเองดี", "romanization": "tua-eng dii", "english": "oneself is good" },
+      { "thai": "ตัวเองไม่ดี", "romanization": "tua-eng mâi dii", "english": "oneself is not good" },
+      { "thai": "ตัวเองเล่นเกม", "romanization": "tua-eng lên gem", "english": "oneself plays a game" }
+    ],
+    "longphrases": [
+      { "thai": "ตัวเองเป็นคน", "romanization": "tua-eng bpen kon", "english": "oneself is a person" },
+      { "thai": "ตัวเองอยากเดินทาง", "romanization": "tua-eng yàak dern thaang", "english": "oneself wants to travel" },
+      { "thai": "ตัวเองดูหนัง", "romanization": "tua-eng duu năng", "english": "oneself watches a movie" }
+    ],
+    "sentences": [
+      { "thai": "ตัวเองดีวันนี้", "romanization": "tua-eng dii wan-née", "english": "oneself is good today" },
+      { "thai": "ตัวเองไม่ดีเมื่อวานนี้", "romanization": "tua-eng mâi dii mûe-waan-née", "english": "oneself wasn’t good yesterday" },
+      { "thai": "ตัวเองเล่นเกมวันเสาร์", "romanization": "tua-eng lên gem wan sǎo", "english": "oneself plays a game on Saturday" }
+    ]
+  },
+  {
+    "word": "อะไร",
+    "confidence": 1,
+    "romanization": "à-rai",
+    "type": "content",
+    "pos": "interrogative",
+    "definition": "what",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "กินอะไร", "romanization": "gin à-rai", "english": "eat what" },
+      { "thai": "ดูอะไร", "romanization": "duu à-rai", "english": "watch what" },
+      { "thai": "ทำอะไร", "romanization": "tam à-rai", "english": "do what" }
+    ],
+    "longphrases": [
+      { "thai": "คุณทำอะไรแล้ววันนี้", "romanization": "khun tam à-rai láew wan-née", "english": "what did you do today" },
+      { "thai": "อะไรดีจริง ๆ", "romanization": "à-rai dii jing jing", "english": "what’s really good" },
+      { "thai": "กินอะไรคืนนี้", "romanization": "gin à-rai keun-née", "english": "what to eat tonight" }
+    ],
+    "sentences": [
+      { "thai": "กินอะไรวันนี้", "romanization": "gin à-rai wan-née", "english": "what to eat today" },
+      { "thai": "ดูอะไรคืนนี้", "romanization": "duu à-rai keun-née", "english": "what to watch tonight" },
+      { "thai": "ทำอะไรพรุ่งนี้", "romanization": "tam à-rai prûng-née", "english": "what to do tomorrow" }
+    ]
+  },
+  {
+    "word": "เป็น",
+    "confidence": 1,
+    "romanization": "bpen",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to be",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เป็นคน", "romanization": "bpen kon", "english": "to be a person" },
+      { "thai": "เป็นบ้าน", "romanization": "bpen bâan", "english": "to be a home" },
+      { "thai": "เป็นวัน", "romanization": "bpen wan", "english": "to be a day" }
+    ],
+    "longphrases": [
+      { "thai": "เป็นวันจันทร์", "romanization": "bpen wan jan-than", "english": "to be Monday" },
+      { "thai": "เป็นวันอะไร", "romanization": "bpen wan à-rai", "english": "to be what day" },
+      { "thai": "เป็นวันอาทิตย์", "romanization": "bpen wan a-thít", "english": "to be Sunday" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เป็นวันอะไร", "romanization": "wan-née bpen wan à-rai", "english": "what day is today" },
+      { "thai": "พรุ่งนี้เป็นวันอะไรคะ", "romanization": "prûng-née bpen wan à-rai khá", "english": "what day is tomorrow?" },
+      { "thai": "เมื่อวานนี้เป็นวันอะไรคะ", "romanization": "mûe-waan-née bpen wan à-rai khá", "english": "what day was yesterday?" }
+    ]
+  },
+  {
+    "word": "พรุ่งนี้",
+    "confidence": 1,
+    "romanization": "prûng-née",
+    "type": "time",
+    "pos": "noun",
+    "definition": "tomorrow",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พรุ่งนี้ดี", "romanization": "prûng-née dii", "english": "tomorrow is good" },
+      { "thai": "พรุ่งนี้ไม่ดี", "romanization": "prûng-née mâi dii", "english": "tomorrow is not good" },
+      { "thai": "พรุ่งนี้ดูหนัง", "romanization": "prûng-née duu năng", "english": "watch a movie tomorrow" }
+    ],
+    "longphrases": [
+      { "thai": "พรุ่งนี้อยากเดินทาง", "romanization": "prûng-née yàak dern thaang", "english": "tomorrow want to travel" },
+      { "thai": "พรุ่งนี้อยากเล่นเกม", "romanization": "prûng-née yàak lên gem", "english": "tomorrow want to play a game" },
+      { "thai": "พรุ่งนี้เป็นวันอะไรคะ", "romanization": "prûng-née bpen wan à-rai khá", "english": "what day is tomorrow?" }
+    ],
+    "sentences": [
+      { "thai": "พรุ่งนี้เป็นวันจันทร์", "romanization": "prûng-née bpen wan jan-than", "english": "tomorrow is Monday" },
+      { "thai": "พรุ่งนี้คุณทำอะไร", "romanization": "prûng-née khun tam à-rai", "english": "what are you doing tomorrow" },
+      { "thai": "พรุ่งนี้เราเดินทางกรุงเทพฯ", "romanization": "prûng-née rao dern thaang krung thep", "english": "tomorrow we travel to Bangkok" }
+    ]
+  },
+  {
+    "word": "เมื่อวานนี้",
+    "confidence": 1,
+    "romanization": "mûe-waan-née",
+    "type": "time",
+    "pos": "noun",
+    "definition": "yesterday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เมื่อวานนี้ดี", "romanization": "mûe-waan-née dii", "english": "yesterday was good" },
+      { "thai": "เมื่อวานนี้ไม่ดี", "romanization": "mûe-waan-née mâi dii", "english": "yesterday was not good" },
+      { "thai": "เมื่อวานนี้ดูหนัง", "romanization": "mûe-waan-née duu năng", "english": "watched a movie yesterday" }
+    ],
+    "longphrases": [
+      { "thai": "เมื่อวานนี้เราเล่นเกม", "romanization": "mûe-waan-née rao lên gem", "english": "yesterday we played a game" },
+      { "thai": "เมื่อวานนี้อยากกินอะไร", "romanization": "mûe-waan-née yàak gin à-rai", "english": "yesterday wanted to eat something" },
+      { "thai": "เมื่อวานนี้เป็นวันอะไรคะ", "romanization": "mûe-waan-née bpen wan à-rai khá", "english": "what day was yesterday?" }
+    ],
+    "sentences": [
+      { "thai": "เมื่อวานนี้เป็นวันอาทิตย์", "romanization": "mûe-waan-née bpen wan a-thít", "english": "yesterday was Sunday" },
+      { "thai": "เมื่อวานนี้ฉันวิ่ง", "romanization": "mûe-waan-née chăn wîng", "english": "I ran yesterday" },
+      { "thai": "เมื่อวานนี้เราเดินทาง", "romanization": "mûe-waan-née rao dern thaang", "english": "we traveled yesterday" }
+    ]
+  },
+  {
+    "word": "วันจันทร์",
+    "confidence": 1,
+    "romanization": "wan jan-than",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Monday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันจันทร์ดี", "romanization": "wan jan-than dii", "english": "Monday is good" },
+      { "thai": "วันจันทร์ไม่ดี", "romanization": "wan jan-than mâi dii", "english": "Monday is not good" },
+      { "thai": "วันจันทร์ดูหนัง", "romanization": "wan jan-than duu năng", "english": "watch a movie on Monday" }
+    ],
+    "longphrases": [
+      { "thai": "วันจันทร์เราเดินทาง", "romanization": "wan jan-than rao dern thaang", "english": "on Monday we travel" },
+      { "thai": "วันจันทร์อยากเล่นเกม", "romanization": "wan jan-than yàak lên gem", "english": "on Monday we want to play a game" },
+      { "thai": "วันจันทร์เป็นวันดี", "romanization": "wan jan-than bpen wan dii", "english": "Monday is a good day" }
+    ],
+    "sentences": [
+      { "thai": "วันจันทร์เป็นวันอะไร", "romanization": "wan jan-than bpen wan à-rai", "english": "what day is Monday?" },
+      { "thai": "วันจันทร์ฉันดูหนัง", "romanization": "wan jan-than chăn duu năng", "english": "I watch a movie on Monday" },
+      { "thai": "วันจันทร์เราเล่นเกม", "romanization": "wan jan-than rao lên gem", "english": "we play a game on Monday" }
+    ]
+  },
+  {
+    "word": "วันอังคาร",
+    "confidence": 1,
+    "romanization": "wan ang-khaan",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Tuesday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันอังคารดี", "romanization": "wan ang-khaan dii", "english": "Tuesday is good" },
+      { "thai": "วันอังคารไม่ดี", "romanization": "wan ang-khaan mâi dii", "english": "Tuesday is not good" },
+      { "thai": "วันอังคารกินอะไร", "romanization": "wan ang-khaan gin à-rai", "english": "what to eat on Tuesday" }
+    ],
+    "longphrases": [
+      { "thai": "วันอังคารเราดูหนัง", "romanization": "wan ang-khaan rao duu năng", "english": "on Tuesday we watch a movie" },
+      { "thai": "วันอังคารอยากเดินทาง", "romanization": "wan ang-khaan yàak dern thaang", "english": "on Tuesday want to travel" },
+      { "thai": "วันอังคารฉันเล่นเกม", "romanization": "wan ang-khaan chăn lên gem", "english": "I play a game on Tuesday" }
+    ],
+    "sentences": [
+      { "thai": "วันอังคารเป็นวันอะไร", "romanization": "wan ang-khaan bpen wan à-rai", "english": "what day is Tuesday?" },
+      { "thai": "วันอังคารเราเจอคุณ", "romanization": "wan ang-khaan rao jer khun", "english": "we meet you on Tuesday" },
+      { "thai": "วันอังคารฉันวิ่ง", "romanization": "wan ang-khaan chăn wîng", "english": "I run on Tuesday" }
+    ]
+  },
+  {
+    "word": "วันพุธ",
+    "confidence": 1,
+    "romanization": "wan phut",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Wednesday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันพุธดี", "romanization": "wan phut dii", "english": "Wednesday is good" },
+      { "thai": "วันพุธไม่ดี", "romanization": "wan phut mâi dii", "english": "Wednesday is not good" },
+      { "thai": "วันพุธดูหนัง", "romanization": "wan phut duu năng", "english": "watch a movie on Wednesday" }
+    ],
+    "longphrases": [
+      { "thai": "วันพุธเราเล่นเกม", "romanization": "wan phut rao lên gem", "english": "on Wednesday we play a game" },
+      { "thai": "วันพุธอยากเดินทาง", "romanization": "wan phut yàak dern thaang", "english": "on Wednesday want to travel" },
+      { "thai": "วันพุธกินอะไร", "romanization": "wan phut gin à-rai", "english": "what to eat on Wednesday" }
+    ],
+    "sentences": [
+      { "thai": "วันพุธเป็นวันอะไร", "romanization": "wan phut bpen wan à-rai", "english": "what day is Wednesday?" },
+      { "thai": "วันพุธฉันดูหนัง", "romanization": "wan phut chăn duu năng", "english": "I watch a movie on Wednesday" },
+      { "thai": "วันพุธคืนนี้ดูหนัง", "romanization": "wan phut keun-née duu năng", "english": "on Wednesday night watch a movie" }
+    ]
+  },
+  {
+    "word": "วันพฤหัสบดี",
+    "confidence": 1,
+    "romanization": "wan phá-rêu-hàt-sa-bhò-dee",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Thursday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันพฤหัสบดีดี", "romanization": "wan phá-rêu-hàt-sa-bhò-dee dii", "english": "Thursday is good" },
+      { "thai": "วันพฤหัสบดีไม่ดี", "romanization": "wan phá-rêu-hàt-sa-bhò-dee mâi dii", "english": "Thursday is not good" },
+      { "thai": "วันพฤหัสบดีดูหนัง", "romanization": "wan phá-rêu-hàt-sa-bhò-dee duu nang", "english": "watch a movie on Thursday" }
+    ],
+    "longphrases": [
+      { "thai": "วันพฤหัสบดีเราเดินทาง", "romanization": "wan phá-rêu-hàt-sa-bhò-dee rao dern thaang", "english": "on Thursday we travel" },
+      { "thai": "วันพฤหัสบดีอยากเล่นเกม", "romanization": "wan phá-rêu-hàt-sa-bhò-dee yàak lên gem", "english": "on Thursday want to play a game" },
+      { "thai": "วันพฤหัสบดีคืนนี้ดูหนัง", "romanization": "wan phá-rêu-hàt-sa-bhò-dee keun-née duu nang", "english": "Thursday night watch a movie" }
+    ],
+    "sentences": [
+      { "thai": "วันพฤหัสบดีเป็นวันดี", "romanization": "wan phá-rêu-hàt-sa-bhò-dee bpen wan dii", "english": "Thursday is a good day" },
+      { "thai": "ฉันเล่นเกมวันพฤหัสบดี", "romanization": "chăn lên gem wan phá-rêu-hàt-sa-bhò-dee", "english": "I play a game on Thursday" },
+      { "thai": "เราเจอคุณวันพฤหัสบดี", "romanization": "rao jer khun wan phá-rêu-hàt-sa-bhò-dee", "english": "we meet you on Thursday" }
+    ]
+  },
+  {
+    "word": "วันศุกร์",
+    "confidence": 1,
+    "romanization": "wan súk",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Friday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันศุกร์ดี", "romanization": "wan súk dii", "english": "Friday is good" },
+      { "thai": "วันศุกร์ไม่ดี", "romanization": "wan súk mâi dii", "english": "Friday is not good" },
+      { "thai": "วันศุกร์ดูหนัง", "romanization": "wan súk duu nang", "english": "watch a movie on Friday" }
+    ],
+    "longphrases": [
+      { "thai": "วันศุกร์เราเดินทาง", "romanization": "wan súk rao dern thaang", "english": "on Friday we travel" },
+      { "thai": "วันศุกร์อยากดูหนัง", "romanization": "wan súk yàak duu nang", "english": "on Friday want to watch a movie" },
+      { "thai": "วันศุกร์คืนนี้เล่นเกม", "romanization": "wan súk keun-née lên gem", "english": "Friday night play a game" }
+    ],
+    "sentences": [
+      { "thai": "วันศุกร์เป็นวันดี", "romanization": "wan súk bpen wan dii", "english": "Friday is a good day" },
+      { "thai": "ฉันวิ่งวันศุกร์", "romanization": "chăn wîng wan súk", "english": "I run on Friday" },
+      { "thai": "เราเจอคุณวันศุกร์", "romanization": "rao jer khun wan súk", "english": "we meet you on Friday" }
+    ]
+  },
+  {
+    "word": "วันเสาร์",
+    "confidence": 1,
+    "romanization": "wan sǎo",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Saturday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันเสาร์ดี", "romanization": "wan sǎo dii", "english": "Saturday is good" },
+      { "thai": "วันเสาร์ไม่ดี", "romanization": "wan sǎo mâi dii", "english": "Saturday is not good" },
+      { "thai": "วันเสาร์กินอะไร", "romanization": "wan sǎo gin à-rai", "english": "what to eat on Saturday" }
+    ],
+    "longphrases": [
+      { "thai": "วันเสาร์เราเล่นเกม", "romanization": "wan sǎo rao lên gem", "english": "on Saturday we play a game" },
+      { "thai": "วันเสาร์อยากเดินทาง", "romanization": "wan sǎo yàak dern thaang", "english": "on Saturday want to travel" },
+      { "thai": "วันเสาร์คืนนี้ดูหนัง", "romanization": "wan sǎo keun-née duu nang", "english": "Saturday night watch a movie" }
+    ],
+    "sentences": [
+      { "thai": "วันเสาร์เป็นวันดี", "romanization": "wan sǎo bpen wan dii", "english": "Saturday is a good day" },
+      { "thai": "ฉันกำลังเล่นเกมวันเสาร์", "romanization": "chăn gam-lang lên gem wan sǎo", "english": "I am playing a game on Saturday" },
+      { "thai": "เราเจอคุณวันเสาร์", "romanization": "rao jer khun wan sǎo", "english": "we meet you on Saturday" }
+    ]
+  },
+  {
+    "word": "วันอาทิตย์",
+    "confidence": 1,
+    "romanization": "wan a-thít",
+    "type": "time",
+    "pos": "noun",
+    "definition": "Sunday",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วันอาทิตย์ดี", "romanization": "wan a-thít dii", "english": "Sunday is good" },
+      { "thai": "วันอาทิตย์ไม่ดี", "romanization": "wan a-thít mâi dii", "english": "Sunday is not good" },
+      { "thai": "วันอาทิตย์เล่นเกม", "romanization": "wan a-thít lên gem", "english": "play a game on Sunday" }
+    ],
+    "longphrases": [
+      { "thai": "วันอาทิตย์เราเดินทาง", "romanization": "wan a-thít rao dern thaang", "english": "on Sunday we travel" },
+      { "thai": "วันอาทิตย์อยากดูหนัง", "romanization": "wan a-thít yàak duu nang", "english": "on Sunday want to watch a movie" },
+      { "thai": "วันอาทิตย์คืนนี้วิ่ง", "romanization": "wan a-thít keun-née wîng", "english": "Sunday night run" }
+    ],
+    "sentences": [
+      { "thai": "วันอาทิตย์เป็นวันดี", "romanization": "wan a-thít bpen wan dii", "english": "Sunday is a good day" },
+      { "thai": "ฉันดูหนังวันอาทิตย์", "romanization": "chăn duu nang wan a-thít", "english": "I watch a movie on Sunday" },
+      { "thai": "เราเล่นเกมวันอาทิตย์", "romanization": "rao lên gem wan a-thít", "english": "we play a game on Sunday" }
+    ]
+  },
+  {
+    "word": "เช้า",
+    "confidence": 1,
+    "romanization": "châo",
+    "type": "time",
+    "pos": "noun",
+    "definition": "morning",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เช้าดี", "romanization": "châo dii", "english": "morning is good" },
+      { "thai": "เช้าไม่ดี", "romanization": "châo mâi dii", "english": "morning is not good" },
+      { "thai": "เช้ากินอะไร", "romanization": "châo gin à-rai", "english": "what to eat in the morning" }
+    ],
+    "longphrases": [
+      { "thai": "เช้าเราเดินทาง", "romanization": "châo rao dern thaang", "english": "in the morning we travel" },
+      { "thai": "เช้าอยากดูหนัง", "romanization": "châo yàak duu nang", "english": "in the morning want to watch a movie" },
+      { "thai": "เช้าเล่นเกม", "romanization": "châo lên gem", "english": "play a game in the morning" }
+    ],
+    "sentences": [
+      { "thai": "เช้าเราดูหนัง", "romanization": "châo rao duu nang", "english": "we watch a movie in the morning" },
+      { "thai": "ฉันวิ่งเช้า", "romanization": "chăn wîng châo", "english": "I run in the morning" },
+      { "thai": "เราอยากดูหนังเช้า", "romanization": "rao yàak duu nang châo", "english": "we want to watch a movie in the morning" }
+    ]
+  },
+  {
+    "word": "บ่าย",
+    "confidence": 1,
+    "romanization": "bàai",
+    "type": "time",
+    "pos": "noun",
+    "definition": "afternoon",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "บ่ายดี",
+        "romanization": "bàai dii",
+        "english": "afternoon is good"
+      },
+      {
+        "thai": "บ่ายไม่ดี",
+        "romanization": "bàai mâi dii",
+        "english": "afternoon is not good"
+      },
+      {
+        "thai": "บ่ายกินอะไร",
+        "romanization": "bàai gin à-rai",
+        "english": "what to eat in the afternoon"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "บ่ายวันนี้เราเล่นเกม",
+        "romanization": "bàai wan-née rao lên gem",
+        "english": "this afternoon we play a game"
+      },
+      {
+        "thai": "บ่ายวันนี้คุณดูหนังไหม",
+        "romanization": "bàai wan-née khun duu nang mái",
+        "english": "do you watch a movie this afternoon?"
+      },
+      {
+        "thai": "บ่ายวันนี้อยากเดินทาง",
+        "romanization": "bàai wan-née yàak dern thaang",
+        "english": "this afternoon want to travel"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "บ่ายวันนี้ฉันดูหนัง",
+        "romanization": "bàai wan-née chăn duu nang",
+        "english": "this afternoon I watch a movie"
+      },
+      {
+        "thai": "เราเล่นเกมบ่ายวันนี้",
+        "romanization": "rao lên gem bàai wan-née",
+        "english": "we play a game this afternoon"
+      },
+      {
+        "thai": "คุณทำอะไรบ่ายวันนี้",
+        "romanization": "khun tam à-rai bàai wan-née",
+        "english": "what are you doing this afternoon?"
+      }
+    ]
+  },
+  {
+    "word": "เย็น",
+    "confidence": 1,
+    "romanization": "yen",
+    "type": "time",
+    "pos": "noun",
+    "definition": "evening",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "เย็นนี้ดี",
+        "romanization": "yen née dii",
+        "english": "this evening is good"
+      },
+      {
+        "thai": "เย็นไม่ดี",
+        "romanization": "yen mâi dii",
+        "english": "evening is not good"
+      },
+      {
+        "thai": "เย็นนี้ดูหนัง",
+        "romanization": "yen née duu nang",
+        "english": "watch a movie this evening"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "เย็นนี้เราเล่นเกม",
+        "romanization": "yen née rao lên gem",
+        "english": "we play a game this evening"
+      },
+      {
+        "thai": "เย็นนี้อยากเดินทาง",
+        "romanization": "yen née yàak dern thaang",
+        "english": "want to travel this evening"
+      },
+      {
+        "thai": "เย็นนี้คุณทำอะไร",
+        "romanization": "yen née khun tam à-rai",
+        "english": "what are you doing this evening"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันวิ่งเย็นนี้",
+        "romanization": "chăn wîng yen née",
+        "english": "I run this evening"
+      },
+      {
+        "thai": "เราเล่นเกมเย็นนี้",
+        "romanization": "rao lên gem yen née",
+        "english": "we play a game this evening"
+      },
+      {
+        "thai": "คุณดูหนังเย็นนี้ไหม",
+        "romanization": "khun duu nang yen née mái",
+        "english": "do you watch a movie this evening?"
+      }
+    ]
+  },
+  {
+    "word": "กลางคืน",
+    "confidence": 1,
+    "romanization": "klang keuun",
+    "type": "time",
+    "pos": "noun",
+    "definition": "night",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "กลางคืนดี",
+        "romanization": "klang keuun dii",
+        "english": "night is good"
+      },
+      {
+        "thai": "กลางคืนไม่ดี",
+        "romanization": "klang keuun mâi dii",
+        "english": "night is not good"
+      },
+      {
+        "thai": "กลางคืนดูหนัง",
+        "romanization": "klang keuun duu nang",
+        "english": "watch a movie at night"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "กลางคืนเราเดินทาง",
+        "romanization": "klang keuun rao dern thaang",
+        "english": "at night we travel"
+      },
+      {
+        "thai": "กลางคืนฉันวิ่ง",
+        "romanization": "klang keuun chăn wîng",
+        "english": "at night I run"
+      },
+      {
+        "thai": "กลางคืนบ้านว่างไหม",
+        "romanization": "klang keuun baan wâang mái",
+        "english": "is the house free at night?"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "ฉันดูหนังกลางคืน",
+        "romanization": "chăn duu nang klang keuun",
+        "english": "I watch a movie at night"
+      },
+      {
+        "thai": "เราเล่นเกมกลางคืน",
+        "romanization": "rao lên gem klang keuun",
+        "english": "we play a game at night"
+      },
+      {
+        "thai": "คุณวิ่งกลางคืนไหม",
+        "romanization": "khun wîng klang keuun mái",
+        "english": "do you run at night?"
+      }
+    ]
+  },
+  {
+    "word": "คืนนี้",
+    "confidence": 1,
+    "romanization": "keun-née",
+    "type": "time",
+    "pos": "noun",
+    "definition": "tonight",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "คืนนี้ดี",
+        "romanization": "keun-née dii",
+        "english": "tonight is good"
+      },
+      {
+        "thai": "คืนนี้ไม่ดี",
+        "romanization": "keun-née mâi dii",
+        "english": "tonight is not good"
+      },
+      {
+        "thai": "คืนนี้กินอะไร",
+        "romanization": "keun-née gin à-rai",
+        "english": "what to eat tonight"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คืนนี้เราเล่นเกม",
+        "romanization": "keun-née rao lên gem",
+        "english": "we play a game tonight"
+      },
+      {
+        "thai": "คืนนี้ฉันดูหนัง",
+        "romanization": "keun-née chăn duu nang",
+        "english": "I watch a movie tonight"
+      },
+      {
+        "thai": "คืนนี้อยากเดินทาง",
+        "romanization": "keun-née yàak dern thaang",
+        "english": "want to travel tonight"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คืนนี้คุณทำอะไร",
+        "romanization": "keun-née khun tam à-rai",
+        "english": "what are you doing tonight"
+      },
+      {
+        "thai": "คืนนี้เราเจอคุณ",
+        "romanization": "keun-née rao jer khun",
+        "english": "we meet you tonight"
+      },
+      {
+        "thai": "คืนนี้ฉันวิ่ง",
+        "romanization": "keun-née chăn wîng",
+        "english": "I run tonight"
+      }
+    ]
+  },
+  {
+    "word": "คืน",
+    "confidence": 1,
+    "romanization": "keun",
+    "type": "time",
+    "pos": "noun",
+    "definition": "night",
+    "notes": "",
+    "shortphrases": [
+      {
+        "thai": "คืนดี",
+        "romanization": "keun dii",
+        "english": "night is good"
+      },
+      {
+        "thai": "คืนไม่ดี",
+        "romanization": "keun mâi dii",
+        "english": "night is not good"
+      },
+      {
+        "thai": "คืนดูหนัง",
+        "romanization": "keun duu nang",
+        "english": "watch a movie at night"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คืนวันจันทร์ฉันเล่นเกม",
+        "romanization": "keun wan jan-than chăn lên gem",
+        "english": "on Monday night I play a game"
+      },
+      {
+        "thai": "คืนวันศุกร์เราเดินทาง",
+        "romanization": "keun wan súk rao dern thaang",
+        "english": "on Friday night we travel"
+      },
+      {
+        "thai": "คืนบ้านว่างไหม",
+        "romanization": "keun baan wâang mái",
+        "english": "is the house free at night"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "คืนวันอาทิตย์ฉันดูหนัง",
+        "romanization": "keun wan a-thít chăn duu nang",
+        "english": "on Sunday night I watch a movie"
+      },
+      {
+        "thai": "คืนวันเสาร์เราเล่นเกม",
+        "romanization": "keun wan sǎo rao lên gem",
+        "english": "on Saturday night we play a game"
+      },
+      {
+        "thai": "คืนวันพุธเขาวิ่ง",
+        "romanization": "keun wan phut khao wîng",
+        "english": "on Wednesday night he runs"
+      }
+    ]
+  },
+  {
+    "word": "เที่ยง",
+    "confidence": 1,
+    "romanization": "tîang",
+    "type": "time",
+    "pos": "noun",
+    "definition": "noon",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เที่ยงดี", "romanization": "tîang dii", "english": "noon is good" },
+      { "thai": "เที่ยงไม่ดี", "romanization": "tîang mâi dii", "english": "noon is not good" },
+      { "thai": "กินเที่ยง", "romanization": "gin tîang", "english": "eat lunch" }
+    ],
+    "longphrases": [
+      { "thai": "เที่ยงเราเป็นคน", "romanization": "tîang rao bpen kon", "english": "noon we are people" },
+      { "thai": "เที่ยงเราเดินทาง", "romanization": "tîang rao dern thaang", "english": "we travel at noon" },
+      { "thai": "เที่ยงฉันดูหนัง", "romanization": "tîang chăn duu nang", "english": "I watch a movie at noon" }
+    ],
+    "sentences": [
+      { "thai": "เที่ยงวันนี้ฉันกิน", "romanization": "tîang wan-née chăn gin", "english": "I eat at noon today" },
+      { "thai": "เที่ยงวันจันทร์เราเจอคุณ", "romanization": "tîang wan jan-than rao jer khun", "english": "we meet you at noon on Monday" },
+      { "thai": "เที่ยงแล้ว", "romanization": "tîang láew", "english": "it's already noon" }
+    ]
+  },
+  {
+    "word": "กลางวัน",
+    "confidence": 1,
+    "romanization": "klang wan",
+    "type": "time",
+    "pos": "noun",
+    "definition": "daytime",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "กลางวันดี", "romanization": "klang wan dii", "english": "daytime is good" },
+      { "thai": "กลางวันไม่ดี", "romanization": "klang wan mâi dii", "english": "daytime is not good" },
+      { "thai": "กลางวันดูหนัง", "romanization": "klang wan duu nang", "english": "watch a movie during the day" }
+    ],
+    "longphrases": [
+      { "thai": "กลางวันเราเป็นคน", "romanization": "klang wan rao bpen kon", "english": "we are people during the day" },
+      { "thai": "กลางวันเราเดินทาง", "romanization": "klang wan rao dern thaang", "english": "we travel during the day" },
+      { "thai": "กลางวันเรา wîng", "romanization": "klang wan rao wîng", "english": "we run during the day" }
+    ],
+    "sentences": [
+      { "thai": "กลางวันคุณทำอะไร", "romanization": "klang wan khun tam à-rai", "english": "what are you doing during the day" },
+      { "thai": "กลางวันฉันเล่นเกม", "romanization": "klang wan chăn lên gem", "english": "I play a game during the day" },
+      { "thai": "กลางวันเราเจอคุณ", "romanization": "klang wan rao jer khun", "english": "we meet you during the day" }
+    ]
+  },
+  {
+    "word": "หนัง",
+    "confidence": 1,
+    "romanization": "nang",
+    "type": "content",
+    "pos": "noun",
+    "definition": "movie",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ดูหนัง", "romanization": "duu nang", "english": "watch a movie" },
+      { "thai": "หนังดี", "romanization": "nang dii", "english": "a good movie" },
+      { "thai": "หนังไม่ดี", "romanization": "nang mâi dii", "english": "a bad movie" }
+    ],
+    "longphrases": [
+      { "thai": "ดูหนังคืนนี้", "romanization": "duu nang keun-née", "english": "watch a movie tonight" },
+      { "thai": "ดูหนังพรุ่งนี้", "romanization": "duu nang prûng-née", "english": "watch a movie tomorrow" },
+      { "thai": "ดูหนังเมื่อวานนี้", "romanization": "duu nang mûe-waan-née", "english": "watched a movie yesterday" }
+    ],
+    "sentences": [
+      { "thai": "ฉันดูหนังเช้า", "romanization": "chăn duu nang châo", "english": "I watch a movie in the morning" },
+      { "thai": "คุณดูหนังเย็นไหม", "romanization": "khun duu nang yen mái", "english": "do you watch a movie in the evening" },
+      { "thai": "คุณดูหนังบ่ายไหม", "romanization": "khun duu nang bàai mái", "english": "do you watch a movie in the afternoon" }
+    ]
+  },
+  {
+    "word": "วิ่ง",
+    "confidence": 1,
+    "romanization": "wîng",
+    "type": "content",
+    "pos": "verb",
+    "definition": "run",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "วิ่งดี", "romanization": "wîng dii", "english": "run well" },
+      { "thai": "วิ่งไม่ดี", "romanization": "wîng mâi dii", "english": "run poorly" },
+      { "thai": "วิ่งกับเรา", "romanization": "wîng gàp rao", "english": "run with us" }
+    ],
+    "longphrases": [
+      { "thai": "เราวิ่งเช้า", "romanization": "rao wîng châo", "english": "we run in the morning" },
+      { "thai": "ฉันวิ่งเย็น", "romanization": "chăn wîng yen", "english": "I run in the evening" },
+      { "thai": "เขาวิ่งคืน", "romanization": "kháo wîng keun", "english": "he runs at night" }
+    ],
+    "sentences": [
+      { "thai": "ฉันวิ่งวันศุกร์", "romanization": "chăn wîng wan súk", "english": "I run on Friday" },
+      { "thai": "คุณวิ่งเย็นไหม", "romanization": "khun wîng yen mái", "english": "do you run in the evening" },
+      { "thai": "เขาวิ่งเมื่อวานนี้", "romanization": "kháo wîng mûe-waan-née", "english": "he ran yesterday" }
+    ]
+  },
+  {
+    "word": "เล่น",
+    "confidence": 1,
+    "romanization": "lên",
+    "type": "content",
+    "pos": "verb",
+    "definition": "play",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เล่นดี", "romanization": "lên dii", "english": "play well" },
+      { "thai": "เล่นไม่ดี", "romanization": "lên mâi dii", "english": "play poorly" },
+      { "thai": "เล่นเกม", "romanization": "lên gem", "english": "play a game" }
+    ],
+    "longphrases": [
+      { "thai": "คุณเล่นเกมวันนี้", "romanization": "khun lên gem wan-née", "english": "you play a game today" },
+      { "thai": "เราเล่นเกมพรุ่งนี้", "romanization": "rao lên gem prûng-née", "english": "we play a game tomorrow" },
+      { "thai": "เขาเล่นเกมเย็น", "romanization": "kháo lên gem yen", "english": "he plays a game in the evening" }
+    ],
+    "sentences": [
+      { "thai": "ฉันเล่นเกมเช้า", "romanization": "chăn lên gem châo", "english": "I play a game in the morning" },
+      { "thai": "คุณเล่นเกมเย็นไหม", "romanization": "khun lên gem yen mái", "english": "do you play a game in the evening" },
+      { "thai": "เราเล่นเกมวันอาทิตย์", "romanization": "rao lên gem wan a-thít", "english": "we play a game on Sunday" }
+    ]
+  },
+  {
+    "word": "เกม",
+    "confidence": 1,
+    "romanization": "gem",
+    "type": "content",
+    "pos": "noun",
+    "definition": "game",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เล่นเกม", "romanization": "lên gem", "english": "play a game" },
+      { "thai": "เกมดี", "romanization": "gem dii", "english": "the game is good" },
+      { "thai": "เกมวันนี้", "romanization": "gem wan-née", "english": "game today" }
+    ],
+    "longphrases": [
+      { "thai": "เราเล่นเกมวันนี้", "romanization": "rao lên gem wan-née", "english": "we play a game today" },
+      { "thai": "เกมคืนนี้", "romanization": "gem keun-née", "english": "game tonight" },
+      { "thai": "เกมพรุ่งนี้", "romanization": "gem prûng-née", "english": "game tomorrow" }
+    ],
+    "sentences": [
+      { "thai": "ฉันเล่นเกมพรุ่งนี้", "romanization": "chăn lên gem prûng-née", "english": "I will play a game tomorrow" },
+      { "thai": "คุณเล่นเกมคืนนี้ไหม", "romanization": "khun lên gem keun-née mái", "english": "do you play a game tonight?" },
+      { "thai": "เราเล่นเกมแล้วเจอกัน", "romanization": "rao lên gem láew jer gan", "english": "we play a game then see each other" }
+    ]
+  },
+  {
+    "word": "หวังว่า",
+    "confidence": 1,
+    "romanization": "wang wâa",
+    "type": "content",
+    "pos": "conjunction",
+    "definition": "hope that",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "หวังว่าเก่ง", "romanization": "wang wâa gèng", "english": "hope that [you] are talented" },
+      { "thai": "หวังว่าได้เจอคุณ", "romanization": "wang wâa dâai jer khun", "english": "hope to meet you" },
+      { "thai": "หวังว่าเราจะเจอคุณ", "romanization": "wang wâa rao jà jer khun", "english": "hope that we will meet you" }
+    ],
+    "longphrases": [
+      { "thai": "หวังว่าจะได้เจอคุณคืนนี้", "romanization": "wang wâa jà dâai jer khun keun-née", "english": "hope to meet you tonight" },
+      { "thai": "หวังว่าเกมจะดี", "romanization": "wang wâa gem jà dii", "english": "hope that the game will be good" },
+      { "thai": "หวังว่าจะได้เดินทางกรุงเทพฯ", "romanization": "wang wâa jà dâai dern thaang krung thep", "english": "hope to travel to Bangkok" }
+    ],
+    "sentences": [
+      { "thai": "ฉันหวังว่าจะได้เจอคุณคืนนี้", "romanization": "chăn wang wâa jà dâai jer khun keun-née", "english": "I hope to meet you tonight" },
+      { "thai": "คุณหวังว่าเกมจะดีไหม", "romanization": "khun wang wâa gem jà dii mái", "english": "do you hope that the game will be good?" },
+      { "thai": "เรา หวังว่าจะได้เดินทางกรุงเทพฯ", "romanization": "rao wang wâa jà dâai dern thaang krung thep", "english": "we hope to travel to Bangkok" }
+    ]
+  },
+  {
+    "word": "กรุงเทพฯ",
+    "confidence": 1,
+    "romanization": "krung thep",
+    "type": "content",
+    "pos": "proper noun",
+    "definition": "Bangkok",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "กรุงเทพฯดี", "romanization": "krung thep dii", "english": "Bangkok is good" },
+      { "thai": "กรุงเทพฯเป็นบ้าน", "romanization": "krung thep bpen bâan", "english": "Bangkok is home" },
+      { "thai": "กรุงเทพฯกินอะไร", "romanization": "krung thep gin à-rai", "english": "what to eat in Bangkok" }
+    ],
+    "longphrases": [
+      { "thai": "กรุงเทพฯเป็นบ้านที่เราเดินทาง", "romanization": "krung thep bpen bâan tîi rao dern thaang", "english": "Bangkok is the home we travel to" },
+      { "thai": "กรุงเทพฯคืนนี้ดูหนัง", "romanization": "krung thep keun-née duu nang", "english": "watch a movie in Bangkok tonight" },
+      { "thai": "กรุงเทพฯพรุ่งนี้เราเล่นเกม", "romanization": "krung thep prûng-née rao lên gem", "english": "tomorrow in Bangkok we play a game" }
+    ],
+    "sentences": [
+      { "thai": "เมื่อวานนี้ฉันเดินทางกรุงเทพฯ", "romanization": "mûe-waan-née chăn dern thaang krung thep", "english": "yesterday I traveled to Bangkok" },
+      { "thai": "พรุ่งนี้เราเดินทางกรุงเทพฯ", "romanization": "prûng-née rao dern thaang krung thep", "english": "tomorrow we travel to Bangkok" },
+      { "thai": "คืนนี้คุณอยากเดินทางกรุงเทพฯไหม", "romanization": "keun-née khun yàak dern thaang krung thep mái", "english": "do you want to travel to Bangkok tonight?" }
+    ]
+  },
+  {
+    "word": "เดินทาง",
+    "confidence": 1,
+    "romanization": "dern thaang",
+    "type": "content",
+    "pos": "verb",
+    "definition": "travel",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เดินทางดี", "romanization": "dern thaang dii", "english": "travel is good" },
+      { "thai": "เดินทางไม่ดี", "romanization": "dern thaang mâi dii", "english": "travel is not good" },
+      { "thai": "เดินทางกรุงเทพฯ", "romanization": "dern thaang krung thep", "english": "travel to Bangkok" }
+    ],
+    "longphrases": [
+      { "thai": "พรุ่งนี้เดินทาง", "romanization": "prûng-née dern thaang", "english": "travel tomorrow" },
+      { "thai": "เมื่อวานนี้เดินทาง", "romanization": "mûe-waan-née dern thaang", "english": "traveled yesterday" },
+      { "thai": "คืนนี้เดินทาง", "romanization": "keun-née dern thaang", "english": "travel tonight" }
+    ],
+    "sentences": [
+      { "thai": "ฉันเดินทางพรุ่งนี้", "romanization": "chăn dern thaang prûng-née", "english": "I travel tomorrow" },
+      { "thai": "คุณเดินทางเมื่อวานนี้ไหม", "romanization": "khun dern thaang mûe-waan-née mái", "english": "did you travel yesterday?" },
+      { "thai": "เราเดินทางวันศุกร์", "romanization": "rao dern thaang wan súk", "english": "we travel on Friday" }
+    ]
+  },
+  {
+    "word": "อยาก",
+    "confidence": 1,
+    "romanization": "yàak",
+    "type": "content",
+    "pos": "verb",
+    "definition": "want",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อยากเล่นเกม", "romanization": "yàak lên gem", "english": "want to play a game" },
+      { "thai": "อยากดูหนัง", "romanization": "yàak duu nang", "english": "want to watch a movie" },
+      { "thai": "อยากเดินทาง", "romanization": "yàak dern thaang", "english": "want to travel" }
+    ],
+    "longphrases": [
+      { "thai": "พรุ่งนี้อยากเดินทาง", "romanization": "prûng-née yàak dern thaang", "english": "tomorrow want to travel" },
+      { "thai": "คืนนี้อยากดูหนัง", "romanization": "keun-née yàak duu nang", "english": "tonight want to watch a movie" },
+      { "thai": "เมื่อวานนี้อยากเล่นเกม", "romanization": "mûe-waan-née yàak lên gem", "english": "yesterday wanted to play a game" }
+    ],
+    "sentences": [
+      { "thai": "ฉันอยากเดินทางกรุงเทพฯ", "romanization": "chăn yàak dern thaang krung thep", "english": "I want to travel to Bangkok" },
+      { "thai": "คุณอยากดูหนังไหม", "romanization": "khun yàak duu nang mái", "english": "do you want to watch a movie?" },
+      { "thai": "เราอยากเล่นเกมวันอาทิตย์", "romanization": "rao yàak lên gem wan a-thít", "english": "we want to play a game on Sunday" }
+    ]
+  }
+]
