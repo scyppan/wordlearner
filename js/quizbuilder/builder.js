@@ -131,6 +131,7 @@ function renderquizbuilder() {
     // ---- AVAILABILITY/DISABLING ----
     var avail = getquizitemavailability(wordsdata);
     applyquizinputlimits(main, avail);
+    trimquizbuilderinputs(main, avail);
 
     // ---- TOTALS/STATE RESTORE ----
     function updatetotalsandstore() {
@@ -287,6 +288,21 @@ function arrayisarray(val) {
 }
 function parseint(val, base) {
     return parseInt(val, base);
+}
+
+function trimquizbuilderinputs(mainelem, availability) {
+    mainelem.querySelectorAll('input[type="number"]').forEach(function(inp) {
+        var conf = Number(inp.dataset.confidence);
+        var type = normalizetype(inp.dataset.type);
+        var avail = availability[type]?.[conf] ?? 0;
+
+        // If current value is above max, set it to max
+        if (Number(inp.value) > avail) {
+            inp.value = avail;
+            var key = conf + '-' + type;
+            quizbuilderinputs[key] = avail;
+        }
+    });
 }
 
 //---------

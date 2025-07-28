@@ -99,7 +99,8 @@ function renderquizsession(quizindex, targetelem) {
       tr.appendChild(tdstatus);
       table.appendChild(tr);
     });
-  
+    
     target.appendChild(table);
+
   }
   
