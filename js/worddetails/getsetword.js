@@ -41,6 +41,7 @@ function changethaiscript(val) {
     var word = getwordfromdetailspanel()
     word.word = val
     refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
     setthaiscript(word)
 }
 
@@ -57,6 +58,7 @@ function changeromanization(val) {
     var word = getwordfromdetailspanel()
     word.romanization = val
     refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
     setromanization(word)
 }
 
@@ -74,6 +76,7 @@ function changerating(val) {
     var word = getwordfromdetailspanel()
     word.confidence = val
     setratingfromdb(word)
+    storedata('wordsdata', wordsdata)
 }
 
 function settypefromdb(word) {
@@ -89,281 +92,294 @@ function changetype(val) {
     var word = getwordfromdetailspanel()
     word.type = val
     settypefromdb(word)
+    storedata('wordsdata', wordsdata)
 }
 
 function changepos(val) {
     var word = getwordfromdetailspanel()
     word.pos = val
     setposfromdb(word)
+    storedata('wordsdata', wordsdata)
 }
 
 function setposfromdb(word) {
-    var el = document.getElementById('word-pos-input');
-    if (!el) return;
-    el.value = word.pos || '';
-    // Replace any old handler
-    el.oninput = function () {
-        word.pos = this.value.trim();
-        refreshwordlist(wordsdata);
-    };
+    var el = document.getElementById('word-pos-input')
+    if (!el) return
+    el.value = word.pos || ''
+    el.oninput = function() {
+        word.pos = this.value.trim()
+        refreshwordlist(wordsdata)
+        storedata('wordsdata', wordsdata)
+    }
 }
 
 function setdefinitionfromdb(word) {
-    var el = document.getElementById('word-definition-input');
-    if (!el) return;
-    el.value = word.definition || '';
-    // Replace any old handler
-    el.oninput = function () {
-        word.definition = this.value;
-        refreshwordlist(wordsdata);
-    };
+    var el = document.getElementById('word-definition-input')
+    if (!el) return
+    el.value = word.definition || ''
+    el.oninput = function() {
+        word.definition = this.value
+        refreshwordlist(wordsdata)
+        storedata('wordsdata', wordsdata)
+    }
 }
 
 function changedefinition(val) {
     var word = getwordfromdetailspanel()
     word.definition = val
     refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
     setdefinitionfromdb(word)
 }
 
 function setnotesfromdb(word) {
-    var el = document.getElementById('word-notes-input');
-    if (!el) return;
-    el.value = word.notes || '';
-    el.oninput = function () {
-        word.notes = this.value;
-    };
+    var el = document.getElementById('word-notes-input')
+    if (!el) return
+    el.value = word.notes || ''
+    el.oninput = function() {
+        word.notes = this.value
+        refreshwordlist(wordsdata)
+        storedata('wordsdata', wordsdata)
+    }
 }
 
 function changenotes(val) {
     var word = getwordfromdetailspanel()
     word.notes = val
+    storedata('wordsdata', wordsdata)
     setnotesfromdb(word)
 }
 
 function setshortphrasesfromdb(word) {
-  var panel = document.getElementById('word-details');
-  if (!panel) return;
+    var panel = document.getElementById('word-details')
+    if (!panel) return
 
-  var sec = panel.querySelector('.word-advancement-section.shortphrases');
-  if (!sec) return;
+    var sec = panel.querySelector('.word-advancement-section.shortphrases')
+    if (!sec) return
 
-  var tbody = sec.querySelector('tbody');
-  if (!tbody) return;
-  tbody.innerHTML = '';
+    var tbody = sec.querySelector('tbody')
+    if (!tbody) return
+    tbody.innerHTML = ''
 
-  var columns = ['thai', 'romanization', 'english'];
+    var columns = ['thai', 'romanization', 'english']
 
-  for (var rowidx = 0; rowidx < (word.shortphrases || []).length; rowidx++) {
-    var row = word.shortphrases[rowidx] || {};
-    var tr = document.createElement('tr');
+    for (var rowidx = 0; rowidx < (word.shortphrases || []).length; rowidx++) {
+        var row = word.shortphrases[rowidx] || {}
+        var tr = document.createElement('tr')
 
-    for (var colidx = 0; colidx < columns.length; colidx++) {
-      var col = columns[colidx];
-      var td = document.createElement('td');
-      var span = createinlineeditablespan('shortphrases-' + col);
-      span.textContent = typeof row[col] === 'string' ? row[col] : '';
-      span.onblur = (function(r, c) {
-        return function() {
-          changeshortphrasecell(word, r, c, this.textContent.trim());
-        };
-      })(rowidx, colidx);
-      td.appendChild(span);
-      tr.appendChild(td);
+        for (var colidx = 0; colidx < columns.length; colidx++) {
+            var col = columns[colidx]
+            var td = document.createElement('td')
+            var span = createinlineeditablespan('shortphrases-' + col)
+            span.textContent = typeof row[col] === 'string' ? row[col] : ''
+            span.onblur = (function(r, c) {
+                return function() {
+                    changeshortphrasecell(word, r, c, this.textContent.trim())
+                }
+            })(rowidx, colidx)
+            td.appendChild(span)
+            tr.appendChild(td)
+        }
+
+        var tddel = document.createElement('td')
+        var delbtn = document.createElement('button')
+        delbtn.type = 'button'
+        delbtn.className = 'advancement-del'
+        delbtn.textContent = '-'
+        delbtn.onclick = (function(r) {
+            return function() {
+                word.shortphrases.splice(r, 1)
+                setshortphrasesfromdb(word)
+                refreshwordlist(wordsdata)
+                storedata('wordsdata', wordsdata)
+            }
+        })(rowidx)
+        tddel.appendChild(delbtn)
+        tr.appendChild(tddel)
+
+        tbody.appendChild(tr)
     }
 
-    var tddel = document.createElement('td');
-    var delbtn = document.createElement('button');
-    delbtn.type = 'button';
-    delbtn.className = 'advancement-del';
-    delbtn.textContent = '-';
-    delbtn.onclick = (function(r) {
-      return function() {
-        word.shortphrases.splice(r, 1);
-        setshortphrasesfromdb(word);
-        refreshwordlist(wordsdata);
-      };
-    })(rowidx);
-    tddel.appendChild(delbtn);
-    tr.appendChild(tddel);
-
-    tbody.appendChild(tr);
-  }
-
-  var addbtn = sec.querySelector('.advancement-add');
-  if (addbtn) {
-    addbtn.onclick = function() {
-      word.shortphrases.push({ thai: '', romanization: '', english: '' });
-      setshortphrasesfromdb(word);
-      refreshwordlist(wordsdata);
-    };
-  }
+    var addbtn = sec.querySelector('.advancement-add')
+    if (addbtn) {
+        addbtn.onclick = function() {
+            word.shortphrases.push({ thai: '', romanization: '', english: '' })
+            setshortphrasesfromdb(word)
+            refreshwordlist(wordsdata)
+            storedata('wordsdata', wordsdata)
+        }
+    }
 }
 
 function changeshortphrasecell(word, rowidx, colidx, newvalue) {
-  if (!word || !word.shortphrases) return;
+    if (!word || !word.shortphrases) return
 
-  var columns = ['thai', 'romanization', 'english'];
-  var key = columns[colidx];
-  if (!key) return;
+    var columns = ['thai', 'romanization', 'english']
+    var key = columns[colidx]
+    if (!key) return
 
-  if (!word.shortphrases[rowidx]) {
-    word.shortphrases[rowidx] = { thai: '', romanization: '', english: '' };
-  }
+    if (!word.shortphrases[rowidx]) {
+        word.shortphrases[rowidx] = { thai: '', romanization: '', english: '' }
+    }
 
-  word.shortphrases[rowidx][key] = newvalue;
-  refreshwordlist(wordsdata);
+    word.shortphrases[rowidx][key] = newvalue
+    refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
 }
 
 function setlongphrasesfromdb(word) {
-  var panel = document.getElementById('word-details');
-  if (!panel) return;
+    var panel = document.getElementById('word-details')
+    if (!panel) return
 
-  var sec = panel.querySelector('.word-advancement-section.longphrases');
-  if (!sec) return;
+    var sec = panel.querySelector('.word-advancement-section.longphrases')
+    if (!sec) return
 
-  var tbody = sec.querySelector('tbody');
-  if (!tbody) return;
-  tbody.innerHTML = '';
+    var tbody = sec.querySelector('tbody')
+    if (!tbody) return
+    tbody.innerHTML = ''
 
-  var columns = ['thai', 'romanization', 'english'];
+    var columns = ['thai', 'romanization', 'english']
 
-  for (var rowidx = 0; rowidx < (word.longphrases || []).length; rowidx++) {
-    var row = word.longphrases[rowidx] || {};
-    var tr = document.createElement('tr');
+    for (var rowidx = 0; rowidx < (word.longphrases || []).length; rowidx++) {
+        var row = word.longphrases[rowidx] || {}
+        var tr = document.createElement('tr')
 
-    for (var colidx = 0; colidx < columns.length; colidx++) {
-      var col = columns[colidx];
-      var td = document.createElement('td');
-      var span = createinlineeditablespan('longphrases-' + col);
-      span.textContent = typeof row[col] === 'string' ? row[col] : '';
-      span.onblur = (function(r, c) {
-        return function() {
-          changelongphrasecell(word, r, c, this.textContent.trim());
-        };
-      })(rowidx, colidx);
-      td.appendChild(span);
-      tr.appendChild(td);
+        for (var colidx = 0; colidx < columns.length; colidx++) {
+            var col = columns[colidx]
+            var td = document.createElement('td')
+            var span = createinlineeditablespan('longphrases-' + col)
+            span.textContent = typeof row[col] === 'string' ? row[col] : ''
+            span.onblur = (function(r, c) {
+                return function() {
+                    changelongphrasecell(word, r, c, this.textContent.trim())
+                }
+            })(rowidx, colidx)
+            td.appendChild(span)
+            tr.appendChild(td)
+        }
+
+        var tddel = document.createElement('td')
+        var delbtn = document.createElement('button')
+        delbtn.type = 'button'
+        delbtn.className = 'advancement-del'
+        delbtn.textContent = '-'
+        delbtn.onclick = (function(r) {
+            return function() {
+                word.longphrases.splice(r, 1)
+                setlongphrasesfromdb(word)
+                refreshwordlist(wordsdata)
+                storedata('wordsdata', wordsdata)
+            }
+        })(rowidx)
+        tddel.appendChild(delbtn)
+        tr.appendChild(tddel)
+
+        tbody.appendChild(tr)
     }
 
-    var tddel = document.createElement('td');
-    var delbtn = document.createElement('button');
-    delbtn.type = 'button';
-    delbtn.className = 'advancement-del';
-    delbtn.textContent = '-';
-    delbtn.onclick = (function(r) {
-      return function() {
-        word.longphrases.splice(r, 1);
-        setlongphrasesfromdb(word);
-        refreshwordlist(wordsdata);
-      };
-    })(rowidx);
-    tddel.appendChild(delbtn);
-    tr.appendChild(tddel);
-
-    tbody.appendChild(tr);
-  }
-
-  var addbtn = sec.querySelector('.advancement-add');
-  if (addbtn) {
-    addbtn.onclick = function() {
-      word.longphrases.push({ thai: '', romanization: '', english: '' });
-      setlongphrasesfromdb(word);
-      refreshwordlist(wordsdata);
-    };
-  }
+    var addbtn = sec.querySelector('.advancement-add')
+    if (addbtn) {
+        addbtn.onclick = function() {
+            word.longphrases.push({ thai: '', romanization: '', english: '' })
+            setlongphrasesfromdb(word)
+            refreshwordlist(wordsdata)
+            storedata('wordsdata', wordsdata)
+        }
+    }
 }
 
 function changelongphrasecell(word, rowidx, colidx, newvalue) {
-  if (!word || !word.longphrases) return;
+    if (!word || !word.longphrases) return
 
-  var columns = ['thai', 'romanization', 'english'];
-  var key = columns[colidx];
-  if (!key) return;
+    var columns = ['thai', 'romanization', 'english']
+    var key = columns[colidx]
+    if (!key) return
 
-  if (!word.longphrases[rowidx] || typeof word.longphrases[rowidx] !== 'object') {
-    word.longphrases[rowidx] = { thai: '', romanization: '', english: '' };
-  }
+    if (!word.longphrases[rowidx] || typeof word.longphrases[rowidx] !== 'object') {
+        word.longphrases[rowidx] = { thai: '', romanization: '', english: '' }
+    }
 
-  word.longphrases[rowidx][key] = newvalue;
-  refreshwordlist(wordsdata);
+    word.longphrases[rowidx][key] = newvalue
+    refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
 }
 
 function setsentencesfromdb(word) {
-  var panel = document.getElementById('word-details');
-  if (!panel) return;
+    var panel = document.getElementById('word-details')
+    if (!panel) return
 
-  var sec = panel.querySelector('.word-advancement-section.sentences');
-  if (!sec) return;
+    var sec = panel.querySelector('.word-advancement-section.sentences')
+    if (!sec) return
 
-  var tbody = sec.querySelector('tbody');
-  if (!tbody) return;
-  tbody.innerHTML = '';
+    var tbody = sec.querySelector('tbody')
+    if (!tbody) return
+    tbody.innerHTML = ''
 
-  var columns = ['thai', 'romanization', 'english'];
+    var columns = ['thai', 'romanization', 'english']
 
-  for (var rowidx = 0; rowidx < (word.sentences || []).length; rowidx++) {
-    var row = word.sentences[rowidx] || {};
-    var tr = document.createElement('tr');
+    for (var rowidx = 0; rowidx < (word.sentences || []).length; rowidx++) {
+        var row = word.sentences[rowidx] || {}
+        var tr = document.createElement('tr')
 
-    for (var colidx = 0; colidx < columns.length; colidx++) {
-      var col = columns[colidx];
-      var td = document.createElement('td');
-      var span = createinlineeditablespan('sentences-' + col);
-      span.textContent = typeof row[col] === 'string' ? row[col] : '';
-      span.onblur = (function(r, c) {
-        return function() {
-          changesentencecell(word, r, c, this.textContent.trim());
-        };
-      })(rowidx, colidx);
-      td.appendChild(span);
-      tr.appendChild(td);
+        for (var colidx = 0; colidx < columns.length; colidx++) {
+            var col = columns[colidx]
+            var td = document.createElement('td')
+            var span = createinlineeditablespan('sentences-' + col)
+            span.textContent = typeof row[col] === 'string' ? row[col] : ''
+            span.onblur = (function(r, c) {
+                return function() {
+                    changesentencecell(word, r, c, this.textContent.trim())
+                }
+            })(rowidx, colidx)
+            td.appendChild(span)
+            tr.appendChild(td)
+        }
+
+        var tddel = document.createElement('td')
+        var delbtn = document.createElement('button')
+        delbtn.type = 'button'
+        delbtn.className = 'advancement-del'
+        delbtn.textContent = '-'
+        delbtn.onclick = (function(r) {
+            return function() {
+                word.sentences.splice(r, 1)
+                setsentencesfromdb(word)
+                refreshwordlist(wordsdata)
+                storedata('wordsdata', wordsdata)
+            }
+        })(rowidx)
+        tddel.appendChild(delbtn)
+        tr.appendChild(tddel)
+
+        tbody.appendChild(tr)
     }
 
-    var tddel = document.createElement('td');
-    var delbtn = document.createElement('button');
-    delbtn.type = 'button';
-    delbtn.className = 'advancement-del';
-    delbtn.textContent = '-';
-    delbtn.onclick = (function(r) {
-      return function() {
-        word.sentences.splice(r, 1);
-        setsentencesfromdb(word);
-        refreshwordlist(wordsdata);
-      };
-    })(rowidx);
-    tddel.appendChild(delbtn);
-    tr.appendChild(tddel);
-
-    tbody.appendChild(tr);
-  }
-
-  var addbtn = sec.querySelector('.advancement-add');
-  if (addbtn) {
-    addbtn.onclick = function() {
-      word.sentences.push({ thai: '', romanization: '', english: '' });
-      setsentencesfromdb(word);
-      refreshwordlist(wordsdata);
-    };
-  }
+    var addbtn = sec.querySelector('.advancement-add')
+    if (addbtn) {
+        addbtn.onclick = function() {
+            word.sentences.push({ thai: '', romanization: '', english: '' })
+            setsentencesfromdb(word)
+            refreshwordlist(wordsdata)
+            storedata('wordsdata', wordsdata)
+        }
+    }
 }
 
 function changesentencecell(word, rowidx, colidx, newvalue) {
-  if (!word || !word.sentences) return;
+    if (!word || !word.sentences) return
 
-  var columns = ['thai', 'romanization', 'english'];
-  var key = columns[colidx];
-  if (!key) return;
+    var columns = ['thai', 'romanization', 'english']
+    var key = columns[colidx]
+    if (!key) return
 
-  if (!word.sentences[rowidx] || typeof word.sentences[rowidx] !== 'object') {
-    word.sentences[rowidx] = { thai: '', romanization: '', english: '' };
-  }
+    if (!word.sentences[rowidx] || typeof word.sentences[rowidx] !== 'object') {
+        word.sentences[rowidx] = { thai: '', romanization: '', english: '' }
+    }
 
-  word.sentences[rowidx][key] = newvalue;
-  refreshwordlist(wordsdata);
+    word.sentences[rowidx][key] = newvalue
+    refreshwordlist(wordsdata)
+    storedata('wordsdata', wordsdata)
 }
-
-
 
 //---------
 //HELPER FUNCTIONS

@@ -26,14 +26,15 @@ function createdeletewordbutton(word) {
 //---------
 
 function deleteword() {
-  const detail = getwordfromdetailspanel();
+  const detail = getwordfromdetailspanel()
   const idx = wordsdata.findIndex(function(w) {
-    return w.word === detail.word;
-  });
+    return w.word === detail.word
+  })
   if (idx !== -1) {
-    wordsdata.splice(idx, 1);
+    wordsdata.splice(idx, 1)
+    storedata('wordsdata', wordsdata)    // persist updated wordsdata after deletion
   }
-  renderwordpanel();
+  renderwordpanel()
 }
 
 

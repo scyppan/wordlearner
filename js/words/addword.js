@@ -1,14 +1,15 @@
+
 function addword() {
-    const placeholderBase = 'ตัวยึดตำแหน่ง'
-    const romanBase       = 'placeholder'
+    const placeholderbase = 'ตัวยึดตำแหน่ง'
+    const romanbase       = 'placeholder'
     const count = 1 + wordsdata.filter(w =>
-        (w.word || '').startsWith(placeholderBase)
+        (w.word || '').startsWith(placeholderbase)
     ).length
 
-    const newWord = {
-        word:           placeholderBase + (count>1?count:''),
+    const newword = {
+        word:           placeholderbase + (count>1?count:''),
         confidence:     1,
-        romanization:   romanBase + (count>1?count:''),
+        romanization:   romanbase + (count>1?count:''),
         type:           'content',
         pos:            '',
         definition:     '',
@@ -18,13 +19,9 @@ function addword() {
         sentences:      []
     }
 
-    wordsdata.push(newWord)
-    showworddetails(newWord)
-    searchbar(document.getElementById('word-list'));
+    wordsdata.push(newword)
+    storedata('wordsdata', wordsdata)
+    showworddetails(newword)
+    searchbar(document.getElementById('word-list'))
 }
 
-function replacewordlist(){
-
-
-    
-}

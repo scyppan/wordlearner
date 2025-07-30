@@ -88,11 +88,12 @@ function renderquizsession(quizindex, targetelem) {
         bubble.tabIndex = 0;
         bubble.setAttribute('aria-label', s.label);
         bubble.addEventListener('click', function() {
-          item.state = s.state;
-          tdstatus.querySelectorAll('.quizsession-bubble')
-                  .forEach(b => b.classList.remove('selected'));
-          bubble.classList.add('selected');
-        });
+  item.state = s.state;
+  tdstatus.querySelectorAll('.quizsession-bubble')
+          .forEach(b => b.classList.remove('selected'));
+  bubble.classList.add('selected');
+  storedata('quizzes', quizzes)   // ← persist the changed state
+});
         tdstatus.appendChild(bubble);
       });
   
