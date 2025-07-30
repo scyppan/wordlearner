@@ -1,0 +1,1349 @@
+[
+  {
+    "word": "ชอบ",
+    "confidence": 1,
+    "romanization": "châawp",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to like",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ชอบวิ่ง", "romanization": "châawp wîng", "english": "like running" },
+      { "thai": "ชอบกิน", "romanization": "châawp gin", "english": "like eating" },
+      { "thai": "ชอบเล่นเกม", "romanization": "châawp lên gem", "english": "like playing games" }
+    ],
+    "longphrases": [
+      { "thai": "ชอบเดินทางกรุงเทพฯ", "romanization": "châawp dern thaang krung thep", "english": "like traveling to Bangkok" },
+      { "thai": "ชอบดูหนังคืนนี้", "romanization": "châawp duu nang keun-née", "english": "like watching movies tonight" },
+      { "thai": "ชอบวิ่งกลางคืน", "romanization": "châawp wîng klang keuun", "english": "like running at night" },
+{ "thai": "คุณชอบทำอะไร", "romanization": "khun châawp tam à-rai", "english": "What do you like to do?" }
+
+    ],
+    "sentences": [
+      { "thai": "ฉันชอบเล่นเกมวันเสาร์", "romanization": "chăn châawp lên gem wan sǎo", "english": "I like playing games on Saturday" },
+      { "thai": "เขาชอบเดินทางวันศุกร์", "romanization": "khăo châawp dern thaang wan súk", "english": "He likes traveling on Friday" },
+      { "thai": "เราชอบดูหนังกลางคืนวันอาทิตย์", "romanization": "rao châawp duu nang klang keuun wan a-thít", "english": "We like watching movies on Sunday night" }
+    ]
+  },
+  {
+    "word": "ไม่ชอบ",
+    "confidence": 1,
+    "romanization": "mâi châawp",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to dislike",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ไม่ชอบวิ่ง", "romanization": "mâi châawp wîng", "english": "dislike running" },
+      { "thai": "ไม่ชอบดูหนัง", "romanization": "mâi châawp duu nang", "english": "dislike watching movies" },
+      { "thai": "ไม่ชอบกิน", "romanization": "mâi châawp gin", "english": "dislike eating" }
+    ],
+    "longphrases": [
+      { "thai": "ไม่ชอบเดินทางกรุงเทพฯ", "romanization": "mâi châawp dern thaang krung thep", "english": "dislike traveling to Bangkok" },
+      { "thai": "ไม่ชอบเล่นเกมคืนนี้", "romanization": "mâi châawp lên gem keun-née", "english": "dislike playing games tonight" },
+      { "thai": "ไม่ชอบวิ่งตอนเช้า", "romanization": "mâi châawp wîng dtâawn châo", "english": "dislike running in the morning" },
+{ "thai": "คุณไม่ชอบทำอะไร", "romanization": "khun mâi châawp tam à-rai", "english": "What do you not like to do?" }
+
+    ],
+    "sentences": [
+      { "thai": "ฉันไม่ชอบดูหนังวันจันทร์", "romanization": "chăn mâi châawp duu nang wan jan-than", "english": "I dislike watching movies on Monday" },
+      { "thai": "เขาไม่ชอบเดินทางวันพุธ", "romanization": "khăo mâi châawp dern thaang wan phut", "english": "He dislikes traveling on Wednesday" },
+      { "thai": "เราไม่ชอบเล่นเกมกลางคืน", "romanization": "rao mâi châawp lên gem klang keuun", "english": "We dislike playing games at night" }
+    ]
+  },
+  {
+    "word": "อาหารไทย",
+    "confidence": 1,
+    "romanization": "aa-hăan thai",
+    "type": "content",
+    "pos": "noun",
+    "definition": "Thai food",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "กินอาหารไทย", "romanization": "gin aa-hăan thai", "english": "eat Thai food" },
+      { "thai": "ชอบอาหารไทย", "romanization": "châawp aa-hăan thai", "english": "like Thai food" },
+      { "thai": "อาหารไทยดี", "romanization": "aa-hăan thai dii", "english": "Thai food is good" }
+    ],
+    "longphrases": [
+      { "thai": "เราอยากกินอาหารไทย", "romanization": "rao yàak gin aa-hăan thai", "english": "we want to eat Thai food" },
+      { "thai": "ไม่ชอบอาหารไทยคืนนี้", "romanization": "mâi châawp aa-hăan thai keun-née", "english": "dislike Thai food tonight" },
+      { "thai": "อาหารไทยดีจริง ๆ", "romanization": "aa-hăan thai dii jing jing", "english": "Thai food is really good" }
+    ],
+    "sentences": [
+      { "thai": "เขาชอบกินอาหารไทยวันเสาร์", "romanization": "khăo châawp gin aa-hăan thai wan sǎo", "english": "He likes eating Thai food on Saturday" },
+      { "thai": "เราไม่ชอบกินอาหารไทยวันอาทิตย์", "romanization": "rao mâi châawp gin aa-hăan thai wan a-thít", "english": "We dislike eating Thai food on Sunday" },
+      { "thai": "อาหารไทยดีวันศุกร์", "romanization": "aa-hăan thai dii wan súk", "english": "Thai food is good on Friday" }
+    ]
+  },   {
+    "word": "อังกฤษ",
+    "confidence": 1,
+    "romanization": "ang-grìt",
+    "type": "content",
+    "pos": "noun",
+    "definition": "English",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พูดอังกฤษ", "romanization": "pôot ang-grìt", "english": "speak English" },
+      { "thai": "ภาษาอังกฤษ", "romanization": "paa-săa ang-grìt", "english": "English language" },
+      { "thai": "เรียนอังกฤษ", "romanization": "rian ang-grìt", "english": "study English" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันชอบพูดอังกฤษ", "romanization": "chăn châawp pôot ang-grìt", "english": "I like speaking English" },
+      { "thai": "เขาไม่ชอบเรียนอังกฤษ", "romanization": "khăo mâi châawp rian ang-grìt", "english": "He dislikes studying English" },
+      { "thai": "เราเรียนภาษาอังกฤษวันนี้", "romanization": "rao rian paa-săa ang-grìt wan née", "english": "We study English today" }
+    ],
+    "sentences": [
+      { "thai": "เขาพูดอังกฤษวันศุกร์", "romanization": "khăo pôot ang-grìt wan súk", "english": "He speaks English on Friday" },
+      { "thai": "เราเรียนภาษาอังกฤษตอนเช้า", "romanization": "rao rian paa-săa ang-grìt dtâawn châo", "english": "We study English in the morning" },
+      { "thai": "ฉันไม่ชอบพูดอังกฤษตอนเย็น", "romanization": "chăn mâi châawp pôot ang-grìt dtâawn yen", "english": "I dislike speaking English in the evening" }
+    ]
+  },
+  {
+    "word": "สนุก",
+    "confidence": 1,
+    "romanization": "sà-nùk",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "fun",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เกมสนุก", "romanization": "gem sà-nùk", "english": "fun game" },
+      { "thai": "ดูหนังสนุก", "romanization": "duu nang sà-nùk", "english": "watch fun movie" },
+      { "thai": "สนุกดี", "romanization": "sà-nùk dii", "english": "it's fun" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้สนุกมาก", "romanization": "wan née sà-nùk mâak", "english": "today is very fun" },
+      { "thai": "เล่นเกมสนุกคืนนี้", "romanization": "lên gem sà-nùk keun-née", "english": "play fun game tonight" },
+      { "thai": "ดูหนังสนุกวันเสาร์", "romanization": "duu nang sà-nùk wan sǎo", "english": "watch a fun movie on Saturday" }
+    ],
+    "sentences": [
+      { "thai": "เขาชอบเล่นเกมสนุกวันอาทิตย์", "romanization": "khăo châawp lên gem sà-nùk wan a-thít", "english": "He likes playing fun games on Sunday" },
+      { "thai": "เราดูหนังสนุกกลางคืน", "romanization": "rao duu nang sà-nùk klang keuun", "english": "We watch fun movies at night" },
+      { "thai": "ฉันไม่ชอบเกมสนุกวันนี้", "romanization": "chăn mâi châawp gem sà-nùk wan née", "english": "I dislike the fun game today" }
+    ]
+  },
+  {
+    "word": "ทำ",
+    "confidence": 1,
+    "romanization": "tam",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to do",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ทำอาหาร", "romanization": "tam aa-hăan", "english": "cook food" },
+      { "thai": "ทำดี", "romanization": "tam dii", "english": "do well" },
+      { "thai": "ทำอะไร", "romanization": "tam à-rai", "english": "do what" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้ทำอาหารไทย", "romanization": "wan née tam aa-hăan thai", "english": "today cook Thai food" },
+      { "thai": "ทำอะไรคืนนี้", "romanization": "tam à-rai keun-née", "english": "what to do tonight" },
+      { "thai": "เราทำอาหารวันจันทร์", "romanization": "rao tam aa-hăan wan jan-than", "english": "we cook food on Monday" }
+    ],
+    "sentences": [
+      { "thai": "ฉันชอบทำอาหารวันอาทิตย์", "romanization": "chăn châawp tam aa-hăan wan a-thít", "english": "I like cooking on Sunday" },
+      { "thai": "เขาไม่ชอบทำอะไรตอนเช้า", "romanization": "khăo mâi châawp tam à-rai dtâawn châo", "english": "He dislikes doing anything in the morning" },
+      { "thai": "เราทำดีจริง ๆ", "romanization": "rao tam dii jing jing", "english": "We really do well" }
+    ]
+  },
+  {
+    "word": "อังกฤษ",
+    "confidence": 1,
+    "romanization": "ang-grìt",
+    "type": "content",
+    "pos": "noun",
+    "definition": "English",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พูดอังกฤษ", "romanization": "pôot ang-grìt", "english": "speak English" },
+      { "thai": "ภาษาอังกฤษ", "romanization": "paa-săa ang-grìt", "english": "English language" },
+      { "thai": "เรียนอังกฤษ", "romanization": "rian ang-grìt", "english": "study English" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันชอบพูดอังกฤษ", "romanization": "chăn châawp pôot ang-grìt", "english": "I like speaking English" },
+      { "thai": "เขาไม่ชอบเรียนอังกฤษ", "romanization": "khăo mâi châawp rian ang-grìt", "english": "He dislikes studying English" },
+      { "thai": "เราเรียนภาษาอังกฤษวันนี้", "romanization": "rao rian paa-săa ang-grìt wan née", "english": "We study English today" }
+    ],
+    "sentences": [
+      { "thai": "เขาพูดอังกฤษวันศุกร์", "romanization": "khăo pôot ang-grìt wan súk", "english": "He speaks English on Friday" },
+      { "thai": "เราเรียนภาษาอังกฤษตอนเช้า", "romanization": "rao rian paa-săa ang-grìt dtâawn châo", "english": "We study English in the morning" },
+      { "thai": "ฉันไม่ชอบพูดอังกฤษตอนเย็น", "romanization": "chăn mâi châawp pôot ang-grìt dtâawn yen", "english": "I dislike speaking English in the evening" }
+    ]
+  }
+
+
+,
+  {
+    "word": "สนุก",
+    "confidence": 1,
+    "romanization": "sà-nùk",
+    "type": "content",
+    "pos": "adjective",
+    "definition": "fun",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เกมสนุก", "romanization": "gem sà-nùk", "english": "fun game" },
+      { "thai": "ดูหนังสนุก", "romanization": "duu nang sà-nùk", "english": "watch fun movie" },
+      { "thai": "สนุกดี", "romanization": "sà-nùk dii", "english": "it's fun" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้สนุกมาก", "romanization": "wan née sà-nùk mâak", "english": "today is very fun" },
+      { "thai": "เล่นเกมสนุกคืนนี้", "romanization": "lên gem sà-nùk keun-née", "english": "play fun game tonight" },
+      { "thai": "ดูหนังสนุกวันเสาร์", "romanization": "duu nang sà-nùk wan sǎo", "english": "watch a fun movie on Saturday" }
+    ],
+    "sentences": [
+      { "thai": "เขาชอบเล่นเกมสนุกวันอาทิตย์", "romanization": "khăo châawp lên gem sà-nùk wan a-thít", "english": "He likes playing fun games on Sunday" },
+      { "thai": "เราดูหนังสนุกกลางคืน", "romanization": "rao duu nang sà-nùk klang keuun", "english": "We watch fun movies at night" },
+      { "thai": "ฉันไม่ชอบเกมสนุกวันนี้", "romanization": "chăn mâi châawp gem sà-nùk wan née", "english": "I dislike the fun game today" }
+    ]
+  },
+  {
+    "word": "ทำ",
+    "confidence": 1,
+    "romanization": "tam",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to do",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ทำอาหาร", "romanization": "tam aa-hăan", "english": "cook food" },
+      { "thai": "ทำดี", "romanization": "tam dii", "english": "do well" },
+      { "thai": "ทำอะไร", "romanization": "tam à-rai", "english": "do what" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้ทำอาหารไทย", "romanization": "wan née tam aa-hăan thai", "english": "today cook Thai food" },
+      { "thai": "ทำอะไรคืนนี้", "romanization": "tam à-rai keun-née", "english": "what to do tonight" },
+      { "thai": "เราทำอาหารวันจันทร์", "romanization": "rao tam aa-hăan wan jan-than", "english": "we cook food on Monday" }
+    ],
+    "sentences": [
+      { "thai": "ฉันชอบทำอาหารวันอาทิตย์", "romanization": "chăn châawp tam aa-hăan wan a-thít", "english": "I like cooking on Sunday" },
+      { "thai": "เขาไม่ชอบทำอะไรตอนเช้า", "romanization": "khăo mâi châawp tam à-rai dtâawn châo", "english": "He dislikes doing anything in the morning" },
+      { "thai": "เราทำดีจริง ๆ", "romanization": "rao tam dii jing jing", "english": "We really do well" }
+    ]
+  },
+  {
+    "word": "อาบน้ำ",
+    "confidence": 1,
+    "romanization": "àap náam",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to take a shower",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อาบน้ำตอนเช้า", "romanization": "àap náam dtâawn châo", "english": "shower in the morning" },
+      { "thai": "อาบน้ำคืนนี้", "romanization": "àap náam keun-née", "english": "shower tonight" },
+      { "thai": "ชอบอาบน้ำ", "romanization": "châawp àap náam", "english": "like taking a shower" }
+    ],
+    "longphrases": [
+      { "thai": "เขาอาบน้ำวันศุกร์", "romanization": "khăo àap náam wan súk", "english": "He showers on Friday" },
+      { "thai": "เราอาบน้ำก่อนนอน", "romanization": "rao àap náam gòn non", "english": "we shower before bed" },
+      { "thai": "ฉันไม่ชอบอาบน้ำตอนเย็น", "romanization": "chăn mâi châawp àap náam dtâawn yen", "english": "I dislike showering in the evening" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เขาอาบน้ำตอนเช้า", "romanization": "wan née khăo àap náam dtâawn châo", "english": "Today he showers in the morning" },
+      { "thai": "เราอาบน้ำทุกวัน", "romanization": "rao àap náam túk wan", "english": "We shower every day" },
+      { "thai": "ฉันชอบอาบน้ำกลางคืน", "romanization": "chăn châawp àap náam klang keuun", "english": "I like showering at night" }
+    ]
+  },
+  {
+    "word": "ทีวี",
+    "confidence": 1,
+    "romanization": "thii-wii",
+    "type": "content",
+    "pos": "noun",
+    "definition": "TV",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ดูทีวี", "romanization": "duu thii-wii", "english": "watch TV" },
+      { "thai": "ทีวีสนุก", "romanization": "thii-wii sà-nùk", "english": "fun TV" },
+      { "thai": "ชอบดูทีวี", "romanization": "châawp duu thii-wii", "english": "like watching TV" }
+    ],
+    "longphrases": [
+      { "thai": "เขาดูทีวีทุกวัน", "romanization": "khăo duu thii-wii túk wan", "english": "He watches TV every day" },
+      { "thai": "เราดูทีวีคืนนี้", "romanization": "rao duu thii-wii keun-née", "english": "We watch TV tonight" },
+      { "thai": "ฉันไม่ชอบดูทีวีตอนเช้า", "romanization": "chăn mâi châawp duu thii-wii dtâawn châo", "english": "I dislike watching TV in the morning" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เขาดูทีวีที่บ้าน", "romanization": "wan née khăo duu thii-wii têe bâan", "english": "Today he watches TV at home" },
+      { "thai": "เราไม่ดูทีวีวันจันทร์", "romanization": "rao mâi duu thii-wii wan jan-than", "english": "We don't watch TV on Monday" },
+      { "thai": "ฉันชอบดูทีวีตอนเย็น", "romanization": "chăn châawp duu thii-wii dtâawn yen", "english": "I like watching TV in the evening" }
+    ]
+  },
+  {
+    "word": "โทรศัพท์",
+    "confidence": 1,
+    "romanization": "thoo-rá-sàp",
+    "type": "content",
+    "pos": "noun",
+    "definition": "telephone",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "คุยโทรศัพท์", "romanization": "khui thoo-rá-sàp", "english": "talk on the phone" },
+      { "thai": "โทรศัพท์สนุก", "romanization": "thoo-rá-sàp sà-nùk", "english": "fun phone" },
+      { "thai": "ชอบโทรศัพท์", "romanization": "châawp thoo-rá-sàp", "english": "like telephone" }
+    ],
+    "longphrases": [
+      { "thai": "เขาคุยโทรศัพท์ทุกวัน", "romanization": "khăo khui thoo-rá-sàp túk wan", "english": "He talks on the phone every day" },
+      { "thai": "เราคุยโทรศัพท์คืนนี้", "romanization": "rao khui thoo-rá-sàp keun-née", "english": "We talk on the phone tonight" },
+      { "thai": "ฉันไม่ชอบคุยโทรศัพท์ตอนเช้า", "romanization": "chăn mâi châawp khui thoo-rá-sàp dtâawn châo", "english": "I dislike talking on the phone in the morning" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เขาคุยโทรศัพท์ที่บ้าน", "romanization": "wan née khăo khui thoo-rá-sàp têe bâan", "english": "Today he talks on the phone at home" },
+      { "thai": "เราไม่คุยโทรศัพท์วันจันทร์", "romanization": "rao mâi khui thoo-rá-sàp wan jan-than", "english": "We don't talk on the phone on Monday" },
+      { "thai": "ฉันชอบคุยโทรศัพท์ตอนเย็น", "romanization": "chăn châawp khui thoo-rá-sàp dtâawn yen", "english": "I like talking on the phone in the evening" }
+    ]
+  },
+  {
+    "word": "เขาหลับแล้ว",
+    "confidence": 1,
+    "romanization": "khăo làp láew",
+    "type": "content",
+    "pos": "phrase",
+    "definition": "he is already asleep",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เขาหลับแล้ว", "romanization": "khăo làp láew", "english": "he is already asleep" },
+      { "thai": "เขานอนหลับ", "romanization": "khăo non làp", "english": "he is sleeping" },
+      { "thai": "หลับสนิท", "romanization": "làp sà-nìt", "english": "sound asleep" }
+    ],
+    "longphrases": [
+      { "thai": "เขาหลับแล้วตอนนี้", "romanization": "khăo làp láew dtâawn née", "english": "he is already asleep now" },
+      { "thai": "เขาหลับเร็วมาก", "romanization": "khăo làp reo mâak", "english": "he falls asleep very quickly" },
+      { "thai": "ฉันคิดว่าเขาหลับแล้ว", "romanization": "chăn khít wâa khăo làp láew", "english": "I think he is already asleep" }
+    ],
+    "sentences": [
+      { "thai": "เขาหลับแล้วเพราะเหนื่อย", "romanization": "khăo làp láew phróe nèuay", "english": "He is already asleep because he is tired" },
+      { "thai": "เราไม่ควรรบกวนเขาเพราะเขาหลับแล้ว", "romanization": "rao mâi khuan róp-kuan khăo phróe khăo làp láew", "english": "We shouldn't disturb him because he is already asleep" },
+      { "thai": "ฉันบอกแล้วว่าเขาหลับแล้ว", "romanization": "chăn bòk láew wâa khăo làp láew", "english": "I already told you he is asleep" }
+    ]
+  },
+  {
+    "word": "อยู่",
+    "confidence": 1,
+    "romanization": "yùu",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to be (location), stay",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อยู่บ้าน", "romanization": "yùu bâan", "english": "stay home" },
+      { "thai": "อยู่ที่นี่", "romanization": "yùu têe nîi", "english": "stay here" },
+      { "thai": "เขาอยู่ไหน", "romanization": "khăo yùu năi", "english": "where is he?" }
+    ],
+    "longphrases": [
+      { "thai": "เขาอยู่ที่บ้านวันนี้", "romanization": "khăo yùu têe bâan wan née", "english": "He stays home today" },
+      { "thai": "เราอยู่ด้วยกันคืนนี้", "romanization": "rao yùu dûay gan keun-née", "english": "We stay together tonight" },
+      { "thai": "เธออยู่ที่ไหนตอนนี้", "romanization": "thoe yùu têe năi dtâawn née", "english": "Where are you right now?" }
+    ],
+    "sentences": [
+      { "thai": "ฉันอยู่บ้านทั้งวัน", "romanization": "chăn yùu bâan tháng wan", "english": "I stay home all day" },
+      { "thai": "เขาอยู่กรุงเทพฯ", "romanization": "khăo yùu krung thêep", "english": "He is in Bangkok" },
+      { "thai": "เราไม่อยู่ที่บ้านคืนนี้", "romanization": "rao mâi yùu têe bâan keun-née", "english": "We are not at home tonight" },
+{ "thai": "ผมอยู่ที่บ้าน", "romanization": "phŏm yùu têe bâan", "english": "I am at home" }
+
+    ]
+  },
+  {
+    "word": "เป็น",
+    "confidence": 1,
+    "romanization": "bpen",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to be",
+    "notes": "Can sometimes be used to indicate 'can' instead",
+    "shortphrases": [
+      { "thai": "เป็นเพื่อน", "romanization": "bpen phêuuan", "english": "to be friends" },
+      { "thai": "เป็นอะไร", "romanization": "bpen à-rai", "english": "what is it" },
+      { "thai": "เป็นคนดี", "romanization": "bpen khon dii", "english": "to be a good person" }
+    ],
+    "longphrases": [
+      { "thai": "เขาเป็นเพื่อนที่ดี", "romanization": "khăo bpen phêuuan têe dii", "english": "He is a good friend" },
+      { "thai": "ฉันเป็นนักเรียน", "romanization": "chăn bpen nák rian", "english": "I am a student" },
+      { "thai": "วันนี้เป็นวันที่ดี", "romanization": "wan née bpen wan têe dii", "english": "Today is a good day" }
+    ],
+    "sentences": [
+      { "thai": "เขาเป็นคนที่ฉันชอบ", "romanization": "khăo bpen khon têe chăn châawp", "english": "He is someone I like" },
+      { "thai": "เราเป็นเพื่อนกัน", "romanization": "rao bpen phêuuan gan", "english": "We are friends" },
+      { "thai": "ฉันเป็นคนที่อยู่บ้านบ่อย", "romanization": "chăn bpen khon têe yùu bâan bòi", "english": "I am a person who stays home often" },
+{ "thai": "ผมเป็นหมอ", "romanization": "phŏm bpen mǎaw", "english": "I am a doctor" },
+{ "thai": "ผมเป็นคนไทย", "romanization": "phŏm bpen khon thai", "english": "I am Thai" }
+
+
+    ]
+  },
+  {
+    "word": "คือ",
+    "confidence": 1,
+    "romanization": "kheuu",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to be (identification)",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "นี่คืออะไร", "romanization": "nîi kheuu à-rai", "english": "what is this" },
+      { "thai": "คือเพื่อน", "romanization": "kheuu phêuuan", "english": "is a friend" },
+      { "thai": "คือบ้านของฉัน", "romanization": "kheuu bâan khǎawng chăn", "english": "is my home" }
+    ],
+    "longphrases": [
+      { "thai": "นี่คือเพื่อนของฉัน", "romanization": "nîi kheuu phêuuan khǎawng chăn", "english": "this is my friend" },
+      { "thai": "บ้านนี้คือบ้านเขา", "romanization": "bâan níi kheuu bâan khăo", "english": "this house is his" },
+      { "thai": "วันศุกร์คือวันที่ดี", "romanization": "wan súk kheuu wan têe dii", "english": "Friday is a good day" }
+    ],
+    "sentences": [
+      { "thai": "เขาคือเพื่อนที่ดีของฉัน", "romanization": "khăo kheuu phêuuan têe dii khǎawng chăn", "english": "He is a good friend of mine" },
+      { "thai": "วันนี้คือวันอาทิตย์", "romanization": "wan née kheuu wan a-thít", "english": "Today is Sunday" },
+      { "thai": "นั่นคือบ้านของเรา", "romanization": "nân kheuu bâan khǎawng rao", "english": "That is our house" },
+{ "thai": "นี่คือปีเตอร์", "romanization": "nîi kheuu bpí-dtêr", "english": "This is Peter" }
+
+    ]
+  },
+  {
+    "word": "เพื่อน",
+    "confidence": 1,
+    "romanization": "phêuuan",
+    "type": "content",
+    "pos": "noun",
+    "definition": "friend",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เพื่อนดี", "romanization": "phêuuan dii", "english": "good friend" },
+      { "thai": "เพื่อนฉัน", "romanization": "phêuuan chăn", "english": "my friend" },
+      { "thai": "เป็นเพื่อน", "romanization": "bpen phêuuan", "english": "to be friends" }
+    ],
+    "longphrases": [
+      { "thai": "เขาเป็นเพื่อนที่ดี", "romanization": "khăo bpen phêuuan têe dii", "english": "He is a good friend" },
+      { "thai": "ฉันอยู่กับเพื่อน", "romanization": "chăn yùu gàp phêuuan", "english": "I’m with a friend" },
+      { "thai": "เราคุยกับเพื่อนบ่อย", "romanization": "rao khui gàp phêuuan bòi", "english": "We talk with friends often" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันไปบ้านเพื่อน", "romanization": "wan née chăn bpai bâan phêuuan", "english": "Today I went to my friend’s house" },
+      { "thai": "เขาอยู่กับเพื่อนที่กรุงเทพฯ", "romanization": "khăo yùu gàp phêuuan têe krung thêep", "english": "He is with friends in Bangkok" },
+      { "thai": "เราเป็นเพื่อนกันตั้งแต่เด็ก", "romanization": "rao bpen phêuuan gan tâng-dtàae dèk", "english": "We’ve been friends since childhood" }
+    ]
+  },
+  {
+    "word": "อ่านหนังสือ",
+    "confidence": 1,
+    "romanization": "àan năng-sĕu",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to read a book",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อ่านหนังสือดี", "romanization": "àan năng-sĕu dii", "english": "reading is good" },
+      { "thai": "ชอบอ่านหนังสือ", "romanization": "châawp àan năng-sĕu", "english": "like reading books" },
+      { "thai": "อ่านหนังสือทุกวัน", "romanization": "àan năng-sĕu túk wan", "english": "read books every day" }
+    ],
+    "longphrases": [
+      { "thai": "เขาอ่านหนังสือตอนเช้า", "romanization": "khăo àan năng-sĕu dtâawn châo", "english": "he reads in the morning" },
+      { "thai": "ฉันชอบอ่านหนังสือตอนเย็น", "romanization": "chăn châawp àan năng-sĕu dtâawn yen", "english": "I like reading in the evening" },
+      { "thai": "เรามักจะอ่านหนังสือวันศุกร์", "romanization": "rao mák jà àan năng-sĕu wan súk", "english": "we usually read on Fridays" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันอ่านหนังสือที่บ้าน", "romanization": "wan née chăn àan năng-sĕu têe bâan", "english": "Today I read a book at home" },
+      { "thai": "เขาอ่านหนังสือทุกวันอาทิตย์", "romanization": "khăo àan năng-sĕu túk wan a-thít", "english": "He reads every Sunday" },
+      { "thai": "ฉันไม่ชอบอ่านหนังสือตอนกลางคืน", "romanization": "chăn mâi châawp àan năng-sĕu dtâawn klang keuun", "english": "I don’t like reading at night" }
+    ]
+  },
+  {
+    "word": "ทะเลสาบ",
+    "confidence": 1,
+    "romanization": "thá-lee sàap",
+    "type": "content",
+    "pos": "noun",
+    "definition": "lake",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ไปทะเลสาบ", "romanization": "bpai thá-lee sàap", "english": "go to the lake" },
+      { "thai": "ทะเลสาบดี", "romanization": "thá-lee sàap dii", "english": "the lake is nice" },
+      { "thai": "ชอบทะเลสาบ", "romanization": "châawp thá-lee sàap", "english": "like the lake" },
+{ "thai": "ไปชายทะเล", "romanization": "bpai chaai thá-lee", "english": "go to the beach" }
+
+    ],
+    "longphrases": [
+      { "thai": "เราชอบไปทะเลสาบ", "romanization": "rao châawp bpai thá-lee sàap", "english": "we like going to the lake" },
+      { "thai": "เขาอยู่ที่ทะเลสาบวันนี้", "romanization": "khăo yùu têe thá-lee sàap wan née", "english": "he is at the lake today" },
+      { "thai": "ฉันไม่ชอบทะเลสาบตอนเย็น", "romanization": "chăn mâi châawp thá-lee sàap dtâawn yen", "english": "I don’t like the lake in the evening" }
+    ],
+    "sentences": [
+      { "thai": "เราไปทะเลสาบวันอาทิตย์", "romanization": "rao bpai thá-lee sàap wan a-thít", "english": "We go to the lake on Sunday" },
+      { "thai": "วันนี้เขาอยู่ที่ทะเลสาบ", "romanization": "wan née khăo yùu têe thá-lee sàap", "english": "Today he is at the lake" },
+      { "thai": "ฉันชอบไปทะเลสาบวันศุกร์", "romanization": "chăn châawp bpai thá-lee sàap wan súk", "english": "I like going to the lake on Friday" },
+{ "thai": "คุณอยากไปทะเลสาบไหม", "romanization": "khun yàak bpai thá-lee sàap mái", "english": "Do you want to go to the lake?" }
+
+    ]
+  },
+  {
+    "word": "ตื่น",
+    "confidence": 1,
+    "romanization": "dtèun",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to wake up",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ตื่นเช้า", "romanization": "dtèun cháo", "english": "wake up early" },
+      { "thai": "ตื่นตอนเช้า", "romanization": "dtèun dtâawn cháo", "english": "wake up in the morning" },
+      { "thai": "ตื่นแล้ว", "romanization": "dtèun láew", "english": "already awake" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันตื่นตอนเจ็ดโมง", "romanization": "chăn dtèun dtâawn jèt moong", "english": "I wake up at seven o’clock" },
+      { "thai": "เขาตื่นเร็วทุกวัน", "romanization": "khăo dtèun reo túk wan", "english": "he wakes up early every day" },
+      { "thai": "วันนี้ตื่นสาย", "romanization": "wan née dtèun săai", "english": "woke up late today" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันตื่นตอนหกโมงเช้า", "romanization": "wan née chăn dtèun dtâawn hòk moong cháo", "english": "Today I woke up at 6 a.m." },
+      { "thai": "เขาตื่นแล้วตอนนี้", "romanization": "khăo dtèun láew dtâawn née", "english": "He is already awake now" },
+      { "thai": "เราตื่นเช้าทุกวัน", "romanization": "rao dtèun cháo túk wan", "english": "We wake up early every day" }
+    ]
+  },  {
+    "word": "นอน",
+    "confidence": 1,
+    "romanization": "non",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to sleep",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "นอนดี", "romanization": "non dii", "english": "sleep well" },
+      { "thai": "นอนเร็ว", "romanization": "non reo", "english": "sleep early" },
+      { "thai": "นอนดึก", "romanization": "non dèuk", "english": "sleep late" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันนอนตอนสี่ทุ่ม", "romanization": "chăn non dtâawn sìi thûm", "english": "I sleep at 10 p.m." },
+      { "thai": "เขานอนที่บ้านวันนี้", "romanization": "khăo non têe bâan wan née", "english": "he sleeps at home today" },
+      { "thai": "เรานอนไม่หลับตอนคืน", "romanization": "rao non mâi làp dtâawn keuun", "english": "we can’t sleep at night" }
+    ],
+    "sentences": [
+      { "thai": "เมื่อคืนฉันนอนดึกมาก", "romanization": "meuu keuun chăn non dèuk mâak", "english": "Last night I slept very late" },
+      { "thai": "เขานอนตอนสองทุ่มทุกคืน", "romanization": "khăo non dtâawn sŏng thûm túk keuun", "english": "He sleeps at 8 p.m. every night" },
+      { "thai": "เราอยากนอนตอนนี้", "romanization": "rao yàak non dtâawn née", "english": "We want to sleep now" }
+    ]
+  },
+  {
+    "word": "หา",
+    "confidence": 1,
+    "romanization": "hăa",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to find / look for",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "หาอะไร", "romanization": "hăa à-rai", "english": "find what" },
+      { "thai": "หาเพื่อน", "romanization": "hăa phêuuan", "english": "look for a friend" },
+      { "thai": "หาบ้าน", "romanization": "hăa bâan", "english": "look for a house" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันหาของตอนเช้า", "romanization": "chăn hăa khǎawng dtâawn châo", "english": "I look for things in the morning" },
+      { "thai": "เขาหาเพื่อนที่กรุงเทพฯ", "romanization": "khăo hăa phêuuan têe krung thêep", "english": "he looks for friends in Bangkok" },
+      { "thai": "วันนี้ฉันหาบ้านใหม่", "romanization": "wan née chăn hăa bâan mài", "english": "today I’m looking for a new house" }
+    ],
+    "sentences": [
+      { "thai": "ฉันกำลังหาบ้านที่ดี", "romanization": "chăn gam-lang hăa bâan têe dii", "english": "I’m looking for a good house" },
+      { "thai": "เขาหาเพื่อนตอนกลางคืน", "romanization": "khăo hăa phêuuan dtâawn klang keuun", "english": "He looks for friends at night" },
+      { "thai": "เราอยากหาอะไรอร่อย", "romanization": "rao yàak hăa à-rai à-ròi", "english": "We want to find something tasty" }
+    ]
+  },
+  {
+    "word": "กับ",
+    "confidence": 1,
+    "romanization": "gàp",
+    "type": "content",
+    "pos": "preposition",
+    "definition": "with",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อยู่กับเพื่อน", "romanization": "yùu gàp phêuuan", "english": "stay with a friend" },
+      { "thai": "กินกับ", "romanization": "gin gàp", "english": "eat with" },
+      { "thai": "คุยกับเขา", "romanization": "khui gàp khăo", "english": "talk with him" }
+    ],
+    "longphrases": [
+      { "thai": "อยู่กับครอบครัววันนี้", "romanization": "yùu gàp khrâawp-khrua wan née", "english": "stay with family today" },
+      { "thai": "เราไปกับเขาวันศุกร์", "romanization": "rao bpai gàp khăo wan súk", "english": "we go with him on Friday" },
+      { "thai": "ฉันกินอาหารกับเพื่อน", "romanization": "chăn gin aa-hăan gàp phêuuan", "english": "I eat with a friend" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันอยู่กับแม่ทั้งวัน", "romanization": "wan née chăn yùu gàp mâae tháng wan", "english": "Today I stay with my mom all day" },
+      { "thai": "เราไปกินอาหารกับเขา", "romanization": "rao bpai gin aa-hăan gàp khăo", "english": "We go eat with him" },
+      { "thai": "เขาคุยกับเพื่อนวันเสาร์", "romanization": "khăo khui gàp phêuuan wan sǎo", "english": "He talks with friends on Saturday" }
+    ]
+  },
+  {
+    "word": "พูด",
+    "confidence": 1,
+    "romanization": "pôot",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to speak",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พูดดี", "romanization": "pôot dii", "english": "speak well" },
+      { "thai": "พูดมาก", "romanization": "pôot mâak", "english": "speak a lot" },
+      { "thai": "พูดอะไร", "romanization": "pôot à-rai", "english": "say what" }
+    ],
+    "longphrases": [
+      { "thai": "เขาพูดภาษาอังกฤษ", "romanization": "khăo pôot paa-săa ang-grìt", "english": "He speaks English" },
+      { "thai": "ฉันพูดกับเพื่อนวันนี้", "romanization": "chăn pôot gàp phêuuan wan née", "english": "I talk to a friend today" },
+      { "thai": "เธอพูดเร็วมาก", "romanization": "thoe pôot reo mâak", "english": "She speaks very fast" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันพูดกับแม่", "romanization": "wan née chăn pôot gàp mâae", "english": "Today I speak with mom" },
+      { "thai": "เขาพูดดีมากในชั้นเรียน", "romanization": "khăo pôot dii mâak nai chán rian", "english": "He speaks very well in class" },
+      { "thai": "เราไม่พูดภาษาอังกฤษตอนเย็น", "romanization": "rao mâi pôot paa-săa ang-grìt dtâawn yen", "english": "We don't speak English in the evening" }
+    ]
+  },
+  {
+    "word": "คุย",
+    "confidence": 1,
+    "romanization": "khui",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to talk",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "คุยดี", "romanization": "khui dii", "english": "talk nicely" },
+      { "thai": "คุยกับเพื่อน", "romanization": "khui gàp phêuuan", "english": "talk with a friend" },
+      { "thai": "คุยตอนเย็น", "romanization": "khui dtâawn yen", "english": "talk in the evening" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้ฉันคุยกับเขา", "romanization": "wan née chăn khui gàp khăo", "english": "Today I talk with him" },
+      { "thai": "เราคุยเรื่องหนัง", "romanization": "rao khui rûueang năng", "english": "We talk about movies" },
+      { "thai": "เขาชอบคุยตอนกลางคืน", "romanization": "khăo châawp khui dtâawn klang keuun", "english": "He likes to talk at night" }
+    ],
+    "sentences": [
+      { "thai": "ฉันคุยกับเพื่อนทุกวัน", "romanization": "chăn khui gàp phêuuan túk wan", "english": "I talk with friends every day" },
+      { "thai": "เราไม่คุยตอนเช้า", "romanization": "rao mâi khui dtâawn châo", "english": "We don’t talk in the morning" },
+      { "thai": "เขาคุยเรื่องสนุกวันนี้", "romanization": "khăo khui rûueang sà-nùk wan née", "english": "He talks about fun things today" }
+    ]
+  },
+  {
+    "word": "หมอ",
+    "confidence": 1,
+    "romanization": "mǎaw",
+    "type": "content",
+    "pos": "noun",
+    "definition": "doctor",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ไปหาหมอ", "romanization": "bpai hăa mǎaw", "english": "go see a doctor" },
+      { "thai": "หมอดี", "romanization": "mǎaw dii", "english": "good doctor" },
+      { "thai": "ชอบหมอ", "romanization": "châawp mǎaw", "english": "like the doctor" }
+    ],
+    "longphrases": [
+      { "thai": "เขาไปหาหมอวันนี้", "romanization": "khăo bpai hăa mǎaw wan née", "english": "he sees a doctor today" },
+      { "thai": "หมอคนนี้ดีมาก", "romanization": "mǎaw khon née dii mâak", "english": "this doctor is very good" },
+      { "thai": "ฉันไม่ชอบไปหาหมอ", "romanization": "chăn mâi châawp bpai hăa mǎaw", "english": "I don’t like going to the doctor" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันไปหาหมอที่โรงพยาบาล", "romanization": "wan née chăn bpai hăa mǎaw têe rohng pá-yaa-baan", "english": "Today I go see a doctor at the hospital" },
+      { "thai": "เขาชอบหมอคนนี้มาก", "romanization": "khăo châawp mǎaw khon née mâak", "english": "He really likes this doctor" },
+      { "thai": "เราต้องไปหาหมอวันจันทร์", "romanization": "rao dtâawng bpai hăa mǎaw wan jan-than", "english": "We have to see the doctor on Monday" },
+{ "thai": "ผมเป็นหมอ", "romanization": "phŏm bpen mǎaw", "english": "I am a doctor" }
+
+    ]
+  },
+  {
+    "word": "กัน",
+    "confidence": 1,
+    "romanization": "gan",
+    "type": "function",
+    "pos": "particle",
+    "definition": "together / each other",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อยู่ด้วยกัน", "romanization": "yùu dûay gan", "english": "stay together" },
+      { "thai": "คุยกัน", "romanization": "khui gan", "english": "talk to each other" },
+      { "thai": "ทำด้วยกัน", "romanization": "tam dûay gan", "english": "do together" }
+    ],
+    "longphrases": [
+      { "thai": "เราอยู่ด้วยกันวันนี้", "romanization": "rao yùu dûay gan wan née", "english": "we’re together today" },
+      { "thai": "เขาคุยกันตอนเย็น", "romanization": "khăo khui gan dtâawn yen", "english": "they talk to each other in the evening" },
+      { "thai": "เราทำอาหารด้วยกันทุกวัน", "romanization": "rao tam aa-hăan dûay gan túk wan", "english": "we cook together every day" }
+    ],
+    "sentences": [
+      { "thai": "ฉันอยู่กับเพื่อนและเราคุยกันสนุกมาก", "romanization": "chăn yùu gàp phêuuan láe rao khui gan sà-nùk mâak", "english": "I’m with a friend and we’re having a fun talk" },
+      { "thai": "เขาและเธออยู่ด้วยกันทุกคืน", "romanization": "khăo láe thoe yùu dûay gan túk keuun", "english": "He and she stay together every night" },
+      { "thai": "วันนี้เราทำทุกอย่างด้วยกัน", "romanization": "wan née rao tam túk yàang dûay gan", "english": "Today we do everything together" }
+    ]
+  },
+  {
+    "word": "บาน",
+    "confidence": 1,
+    "romanization": "baan",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to bloom",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ดอกไม้บาน", "romanization": "dòk mái baan", "english": "flowers bloom" },
+      { "thai": "บานเร็ว", "romanization": "baan reo", "english": "bloom fast" },
+      { "thai": "บานวันนี้", "romanization": "baan wan née", "english": "bloom today" }
+    ],
+    "longphrases": [
+      { "thai": "ดอกไม้บานตอนเช้า", "romanization": "dòk mái baan dtâawn châo", "english": "flowers bloom in the morning" },
+      { "thai": "เขาดูดอกไม้บานทุกวัน", "romanization": "khăo duu dòk mái baan túk wan", "english": "he watches flowers bloom every day" },
+      { "thai": "วันนี้ดอกไม้บานเร็วมาก", "romanization": "wan née dòk mái baan reo mâak", "english": "today the flowers bloom very quickly" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ดอกไม้ในสวนบาน", "romanization": "wan née dòk mái nai sŭan baan", "english": "Today the flowers in the garden bloom" },
+      { "thai": "เขาชอบดอกไม้ที่บานตอนเย็น", "romanization": "khăo châawp dòk mái têe baan dtâawn yen", "english": "He likes flowers that bloom in the evening" },
+      { "thai": "เราเห็นดอกไม้บานที่บ้าน", "romanization": "rao hĕn dòk mái baan têe bâan", "english": "We see flowers blooming at home" }
+    ]
+  },
+  {
+    "word": "ที่",
+    "confidence": 1,
+    "romanization": "têe",
+    "type": "function",
+    "pos": "preposition",
+    "definition": "at / that / which",
+    "notes": "context dependent",
+    "shortphrases": [
+      { "thai": "อยู่ที่บ้าน", "romanization": "yùu têe bâan", "english": "at home" },
+      { "thai": "ที่ดี", "romanization": "têe dii", "english": "that is good" },
+      { "thai": "ที่ไหน", "romanization": "têe năi", "english": "where" }
+    ],
+    "longphrases": [
+      { "thai": "บ้านที่เขาอยู่", "romanization": "bâan têe khăo yùu", "english": "the house that he stays in" },
+      { "thai": "ที่ที่เราพบกัน", "romanization": "têe têe rao phóp gan", "english": "the place where we meet" },
+      { "thai": "ฉันชอบที่ที่เงียบ", "romanization": "chăn châawp têe têe ngîap", "english": "I like quiet places" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เราอยู่ที่บ้านของเขา", "romanization": "wan née rao yùu têe bâan khǎawng khăo", "english": "Today we are at his house" },
+      { "thai": "เขาชอบที่เงียบมาก", "romanization": "khăo châawp têe ngîap mâak", "english": "He really likes quiet places" },
+      { "thai": "เราพบกันที่ร้านอาหาร", "romanization": "rao phóp gan têe ráan aa-hăan", "english": "We meet at the restaurant" }
+    ]
+  },
+  {
+    "word": "ต้องการ",
+    "confidence": 1,
+    "romanization": "dtâwng gaan",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to want / to need",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ต้องการอะไร", "romanization": "dtâwng gaan à-rai", "english": "what do (you) want" },
+      { "thai": "ต้องการมาก", "romanization": "dtâwng gaan mâak", "english": "want very much" },
+      { "thai": "ไม่ต้องการ", "romanization": "mâi dtâwng gaan", "english": "do not want" }
+    ],
+    "longphrases": [
+      { "thai": "เขาต้องการอาหารไทย", "romanization": "khăo dtâwng gaan aa-hăan thai", "english": "he wants Thai food" },
+      { "thai": "ฉันต้องการไปทะเลสาบ", "romanization": "chăn dtâwng gaan bpai thá-lee sàap", "english": "I want to go to the lake" },
+      { "thai": "เราต้องการดูทีวีตอนเย็น", "romanization": "rao dtâwng gaan duu thii-wii dtâawn yen", "english": "we want to watch TV in the evening" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันต้องการคุยกับเพื่อน", "romanization": "wan née chăn dtâwng gaan khui gàp phêuuan", "english": "Today I want to talk with a friend" },
+      { "thai": "เขาไม่ต้องการไปที่นั่น", "romanization": "khăo mâi dtâwng gaan bpai têe nân", "english": "He doesn’t want to go there" },
+      { "thai": "เราต้องการทำอาหารที่บ้าน", "romanization": "rao dtâwng gaan tam aa-hăan têe bâan", "english": "We want to cook food at home" }
+    ]
+  },
+
+  {
+    "word": "โรงแรม",
+    "confidence": 1,
+    "romanization": "rohng-raem",
+    "type": "content",
+    "pos": "noun",
+    "definition": "hotel",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ไปโรงแรม", "romanization": "bpai rohng-raem", "english": "go to the hotel" },
+      { "thai": "โรงแรมดี", "romanization": "rohng-raem dii", "english": "nice hotel" },
+      { "thai": "อยู่ที่โรงแรม", "romanization": "yùu têe rohng-raem", "english": "stay at the hotel" }
+    ],
+    "longphrases": [
+      { "thai": "เราพักที่โรงแรม", "romanization": "rao phák têe rohng-raem", "english": "we stay at the hotel" },
+      { "thai": "เขาไปโรงแรมวันศุกร์", "romanization": "khăo bpai rohng-raem wan súk", "english": "he goes to the hotel on Friday" },
+      { "thai": "ฉันไม่ชอบโรงแรมนี้", "romanization": "chăn mâi châawp rohng-raem née", "english": "I don't like this hotel" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้เราพักที่โรงแรมในกรุงเทพฯ", "romanization": "wan née rao phák têe rohng-raem nai krung thêep", "english": "Today we are staying at a hotel in Bangkok" },
+      { "thai": "เขาอยู่ที่โรงแรมตอนเย็น", "romanization": "khăo yùu têe rohng-raem dtâawn yen", "english": "He is at the hotel in the evening" },
+      { "thai": "ฉันชอบโรงแรมที่เงียบ", "romanization": "chăn châawp rohng-raem têe ngîap", "english": "I like quiet hotels" }
+    ]
+  },
+  {
+    "word": "พัก",
+    "confidence": 1,
+    "romanization": "phák",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to stay / rest",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พักผ่อน", "romanization": "phák pòn", "english": "rest" },
+      { "thai": "พักที่นี่", "romanization": "phák têe nîi", "english": "stay here" },
+      { "thai": "พักที่โรงแรม", "romanization": "phák têe rohng-raem", "english": "stay at the hotel" }
+    ],
+    "longphrases": [
+      { "thai": "วันนี้ฉันพักที่บ้าน", "romanization": "wan née chăn phák têe bâan", "english": "Today I rest at home" },
+      { "thai": "เขาพักที่โรงแรมในเมือง", "romanization": "khăo phák têe rohng-raem nai meuang", "english": "He stays at a hotel in the city" },
+      { "thai": "เราพักที่นี่สองวัน", "romanization": "rao phák têe nîi sǎawng wan", "english": "We’re staying here for two days" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้ฉันพักที่โรงแรม", "romanization": "keun-née chăn phák têe rohng-raem", "english": "Tonight I stay at the hotel" },
+      { "thai": "เราต้องพักหลังจากเดินทางนาน", "romanization": "rao dtâawng phák lăng jàak dern thaang naan", "english": "We need to rest after traveling a long time" },
+      { "thai": "เขาพักผ่อนวันเสาร์และวันอาทิตย์", "romanization": "khăo phák pòn wan sǎo láe wan a-thít", "english": "He rests on Saturday and Sunday" },
+{ "thai": "ผมพักอยู่ที่โรงแรม", "romanization": "phŏm phák yùu têe rohng-raem", "english": "I am staying at the hotel" }
+
+    ]
+  },
+  {
+    "word": "นี่",
+    "confidence": 1,
+    "romanization": "nîi",
+    "type": "function",
+    "pos": "pronoun",
+    "definition": "this",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "นี่คืออะไร", "romanization": "nîi kheuu à-rai", "english": "what is this?" },
+      { "thai": "ชอบนี่", "romanization": "châawp nîi", "english": "like this" },
+      { "thai": "นี่ดี", "romanization": "nîi dii", "english": "this is good" }
+    ],
+    "longphrases": [
+      { "thai": "นี่คือเพื่อนของฉัน", "romanization": "nîi kheuu phêuuan khǎawng chăn", "english": "this is my friend" },
+      { "thai": "ฉันไม่ชอบนี่เลย", "romanization": "chăn mâi châawp nîi loei", "english": "I don't like this at all" },
+      { "thai": "นี่คือบ้านของเรา", "romanization": "nîi kheuu bâan khǎawng rao", "english": "this is our house" }
+    ],
+    "sentences": [
+      { "thai": "นี่คือสิ่งที่เราต้องการ", "romanization": "nîi kheuu sìng têe rao dtâawng gaan", "english": "This is what we want" },
+      { "thai": "ฉันไม่คิดว่านี่ดี", "romanization": "chăn mâi khít wâa nîi dii", "english": "I don't think this is good" },
+      { "thai": "เขาชอบนี่มาก", "romanization": "khăo châawp nîi mâak", "english": "He likes this a lot" },
+{ "thai": "นี่คือปีเตอร์", "romanization": "nîi kheuu bpí-dtêr", "english": "This is Peter" }
+
+    ]
+  },
+  {
+    "word": "อะไร",
+    "confidence": 1,
+    "romanization": "à-rai",
+    "type": "function",
+    "pos": "pronoun",
+    "definition": "what",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "พูดอะไร", "romanization": "pôot à-rai", "english": "say what" },
+      { "thai": "ทำอะไร", "romanization": "tam à-rai", "english": "do what" },
+      { "thai": "อะไรดี", "romanization": "à-rai dii", "english": "what is good" }
+    ],
+    "longphrases": [
+      { "thai": "คุณต้องการอะไรวันนี้", "romanization": "khun dtâawng gaan à-rai wan née", "english": "What do you want today?" },
+      { "thai": "เขาพูดอะไรตอนเย็น", "romanization": "khăo pôot à-rai dtâawn yen", "english": "What did he say in the evening?" },
+      { "thai": "เราทำอะไรที่บ้าน", "romanization": "rao tam à-rai têe bâan", "english": "What are we doing at home?" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้คุณต้องการอะไร", "romanization": "wan née khun dtâawng gaan à-rai", "english": "What do you want today?" },
+      { "thai": "เขาพูดอะไรกับเพื่อน", "romanization": "khăo pôot à-rai gàp phêuuan", "english": "What did he say to his friend?" },
+      { "thai": "เราทำอะไรตอนเช้า", "romanization": "rao tam à-rai dtâawn châo", "english": "What are we doing in the morning?" }
+    ]
+  },
+  {
+    "word": "ที่ไหน",
+    "confidence": 1,
+    "romanization": "têe năi",
+    "type": "function",
+    "pos": "question",
+    "definition": "where",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อยู่ที่ไหน", "romanization": "yùu têe năi", "english": "where is (someone)" },
+      { "thai": "ที่ไหนดี", "romanization": "têe năi dii", "english": "where is good" },
+      { "thai": "ไปที่ไหน", "romanization": "bpai têe năi", "english": "go where" }
+    ],
+    "longphrases": [
+      { "thai": "เขาอยู่ที่ไหนตอนนี้", "romanization": "khăo yùu têe năi dtâawn née", "english": "Where is he right now?" },
+      { "thai": "เราจะไปที่ไหนวันนี้", "romanization": "rao jà bpai têe năi wan née", "english": "Where will we go today?" },
+      { "thai": "คุณพักที่ไหนวันศุกร์", "romanization": "khun phák têe năi wan súk", "english": "Where do you stay on Friday?" }
+    ],
+    "sentences": [
+      { "thai": "คุณอยู่ที่ไหนตอนนี้", "romanization": "khun yùu têe năi dtâawn née", "english": "Where are you now?" },
+      { "thai": "เขาพักที่ไหนในกรุงเทพฯ", "romanization": "khăo phák têe năi nai krung thêep", "english": "Where is he staying in Bangkok?" },
+      { "thai": "เราจะไปที่ไหนคืนนี้", "romanization": "rao jà bpai têe năi keun-née", "english": "Where will we go tonight?" }
+    ]
+  },
+  {
+    "word": "เมื่อไหร่",
+    "confidence": 1,
+    "romanization": "mûuea rài",
+    "type": "function",
+    "pos": "question",
+    "definition": "when",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เมื่อไหร่ดี", "romanization": "mûuea rài dii", "english": "when is good" },
+      { "thai": "ไปเมื่อไหร่", "romanization": "bpai mûuea rài", "english": "go when" },
+      { "thai": "เมื่อไหร่จะไป", "romanization": "mûuea rài jà bpai", "english": "when will (we) go" }
+    ],
+    "longphrases": [
+      { "thai": "คุณจะไปเมื่อไหร่", "romanization": "khun jà bpai mûuea rài", "english": "When will you go?" },
+      { "thai": "เขามาถึงเมื่อไหร่", "romanization": "khăo maa thĕung mûuea rài", "english": "When did he arrive?" },
+      { "thai": "เราจะพักเมื่อไหร่ดี", "romanization": "rao jà phák mûuea rài dii", "english": "When should we rest?" }
+    ],
+    "sentences": [
+      { "thai": "คุณจะไปโรงแรมเมื่อไหร่", "romanization": "khun jà bpai rohng-raem mûuea rài", "english": "When will you go to the hotel?" },
+      { "thai": "เขาจะพักที่นี่เมื่อไหร่", "romanization": "khăo jà phák têe nîi mûuea rài", "english": "When will he stay here?" },
+      { "thai": "เราคุยกันเมื่อไหร่ดี", "romanization": "rao khui gan mûuea rài dii", "english": "When should we talk?" }
+    ]
+  },
+  {
+    "word": "ทำไม",
+    "confidence": 1,
+    "romanization": "tam-mai",
+    "type": "function",
+    "pos": "question",
+    "definition": "why",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ทำไมดี", "romanization": "tam-mai dii", "english": "why is it good" },
+      { "thai": "ทำไมไม่ไป", "romanization": "tam-mai mâi bpai", "english": "why not go" },
+      { "thai": "ทำไมพูดแบบนั้น", "romanization": "tam-mai pôot bàaep nán", "english": "why say that" }
+    ],
+    "longphrases": [
+      { "thai": "คุณทำไมไม่พัก", "romanization": "khun tam-mai mâi phák", "english": "Why don't you rest?" },
+      { "thai": "เขาทำไมพูดอย่างนั้น", "romanization": "khăo tam-mai pôot yàang nán", "english": "Why did he say that?" },
+      { "thai": "เราทำไมอยู่ที่นี่", "romanization": "rao tam-mai yùu têe nîi", "english": "Why are we here?" }
+    ],
+    "sentences": [
+      { "thai": "ทำไมคุณไม่ไปโรงแรม", "romanization": "tam-mai khun mâi bpai rohng-raem", "english": "Why don't you go to the hotel?" },
+      { "thai": "เขาทำไมพูดแบบนั้นกับเพื่อน", "romanization": "khăo tam-mai pôot bàaep nán gàp phêuuan", "english": "Why did he say that to his friend?" },
+      { "thai": "ฉันไม่รู้ว่าทำไมเขาอยู่ที่นี่", "romanization": "chăn mâi rúu wâa tam-mai khăo yùu têe nîi", "english": "I don’t know why he’s here" }
+    ]
+  },
+  {
+    "word": "อันไหน",
+    "confidence": 1,
+    "romanization": "an năi",
+    "type": "function",
+    "pos": "question",
+    "definition": "which one",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อันไหนดี", "romanization": "an năi dii", "english": "which one is good" },
+      { "thai": "อันไหนของคุณ", "romanization": "an năi khǎawng khun", "english": "which one is yours" },
+      { "thai": "อันไหนใหญ่กว่า", "romanization": "an năi yài gwàa", "english": "which one is bigger" }
+    ],
+    "longphrases": [
+      { "thai": "คุณชอบอันไหนมากกว่า", "romanization": "khun châawp an năi mâak gwàa", "english": "Which one do you like more?" },
+      { "thai": "อันไหนอยู่ที่บ้าน", "romanization": "an năi yùu têe bâan", "english": "Which one is at home?" },
+      { "thai": "ฉันไม่รู้ว่าอันไหนถูก", "romanization": "chăn mâi rúu wâa an năi thùuk", "english": "I don’t know which one is correct" }
+    ],
+    "sentences": [
+      { "thai": "อันไหนคือของฉัน", "romanization": "an năi kheuu khǎawng chăn", "english": "Which one is mine?" },
+      { "thai": "คุณจะเลือกอันไหน", "romanization": "khun jà lêuak an năi", "english": "Which one will you choose?" },
+      { "thai": "เราไม่แน่ใจว่าอันไหนดีกว่า", "romanization": "rao mâi nâe jai wâa an năi dii gwàa", "english": "We’re not sure which one is better" }
+    ]
+  },
+  {
+    "word": "ใคร",
+    "confidence": 1,
+    "romanization": "khrai",
+    "type": "function",
+    "pos": "question",
+    "definition": "who",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ใครดี", "romanization": "khrai dii", "english": "who is good" },
+      { "thai": "พูดกับใคร", "romanization": "pôot gàp khrai", "english": "speak with who" },
+      { "thai": "ใครอยู่ที่นี่", "romanization": "khrai yùu têe nîi", "english": "who is here" }
+    ],
+    "longphrases": [
+      { "thai": "คุณอยู่กับใคร", "romanization": "khun yùu gàp khrai", "english": "Who are you with?" },
+      { "thai": "เขาคุยกับใครวันนี้", "romanization": "khăo khui gàp khrai wan née", "english": "Who is he talking to today?" },
+      { "thai": "ใครพักที่โรงแรมนี้", "romanization": "khrai phák têe rohng-raem née", "english": "Who is staying at this hotel?" }
+    ],
+    "sentences": [
+      { "thai": "คุณพูดกับใครตอนเย็น", "romanization": "khun pôot gàp khrai dtâawn yen", "english": "Who did you talk to in the evening?" },
+      { "thai": "ใครอยู่ที่บ้านตอนนี้", "romanization": "khrai yùu têe bâan dtâawn née", "english": "Who is at home right now?" },
+      { "thai": "เขาพักกับใครในกรุงเทพฯ", "romanization": "khăo phák gàp khrai nai krung thêep", "english": "Who is he staying with in Bangkok?" }
+    ]
+  },
+  {
+    "word": "ยังไง",
+    "confidence": 1,
+    "romanization": "yang ngai",
+    "type": "function",
+    "pos": "question",
+    "definition": "how",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ทำยังไง", "romanization": "tam yang ngai", "english": "how to do" },
+      { "thai": "ยังไงดี", "romanization": "yang ngai dii", "english": "how is good" },
+      { "thai": "พูดยังไง", "romanization": "pôot yang ngai", "english": "how to say" }
+    ],
+    "longphrases": [
+      { "thai": "เราจะทำยังไงดีวันนี้", "romanization": "rao jà tam yang ngai dii wan née", "english": "What should we do today?" },
+      { "thai": "เขาพูดยังไงกับเพื่อน", "romanization": "khăo pôot yang ngai gàp phêuuan", "english": "How did he talk to his friend?" },
+      { "thai": "ยังไงคือสิ่งที่ดี", "romanization": "yang ngai kheuu sìng têe dii", "english": "How is what is good" }
+    ],
+    "sentences": [
+      { "thai": "คุณทำอาหารยังไง", "romanization": "khun tam aa-hăan yang ngai", "english": "How do you cook food?" },
+      { "thai": "เขาพูดภาษาอังกฤษยังไง", "romanization": "khăo pôot paa-săa ang-grìt yang ngai", "english": "How does he speak English?" },
+      { "thai": "เราจะไปที่โรงแรมยังไง", "romanization": "rao jà bpai têe rohng-raem yang ngai", "english": "How will we get to the hotel?" }
+    ]
+  },
+  {
+    "word": "อย่างไร",
+    "confidence": 1,
+    "romanization": "yàang rai",
+    "type": "function",
+    "pos": "question",
+    "definition": "how (formal)",
+    "notes": "used in formal contexts, interchangeable with ยังไง",
+    "shortphrases": [
+      { "thai": "ทำอย่างไร", "romanization": "tam yàang rai", "english": "how to do" },
+      { "thai": "พูดอย่างไร", "romanization": "pôot yàang rai", "english": "how to say" },
+      { "thai": "อย่างไรดี", "romanization": "yàang rai dii", "english": "how is good" }
+    ],
+    "longphrases": [
+      { "thai": "คุณจะไปอย่างไร", "romanization": "khun jà bpai yàang rai", "english": "How will you go?" },
+      { "thai": "เขาทำอาหารอย่างไร", "romanization": "khăo tam aa-hăan yàang rai", "english": "How does he cook food?" },
+      { "thai": "เราพูดอย่างไรกับเพื่อน", "romanization": "rao pôot yàang rai gàp phêuuan", "english": "How do we talk to a friend?" }
+    ],
+    "sentences": [
+      { "thai": "คุณจะไปที่โรงแรมอย่างไร", "romanization": "khun jà bpai têe rohng-raem yàang rai", "english": "How will you get to the hotel?" },
+      { "thai": "เขาพูดภาษาอังกฤษอย่างไร", "romanization": "khăo pôot paa-săa ang-grìt yàang rai", "english": "How does he speak English?" },
+      { "thai": "เราทำอาหารอย่างไรที่บ้าน", "romanization": "rao tam aa-hăan yàang rai têe bâan", "english": "How do we cook food at home?" }
+    ]
+  },
+  {
+    "word": "รอ",
+    "confidence": 1,
+    "romanization": "raw",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to wait",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "รออยู่", "romanization": "raw yùu", "english": "waiting" },
+      { "thai": "ต้องรอ", "romanization": "dtâawng raw", "english": "must wait" },
+      { "thai": "รอใคร", "romanization": "raw khrai", "english": "wait for whom" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันรอคุณอยู่ที่บ้าน", "romanization": "chăn raw khun yùu têe bâan", "english": "I’m waiting for you at home" },
+      { "thai": "เขาต้องรอที่นี่", "romanization": "khăo dtâawng raw têe nîi", "english": "He has to wait here" },
+      { "thai": "เรารอเพื่อนอยู่", "romanization": "rao raw phêuuan yùu", "english": "We’re waiting for a friend" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้ฉันรอเขาที่โรงแรม", "romanization": "keun-née chăn raw khăo têe rohng-raem", "english": "Tonight I’ll wait for him at the hotel" },
+      { "thai": "เรารอคุณที่บ้านวันเสาร์", "romanization": "rao raw khun têe bâan wan sǎo", "english": "We’ll wait for you at home on Saturday" },
+      { "thai": "เขารออยู่กับเพื่อนตอนเย็น", "romanization": "khăo raw yùu gàp phêuuan dtâawn yen", "english": "He’s waiting with a friend in the evening" }
+    ]
+  },
+  {
+    "word": "ดื่ม",
+    "confidence": 1,
+    "romanization": "dùuem",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to drink",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ดื่มน้ำ", "romanization": "dùuem nám", "english": "drink water" },
+      { "thai": "ดื่มยา", "romanization": "dùuem yaa", "english": "take medicine" },
+      { "thai": "ชอบดื่ม", "romanization": "châawp dùuem", "english": "like drinking" }
+    ],
+    "longphrases": [
+      { "thai": "เขาดื่มน้ำตอนเช้า", "romanization": "khăo dùuem nám dtâawn châo", "english": "He drinks water in the morning" },
+      { "thai": "ฉันดื่มยาเวลาเจ็บคอ", "romanization": "chăn dùuem yaa way-laa jèp khaw", "english": "I take medicine when I have a sore throat" },
+      { "thai": "เราชอบดื่มตอนเย็น", "romanization": "rao châawp dùuem dtâawn yen", "english": "We like drinking in the evening" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้เขาดื่มน้ำเย็นที่บ้าน", "romanization": "keun-née khăo dùuem nám yen têe bâan", "english": "Tonight he drinks cold water at home" },
+      { "thai": "ฉันไม่ชอบดื่มตอนเช้า", "romanization": "chăn mâi châawp dùuem dtâawn châo", "english": "I don’t like drinking in the morning" },
+      { "thai": "เราดื่มยาทุกวัน", "romanization": "rao dùuem yaa túk wan", "english": "We take medicine every day" }
+    ]
+  },
+  {
+    "word": "ยา",
+    "confidence": 1,
+    "romanization": "yaa",
+    "type": "content",
+    "pos": "noun",
+    "definition": "medicine",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "กินยา", "romanization": "gin yaa", "english": "take medicine" },
+      { "thai": "ยาเย็น", "romanization": "yaa yen", "english": "cold medicine" },
+      { "thai": "ไม่ชอบยา", "romanization": "mâi châawp yaa", "english": "dislike medicine" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันต้องกินยาทุกวัน", "romanization": "chăn dtâawng gin yaa túk wan", "english": "I have to take medicine every day" },
+      { "thai": "เขาไม่ชอบยาขม", "romanization": "khăo mâi châawp yaa khǒm", "english": "He doesn’t like bitter medicine" },
+      { "thai": "เรากินยาก่อนนอน", "romanization": "rao gin yaa gàawn non", "english": "We take medicine before bed" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันกินยาเพราะไม่สบาย", "romanization": "wan née chăn gin yaa phróe mâi sà-baai", "english": "Today I took medicine because I’m not well" },
+      { "thai": "เขาต้องกินยาหลังอาหาร", "romanization": "khăo dtâawng gin yaa lăng aa-hăan", "english": "He must take medicine after meals" },
+      { "thai": "เราไม่ชอบยาที่ขม", "romanization": "rao mâi châawp yaa têe khǒm", "english": "We don’t like medicine that is bitter" }
+    ]
+  },
+  {
+    "word": "กี่",
+    "confidence": 1,
+    "romanization": "gìi",
+    "type": "function",
+    "pos": "question",
+    "definition": "how many / how much",
+    "notes": "used with classifiers",
+    "shortphrases": [
+      { "thai": "กี่คน", "romanization": "gìi khon", "english": "how many people" },
+      { "thai": "กี่วัน", "romanization": "gìi wan", "english": "how many days" },
+      { "thai": "กี่อัน", "romanization": "gìi an", "english": "how many items" }
+    ],
+    "longphrases": [
+      { "thai": "คุณจะอยู่กี่วัน", "romanization": "khun jà yùu gìi wan", "english": "How many days will you stay?" },
+      { "thai": "เขากินกี่เม็ด", "romanization": "khăo gin gìi mèt", "english": "How many pills did he take?" },
+      { "thai": "เราต้องใช้กี่อัน", "romanization": "rao dtâawng chái gìi an", "english": "How many (of them) do we need to use?" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้คุณกินยากี่เม็ด", "romanization": "keun-née khun gin yaa gìi mèt", "english": "How many pills will you take tonight?" },
+      { "thai": "เราจะอยู่ที่นี่กี่วัน", "romanization": "rao jà yùu têe nîi gìi wan", "english": "How many days will we stay here?" },
+      { "thai": "เขาซื้อของกี่ชิ้น", "romanization": "khăo súue khǎawng gìi chín", "english": "How many pieces did he buy?" }
+    ]
+    }
+
+
+,
+    {
+    "word": "เท่าไหร่",
+    "confidence": 1,
+    "romanization": "thâo rài",
+    "type": "function",
+    "pos": "question",
+    "definition": "how much",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ราคาเท่าไหร่", "romanization": "raa-khaa thâo rài", "english": "how much is the price" },
+      { "thai": "เท่าไหร่ดี", "romanization": "thâo rài dii", "english": "how much is good" },
+      { "thai": "มีเท่าไหร่", "romanization": "mii thâo rài", "english": "how much is there" }
+    ],
+    "longphrases": [
+      { "thai": "คุณต้องการเท่าไหร่", "romanization": "khun dtâawng gaan thâo rài", "english": "How much do you want?" },
+      { "thai": "ราคานี้เท่าไหร่", "romanization": "raa-khaa née thâo rài", "english": "How much is this price?" },
+      { "thai": "เรามีเท่าไหร่พอไหม", "romanization": "rao mii thâo rài paw mái", "english": "Do we have enough?" }
+    ],
+    "sentences": [
+      { "thai": "คุณต้องจ่ายเท่าไหร่วันนี้", "romanization": "khun dtâawng jàai thâo rài wan née", "english": "How much do you need to pay today?" },
+      { "thai": "เขามีเงินเท่าไหร่ในกระเป๋า", "romanization": "khăo mii ngern thâo rài nai grà-bpăo", "english": "How much money does he have in his bag?" },
+      { "thai": "เราต้องการเท่าไหร่สำหรับอันนี้", "romanization": "rao dtâawng gaan thâo rài sǎm-ràp an née", "english": "How much do we need for this?" }
+    ]
+  },
+  {
+    "word": "ของใคร",
+    "confidence": 1,
+    "romanization": "khǎawng khrai",
+    "type": "function",
+    "pos": "question",
+    "definition": "whose",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ของใครนี่", "romanization": "khǎawng khrai nîi", "english": "whose is this" },
+      { "thai": "ไม่รู้ของใคร", "romanization": "mâi rúu khǎawng khrai", "english": "don’t know whose it is" },
+      { "thai": "เป็นของใคร", "romanization": "bpen khǎawng khrai", "english": "belong to whom" }
+    ],
+    "longphrases": [
+      { "thai": "บ้านนี้เป็นของใคร", "romanization": "bâan née bpen khǎawng khrai", "english": "Whose house is this?" },
+      { "thai": "ของใครอยู่ที่นี่", "romanization": "khǎawng khrai yùu têe nîi", "english": "Whose (thing) is here?" },
+      { "thai": "คุณรู้ไหมว่าของใคร", "romanization": "khun rúu mái wâa khǎawng khrai", "english": "Do you know whose it is?" }
+    ],
+    "sentences": [
+      { "thai": "ของใครอยู่ที่บ้านเรา", "romanization": "khǎawng khrai yùu têe bâan rao", "english": "Whose thing is at our house?" },
+      { "thai": "เขาไม่รู้ว่าของใคร", "romanization": "khăo mâi rúu wâa khǎawng khrai", "english": "He doesn’t know whose it is" },
+      { "thai": "นี่เป็นของใครคุณรู้ไหม", "romanization": "nîi bpen khǎawng khrai khun rúu mái", "english": "Whose is this, do you know?" }
+    ]
+  },
+  {
+    "word": "ประเทศ",
+    "confidence": 1,
+    "romanization": "bprà-thêet",
+    "type": "content",
+    "pos": "noun",
+    "definition": "country",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ประเทศไทย", "romanization": "bprà-thêet thai", "english": "Thailand" },
+      { "thai": "ประเทศอะไร", "romanization": "bprà-thêet à-rai", "english": "what country" },
+      { "thai": "ประเทศดี", "romanization": "bprà-thêet dii", "english": "good country" }
+    ],
+    "longphrases": [
+      { "thai": "ประเทศที่เขาอยู่", "romanization": "bprà-thêet têe khăo yùu", "english": "the country he lives in" },
+      { "thai": "เราอยู่ในประเทศไทย", "romanization": "rao yùu nai bprà-thêet thai", "english": "we live in Thailand" },
+      { "thai": "เขาเป็นคนต่างประเทศ", "romanization": "khăo bpen khon dtàang bprà-thêet", "english": "he is a foreigner" }
+    ],
+    "sentences": [
+      { "thai": "คุณอยู่ในประเทศอะไร", "romanization": "khun yùu nai bprà-thêet à-rai", "english": "What country are you in?" },
+      { "thai": "เราอยู่ประเทศไทยทุกวัน", "romanization": "rao yùu bprà-thêet thai túk wan", "english": "We are in Thailand every day" },
+      { "thai": "เขามาจากประเทศอื่น", "romanization": "khăo maa jàak bprà-thêet ùuen", "english": "He comes from another country" }
+    ]
+  },
+  {
+    "word": "แมว",
+    "confidence": 1,
+    "romanization": "maeo",
+    "type": "content",
+    "pos": "noun",
+    "definition": "cat",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เลี้ยงแมว", "romanization": "líang maeo", "english": "raise a cat" },
+      { "thai": "แมวน่ารัก", "romanization": "maeo nâa rák", "english": "cute cat" },
+      { "thai": "ชอบแมว", "romanization": "châawp maeo", "english": "like cats" }
+    ],
+    "longphrases": [
+      { "thai": "เขาเลี้ยงแมวที่บ้าน", "romanization": "khăo líang maeo têe bâan", "english": "he raises cats at home" },
+      { "thai": "แมวสีขาวน่ารักมาก", "romanization": "maeo sĕe khăao nâa rák mâak", "english": "the white cat is very cute" },
+      { "thai": "ฉันไม่ชอบแมวเลย", "romanization": "chăn mâi châawp maeo loei", "english": "I don’t like cats at all" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้แมวอยู่ที่บ้าน", "romanization": "keun-née maeo yùu têe bâan", "english": "The cat is at home tonight" },
+      { "thai": "เขาเลี้ยงแมวสองตัว", "romanization": "khăo líang maeo sǎawng dtua", "english": "He has two cats" },
+      { "thai": "ฉันชอบแมวที่น่ารัก", "romanization": "chăn châawp maeo têe nâa rák", "english": "I like cats that are cute" }
+    ]
+  },
+  {
+    "word": "มี",
+    "confidence": 1,
+    "romanization": "mii",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to have / there is",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "มีบ้าน", "romanization": "mii bâan", "english": "have a house" },
+      { "thai": "ไม่มีอะไร", "romanization": "mâi mii à-rai", "english": "have nothing" },
+      { "thai": "มีเพื่อน", "romanization": "mii phêuuan", "english": "have a friend" }
+    ],
+    "longphrases": [
+      { "thai": "เขามีบ้านในกรุงเทพฯ", "romanization": "khăo mii bâan nai krung thêep", "english": "He has a house in Bangkok" },
+      { "thai": "ฉันไม่มีอะไรกิน", "romanization": "chăn mâi mii à-rai gin", "english": "I have nothing to eat" },
+      { "thai": "เรามีเพื่อนที่ดี", "romanization": "rao mii phêuuan têe dii", "english": "We have good friends" }
+    ],
+    "sentences": [
+      { "thai": "คืนนี้เขามีเพื่อนมาที่บ้าน", "romanization": "keun-née khăo mii phêuuan maa têe bâan", "english": "Tonight he has a friend come to the house" },
+      { "thai": "ฉันไม่มีบ้านอยู่ตอนนี้", "romanization": "chăn mâi mii bâan yùu dtâawn née", "english": "I don’t have a house right now" },
+      { "thai": "เรามีอะไรต้องทำวันนี้", "romanization": "rao mii à-rai dtâawng tam wan née", "english": "We have something to do today" }
+    ]
+  },
+  {
+    "word": "เวลา",
+    "confidence": 1,
+    "romanization": "way-laa",
+    "type": "content",
+    "pos": "noun",
+    "definition": "time",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "มีเวลา", "romanization": "mii way-laa", "english": "have time" },
+      { "thai": "เวลาไหน", "romanization": "way-laa năi", "english": "what time" },
+      { "thai": "เวลาเช้า", "romanization": "way-laa cháo", "english": "morning time" }
+    ],
+    "longphrases": [
+      { "thai": "ฉันมีเวลาเช้านี้", "romanization": "chăn mii way-laa cháo née", "english": "I have time this morning" },
+      { "thai": "คุณต้องใช้เวลาเยอะ", "romanization": "khun dtâawng chái way-laa yóe", "english": "You need a lot of time" },
+      { "thai": "เขาไม่มีเวลาเลย", "romanization": "khăo mâi mii way-laa loei", "english": "He doesn’t have any time at all" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้ฉันมีเวลาทั้งวัน", "romanization": "wan née chăn mii way-laa tháng wan", "english": "Today I have time all day" },
+      { "thai": "เขาไม่มีเวลาไปโรงแรม", "romanization": "khăo mâi mii way-laa bpai rohng-raem", "english": "He doesn’t have time to go to the hotel" },
+      { "thai": "เราต้องการเวลาเพิ่ม", "romanization": "rao dtâawng gaan way-laa phêrm", "english": "We need more time" }
+    ]
+  },
+  {
+    "word": "อายุ",
+    "confidence": 1,
+    "romanization": "aa-yú",
+    "type": "content",
+    "pos": "noun",
+    "definition": "age",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "อายุเท่าไหร่", "romanization": "aa-yú thâo rài", "english": "how old" },
+      { "thai": "อายุเยอะ", "romanization": "aa-yú yóe", "english": "old age" },
+      { "thai": "อายุยังน้อย", "romanization": "aa-yú yang náaw", "english": "still young" }
+    ],
+    "longphrases": [
+      { "thai": "เขาอายุเท่าไหร่วันนี้", "romanization": "khăo aa-yú thâo rài wan née", "english": "How old is he today?" },
+      { "thai": "ฉันมีอายุน้อย", "romanization": "chăn mii aa-yú náaw", "english": "I am young" },
+      { "thai": "เพื่อนอายุเยอะกว่าเรา", "romanization": "phêuuan aa-yú yóe gwàa rao", "english": "Friend is older than us" }
+    ],
+    "sentences": [
+      { "thai": "คุณอายุเท่าไหร่ตอนนี้", "romanization": "khun aa-yú thâo rài dtâawn née", "english": "How old are you now?" },
+      { "thai": "เขามีอายุมากกว่าน้อง", "romanization": "khăo mii aa-yú mâak gwàa náawng", "english": "He is older than the younger sibling" },
+      { "thai": "ฉันไม่รู้ว่าเขาอายุเท่าไหร่", "romanization": "chăn mâi rúu wâa khăo aa-yú thâo rài", "english": "I don’t know how old he is" }
+    ]
+  },
+  {
+    "word": "เทศกาล",
+    "confidence": 1,
+    "romanization": "thêet-sà-gaan",
+    "type": "content",
+    "pos": "noun",
+    "definition": "festival",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "เทศกาลไทย", "romanization": "thêet-sà-gaan thai", "english": "Thai festival" },
+      { "thai": "มีเทศกาล", "romanization": "mii thêet-sà-gaan", "english": "have a festival" },
+      { "thai": "ชอบเทศกาล", "romanization": "châawp thêet-sà-gaan", "english": "like festivals" }
+    ],
+    "longphrases": [
+      { "thai": "เทศกาลนี้สนุกมาก", "romanization": "thêet-sà-gaan née sà-nùk mâak", "english": "This festival is very fun" },
+      { "thai": "เขาชอบเทศกาลไทย", "romanization": "khăo châawp thêet-sà-gaan thai", "english": "He likes Thai festivals" },
+      { "thai": "เราจะไปงานเทศกาล", "romanization": "rao jà bpai ngaan thêet-sà-gaan", "english": "We will go to the festival" }
+    ],
+    "sentences": [
+      { "thai": "วันนี้มีเทศกาลในกรุงเทพฯ", "romanization": "wan née mii thêet-sà-gaan nai krung thêep", "english": "Today there is a festival in Bangkok" },
+      { "thai": "เขาไม่ชอบเทศกาลเสียงดัง", "romanization": "khăo mâi châawp thêet-sà-gaan sĭiang dang", "english": "He doesn’t like loud festivals" },
+      { "thai": "เราชอบไปเทศกาลกับเพื่อน", "romanization": "rao châawp bpai thêet-sà-gaan gàp phêuuan", "english": "We like going to festivals with friends" }
+    ]
+  },
+  {
+    "word": "รึเปล่า",
+    "confidence": 1,
+    "romanization": "rúe bplàao",
+    "type": "function",
+    "pos": "particle",
+    "definition": "...or not? (question particle)",
+    "notes": "used to form yes-no questions",
+    "shortphrases": [
+      { "thai": "ไปไหมรึเปล่า", "romanization": "bpai mái rúe bplàao", "english": "are you going or not?" },
+      { "thai": "ใช่รึเปล่า", "romanization": "châi rúe bplàao", "english": "is it right or not?" },
+      { "thai": "รู้รึเปล่า", "romanization": "rúu rúe bplàao", "english": "do you know or not?" }
+    ],
+    "longphrases": [
+      { "thai": "คุณไปโรงแรมรึเปล่า", "romanization": "khun bpai rohng-raem rúe bplàao", "english": "Are you going to the hotel or not?" },
+      { "thai": "เขาชอบแมวรึเปล่า", "romanization": "khăo châawp maeo rúe bplàao", "english": "Does he like cats or not?" },
+      { "thai": "เรามีเวลาไปไหมรึเปล่า", "romanization": "rao mii way-laa bpai mái rúe bplàao", "english": "Do we have time to go or not?" }
+    ],
+    "sentences": [
+      { "thai": "คุณพักที่นี่รึเปล่า", "romanization": "khun phák têe nîi rúe bplàao", "english": "Are you staying here or not?" },
+      { "thai": "เขาพูดจริงรึเปล่า", "romanization": "khăo pôot jing rúe bplàao", "english": "Is he telling the truth or not?" },
+      { "thai": "เราต้องการไปตอนนี้รึเปล่า", "romanization": "rao dtâawng gaan bpai dtâawn née rúe bplàao", "english": "Do we need to go now or not?" }
+    ]
+  },
+  {
+    "word": "ชนะ",
+    "confidence": 1,
+    "romanization": "chá-ná",
+    "type": "content",
+    "pos": "verb",
+    "definition": "to win",
+    "notes": "",
+    "shortphrases": [
+      { "thai": "ชนะเกม", "romanization": "chá-ná gem", "english": "win a game" },
+      { "thai": "ใครชนะ", "romanization": "khrai chá-ná", "english": "who won" },
+      { "thai": "ชนะแล้ว", "romanization": "chá-ná láew", "english": "already won" }
+    ],
+    "longphrases": [
+      { "thai": "เขาชนะเกมเมื่อคืนนี้", "romanization": "khăo chá-ná gem mêua keun née", "english": "He won the game last night" },
+      { "thai": "เราต้องชนะวันนี้", "romanization": "rao dtâawng chá-ná wan née", "english": "We must win today" },
+      { "thai": "เธอชนะเพราะเล่นดี", "romanization": "thoe chá-ná phróe lên dii", "english": "She won because she played well" }
+    ],
+    "sentences": [
+      { "thai": "เขาชนะเกมที่โรงแรม", "romanization": "khăo chá-ná gem têe rohng-raem", "english": "He won the game at the hotel" },
+      { "thai": "วันนี้ฉันชนะเพื่อนในเกม", "romanization": "wan née chăn chá-ná phêuuan nai gem", "english": "Today I beat my friend in a game" },
+      { "thai": "เราต้องการชนะอีกครั้งพรุ่งนี้", "romanization": "rao dtâawng gaan chá-ná èek khráng phrûng-níi", "english": "We want to win again tomorrow" }
+    ]
+  }
+]
