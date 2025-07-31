@@ -292,31 +292,31 @@
       { "thai": "เราไม่คุยโทรศัพท์วันจันทร์", "romanization": "rao mâi khui thoo-rá-sàp wan jan-than", "english": "We don't talk on the phone on Monday" },
       { "thai": "ฉันชอบคุยโทรศัพท์ตอนเย็น", "romanization": "chăn châawp khui thoo-rá-sàp dtâawn yen", "english": "I like talking on the phone in the evening" }
     ]
-  },
-  {
-    "word": "เขาหลับแล้ว",
-    "confidence": 1,
-    "romanization": "khăo làp láew",
-    "type": "content",
-    "pos": "phrase",
-    "definition": "he is already asleep",
-    "notes": "",
-    "shortphrases": [
-      { "thai": "เขาหลับแล้ว", "romanization": "khăo làp láew", "english": "he is already asleep" },
-      { "thai": "เขานอนหลับ", "romanization": "khăo non làp", "english": "he is sleeping" },
-      { "thai": "หลับสนิท", "romanization": "làp sà-nìt", "english": "sound asleep" }
-    ],
-    "longphrases": [
-      { "thai": "เขาหลับแล้วตอนนี้", "romanization": "khăo làp láew dtâawn née", "english": "he is already asleep now" },
-      { "thai": "เขาหลับเร็วมาก", "romanization": "khăo làp reo mâak", "english": "he falls asleep very quickly" },
-      { "thai": "ฉันคิดว่าเขาหลับแล้ว", "romanization": "chăn khít wâa khăo làp láew", "english": "I think he is already asleep" }
-    ],
-    "sentences": [
-      { "thai": "เขาหลับแล้วเพราะเหนื่อย", "romanization": "khăo làp láew phróe nèuay", "english": "He is already asleep because he is tired" },
-      { "thai": "เราไม่ควรรบกวนเขาเพราะเขาหลับแล้ว", "romanization": "rao mâi khuan róp-kuan khăo phróe khăo làp láew", "english": "We shouldn't disturb him because he is already asleep" },
-      { "thai": "ฉันบอกแล้วว่าเขาหลับแล้ว", "romanization": "chăn bòk láew wâa khăo làp láew", "english": "I already told you he is asleep" }
-    ]
-  },
+  },{
+  "word": "หลับ",
+  "confidence": 3,
+  "romanization": "làp",
+  "type": "content",
+  "pos": "verb",
+  "definition": "to sleep / fall asleep",
+  "notes": "",
+  "shortphrases": [
+    { "thai": "หลับสนิท", "romanization": "làp sà-nìt", "english": "sleep soundly" },
+    { "thai": "อยากหลับ", "romanization": "yàak làp", "english": "want to sleep" },
+    { "thai": "ไม่หลับ", "romanization": "mâi làp", "english": "not asleep" }
+  ],
+  "longphrases": [
+    { "thai": "เขาหลับเมื่อผมพูด", "romanization": "khăo làp mêua phŏm phûut", "english": "he fell asleep when I was talking" },
+    { "thai": "ฉันอยากหลับแล้ว", "romanization": "chăn yàak làp láew", "english": "I want to sleep already" },
+    { "thai": "คุณหลับเมื่อคืนนี้", "romanization": "khun làp mêua kheuun níi", "english": "you slept last night" }
+  ],
+  "sentences": [
+    { "thai": "ผมง่วงมากตอนเย็นเมื่อวาน", "romanization": "phŏm ngûang mâak dton yen mêua waan", "english": "I was very sleepy yesterday evening" },
+    { "thai": "เขาหลับเมื่อผมพูด", "romanization": "khăo làp mêua phŏm phûut", "english": "he fell asleep when I was talking" },
+    { "thai": "ฉันหลับตอนเช้าเมื่อวานนี้", "romanization": "chăn làp dton cháao mêua waan níi", "english": "I slept in the morning yesterday" }
+  ]
+}
+,
   {
     "word": "อยู่",
     "confidence": 1,
