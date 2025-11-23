@@ -330,38 +330,52 @@ function importtsvphrases() {
                 }
 
                 var header = lines[0].split('\t')
-                var colthai = -1
+
+                var colanchor = -1
                 var coltype = -1
+                var colphrase = -1
                 var colroman = -1
-                var coldef = -1
+                var colenglish = -1
                 var colnotes = -1
 
                 for (var i = 0; i < header.length; i++) {
                     var h = header[i].trim().toUpperCase()
-                    if (h.indexOf('THAI SCRIPT') === 0) colthai = i
-                    else if (h === 'TYPE') coltype = i
-                    else if (h === 'ROMANIZATION') colroman = i
-                    else if (h === 'DEFINITION') coldef = i
-                    else if (h === 'NOTES') colnotes = i
+                    if (h.indexOf('THAI SCRIPT WORD') === 0) {
+                        colanchor = i
+                    } else if (h === 'TYPE') {
+                        coltype = i
+                    } else if (h.indexOf('THAI SCRIPT PHRASE') === 0 || h === 'THAI SCRIPT') {
+                        colphrase = i
+                    } else if (h === 'ROMANIZATION') {
+                        colroman = i
+                    } else if (h === 'ENGLISH' || h === 'DEFINITION') {
+                        colenglish = i
+                    } else if (h === 'NOTES') {
+                        colnotes = i
+                    }
                 }
 
-                if (colthai === -1 || coltype === -1) {
-                    alert('TSV header must include "Thai Script Word" and "Type" columns.')
+                if (colanchor === -1 || coltype === -1 || colroman === -1 || colenglish === -1) {
+                    alert(
+                        'TSV header must include at least: "Thai Script Word", "Type", ' +
+                        '"Romanization", and "English" (or "Definition").'
+                    )
                     return
                 }
 
-                var existingmap = {}
-                if (Array.isArray(wordsdata)) {
-                    wordsdata.forEach(function(w, idx) {
-                        if (w && typeof w.word === 'string') {
-                            existingmap[w.word] = idx
-                        }
-                    })
-                } else {
+                if (!Array.isArray(wordsdata)) {
                     wordsdata = []
                 }
 
+                var existingmap = {}
+                wordsdata.forEach(function(w, idx) {
+                    if (w && typeof w.word === 'string') {
+                        existingmap[w.word] = idx
+                    }
+                })
+
                 function gettargetfield(typestr) {
+                    if (!typestr) return null
                     var t = typestr.toLowerCase()
                     if (t.indexOf('short') === 0) return 'shortphrases'
                     if (t.indexOf('long') === 0) return 'longphrases'
@@ -369,68 +383,77 @@ function importtsvphrases() {
                     return null
                 }
 
-                var addedwords = 0
                 var attachedphrases = 0
+                var createdanchors = 0
                 var skipped = 0
 
                 for (var j = 1; j < lines.length; j++) {
                     var row = lines[j].split('\t')
                     if (!row.length) continue
 
-                    var rawthai = (row[colthai] || '').trim()
-                    var typestr = (row[coltype] || '').trim()
-                    if (!rawthai || !typestr) {
+                    var anchorthai = (row[colanchor] || '').trim()
+                    if (!anchorthai) {
                         skipped++
                         continue
                     }
 
+                    var typestr = coltype >= 0 ? (row[coltype] || '').trim() : ''
                     var field = gettargetfield(typestr)
                     if (!field) {
                         skipped++
                         continue
                     }
 
-                    var roman = colroman >= 0 ? (row[colroman] || '').trim() : ''
-                    var definition = coldef >= 0 ? (row[coldef] || '').trim() : ''
-                    var notes = colnotes >= 0 ? (row[colnotes] || '').trim() : ''
-
-                    var english = definition || ''
-                    if (notes) {
-                        english = english ? (english + ' — ' + notes) : notes
+                    var phrasethai = ''
+                    if (colphrase >= 0) {
+                        phrasethai = (row[colphrase] || '').trim()
+                    }
+                    if (!phrasethai) {
+                        // fallback: if there is no separate phrase column,
+                        // use the anchor text as the phrase text as well.
+                        phrasethai = anchorthai
                     }
 
-                    var phraseobj = {
-                        thai: rawthai,
-                        romanization: roman || '',
-                        english: english || ''
+                    var phraseroman = colroman >= 0 ? (row[colroman] || '').trim() : ''
+                    var english = colenglish >= 0 ? (row[colenglish] || '').trim() : ''
+
+                    if (colnotes >= 0) {
+                        var notes = (row[colnotes] || '').trim()
+                        if (notes) {
+                            english = english ? (english + ' — ' + notes) : notes
+                        }
                     }
 
-                    // anchor word = first token in the phrase
-                    var anchor = rawthai.split(/\s+/)[0]
-                    if (!anchor) {
+                    if (!phrasethai && !phraseroman && !english) {
                         skipped++
                         continue
                     }
 
+                    var phraseobj = {
+                        thai: phrasethai,
+                        romanization: phraseroman || '',
+                        english: english || ''
+                    }
+
                     var wordobj
-                    if (existingmap.hasOwnProperty(anchor)) {
-                        wordobj = wordsdata[existingmap[anchor]]
+                    if (existingmap.hasOwnProperty(anchorthai)) {
+                        wordobj = wordsdata[existingmap[anchorthai]]
                     } else {
                         wordobj = {
-                            word: anchor,
+                            word: anchorthai,
                             confidence: 1,
-                            romanization: '',
+                            romanization: 'placeholder',
                             type: 'content',
                             pos: '',
-                            definition: '',
+                            definition: 'placeholder',
                             notes: '',
                             shortphrases: [],
                             longphrases: [],
                             sentences: []
                         }
                         wordsdata.push(wordobj)
-                        existingmap[anchor] = wordsdata.length - 1
-                        addedwords++
+                        existingmap[anchorthai] = wordsdata.length - 1
+                        createdanchors++
                     }
 
                     if (!Array.isArray(wordobj[field])) {
@@ -438,8 +461,13 @@ function importtsvphrases() {
                     }
 
                     var exists = wordobj[field].some(function(p) {
-                        return p && p.thai === phraseobj.thai
+                        if (!p) return false
+                        if (p.thai && phraseobj.thai && p.thai === phraseobj.thai) return true
+                        if (p.romanization && phraseobj.romanization &&
+                            p.romanization === phraseobj.romanization) return true
+                        return false
                     })
+
                     if (exists) {
                         skipped++
                         continue
@@ -450,20 +478,21 @@ function importtsvphrases() {
                 }
 
                 storedata('wordsdata', wordsdata)
+
                 alert(
                     'TSV phrase import complete.\n' +
                     'Attached ' + attachedphrases + ' phrase' + (attachedphrases === 1 ? '' : 's') + '.\n' +
-                    'Created ' + addedwords + ' new anchor word' + (addedwords === 1 ? '' : 's') + '.\n' +
-                    'Skipped ' + skipped + ' row' + (skipped === 1 ? '' : 's') + ' (missing data, unknown type, or duplicate).'
+                    'Created ' + createdanchors + ' new anchor word' + (createdanchors === 1 ? '' : 's') + '.\n' +
+                    'Skipped ' + skipped + ' row' + (skipped === 1 ? '' : 's') + '.'
                 )
             } catch (err) {
                 console.error(err)
                 alert('Error while importing TSV phrases.')
             }
         }
+
         reader.readAsText(file, 'utf-8')
     }
 
     input.click()
 }
-

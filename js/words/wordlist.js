@@ -10,33 +10,28 @@
 //---------
 
 function buildwordlist() {
-    // sidebar wrapper
     const sidebar = document.createElement('div')
-    sidebar.id = 'words-sidebar'; 
+    sidebar.id = 'words-sidebar'
 
-    // search row
-    const searchRow = document.createElement('div')
-    searchRow.style.display = 'flex'
-    searchRow.style.alignItems = 'center'
+    const searchrow = document.createElement('div')
+    searchrow.className = 'word-search-row'
 
     const search = document.createElement('input')
     search.id = 'word-search'
     search.placeholder = 'Search…'
     attachsearchlistener(search)
-    searchRow.append(search)
+    searchrow.append(search)
 
-    const addBtn = document.createElement('button')
-    addBtn.type = 'button'
-    addBtn.id = 'add-word-btn'
-    addBtn.textContent = '+'
-    addBtn.title = 'Add new word'
-    addBtn.style.marginLeft = '0.5em'
-    addBtn.addEventListener('click', addword)
-    searchRow.append(addBtn)
+    const addbtn = document.createElement('button')
+    addbtn.type = 'button'
+    addbtn.id = 'add-word-btn'
+    addbtn.textContent = '+'
+    addbtn.title = 'Add new word'
+    addbtn.addEventListener('click', addword)
+    searchrow.append(addbtn)
 
-    sidebar.append(searchRow)
+    sidebar.append(searchrow)
 
-    // suggestion list
     const ul = document.createElement('ul')
     ul.id = 'word-list'
     sidebar.append(ul)
@@ -48,6 +43,7 @@ function buildwordlist() {
 
     return sidebar
 }
+
 
 //---------
 //MAJOR FUNCTIONS

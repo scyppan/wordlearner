@@ -1,11 +1,38 @@
-Thai Script Word	Type	Romanization	Definition	Notes
-คุณสบายดีไหม	long phrase	khun sà-baai dii mái	How are you?	polite question
-สบายดี	short phrase	sà-baai dii	I’m fine	basic greeting response
-ไม่สบาย	short phrase	mâi sà-baai	not well / sick	very common expression
-แล้วคุณล่ะ	short phrase	lɛ́ɛo khun lâ	And you?	follow-up to a greeting
-คุณล่ะ	short phrase	khun lâ	And you?	shortened form
-ผมสบายดีครับ	long phrase	phǒm sà-baai dii khráp	I’m fine (male)	polite male form
-ฉันสบายดีค่ะ	long phrase	chǎn sà-baai dii khâ	I’m fine (female)	polite female form
-ผมไม่สบาย	long phrase	phǒm mâi sà-baai	I’m not well (male)	common health expression
-ฉันไม่สบาย	long phrase	chǎn mâi sà-baai	I’m not well (female)	common health expression
-แล้วผมสบายดีแล้ว	sentence	lɛ́ɛo phǒm sà-baai dii lɛ́ɛo	And now I’m fine	includes “already/now”
+Thai Script Word	Type	Thai Script Phrase	Romanization	Definition	Notes
+คุณ	long phrase	คุณสบายดีไหม	khun sà-baai dii mái	Are you well? / How are you?	Very common polite greeting; uses คุณ as polite “you”
+สบาย	long phrase	คุณสบายดีไหม	khun sà-baai dii mái	Are you well? / How are you?	สบาย = comfortable / well; in greetings means “fine / well”
+ดี	long phrase	คุณสบายดีไหม	khun sà-baai dii mái	Are you well? / How are you?	ดี = good; part of the pattern “สบายดี”
+ไหม	long phrase	คุณสบายดีไหม	khun sà-baai dii mái	Are you well? / How are you?	ไหม is the yes–no question particle
+สบาย	short phrase	สบายดี	sà-baai dii	I’m fine	Basic response to “How are you?”
+ดี	short phrase	สบายดี	sà-baai dii	I’m fine	Often understood as “(I’m) fine / (I’m) good”
+ไม่	short phrase	ไม่สบาย	mâi sà-baai	not well / sick	Literally “not comfortable”; used to say you’re ill
+สบาย	short phrase	ไม่สบาย	mâi sà-baai	not well / sick	Often used when talking about being sick
+แล้ว	short phrase	แล้วคุณล่ะ	lɛ́ɛo khun lâ	And you?	Follow-up question after answering about yourself
+คุณ	short phrase	แล้วคุณล่ะ	lɛ́ɛo khun lâ	And you?	Uses คุณ as polite “you”
+ล่ะ	short phrase	แล้วคุณล่ะ	lɛ́ɛo khun lâ	And you?	ล่ะ marks “what about…?”
+ผม	long phrase	ผมสบายดีครับ	phǒm sà-baai dii khráp	I’m fine (male, polite)	ผม = I (male speaker)
+สบาย	long phrase	ผมสบายดีครับ	phǒm sà-baai dii khráp	I’m fine (male, polite)	Part of the “I’m fine” pattern
+ดี	long phrase	ผมสบายดีครับ	phǒm sà-baai dii khráp	I’m fine (male, polite)	Literally “I comfortable good”
+ครับ	long phrase	ผมสบายดีครับ	phǒm sà-baai dii khráp	I’m fine (male, polite)	Polite ending particle for male speakers
+ฉัน	long phrase	ฉันสบายดีค่ะ	chǎn sà-baai dii khâ	I’m fine (female, polite)	ฉัน = I (common, esp. female)
+สบาย	long phrase	ฉันสบายดีค่ะ	chǎn sà-baai dii khâ	I’m fine (female, polite)	Same greeting pattern
+ดี	long phrase	ฉันสบายดีค่ะ	chǎn sà-baai dii khâ	I’m fine (female, polite)	Same structure as male version
+ค่ะ	long phrase	ฉันสบายดีค่ะ	chǎn sà-baai dii khâ	I’m fine (female, polite)	Polite ending particle for female speakers (statement tone)
+ผม	long phrase	ผมไม่สบายครับ	phǒm mâi sà-baai khráp	I’m not well (male, polite)	Useful when you’re sick
+ไม่	long phrase	ผมไม่สบายครับ	phǒm mâi sà-baai khráp	I’m not well (male, polite)	ไม่ = no / not
+สบาย	long phrase	ผมไม่สบายครับ	phǒm mâi sà-baai khráp	I’m not well (male, polite)	Literally “not comfortable”
+ครับ	long phrase	ผมไม่สบายครับ	phǒm mâi sà-baai khráp	I’m not well (male, polite)	Polite male ending
+ฉัน	long phrase	ฉันไม่สบายค่ะ	chǎn mâi sà-baai khâ	I’m not well (female, polite)	Same meaning with female pronoun
+ไม่	long phrase	ฉันไม่สบายค่ะ	chǎn mâi sà-baai khâ	I’m not well (female, polite)	Negative particle
+สบาย	long phrase	ฉันไม่สบายค่ะ	chǎn mâi sà-baai khâ	I’m not well (female, polite)	Often used when you’re ill
+ค่ะ	long phrase	ฉันไม่สบายค่ะ	chǎn mâi sà-baai khâ	I’m not well (female, polite)	Polite female ending
+ไม่	short phrase	ไม่ครับ	mâi khráp	No (male, polite)	Common polite “no” for male speakers
+ครับ	short phrase	ไม่ครับ	mâi khráp	No (male, polite)	Can stand alone as a full reply
+ไม่	short phrase	ไม่ค่ะ	mâi khâ	No (female, polite)	Common polite “no” for female speakers
+ค่ะ	short phrase	ไม่ค่ะ	mâi khâ	No (female, polite)	Can stand alone as a full reply
+แล้ว	short phrase	แล้วผมล่ะ	lɛ́ɛo phǒm lâ	And what about me? (male)	Uses แล้ว + ล่ะ “then what about…?”
+ผม	short phrase	แล้วผมล่ะ	lɛ́ɛo phǒm lâ	And what about me? (male)	Male “I”
+ล่ะ	short phrase	แล้วผมล่ะ	lɛ́ɛo phǒm lâ	And what about me? (male)	“what about…?”
+แล้ว	short phrase	แล้วฉันล่ะ	lɛ́ɛo chǎn lâ	And what about me? (female)	Same structure with female “I”
+ฉัน	short phrase	แล้วฉันล่ะ	lɛ́ɛo chǎn lâ	And what about me? (female)	Female / common “I”
+ล่ะ	short phrase	แล้วฉันล่ะ	lɛ́ɛo chǎn lâ	And what about me? (female)	“what about…?”
