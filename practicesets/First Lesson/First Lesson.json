@@ -1,0 +1,350 @@
+[
+  {
+    "word": "คุณ",
+    "confidence": 1,
+    "romanization": "khun",
+    "type": "content",
+    "pos": "",
+    "definition": "you (polite)",
+    "notes": "used for both genders; very common polite “you”",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — Uses คุณ as polite “you”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — Very common polite greeting; uses คุณ as polite “you”"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "สบาย",
+    "confidence": 1,
+    "romanization": "sà-baai",
+    "type": "content",
+    "pos": "",
+    "definition": "comfortable; well",
+    "notes": "appears in “สบายดี”; base adjective",
+    "shortphrases": [
+      {
+        "thai": "สบายดี",
+        "romanization": "sà-baai dii",
+        "english": "I’m fine — Basic response to “How are you?”"
+      },
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "not well / sick — Often used when talking about being sick"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — สบาย = comfortable / well; in greetings means “fine / well”"
+      },
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Part of the “I’m fine” pattern"
+      },
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Same greeting pattern"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Literally “not comfortable”"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Often used when you’re ill"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ดี",
+    "confidence": 1,
+    "romanization": "dii",
+    "type": "content",
+    "pos": "",
+    "definition": "good; well",
+    "notes": "modifies many phrases; in greetings means “fine”",
+    "shortphrases": [
+      {
+        "thai": "สบายดี",
+        "romanization": "sà-baai dii",
+        "english": "I’m fine — Often understood as “(I’m) fine / (I’m) good”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — ดี = good; part of the pattern “สบายดี”"
+      },
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Literally “I comfortable good”"
+      },
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Same structure as male version"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ไหม",
+    "confidence": 1,
+    "romanization": "mái",
+    "type": "content",
+    "pos": "",
+    "definition": "yes/no question particle",
+    "notes": "placed at end of a question",
+    "shortphrases": [],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — ไหม is the yes–no question particle"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ไม่",
+    "confidence": 1,
+    "romanization": "mâi",
+    "type": "content",
+    "pos": "",
+    "definition": "no; not",
+    "notes": "negates verbs/adjectives; tone always falling",
+    "shortphrases": [
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "not well / sick — Literally “not comfortable”; used to say you’re ill"
+      },
+      {
+        "thai": "ไม่ครับ",
+        "romanization": "mâi khráp",
+        "english": "No (male, polite) — Common polite “no” for male speakers"
+      },
+      {
+        "thai": "ไม่ค่ะ",
+        "romanization": "mâi khâ",
+        "english": "No (female, polite) — Common polite “no” for female speakers"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — ไม่ = no / not"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Negative particle"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ค่ะ",
+    "confidence": 1,
+    "romanization": "khâ",
+    "type": "content",
+    "pos": "",
+    "definition": "polite particle (female)",
+    "notes": "final particle for most polite female speech",
+    "shortphrases": [
+      {
+        "thai": "ไม่ค่ะ",
+        "romanization": "mâi khâ",
+        "english": "No (female, polite) — Can stand alone as a full reply"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Polite ending particle for female speakers (statement tone)"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Polite female ending"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ครับ",
+    "confidence": 1,
+    "romanization": "khráp",
+    "type": "content",
+    "pos": "",
+    "definition": "polite particle (male)",
+    "notes": "final particle for most polite male speech",
+    "shortphrases": [
+      {
+        "thai": "ไม่ครับ",
+        "romanization": "mâi khráp",
+        "english": "No (male, polite) — Can stand alone as a full reply"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Polite ending particle for male speakers"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Polite male ending"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ผม",
+    "confidence": 1,
+    "romanization": "phǒm",
+    "type": "content",
+    "pos": "",
+    "definition": "I (male)",
+    "notes": "male speakers only",
+    "shortphrases": [
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — Male “I”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — ผม = I (male speaker)"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Useful when you’re sick"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ฉัน",
+    "confidence": 1,
+    "romanization": "chǎn",
+    "type": "content",
+    "pos": "",
+    "definition": "I (common, esp. female)",
+    "notes": "general “I” but more common for women",
+    "shortphrases": [
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — Female / common “I”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — ฉัน = I (common, esp. female)"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Same meaning with female pronoun"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "แล้ว",
+    "confidence": 1,
+    "romanization": "lɛ́ɛo",
+    "type": "content",
+    "pos": "",
+    "definition": "already; then; and",
+    "notes": "used in “แล้วคุณล่ะ”",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — Follow-up question after answering about yourself"
+      },
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — Uses แล้ว + ล่ะ “then what about…?”"
+      },
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — Same structure with female “I”"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ล่ะ",
+    "confidence": 1,
+    "romanization": "lâ",
+    "type": "content",
+    "pos": "",
+    "definition": "and…? / what about…?",
+    "notes": "follows nouns/pronouns; “แล้ว…ล่ะ?”",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — ล่ะ marks “what about…?”"
+      },
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — “what about…?”"
+      },
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — “what about…?”"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ลา",
+    "confidence": 1,
+    "romanization": "laa",
+    "type": "content",
+    "pos": "",
+    "definition": "to take leave / depart",
+    "notes": "used in polite leave-taking; base of “ลาแล้ว”",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]
