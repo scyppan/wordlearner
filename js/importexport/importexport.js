@@ -24,6 +24,20 @@ function renderdata() {
     importAdditionalBtn.title = 'This will add new words to the existing word list (duplicates will be skipped).';
     importAdditionalBtn.onclick = importadditionalwords;
 
+    // Import words from TSV
+    var importTsvWordsBtn = document.createElement('button');
+    importTsvWordsBtn.id = 'importTsvWordsBtn';
+    importTsvWordsBtn.textContent = 'Import words from TSV';
+    importTsvWordsBtn.title = 'Add/update words from a TSV file with THAI / ROMANIZATION / DEFINITION / NOTES.';
+    importTsvWordsBtn.onclick = importtsvwords;
+
+    // Import phrases from TSV
+    var importTsvPhrasesBtn = document.createElement('button');
+    importTsvPhrasesBtn.id = 'importTsvPhrasesBtn';
+    importTsvPhrasesBtn.textContent = 'Import phrases from TSV';
+    importTsvPhrasesBtn.title = 'Add phrases/sentences from a TSV file with Thai Script Word / Type / Romanization / Definition / Notes.';
+    importTsvPhrasesBtn.onclick = importtsvphrases;
+
     // Export words
     var exportBtn = document.createElement('button');
     exportBtn.id = 'exportDataBtn';
@@ -32,6 +46,8 @@ function renderdata() {
 
     group1.appendChild(importBtn);
     group1.appendChild(importAdditionalBtn);
+    group1.appendChild(importTsvWordsBtn);
+    group1.appendChild(importTsvPhrasesBtn);
     group1.appendChild(exportBtn);
 
     var group2 = document.createElement('div');
