@@ -166,6 +166,68 @@ function importquizzes() {
     input.click()
 }
 
+function showimportmodal(title, message) {
+    var modal = document.getElementById('import-modal')
+    if (!modal) {
+        modal = document.createElement('div')
+        modal.id = 'import-modal'
+        modal.className = 'import-modal'
+
+        var dialog = document.createElement('div')
+        dialog.className = 'import-modal-dialog'
+
+        var header = document.createElement('div')
+        header.className = 'import-modal-header'
+
+        var titleelem = document.createElement('span')
+        titleelem.className = 'import-modal-title'
+
+        var closebtn = document.createElement('button')
+        closebtn.type = 'button'
+        closebtn.className = 'import-modal-close'
+        closebtn.textContent = '×'
+
+        header.appendChild(titleelem)
+        header.appendChild(closebtn)
+
+        var body = document.createElement('div')
+        body.className = 'import-modal-body'
+
+        var textareaelem = document.createElement('textarea')
+        textareaelem.className = 'import-modal-text'
+        textareaelem.readOnly = true
+
+        body.appendChild(textareaelem)
+
+        dialog.appendChild(header)
+        dialog.appendChild(body)
+        modal.appendChild(dialog)
+        document.body.appendChild(modal)
+
+        function hidemodal() {
+            modal.classList.remove('is-open')
+        }
+
+        closebtn.addEventListener('click', function () {
+            hidemodal()
+        })
+
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                hidemodal()
+            }
+        })
+    }
+
+    var t = modal.querySelector('.import-modal-title')
+    var ta = modal.querySelector('.import-modal-text')
+    if (t) t.textContent = title || ''
+    if (ta) ta.value = message || ''
+
+    modal.classList.add('is-open')
+}
+
+
 function importtsvwords() {
     var input = document.createElement('input')
     input.type = 'file'
@@ -224,6 +286,7 @@ function importtsvwords() {
 
                 var added = 0
                 var updated = 0
+                var updatedromanizations = []
 
                 for (var j = 1; j < lines.length; j++) {
                     var row = lines[j].split('\t')
@@ -265,7 +328,14 @@ function importtsvwords() {
                             }
                         }
 
-                        if (changed) updated++
+                        if (changed) {
+                            updated++
+
+                            var label = roman || existing.romanization || thai
+                            if (label && updatedromanizations.indexOf(label) === -1) {
+                                updatedromanizations.push(label)
+                            }
+                        }
                     } else {
                         var newword = {
                             word: thai,
@@ -286,11 +356,19 @@ function importtsvwords() {
                 }
 
                 storedata('wordsdata', wordsdata)
-                alert(
+
+                var message =
                     'TSV word import complete.\n' +
                     'Added ' + added + ' new word' + (added === 1 ? '' : 's') + '.\n' +
                     'Updated ' + updated + ' existing word' + (updated === 1 ? '' : 's') + '.'
-                )
+
+                if (updatedromanizations.length > 0) {
+                    message +=
+                        '\nUpdated words (romanization):\n' +
+                        updatedromanizations.join(', ')
+                }
+
+                showimportmodal('Word import summary', message)
             } catch (err) {
                 console.error(err)
                 alert('Error while importing TSV words.')
@@ -384,6 +462,7 @@ function importtsvphrases() {
 
                 var attachedphrases = 0
                 var createdanchors = 0
+                var newanchors = []
                 var skipped = 0
 
                 for (var j = 1; j < lines.length; j++) {
@@ -408,8 +487,6 @@ function importtsvphrases() {
                         phrasethai = (row[colphrase] || '').trim()
                     }
                     if (!phrasethai) {
-                        // fallback: if there is no separate phrase column,
-                        // use the anchor text as the phrase text as well.
                         phrasethai = anchorthai
                     }
 
@@ -453,6 +530,10 @@ function importtsvphrases() {
                         wordsdata.push(wordobj)
                         existingmap[anchorthai] = wordsdata.length - 1
                         createdanchors++
+
+                        if (newanchors.indexOf(anchorthai) === -1) {
+                            newanchors.push(anchorthai)
+                        }
                     }
 
                     if (!Array.isArray(wordobj[field])) {
@@ -478,12 +559,19 @@ function importtsvphrases() {
 
                 storedata('wordsdata', wordsdata)
 
-                alert(
+                var message =
                     'TSV phrase import complete.\n' +
                     'Attached ' + attachedphrases + ' phrase' + (attachedphrases === 1 ? '' : 's') + '.\n' +
                     'Created ' + createdanchors + ' new anchor word' + (createdanchors === 1 ? '' : 's') + '.\n' +
                     'Skipped ' + skipped + ' row' + (skipped === 1 ? '' : 's') + '.'
-                )
+
+                if (newanchors.length > 0) {
+                    message +=
+                        '\nNew anchor words:\n' +
+                        newanchors.join(', ')
+                }
+
+                showimportmodal('Phrase import summary', message)
             } catch (err) {
                 console.error(err)
                 alert('Error while importing TSV phrases.')
