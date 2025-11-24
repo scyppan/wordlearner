@@ -1,0 +1,98 @@
+[
+  {
+    "word": "ทำ",
+    "confidence": 1,
+    "romanization": "tham",
+    "type": "content",
+    "pos": "",
+    "definition": "do; make",
+    "notes": "Basic verb “to do/make”; combines with the markers below (กำลังทำ, ทำอยู่, ทำแล้ว, จะทำ)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "กำลัง",
+    "confidence": 1,
+    "romanization": "kam-lang",
+    "type": "content",
+    "pos": "",
+    "definition": "in the middle of (doing)",
+    "notes": "Marks ongoing action; usually before the verb (กำลังทำ = am doing)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "อยู่",
+    "confidence": 1,
+    "romanization": "yùu",
+    "type": "content",
+    "pos": "",
+    "definition": "continuous marker at the end of a sentence",
+    "notes": "At end of the clause to show ongoing action (ทำอยู่ = am doing it right now)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "แล้ว",
+    "confidence": 1,
+    "romanization": "láew",
+    "type": "content",
+    "pos": "",
+    "definition": "already; then",
+    "notes": "After the verb to show completion (ทำแล้ว = already did it)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ยัง",
+    "confidence": 1,
+    "romanization": "yang",
+    "type": "content",
+    "pos": "",
+    "definition": "still; yet",
+    "notes": "With ไม่ for “not yet” (ยังไม่ทำ = haven’t done yet); alone can mean “still”",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เคย",
+    "confidence": 1,
+    "romanization": "kheeuy",
+    "type": "content",
+    "pos": "",
+    "definition": "ever; used to",
+    "notes": "Before verb for past experience/habit (เคยทำ = have done before / used to do)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เพิ่ง",
+    "confidence": 1,
+    "romanization": "phôeng",
+    "type": "content",
+    "pos": "",
+    "definition": "just; just now",
+    "notes": "Before verb for “just did” (เพิ่งทำ = just did it recently)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เดี๋ยว",
+    "confidence": 1,
+    "romanization": "dĭao",
+    "type": "content",
+    "pos": "",
+    "definition": "soon; in a moment",
+    "notes": "Often with จะ for near future (เดี๋ยวจะทำ = I’ll do it in a moment)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]

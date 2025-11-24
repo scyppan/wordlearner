@@ -9,20 +9,9 @@
 //---------
 
 function createmetasection() {
-  // The only externally callable function in this script.
+  // simple empty meta container; no type or part-of-speech UI
   var meta = document.createElement('div');
-  meta.id = 'word-meta';           // unique container
-
-  var typelabel = document.createElement('label');
-  typelabel.textContent = 'Type: ';
-  typelabel.appendChild(createtypeselect());
-  meta.appendChild(typelabel);
-
-  var poslabel = document.createElement('label');
-  poslabel.textContent = 'Part of Speech: ';
-  poslabel.appendChild(createposinput());
-  meta.appendChild(poslabel);
-
+  meta.id = 'word-meta';
   return meta;
 }
 

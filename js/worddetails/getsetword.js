@@ -15,8 +15,6 @@ function showworddetails(word) {
     setthaiscript(word)
     setromanization(word)
     setratingfromdb(word)
-    settypefromdb(word)
-    setposfromdb(word)
     setdefinitionfromdb(word)
     setnotesfromdb(word)
     setshortphrasesfromdb(word)

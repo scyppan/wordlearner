@@ -39,7 +39,6 @@ function importfromjson() {
     input.click()
 }
 
-
 function importadditionalwords() {
     var input = document.createElement('input')
     input.type = 'file'

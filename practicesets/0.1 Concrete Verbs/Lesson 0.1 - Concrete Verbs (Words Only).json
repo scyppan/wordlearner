@@ -1,0 +1,122 @@
+[
+  {
+    "word": "กิน",
+    "confidence": 1,
+    "romanization": "gin",
+    "type": "content",
+    "pos": "",
+    "definition": "eat",
+    "notes": "Very common everyday verb; can also mean “to eat/drink” in casual speech",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ไป",
+    "confidence": 1,
+    "romanization": "bpai",
+    "type": "content",
+    "pos": "",
+    "definition": "go",
+    "notes": "Used for going/heading somewhere; often combined with time/place words",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "จะ",
+    "confidence": 1,
+    "romanization": "jà",
+    "type": "content",
+    "pos": "",
+    "definition": "will",
+    "notes": "Future marker placed before a verb (จะไป, จะกิน); also used to express intention",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เดิน",
+    "confidence": 1,
+    "romanization": "dern",
+    "type": "content",
+    "pos": "",
+    "definition": "walk",
+    "notes": "Used for walking or going on foot",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เล่น",
+    "confidence": 1,
+    "romanization": "lên",
+    "type": "content",
+    "pos": "",
+    "definition": "play",
+    "notes": "Used for playing games, sports, instruments, or casually using things (เล่นมือถือ = be on your phone)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "นั่ง",
+    "confidence": 1,
+    "romanization": "nâng",
+    "type": "content",
+    "pos": "",
+    "definition": "sit",
+    "notes": "To sit; also used for “ride as a passenger” (นั่งรถ = ride in a car)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ยืน",
+    "confidence": 1,
+    "romanization": "yuun",
+    "type": "content",
+    "pos": "",
+    "definition": "stand",
+    "notes": "To stand; contrasts with นั่ง (sit)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "วิ่ง",
+    "confidence": 1,
+    "romanization": "wîng",
+    "type": "content",
+    "pos": "",
+    "definition": "run",
+    "notes": "To run/jog",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "อ่าน",
+    "confidence": 1,
+    "romanization": "àan",
+    "type": "content",
+    "pos": "",
+    "definition": "read",
+    "notes": "To read (books, messages, etc.)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เขียน",
+    "confidence": 1,
+    "romanization": "khǐan",
+    "type": "content",
+    "pos": "",
+    "definition": "write",
+    "notes": "To write/draw; used for writing text or sometimes drawing simple things",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]
