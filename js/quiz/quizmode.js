@@ -147,6 +147,54 @@ function deletequiz(index) {
   renderquizzespanel()
 }
 
+function showquizitempopup(qitem) {
+  if (!qitem) return
+
+  var thai = typeof qitem.thai === 'string' ? qitem.thai : ''
+  var roman = typeof qitem.romanization === 'string' ? qitem.romanization : ''
+  var definition = typeof qitem.definition === 'string' ? qitem.definition : ''
+  var notes = typeof qitem.notes === 'string' ? qitem.notes : ''
+
+  var header = ''
+  if (thai && roman) {
+    header = thai + ' (' + roman + ')'
+  } else if (thai) {
+    header = thai
+  } else if (roman) {
+    header = '(' + roman + ')'
+  }
+
+  var lines = []
+
+  if (definition) {
+    lines.push('Definition: ' + definition)
+  }
+  if (notes) {
+    lines.push('Notes: ' + notes)
+  }
+
+  var msg = ''
+
+  if (header) {
+    msg += header
+  }
+
+  if (lines.length > 0) {
+    if (msg) msg += '\n\n'
+    msg += lines.join('\n')
+  }
+
+  if (!msg) {
+    msg = 'No details recorded for this item yet.'
+  }
+
+  if (typeof showquizstatusmodal === 'function') {
+    showquizstatusmodal(msg)
+  } else {
+    alert(msg)
+  }
+}
+
 //---------
 //IMMEDIATE FUNCTIONS
 //---------

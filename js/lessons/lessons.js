@@ -117,7 +117,7 @@ function renderlessondetailpanel(lesson, lessonindex) {
   var btnuntested = document.createElement('button')
   btnuntested.className = 'lesson-stat-btn stat-untested'
   btnuntested.textContent =
-    'Untested items: ' + stats.untested + ' attempts'
+    'No confidence items: ' + stats.untested
   btnuntested.onclick = function () {
     addlessonrangetoquizplan(lesson, 'untested')
   }
@@ -175,7 +175,6 @@ function renderlessondetailpanel(lesson, lessonindex) {
   scroll.appendChild(itemslist)
   panel.appendChild(scroll)
 }
-
 
 function getlessonstats(lesson) {
   var stats = {
@@ -371,12 +370,12 @@ function getitemconfidencebucket(item) {
 
 function getitemconfidencelabel(item) {
   var bucket = getitemconfidencebucket(item)
-  if (bucket === 'untested') return 'confidence: untested'
+  if (bucket === 'untested') return 'confidence: no confidence'
   if (bucket === 'low') return 'confidence: low'
   if (bucket === 'mid') return 'confidence: medium'
   if (bucket === 'high') return 'confidence: high'
   if (bucket === 'solid') return 'confidence: solidified'
-  return 'confidence: untested'
+  return 'confidence: no confidence'
 }
 
 function getitemprogresslabel(item) {
@@ -384,7 +383,6 @@ function getitemprogresslabel(item) {
   var attempts = typeof item.attempts === 'number' ? item.attempts : 0
   return correct + ' / ' + attempts
 }
-
 
 // delete lesson modal + logic
 
@@ -494,10 +492,3 @@ function deletelesson(index) {
   selectedlessonindex = null
   renderlessonspanel()
 }
-
-
-//---------
-//IMMEDIATE FUNCTIONS
-//---------
-
-// none

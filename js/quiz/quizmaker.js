@@ -341,6 +341,7 @@ function renderquizfeedback(quizindex, stats) {
   table.className = 'quiz-feedback-table'
 
   var header = document.createElement('tr')
+
   var hthai = document.createElement('th')
   hthai.textContent = 'thai'
   header.appendChild(hthai)
@@ -356,6 +357,10 @@ function renderquizfeedback(quizindex, stats) {
   var hres = document.createElement('th')
   hres.textContent = 'result'
   header.appendChild(hres)
+
+  var hadd = document.createElement('th')
+  hadd.textContent = 'add'
+  header.appendChild(hadd)
 
   table.appendChild(header)
 
@@ -388,7 +393,6 @@ function renderquizfeedback(quizindex, stats) {
     tddef.textContent = qitem.definition || ''
     row.appendChild(tddef)
 
-    // result icon column
     var tdres = document.createElement('td')
     var icon = document.createElement('span')
     icon.className = 'quiz-feedback-result-icon'
@@ -404,12 +408,30 @@ function renderquizfeedback(quizindex, stats) {
       icon.setAttribute('aria-label', 'wrong')
     } else {
       icon.classList.add('quiz-feedback-result-untested')
-      icon.textContent = '' // empty circle via border
+      icon.textContent = ''
       icon.setAttribute('aria-label', 'not tested')
     }
 
     tdres.appendChild(icon)
     row.appendChild(tdres)
+
+    var tdadd = document.createElement('td')
+
+    var rootsbtn = document.createElement('button')
+    rootsbtn.type = 'button'
+    rootsbtn.className = 'quiz-feedback-roots-btn'
+    rootsbtn.textContent = '+roots'
+    rootsbtn.addEventListener(
+      'click',
+      (function (quizindexref, itemindexref) {
+        return function () {
+          addrootsfromfeedback(quizindexref, itemindexref)
+        }
+      })(quizindex, i)
+    )
+
+    tdadd.appendChild(rootsbtn)
+    row.appendChild(tdadd)
 
     table.appendChild(row)
   }
@@ -534,4 +556,135 @@ function dropconfidencelevel(conf) {
   if (conf === 3) return 2
   if (conf >= 4) return 3
   return conf
+}
+
+function addlessonrangetoquizplan(lesson, range) {
+  if (!lesson) return
+
+  var labelbase = getlessonlabel(lesson)
+  var label
+
+  if (range === 'untested') {
+    label = 'Untested items from ' + labelbase
+  } else if (range === 'lowplus') {
+    label = 'Low confidence (or untested) items from ' + labelbase
+  } else if (range === 'midplus') {
+    label = 'Middle confidence (or less) items from ' + labelbase
+  } else if (range === 'highplus') {
+    label = 'High confidence (or less) items from ' + labelbase
+  } else if (range === 'solid') {
+    label = 'Solidified items from ' + labelbase
+  } else {
+    label = 'Items from ' + labelbase
+  }
+
+  var entry = {
+    kind: 'range',
+    range: range,
+    lessonnumber: typeof lesson.lessonnumber === 'number' ? lesson.lessonnumber : null,
+    lessonname: typeof lesson.lessonname === 'string' ? lesson.lessonname : '',
+    label: label
+  }
+
+  if (typeof addquizplanentry === 'function') {
+    addquizplanentry(entry)
+  }
+
+  if (typeof showquizstatusmodal === 'function') {
+    showquizstatusmodal('Added to quiz planner:\n' + label)
+  }
+}
+
+function additemtoquizplan(lesson, item, index) {
+  if (!lesson || !item) return
+
+  var labelbase = getlessonlabel(lesson)
+
+  var thai = item && typeof item.thai === 'string' ? item.thai : ''
+  var roman = item && typeof item.romanization === 'string' ? item.romanization : ''
+
+  var wordlabel = ''
+  if (thai && roman) {
+    wordlabel = thai + ' (' + roman + ')'
+  } else if (thai) {
+    wordlabel = thai
+  } else if (roman) {
+    wordlabel = '(' + roman + ')'
+  } else {
+    wordlabel = '(no text)'
+  }
+
+  var label = wordlabel + ' from ' + labelbase
+
+  var entry = {
+    kind: 'item',
+    lessonnumber: typeof lesson.lessonnumber === 'number' ? lesson.lessonnumber : null,
+    lessonname: typeof lesson.lessonname === 'string' ? lesson.lessonname : '',
+    itemindex: typeof index === 'number' ? index : -1,
+    thai: thai,
+    romanization: roman,
+    label: label
+  }
+
+  if (typeof addquizplanentry === 'function') {
+    addquizplanentry(entry)
+  }
+
+  if (typeof showquizstatusmodal === 'function') {
+    showquizstatusmodal('Added to quiz planner:\n' + label)
+  }
+}
+
+function addrootsfromfeedback(quizindex, itemindex) {
+  if (!Array.isArray(quizzes) || !quizzes[quizindex]) return
+  var quiz = quizzes[quizindex]
+  var items = quiz.items || []
+  if (itemindex < 0 || itemindex >= items.length) return
+
+  var qitem = items[itemindex]
+  var info = getlessonitemforquizitem(qitem)
+  if (!info) return
+
+  var src = info.item
+
+  if (typeof addrootstoquizplan === 'function') {
+    addrootstoquizplan(src)
+  }
+}
+
+function addrootstoquizplan(item) {
+  if (!item) return
+
+  var thai = item && typeof item.thai === 'string' ? item.thai : ''
+  thai = thai ? String(thai).trim() : ''
+
+  var roman = item && typeof item.romanization === 'string' ? item.romanization : ''
+
+  var wordlabel = ''
+  if (thai && roman) {
+    wordlabel = thai + ' (' + roman + ')'
+  } else if (thai) {
+    wordlabel = thai
+  } else if (roman) {
+    wordlabel = '(' + roman + ')'
+  } else {
+    wordlabel = '(no text)'
+  }
+
+  var label = 'all roots of ' + wordlabel
+
+  var entry = {
+    kind: 'roots',
+    anchorthai: thai,
+    anchorromanization: roman,
+    label: label
+  }
+
+  if (typeof addquizplanentry === 'function') {
+    addquizplanentry(entry)
+  }
+
+  if (typeof showquizstatusmodal === 'function') {
+    showquizstatusmodal('Added to quiz planner:\n' + label)
+  }
 }
