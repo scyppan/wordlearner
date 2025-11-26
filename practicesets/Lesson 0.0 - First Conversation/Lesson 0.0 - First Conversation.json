@@ -1,0 +1,200 @@
+[
+  {
+    "lessonnumber": 1,
+    "lessonname": "First Conversation",
+    "items": [
+      {
+        "thai": "คุณ",
+        "romanization": "khun",
+        "definition": "you (polite)",
+        "notes": "Polite, gender-neutral “you,” used with adults/strangers.",
+        "roots": [
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผม",
+        "romanization": "phǒm",
+        "definition": "I (male)",
+        "notes": "First-person pronoun mainly for male speakers; polite/neutral.",
+        "roots": [
+          "ผม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉัน",
+        "romanization": "chǎn",
+        "definition": "I (female)",
+        "notes": "First-person pronoun mainly for female speakers; common in casual or polite speech.",
+        "roots": [
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ค่ะ",
+        "romanization": "khâ",
+        "definition": "polite particle (female)",
+        "notes": "Sentence-final polite particle for female speakers (ค่ะ in statements, คะ often in questions).",
+        "roots": [
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ครับ",
+        "romanization": "khráp",
+        "definition": "polite particle (male)",
+        "notes": "Sentence-final polite particle for male speakers; polite/formal.",
+        "roots": [
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทำ",
+        "romanization": "tham",
+        "definition": "do; make",
+        "notes": "Common verb “to do; to make.”",
+        "roots": [
+          "ทำ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ดี",
+        "romanization": "dii",
+        "definition": "good",
+        "notes": "Adjective “good; well.”",
+        "roots": [
+          "ดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้ว",
+        "romanization": "lɛ́ɛo",
+        "definition": "already; then",
+        "notes": "Can mean “already” or link clauses as “then / and then.”",
+        "roots": [
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ล่ะ",
+        "romanization": "là",
+        "definition": "(what) about…?",
+        "notes": "Sentence-final particle used in “And … ? / What about … ?”",
+        "roots": [
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไหม",
+        "romanization": "mǎi",
+        "definition": "yes–no question particle",
+        "notes": "Sentence-final particle turning a statement into a yes–no question.",
+        "roots": [
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบาย",
+        "romanization": "sà-baai",
+        "definition": "comfortable; at ease",
+        "notes": "Used for physical/mental comfort; basis of “I’m fine / Are you well?” patterns.",
+        "roots": [
+          "สบาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีไหม",
+        "romanization": "sà-baai dii mǎi",
+        "definition": "Are you well? / How are you?",
+        "notes": "Very common greeting; literally “comfortable good (question particle).” คุณ is often implied.",
+        "roots": [
+          "สบายดีไหม",
+          "สบาย",
+          "ดี",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีค่ะ",
+        "romanization": "sà-baai dii khâ",
+        "definition": "I’m fine (female)",
+        "notes": "Polite female reply to “How are you?” Literally “comfortable good (polite).”",
+        "roots": [
+          "สบายดีค่ะ",
+          "สบาย",
+          "ดี",
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีครับ",
+        "romanization": "sà-baai dii khráp",
+        "definition": "I’m fine (male)",
+        "notes": "Polite male reply to “How are you?”",
+        "roots": [
+          "สบายดีครับ",
+          "สบาย",
+          "ดี",
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun là",
+        "definition": "And you?",
+        "notes": "Used after answering a question: “And you?”",
+        "roots": [
+          "แล้วคุณล่ะ",
+          "แล้ว",
+          "คุณ",
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  }
+]
