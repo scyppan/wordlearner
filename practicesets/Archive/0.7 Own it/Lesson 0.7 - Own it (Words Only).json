@@ -1,0 +1,86 @@
+[
+  {
+    "word": "ของ",
+    "confidence": 1,
+    "romanization": "khǒng",
+    "type": "content",
+    "pos": "",
+    "definition": "of; belonging to",
+    "notes": "Core possessive marker; shows ownership/possession (“of / belonging to”)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เอง",
+    "confidence": 1,
+    "romanization": "eeng",
+    "type": "content",
+    "pos": "",
+    "definition": "self; own",
+    "notes": "Adds sense of “oneself / (one’s) own” or emphasis (เช่น ของตัวเอง = one’s own thing)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ตัวเอง",
+    "confidence": 1,
+    "romanization": "dtua-eeng",
+    "type": "content",
+    "pos": "",
+    "definition": "oneself; (one’s) own",
+    "notes": "Stronger “self/own”; used for “my own / your own / their own”",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ชื่อ",
+    "confidence": 1,
+    "romanization": "chûue",
+    "type": "content",
+    "pos": "",
+    "definition": "name",
+    "notes": "Used to talk about someone’s name; possession pattern: ชื่อของ… (name of …)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ความ",
+    "confidence": 1,
+    "romanization": "khwaam",
+    "type": "content",
+    "pos": "",
+    "definition": "abstract noun prefix; “-ness” / state of",
+    "notes": "Used to turn verbs/adjectives into nouns (e.g. ความสุข = happiness, ความเป็นเจ้าของ = ownership).",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เจ้า",
+    "confidence": 1,
+    "romanization": "jao",
+    "type": "content",
+    "pos": "",
+    "definition": "owner; master",
+    "notes": "Root in เจ้าของ (owner). In this set, focus on the “owner” meaning related to possession.",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "มี",
+    "confidence": 1,
+    "romanization": "mii",
+    "type": "content",
+    "pos": "",
+    "definition": "to have; there is/are",
+    "notes": "Core verb for “to have” and “there is/are” (มีบ้าน = have a house; มีคน = there are people).",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]

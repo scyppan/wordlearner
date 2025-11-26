@@ -1,0 +1,163 @@
+/* layout for lessons view */
+#lessons-container {
+display: flex;
+height: 100%;
+box-sizing: border-box;
+}
+
+#lessons-list-panel {
+width: 30%;
+min-width: 220px;
+border-right: 1px solid #444;
+padding: 0.5rem;
+box-sizing: border-box;
+}
+
+#lesson-detail-panel {
+flex: 1;
+padding: 0.75rem 1rem;
+box-sizing: border-box;
+}
+
+/* lesson list */
+#lesson-unit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lesson-unit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.3rem;
+  border-radius: 4px;
+  background: #3a3e4a;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.lesson-unit:hover {
+  background: #4a5060;
+}
+
+
+.lesson-unit.selected {
+  background: #5b665a;
+}
+
+.lesson-unit-label {
+  flex: 1 1 auto;
+  margin-right: 0.4rem;
+}
+
+
+.lesson-unit-delete {
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 999px;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+  cursor: pointer;
+  background: #7c3a3a;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.lesson-unit-delete:hover {
+  background: #a24a4a;
+}
+
+/* placeholder */
+.lesson-detail-placeholder {
+color: #cccccc;
+font-size: 0.9rem;
+}
+
+/* stats column (stacked buttons) */
+#lesson-stats {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.35rem;
+margin-bottom: 0.75rem;
+}
+
+.lesson-stat-btn {
+border: none;
+border-radius: 999px;
+padding: 0.3rem 0.7rem;
+font-size: 0.8rem;
+cursor: pointer;
+background: #444857;
+color: #f5f5f5;
+white-space: nowrap;
+}
+
+.lesson-stat-btn:hover {
+background: #565b6b;
+}
+
+/* scrollable items */
+#lesson-items-scroll {
+max-height: calc(100% - 3rem);
+overflow-y: auto;
+padding-right: 0.25rem;
+}
+
+#lesson-items-list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+/* individual item (clickable) */
+.lesson-item {
+padding: 0.45rem 0.6rem;
+margin-bottom: 0.35rem;
+border-radius: 4px;
+background: #343844;
+color: #f5f5f5;
+font-size: 0.85rem;
+cursor: pointer;
+}
+
+.lesson-item-row {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.lesson-item-row1 {
+margin-bottom: 0.1rem;
+}
+
+.lesson-item-main {
+font-weight: 600;
+}
+
+.lesson-item-confidence {
+font-size: 0.75rem;
+opacity: 0.85;
+}
+
+.lesson-item-definition {
+font-style: italic;
+}
+
+.lesson-item-progress {
+font-size: 0.75rem;
+opacity: 0.9;
+}
+
+.lesson-detail-header {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}

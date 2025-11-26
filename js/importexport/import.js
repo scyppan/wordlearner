@@ -1,43 +1,75 @@
+
 function importfromjson() {
-    var input = document.createElement('input')
-    input.type = 'file'
-    input.accept = '.json,application/json'
+  var input = document.createElement('input')
+  input.type = 'file'
+  input.accept = '.json,application/json'
 
-    input.onchange = function(event) {
-        var file = event.target.files[0]
-        if (!file) return
+  input.onchange = function (event) {
+    var file = event.target.files[0]
+    if (!file) return
 
-        var reader = new FileReader()
-        reader.onload = function(e) {
-            try {
-                var arr = JSON.parse(e.target.result)
-                if (!Array.isArray(arr)) throw 0
-                var keys = [
-                    'word', 'confidence', 'romanization', 'type', 'pos',
-                    'definition', 'notes', 'shortphrases', 'longphrases', 'sentences'
-                ]
-                for (var i = 0; i < arr.length; i++) {
-                    var obj = arr[i]
-                    var objkeys = Object.keys(obj)
-                    if (
-                        objkeys.length !== keys.length ||
-                        !keys.every(function(k) { return objkeys.includes(k) })
-                    ) {
-                        throw 0
-                    }
-                }
-                wordsdata = arr
-                storedata('wordsdata', wordsdata)   // ← persist full replacement
-                alert('Import successful! All existing words replaced.')
-            } catch (e) {
-                alert('Invalid JSON format or structure.')
+    var reader = new FileReader()
+    reader.onload = function (e) {
+      try {
+        var data = JSON.parse(e.target.result)
+
+        // new format: { version, fullset, quizzes? }
+        if (data && Array.isArray(data.fullset)) {
+          fullset = data.fullset
+
+          for (var li = 0; li < fullset.length; li++) {
+            var lesson = fullset[li]
+            if (!lesson || !Array.isArray(lesson.items)) continue
+
+            for (var ii = 0; ii < lesson.items.length; ii++) {
+              var item = lesson.items[ii]
+              if (!item) continue
+
+              if (typeof item.confidence !== 'number') item.confidence = 0
+              if (typeof item.attempts !== 'number') item.attempts = 0
+              if (typeof item.correct !== 'number') item.correct = 0
             }
-        }
-        reader.readAsText(file)
-    }
+          }
 
-    input.click()
+          storedata('fullset', fullset)
+
+          if (Array.isArray(data.quizzes)) {
+            quizzes = data.quizzes
+            storedata('quizzes', quizzes)
+          }
+
+          var msg =
+            'Import complete.\n' +
+            'Lessons: ' + fullset.length +
+            (Array.isArray(data.quizzes) ? '\nQuizzes: ' + data.quizzes.length : '')
+
+          showquizstatusmodal(msg)
+          return
+        }
+
+        // legacy format: plain array
+        if (Array.isArray(data)) {
+          wordsdata = data
+          storedata('wordsdata', wordsdata)
+          showquizstatusmodal(
+            'Imported legacy word list.\n' +
+            'Lesson / quiz structure not included in this format.'
+          )
+          return
+        }
+
+        showquizstatusmodal('JSON did not look like a full-set export.')
+      } catch (err) {
+        console.error(err)
+        showquizstatusmodal('Invalid JSON format or structure.')
+      }
+    }
+    reader.readAsText(file)
+  }
+
+  input.click()
 }
+
 
 function importadditionalwords() {
     var input = document.createElement('input')

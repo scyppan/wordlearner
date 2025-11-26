@@ -1,0 +1,50 @@
+[
+  {
+    "word": "เรา",
+    "confidence": 1,
+    "romanization": "rao",
+    "type": "content",
+    "pos": "",
+    "definition": "we / us",
+    "notes": "Used by both genders; also means “I” in informal contexts depending on region",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เขา",
+    "confidence": 1,
+    "romanization": "kháo",
+    "type": "content",
+    "pos": "",
+    "definition": "he / she",
+    "notes": "Same word for “he” and “she”; context determines meaning",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "พวก",
+    "confidence": 1,
+    "romanization": "phûak",
+    "type": "content",
+    "pos": "",
+    "definition": "group of… / plural marker",
+    "notes": "Adds plural meaning (พวกเขา = they; พวกเรา = we all; พวกคุณ = you all)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "มัน",
+    "confidence": 1,
+    "romanization": "man",
+    "type": "content",
+    "pos": "",
+    "definition": "it",
+    "notes": "Used for animals and objects; casual/rude for people",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]

@@ -1,0 +1,938 @@
+[
+  {
+    "word": "คุณ",
+    "confidence": 1,
+    "romanization": "khun",
+    "type": "content",
+    "pos": "",
+    "definition": "you (polite)",
+    "notes": "used for both genders; very common polite “you”",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — Uses คุณ as polite “you”"
+      },
+      {
+        "thai": "พวกคุณ",
+        "romanization": "phûak khun",
+        "english": "you all — Polite plural “you”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — Very common polite greeting; uses คุณ as polite “you”"
+      },
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "english": "are you still reading? — Polite “you”"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Polite “you” inside plural “พวกคุณ”"
+      }
+    ]
+  },
+  {
+    "word": "สบาย",
+    "confidence": 1,
+    "romanization": "sà-baai",
+    "type": "content",
+    "pos": "",
+    "definition": "comfortable; well",
+    "notes": "appears in “สบายดี”; base adjective",
+    "shortphrases": [
+      {
+        "thai": "สบายดี",
+        "romanization": "sà-baai dii",
+        "english": "I’m fine — Basic response to “How are you?”"
+      },
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "not well / sick — Often used when talking about being sick"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — สบาย = comfortable / well; in greetings means “fine / well”"
+      },
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Part of the “I’m fine” pattern"
+      },
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Same greeting pattern"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Literally “not comfortable”"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Often used when you’re ill"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ดี",
+    "confidence": 1,
+    "romanization": "dii",
+    "type": "content",
+    "pos": "",
+    "definition": "good; well",
+    "notes": "modifies many phrases; in greetings means “fine”",
+    "shortphrases": [
+      {
+        "thai": "สบายดี",
+        "romanization": "sà-baai dii",
+        "english": "I’m fine — Often understood as “(I’m) fine / (I’m) good”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — ดี = good; part of the pattern “สบายดี”"
+      },
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Literally “I comfortable good”"
+      },
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Same structure as male version"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ไหม",
+    "confidence": 1,
+    "romanization": "mái",
+    "type": "content",
+    "pos": "",
+    "definition": "yes/no question particle",
+    "notes": "placed at end of a question",
+    "shortphrases": [],
+    "longphrases": [
+      {
+        "thai": "คุณสบายดีไหม",
+        "romanization": "khun sà-baai dii mái",
+        "english": "Are you well? / How are you? — ไหม is the yes–no question particle"
+      },
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "english": "are you still reading? — Yes/no question"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Question marker"
+      },
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Question marker"
+      }
+    ]
+  },
+  {
+    "word": "ไม่",
+    "confidence": 1,
+    "romanization": "mâi",
+    "type": "content",
+    "pos": "",
+    "definition": "no; not",
+    "notes": "negates verbs/adjectives; tone always falling",
+    "shortphrases": [
+      {
+        "thai": "ไม่สบาย",
+        "romanization": "mâi sà-baai",
+        "english": "not well / sick — Literally “not comfortable”; used to say you’re ill"
+      },
+      {
+        "thai": "ไม่ครับ",
+        "romanization": "mâi khráp",
+        "english": "No (male, polite) — Common polite “no” for male speakers"
+      },
+      {
+        "thai": "ไม่ค่ะ",
+        "romanization": "mâi khâ",
+        "english": "No (female, polite) — Common polite “no” for female speakers"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — ไม่ = no / not"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Negative particle"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ค่ะ",
+    "confidence": 1,
+    "romanization": "khâ",
+    "type": "content",
+    "pos": "",
+    "definition": "polite particle (female)",
+    "notes": "final particle for most polite female speech",
+    "shortphrases": [
+      {
+        "thai": "ไม่ค่ะ",
+        "romanization": "mâi khâ",
+        "english": "No (female, polite) — Can stand alone as a full reply"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — Polite ending particle for female speakers (statement tone)"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Polite female ending"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ครับ",
+    "confidence": 1,
+    "romanization": "khráp",
+    "type": "content",
+    "pos": "",
+    "definition": "polite particle (male)",
+    "notes": "final particle for most polite male speech",
+    "shortphrases": [
+      {
+        "thai": "ไม่ครับ",
+        "romanization": "mâi khráp",
+        "english": "No (male, polite) — Can stand alone as a full reply"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — Polite ending particle for male speakers"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Polite male ending"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ผม",
+    "confidence": 1,
+    "romanization": "phǒm",
+    "type": "content",
+    "pos": "",
+    "definition": "I (male)",
+    "notes": "male speakers only",
+    "shortphrases": [
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — Male “I”"
+      },
+      {
+        "thai": "ผมจะไป",
+        "romanization": "phǒm jà bpai",
+        "english": "I (male) will go — Polite male “I”; used by men/boys in most situations"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ผมสบายดีครับ",
+        "romanization": "phǒm sà-baai dii khráp",
+        "english": "I’m fine (male, polite) — ผม = I (male speaker)"
+      },
+      {
+        "thai": "ผมไม่สบายครับ",
+        "romanization": "phǒm mâi sà-baai khráp",
+        "english": "I’m not well (male, polite) — Useful when you’re sick"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "ฉัน",
+    "confidence": 1,
+    "romanization": "chǎn",
+    "type": "content",
+    "pos": "",
+    "definition": "I (common, esp. female)",
+    "notes": "general “I” but more common for women",
+    "shortphrases": [
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — Female / common “I”"
+      },
+      {
+        "thai": "ฉันจะไป",
+        "romanization": "chǎn jà bpai",
+        "english": "I (female) will go — Common polite “I” for women; also used in formal speech"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ฉันสบายดีค่ะ",
+        "romanization": "chǎn sà-baai dii khâ",
+        "english": "I’m fine (female, polite) — ฉัน = I (common, esp. female)"
+      },
+      {
+        "thai": "ฉันไม่สบายค่ะ",
+        "romanization": "chǎn mâi sà-baai khâ",
+        "english": "I’m not well (female, polite) — Same meaning with female pronoun"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "แล้ว",
+    "confidence": 1,
+    "romanization": "lɛ́ɛo",
+    "type": "content",
+    "pos": "",
+    "definition": "already; then; and",
+    "notes": "used in “แล้วคุณล่ะ” | After the verb to show completion (ทำแล้ว = already did it)",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — Follow-up question after answering about yourself"
+      },
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — Uses แล้ว + ล่ะ “then what about…?”"
+      },
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — Same structure with female “I”"
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "english": "I already ate — Very common particle for “already / finished”"
+      },
+      {
+        "thai": "วิ่งแล้ว",
+        "romanization": "wîng láew",
+        "english": "I already ran — แล้ว shows the action is done/completed"
+      },
+      {
+        "thai": "นั่งแล้ว",
+        "romanization": "nâng láew",
+        "english": "I already sat — Shows the action is finished/completed"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ล่ะ",
+    "confidence": 1,
+    "romanization": "lâ",
+    "type": "content",
+    "pos": "",
+    "definition": "and…? / what about…?",
+    "notes": "follows nouns/pronouns; “แล้ว…ล่ะ?”",
+    "shortphrases": [
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun lâ",
+        "english": "And you? — ล่ะ marks “what about…?”"
+      },
+      {
+        "thai": "แล้วผมล่ะ",
+        "romanization": "lɛ́ɛo phǒm lâ",
+        "english": "And what about me? (male) — “what about…?”"
+      },
+      {
+        "thai": "แล้วฉันล่ะ",
+        "romanization": "lɛ́ɛo chǎn lâ",
+        "english": "And what about me? (female) — “what about…?”"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ลา",
+    "confidence": 1,
+    "romanization": "laa",
+    "type": "content",
+    "pos": "",
+    "definition": "to take leave / depart",
+    "notes": "used in polite leave-taking; base of “ลาแล้ว”",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "กิน",
+    "confidence": 1,
+    "romanization": "gin",
+    "type": "content",
+    "pos": "",
+    "definition": "eat",
+    "notes": "Very common everyday verb; can also mean “to eat/drink” in casual speech",
+    "shortphrases": [
+      {
+        "thai": "กำลังกิน",
+        "romanization": "kam-lang gin",
+        "english": "I am eating — Basic verb “to eat”; here with กำลัง as present continuous"
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "english": "I already ate — แล้ว after the verb marks completion / “already”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "ยังกินอยู่",
+        "romanization": "yang gin yùu",
+        "english": "I am still eating — Same verb “eat”; อยู่ at the end keeps it ongoing"
+      },
+      {
+        "thai": "จะไปกิน",
+        "romanization": "jà bpai gin",
+        "english": "I will go eat — Verb “eat”; action planned for the future"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Eat"
+      }
+    ]
+  },
+  {
+    "word": "ไป",
+    "confidence": 1,
+    "romanization": "bpai",
+    "type": "content",
+    "pos": "",
+    "definition": "go",
+    "notes": "Used for going/heading somewhere; often combined with time/place words",
+    "shortphrases": [
+      {
+        "thai": "จะไป",
+        "romanization": "jà bpai",
+        "english": "will go — Very common “will go”; can be followed by place or time"
+      },
+      {
+        "thai": "ไปวิ่ง",
+        "romanization": "bpai wîng",
+        "english": "go (to) run — Pattern “ไป + verb” = go do something"
+      },
+      {
+        "thai": "ไปเดิน",
+        "romanization": "bpai dern",
+        "english": "go (to) walk — Can mean go for a walk / stroll"
+      },
+      {
+        "thai": "ผมจะไป",
+        "romanization": "phǒm jà bpai",
+        "english": "I (male) will go — Often followed by destination or time"
+      },
+      {
+        "thai": "ฉันจะไป",
+        "romanization": "chǎn jà bpai",
+        "english": "I (female) will go — Can be expanded: ฉันจะไปไทย “I will go to Thailand”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "จะไปกิน",
+        "romanization": "jà bpai gin",
+        "english": "I will go eat — ไป = go; here “go (and) eat”"
+      },
+      {
+        "thai": "จะไปวิ่ง",
+        "romanization": "jà bpai wîng",
+        "english": "I will go run — “Go (and) run”; can add place or time after"
+      },
+      {
+        "thai": "เราจะไปวิ่ง",
+        "romanization": "rao jà bpai wîng",
+        "english": "we will go running — Go (and)"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Go (and)"
+      }
+    ]
+  },
+  {
+    "word": "จะ",
+    "confidence": 1,
+    "romanization": "jà",
+    "type": "content",
+    "pos": "",
+    "definition": "will",
+    "notes": "Future marker placed before a verb (จะไป, จะกิน); also used to express intention",
+    "shortphrases": [
+      {
+        "thai": "จะไป",
+        "romanization": "jà bpai",
+        "english": "will go — จะ is the future marker “will”; goes before the verb"
+      },
+      {
+        "thai": "ผมจะไป",
+        "romanization": "phǒm jà bpai",
+        "english": "I (male) will go — Future marker; comes between pronoun and verb"
+      },
+      {
+        "thai": "ฉันจะไป",
+        "romanization": "chǎn jà bpai",
+        "english": "I (female) will go — Same future marker จะ, works the same for any subject"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "จะไปกิน",
+        "romanization": "jà bpai gin",
+        "english": "I will go eat — จะ before a verb = “will / going to” (future or intention)"
+      },
+      {
+        "thai": "จะไปวิ่ง",
+        "romanization": "jà bpai wîng",
+        "english": "I will go run — Same future marker จะ = “will”"
+      },
+      {
+        "thai": "เราจะไปวิ่ง",
+        "romanization": "rao jà bpai wîng",
+        "english": "we will go running — Future / intention"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Future marker"
+      }
+    ]
+  },
+  {
+    "word": "เดิน",
+    "confidence": 1,
+    "romanization": "dern",
+    "type": "content",
+    "pos": "",
+    "definition": "walk",
+    "notes": "Used for walking or going on foot",
+    "shortphrases": [
+      {
+        "thai": "ไปเดิน",
+        "romanization": "bpai dern",
+        "english": "go (to) walk — Used for walking on foot, often relaxed"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "english": "they are still walking — Walk"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "เล่น",
+    "confidence": 1,
+    "romanization": "lên",
+    "type": "content",
+    "pos": "",
+    "definition": "play",
+    "notes": "Used for playing games, sports, instruments, or casually using things (เล่นมือถือ = be on your phone)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "นั่ง",
+    "confidence": 1,
+    "romanization": "nâng",
+    "type": "content",
+    "pos": "",
+    "definition": "sit",
+    "notes": "To sit; also used for “ride as a passenger” (นั่งรถ = ride in a car)",
+    "shortphrases": [
+      {
+        "thai": "นั่งแล้ว",
+        "romanization": "nâng láew",
+        "english": "I already sat — Verb “sit”; can also mean “sat down already”"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ยืน",
+    "confidence": 1,
+    "romanization": "yuun",
+    "type": "content",
+    "pos": "",
+    "definition": "stand",
+    "notes": "To stand; contrasts with นั่ง (sit)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "วิ่ง",
+    "confidence": 1,
+    "romanization": "wîng",
+    "type": "content",
+    "pos": "",
+    "definition": "run",
+    "notes": "To run/jog",
+    "shortphrases": [
+      {
+        "thai": "ไปวิ่ง",
+        "romanization": "bpai wîng",
+        "english": "go (to) run — Often used for exercise/jogging"
+      },
+      {
+        "thai": "วิ่งแล้ว",
+        "romanization": "wîng láew",
+        "english": "I already ran — Base verb “run”; past/completed because of แล้ว"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "จะไปวิ่ง",
+        "romanization": "jà bpai wîng",
+        "english": "I will go run — Verb “run / jog”; often used for exercise"
+      },
+      {
+        "thai": "เราจะไปวิ่ง",
+        "romanization": "rao jà bpai wîng",
+        "english": "we will go running — Run/jog"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Run/jog"
+      }
+    ]
+  },
+  {
+    "word": "อ่าน",
+    "confidence": 1,
+    "romanization": "àan",
+    "type": "content",
+    "pos": "",
+    "definition": "read",
+    "notes": "To read (books, messages, etc.)",
+    "shortphrases": [],
+    "longphrases": [
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "english": "are you still reading? — Read"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "เขียน",
+    "confidence": 1,
+    "romanization": "khǐan",
+    "type": "content",
+    "pos": "",
+    "definition": "write",
+    "notes": "To write/draw; used for writing text or sometimes drawing simple things",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "ทำ",
+    "confidence": 1,
+    "romanization": "tham",
+    "type": "content",
+    "pos": "",
+    "definition": "do; make",
+    "notes": "Basic verb “to do/make”; combines with the markers below (กำลังทำ, ทำอยู่, ทำแล้ว, จะทำ)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "กำลัง",
+    "confidence": 1,
+    "romanization": "kam-lang",
+    "type": "content",
+    "pos": "",
+    "definition": "in the middle of (doing)",
+    "notes": "Marks ongoing action; usually before the verb (กำลังทำ = am doing)",
+    "shortphrases": [
+      {
+        "thai": "กำลังกิน",
+        "romanization": "kam-lang gin",
+        "english": "I am eating — กำลัง before a verb marks an action happening right now (present continuous)"
+      }
+    ],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "อยู่",
+    "confidence": 1,
+    "romanization": "yùu",
+    "type": "content",
+    "pos": "",
+    "definition": "continuous marker at the end of a sentence",
+    "notes": "At end of the clause to show ongoing action (ทำอยู่ = am doing it right now)",
+    "shortphrases": [],
+    "longphrases": [
+      {
+        "thai": "ยังกินอยู่",
+        "romanization": "yang gin yùu",
+        "english": "I am still eating — อยู่ at the end marks a continuing action"
+      },
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "english": "they are still walking — Continuous marker"
+      },
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "english": "are you still reading? — Ongoing action"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Continuous"
+      }
+    ]
+  },
+  {
+    "word": "ยัง",
+    "confidence": 1,
+    "romanization": "yang",
+    "type": "content",
+    "pos": "",
+    "definition": "still; yet",
+    "notes": "With ไม่ for “not yet” (ยังไม่ทำ = haven’t done yet); alone can mean “still”",
+    "shortphrases": [],
+    "longphrases": [
+      {
+        "thai": "ยังกินอยู่",
+        "romanization": "yang gin yùu",
+        "english": "I am still eating — ยัง before the verb = “still”; shows action not finished"
+      },
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "english": "they are still walking — Indicates “still”"
+      },
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "english": "are you still reading? — Still"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Still / not done"
+      }
+    ]
+  },
+  {
+    "word": "เคย",
+    "confidence": 1,
+    "romanization": "kheeuy",
+    "type": "content",
+    "pos": "",
+    "definition": "ever; used to",
+    "notes": "Before verb for past experience/habit (เคยทำ = have done before / used to do)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เพิ่ง",
+    "confidence": 1,
+    "romanization": "phôeng",
+    "type": "content",
+    "pos": "",
+    "definition": "just; just now",
+    "notes": "Before verb for “just did” (เพิ่งทำ = just did it recently)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เดี๋ยว",
+    "confidence": 1,
+    "romanization": "dĭao",
+    "type": "content",
+    "pos": "",
+    "definition": "soon; in a moment",
+    "notes": "Often with จะ for near future (เดี๋ยวจะทำ = I’ll do it in a moment)",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  },
+  {
+    "word": "เรา",
+    "confidence": 1,
+    "romanization": "rao",
+    "type": "content",
+    "pos": "",
+    "definition": "we / us",
+    "notes": "Used by both genders; also means “I” in informal contexts depending on region",
+    "shortphrases": [
+      {
+        "thai": "พวกเรา",
+        "romanization": "phûak rao",
+        "english": "we all — “We / us”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "เราจะไปวิ่ง",
+        "romanization": "rao jà bpai wîng",
+        "english": "we will go running — จะ = future marker; ไปวิ่ง = go run"
+      }
+    ],
+    "sentences": []
+  },
+  {
+    "word": "เขา",
+    "confidence": 1,
+    "romanization": "kháo",
+    "type": "content",
+    "pos": "",
+    "definition": "he / she",
+    "notes": "Same word for “he” and “she”; context determines meaning",
+    "shortphrases": [
+      {
+        "thai": "พวกเขา",
+        "romanization": "phûak kháo",
+        "english": "they — “They (group of them)”"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "english": "they are still walking — ยัง = still; อยู่ = continuous"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Future + question pattern"
+      }
+    ]
+  },
+  {
+    "word": "พวก",
+    "confidence": 1,
+    "romanization": "phûak",
+    "type": "content",
+    "pos": "",
+    "definition": "group of… / plural marker",
+    "notes": "Adds plural meaning (พวกเขา = they; พวกเรา = we all; พวกคุณ = you all)",
+    "shortphrases": [
+      {
+        "thai": "พวกคุณ",
+        "romanization": "phûak khun",
+        "english": "you all — พวก makes the pronoun plural"
+      },
+      {
+        "thai": "พวกเรา",
+        "romanization": "phûak rao",
+        "english": "we all — Explicit plural form"
+      },
+      {
+        "thai": "พวกเขา",
+        "romanization": "phûak kháo",
+        "english": "they — Plural marker added"
+      }
+    ],
+    "longphrases": [
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "english": "they are still walking — ยัง = still; อยู่ = continuous"
+      }
+    ],
+    "sentences": [
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "english": "are all of you still eating? — Future/continuing group “you all”"
+      },
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "english": "are they going to go running? — Future + question pattern"
+      }
+    ]
+  },
+  {
+    "word": "มัน",
+    "confidence": 1,
+    "romanization": "man",
+    "type": "content",
+    "pos": "",
+    "definition": "it",
+    "notes": "Used for animals and objects; casual/rude for people",
+    "shortphrases": [],
+    "longphrases": [],
+    "sentences": []
+  }
+]
