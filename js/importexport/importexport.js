@@ -691,30 +691,32 @@ function importlesson() {
           }
         })
 
+        // IMPORTANT: reset notes in the modal body before adding new ones,
+        // so cancelling + reuploading starts with a clean slate.
         var modal = document.getElementById('lesson-import-modal')
         if (modal) {
           var body = modal.querySelector('.import-modal-body')
           if (body) {
+            var olddup = body.querySelector('.lesson-import-duplicates')
+            if (olddup && olddup.parentNode) {
+              olddup.parentNode.removeChild(olddup)
+            }
+
+            var oldroots = body.querySelector('.lesson-import-missing-roots')
+            if (oldroots && oldroots.parentNode) {
+              oldroots.parentNode.removeChild(oldroots)
+            }
+
             if (duplicatemessage) {
-              var dupnote = body.querySelector('.lesson-import-duplicates')
-              if (!dupnote) {
-                dupnote = document.createElement('div')
-                dupnote.className = 'lesson-import-duplicates'
-                body.appendChild(dupnote)
-              }
+              var dupnote = document.createElement('div')
+              dupnote.className = 'lesson-import-duplicates'
               dupnote.textContent = duplicatemessage
+              body.appendChild(dupnote)
             }
 
             if (unknownrootentries.length > 0) {
-              var rootsnote = body.querySelector('.lesson-import-missing-roots')
-              if (!rootsnote) {
-                rootsnote = document.createElement('div')
-                rootsnote.className = 'lesson-import-missing-roots'
-                body.appendChild(rootsnote)
-              }
-
-              // clear previous content
-              rootsnote.innerHTML = ''
+              var rootsnote = document.createElement('div')
+              rootsnote.className = 'lesson-import-missing-roots'
 
               var title = document.createElement('div')
               title.textContent = 'These roots are not currently present in the existing items nor in this word set:'
@@ -737,6 +739,7 @@ function importlesson() {
               }
 
               rootsnote.appendChild(ul)
+              body.appendChild(rootsnote)
             }
           }
         }
