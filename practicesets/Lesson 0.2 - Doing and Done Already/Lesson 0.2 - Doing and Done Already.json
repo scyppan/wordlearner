@@ -1,6 +1,6 @@
 [
   {
-    "lessonnumber": 1,
+    "lessonnumber": 0,
     "lessonname": "First Conversation",
     "items": [
       {
@@ -64,18 +64,6 @@
         "correct": 0
       },
       {
-        "thai": "ทำ",
-        "romanization": "tham",
-        "definition": "do; make",
-        "notes": "Common verb “to do; to make.”",
-        "roots": [
-          "ทำ"
-        ],
-        "confidence": 0,
-        "attempts": 0,
-        "correct": 0
-      },
-      {
         "thai": "ดี",
         "romanization": "dii",
         "definition": "good",
@@ -91,7 +79,7 @@
         "thai": "แล้ว",
         "romanization": "lɛ́ɛo",
         "definition": "already; then",
-        "notes": "Can mean “already” or link clauses as “then / and then.”",
+        "notes": "Can mean “already” or link clauses as “then / and then.” | After the verb to show completion (ทำแล้ว = already did it)",
         "roots": [
           "แล้ว"
         ],
@@ -198,7 +186,7 @@
     ]
   },
   {
-    "lessonnumber": 2,
+    "lessonnumber": 1,
     "lessonname": "Concrete Verbs",
     "items": [
       {
@@ -388,6 +376,209 @@
           "ฉัน",
           "จะ",
           "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 2,
+    "lessonname": "Doing and Done Already",
+    "items": [
+      {
+        "thai": "ทำ",
+        "romanization": "tham",
+        "definition": "do; make",
+        "notes": "Basic verb “to do/make”; combines with the markers below (กำลังทำ, ทำอยู่, ทำแล้ว, จะทำ)",
+        "roots": [
+          "ทำ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กำลัง",
+        "romanization": "kam-lang",
+        "definition": "in the middle of (doing)",
+        "notes": "Marks ongoing action; usually before the verb (กำลังทำ = am doing)",
+        "roots": [
+          "กำลัง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อยู่",
+        "romanization": "yùu",
+        "definition": "continuous marker at the end of a sentence",
+        "notes": "At end of the clause to show ongoing action (ทำอยู่ = am doing it right now)",
+        "roots": [
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้ว",
+        "romanization": "lɛ́ɛo",
+        "definition": "already; then",
+        "notes": "Can mean “already” or link clauses as “then / and then.” | After the verb to show completion (ทำแล้ว = already did it)",
+        "roots": [
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยัง",
+        "romanization": "yang",
+        "definition": "still; yet",
+        "notes": "With ไม่ for “not yet” (ยังไม่ทำ = haven’t done yet); alone can mean “still”",
+        "roots": [
+          "ยัง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เคย",
+        "romanization": "kheeuy",
+        "definition": "ever; used to",
+        "notes": "Before verb for past experience/habit (เคยทำ = have done before / used to do)",
+        "roots": [
+          "เคย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เพิ่ง",
+        "romanization": "phôeng",
+        "definition": "just; just now",
+        "notes": "Before verb for “just did” (เพิ่งทำ = just did it recently)",
+        "roots": [
+          "เพิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดี๋ยว",
+        "romanization": "dĭao",
+        "definition": "soon; in a moment",
+        "notes": "Often with จะ for near future (เดี๋ยวจะทำ = I’ll do it in a moment)",
+        "roots": [
+          "เดี๋ยว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กำลังกิน",
+        "romanization": "kam-lang gin",
+        "definition": "I am eating",
+        "notes": "กำลัง before a verb marks an action happening right now (present continuous)",
+        "roots": [
+          "กำลังกิน",
+          "กำลัง",
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยังกินอยู่",
+        "romanization": "yang gin yùu",
+        "definition": "I am still eating",
+        "notes": "ยัง before the verb = “still”; shows action not finished",
+        "roots": [
+          "ยังกินอยู่",
+          "ยัง",
+          "กิน",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "definition": "I already ate",
+        "notes": "แล้ว after the verb marks completion / “already”",
+        "roots": [
+          "กินแล้ว",
+          "กิน",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไปกิน",
+        "romanization": "jà bpai gin",
+        "definition": "I will go eat",
+        "notes": "จะ before a verb = “will / going to” (future or intention)",
+        "roots": [
+          "จะไปกิน",
+          "จะ",
+          "ไป",
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไปวิ่ง",
+        "romanization": "jà bpai wîng",
+        "definition": "I will go run",
+        "notes": "Same future marker จะ = “will”",
+        "roots": [
+          "จะไปวิ่ง",
+          "จะ",
+          "ไป",
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วิ่งแล้ว",
+        "romanization": "wîng láew",
+        "definition": "I already ran",
+        "notes": "Base verb “run”; past/completed because of แล้ว",
+        "roots": [
+          "วิ่งแล้ว",
+          "วิ่ง",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นั่งแล้ว",
+        "romanization": "nâng láew",
+        "definition": "I already sat",
+        "notes": "Verb “sit”; can also mean “sat down already”",
+        "roots": [
+          "นั่งแล้ว",
+          "นั่ง",
+          "แล้ว"
         ],
         "confidence": 0,
         "attempts": 0,

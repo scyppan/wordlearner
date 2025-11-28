@@ -1,6 +1,6 @@
 [
   {
-    "lessonnumber": 1,
+    "lessonnumber": 0,
     "lessonname": "First Conversation",
     "items": [
       {
@@ -58,18 +58,6 @@
         "notes": "Sentence-final polite particle for male speakers; polite/formal.",
         "roots": [
           "ครับ"
-        ],
-        "confidence": 0,
-        "attempts": 0,
-        "correct": 0
-      },
-      {
-        "thai": "ทำ",
-        "romanization": "tham",
-        "definition": "do; make",
-        "notes": "Common verb “to do; to make.”",
-        "roots": [
-          "ทำ"
         ],
         "confidence": 0,
         "attempts": 0,

@@ -1,0 +1,386 @@
+[
+  {
+    "lessonnumber": 0,
+    "lessonname": "First Conversation",
+    "items": [
+      {
+        "thai": "คุณ",
+        "romanization": "khun",
+        "definition": "you (polite)",
+        "notes": "Polite, gender-neutral “you,” used with adults/strangers.",
+        "roots": [
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผม",
+        "romanization": "phǒm",
+        "definition": "I (male)",
+        "notes": "First-person pronoun mainly for male speakers; polite/neutral.",
+        "roots": [
+          "ผม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉัน",
+        "romanization": "chǎn",
+        "definition": "I (female)",
+        "notes": "First-person pronoun mainly for female speakers; common in casual or polite speech.",
+        "roots": [
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ค่ะ",
+        "romanization": "khâ",
+        "definition": "polite particle (female)",
+        "notes": "Sentence-final polite particle for female speakers (ค่ะ in statements, คะ often in questions).",
+        "roots": [
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ครับ",
+        "romanization": "khráp",
+        "definition": "polite particle (male)",
+        "notes": "Sentence-final polite particle for male speakers; polite/formal.",
+        "roots": [
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ดี",
+        "romanization": "dii",
+        "definition": "good",
+        "notes": "Adjective “good; well.”",
+        "roots": [
+          "ดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้ว",
+        "romanization": "lɛ́ɛo",
+        "definition": "already; then",
+        "notes": "Can mean “already” or link clauses as “then / and then.”",
+        "roots": [
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ล่ะ",
+        "romanization": "là",
+        "definition": "(what) about…?",
+        "notes": "Sentence-final particle used in “And … ? / What about … ?”",
+        "roots": [
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไหม",
+        "romanization": "mǎi",
+        "definition": "yes–no question particle",
+        "notes": "Sentence-final particle turning a statement into a yes–no question.",
+        "roots": [
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบาย",
+        "romanization": "sà-baai",
+        "definition": "comfortable; at ease",
+        "notes": "Used for physical/mental comfort; basis of “I’m fine / Are you well?” patterns.",
+        "roots": [
+          "สบาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีไหม",
+        "romanization": "sà-baai dii mǎi",
+        "definition": "Are you well? / How are you?",
+        "notes": "Very common greeting; literally “comfortable good (question particle).” คุณ is often implied.",
+        "roots": [
+          "สบายดีไหม",
+          "สบาย",
+          "ดี",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีค่ะ",
+        "romanization": "sà-baai dii khâ",
+        "definition": "I’m fine (female)",
+        "notes": "Polite female reply to “How are you?” Literally “comfortable good (polite).”",
+        "roots": [
+          "สบายดีค่ะ",
+          "สบาย",
+          "ดี",
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีครับ",
+        "romanization": "sà-baai dii khráp",
+        "definition": "I’m fine (male)",
+        "notes": "Polite male reply to “How are you?”",
+        "roots": [
+          "สบายดีครับ",
+          "สบาย",
+          "ดี",
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun là",
+        "definition": "And you?",
+        "notes": "Used after answering a question: “And you?”",
+        "roots": [
+          "แล้วคุณล่ะ",
+          "แล้ว",
+          "คุณ",
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 1,
+    "lessonname": "Concrete Verbs",
+    "items": [
+      {
+        "thai": "กิน",
+        "romanization": "gin",
+        "definition": "eat",
+        "notes": "Very common everyday verb; can also mean “to eat/drink” in casual speech",
+        "roots": [
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไป",
+        "romanization": "bpai",
+        "definition": "go",
+        "notes": "Used for going/heading somewhere; often combined with time/place words",
+        "roots": [
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะ",
+        "romanization": "jà",
+        "definition": "will",
+        "notes": "Future marker placed before a verb (จะไป, จะกิน); also used to express intention",
+        "roots": [
+          "จะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดิน",
+        "romanization": "dern",
+        "definition": "walk",
+        "notes": "Used for walking or going on foot",
+        "roots": [
+          "เดิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เล่น",
+        "romanization": "lên",
+        "definition": "play",
+        "notes": "Used for playing games, sports, instruments, or casually using things (เล่นมือถือ = be on your phone)",
+        "roots": [
+          "เล่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นั่ง",
+        "romanization": "nâng",
+        "definition": "sit",
+        "notes": "To sit; also used for “ride as a passenger” (นั่งรถ = ride in a car)",
+        "roots": [
+          "นั่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยืน",
+        "romanization": "yuun",
+        "definition": "stand",
+        "notes": "To stand; contrasts with นั่ง (sit)",
+        "roots": [
+          "ยืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วิ่ง",
+        "romanization": "wîng",
+        "definition": "run",
+        "notes": "To run/jog",
+        "roots": [
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อ่าน",
+        "romanization": "àan",
+        "definition": "read",
+        "notes": "To read (books, messages, etc.)",
+        "roots": [
+          "อ่าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เขียน",
+        "romanization": "khǐan",
+        "definition": "write",
+        "notes": "To write/draw; used for writing text or sometimes drawing simple things",
+        "roots": [
+          "เขียน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไป",
+        "romanization": "jà bpai",
+        "definition": "will go",
+        "notes": "Basic future verb phrase: จะ (will) + ไป (go); can add destination/time after it.",
+        "roots": [
+          "จะไป",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปวิ่ง",
+        "romanization": "bpai wîng",
+        "definition": "go (to) run",
+        "notes": "Pattern: ไป + วิ่ง; commonly used for going somewhere to run/jog for exercise.",
+        "roots": [
+          "ไปวิ่ง",
+          "ไป",
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปเดิน",
+        "romanization": "bpai dern",
+        "definition": "go (to) walk",
+        "notes": "Pattern: ไป + เดิน; used for going for a walk or stroll.",
+        "roots": [
+          "ไปเดิน",
+          "ไป",
+          "เดิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมจะไป",
+        "romanization": "phǒm jà bpai",
+        "definition": "I (male) will go",
+        "notes": "Male speaker; polite/neutral. ผม (I, male) + จะ (will) + ไป (go).",
+        "roots": [
+          "ผมจะไป",
+          "ผม",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันจะไป",
+        "romanization": "chǎn jà bpai",
+        "definition": "I (female) will go",
+        "notes": "Female speaker; polite/neutral. ฉัน (I, female) + จะ (will) + ไป (go).",
+        "roots": [
+          "ฉันจะไป",
+          "ฉัน",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  }
+]
