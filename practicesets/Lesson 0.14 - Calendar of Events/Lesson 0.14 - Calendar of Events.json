@@ -1,0 +1,5954 @@
+[
+  {
+    "lessonnumber": 0,
+    "lessonname": "First Conversation",
+    "items": [
+      {
+        "thai": "คุณ",
+        "romanization": "khun",
+        "definition": "you (polite)",
+        "notes": "Polite, gender-neutral “you,” used with adults/strangers.",
+        "roots": [
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผม",
+        "romanization": "phǒm",
+        "definition": "I (male)",
+        "notes": "First-person pronoun mainly for male speakers; polite/neutral.",
+        "roots": [
+          "ผม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉัน",
+        "romanization": "chǎn",
+        "definition": "I (female)",
+        "notes": "First-person pronoun mainly for female speakers; common in casual or polite speech.",
+        "roots": [
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ค่ะ",
+        "romanization": "khâ",
+        "definition": "polite particle (female)",
+        "notes": "Sentence-final polite particle for female speakers (ค่ะ in statements, คะ often in questions).",
+        "roots": [
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ครับ",
+        "romanization": "khráp",
+        "definition": "polite particle (male)",
+        "notes": "Sentence-final polite particle for male speakers; polite/formal.",
+        "roots": [
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ดี",
+        "romanization": "dii",
+        "definition": "good",
+        "notes": "Adjective “good; well.”",
+        "roots": [
+          "ดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้ว",
+        "romanization": "lɛ́ɛo",
+        "definition": "already; then",
+        "notes": "Can mean “already” or link clauses as “then / and then.” | After the verb to show completion (ทำแล้ว = already did it)",
+        "roots": [
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ล่ะ",
+        "romanization": "là",
+        "definition": "(what) about…?",
+        "notes": "Sentence-final particle used in “And … ? / What about … ?”",
+        "roots": [
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไหม",
+        "romanization": "mǎi",
+        "definition": "yes–no question particle",
+        "notes": "Sentence-final particle turning a statement into a yes–no question.",
+        "roots": [
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบาย",
+        "romanization": "sà-baai",
+        "definition": "comfortable; at ease",
+        "notes": "Used for physical/mental comfort; basis of “I’m fine / Are you well?” patterns.",
+        "roots": [
+          "สบาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีไหม",
+        "romanization": "sà-baai dii mǎi",
+        "definition": "Are you well? / How are you?",
+        "notes": "Very common greeting; literally “comfortable good (question particle).” คุณ is often implied.",
+        "roots": [
+          "สบายดีไหม",
+          "สบาย",
+          "ดี",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีค่ะ",
+        "romanization": "sà-baai dii khâ",
+        "definition": "I’m fine (female)",
+        "notes": "Polite female reply to “How are you?” Literally “comfortable good (polite).”",
+        "roots": [
+          "สบายดีค่ะ",
+          "สบาย",
+          "ดี",
+          "ค่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สบายดีครับ",
+        "romanization": "sà-baai dii khráp",
+        "definition": "I’m fine (male)",
+        "notes": "Polite male reply to “How are you?”",
+        "roots": [
+          "สบายดีครับ",
+          "สบาย",
+          "ดี",
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้วคุณล่ะ",
+        "romanization": "lɛ́ɛo khun là",
+        "definition": "And you?",
+        "notes": "Used after answering a question: “And you?”",
+        "roots": [
+          "แล้วคุณล่ะ",
+          "แล้ว",
+          "คุณ",
+          "ล่ะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 1,
+    "lessonname": "Concrete Verbs",
+    "items": [
+      {
+        "thai": "กิน",
+        "romanization": "gin",
+        "definition": "eat",
+        "notes": "Very common everyday verb; can also mean “to eat/drink” in casual speech",
+        "roots": [
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไป",
+        "romanization": "bpai",
+        "definition": "go",
+        "notes": "Used for going/heading somewhere; often combined with time/place words",
+        "roots": [
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะ",
+        "romanization": "jà",
+        "definition": "will",
+        "notes": "Future marker placed before a verb (จะไป, จะกิน); also used to express intention",
+        "roots": [
+          "จะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดิน",
+        "romanization": "dern",
+        "definition": "walk",
+        "notes": "Used for walking or going on foot",
+        "roots": [
+          "เดิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เล่น",
+        "romanization": "lên",
+        "definition": "play",
+        "notes": "Used for playing games, sports, instruments, or casually using things (เล่นมือถือ = be on your phone)",
+        "roots": [
+          "เล่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นั่ง",
+        "romanization": "nâng",
+        "definition": "sit",
+        "notes": "To sit; also used for “ride as a passenger” (นั่งรถ = ride in a car)",
+        "roots": [
+          "นั่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยืน",
+        "romanization": "yuun",
+        "definition": "stand",
+        "notes": "To stand; contrasts with นั่ง (sit)",
+        "roots": [
+          "ยืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วิ่ง",
+        "romanization": "wîng",
+        "definition": "run",
+        "notes": "To run/jog",
+        "roots": [
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อ่าน",
+        "romanization": "àan",
+        "definition": "read",
+        "notes": "To read (books, messages, etc.)",
+        "roots": [
+          "อ่าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เขียน",
+        "romanization": "khǐan",
+        "definition": "write",
+        "notes": "To write/draw; used for writing text or sometimes drawing simple things",
+        "roots": [
+          "เขียน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไป",
+        "romanization": "jà bpai",
+        "definition": "will go",
+        "notes": "Basic future verb phrase: จะ (will) + ไป (go); can add destination/time after it.",
+        "roots": [
+          "จะไป",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปวิ่ง",
+        "romanization": "bpai wîng",
+        "definition": "go (to) run",
+        "notes": "Pattern: ไป + วิ่ง; commonly used for going somewhere to run/jog for exercise.",
+        "roots": [
+          "ไปวิ่ง",
+          "ไป",
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปเดิน",
+        "romanization": "bpai dern",
+        "definition": "go (to) walk",
+        "notes": "Pattern: ไป + เดิน; used for going for a walk or stroll.",
+        "roots": [
+          "ไปเดิน",
+          "ไป",
+          "เดิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมจะไป",
+        "romanization": "phǒm jà bpai",
+        "definition": "I (male) will go",
+        "notes": "Male speaker; polite/neutral. ผม (I, male) + จะ (will) + ไป (go).",
+        "roots": [
+          "ผมจะไป",
+          "ผม",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันจะไป",
+        "romanization": "chǎn jà bpai",
+        "definition": "I (female) will go",
+        "notes": "Female speaker; polite/neutral. ฉัน (I, female) + จะ (will) + ไป (go).",
+        "roots": [
+          "ฉันจะไป",
+          "ฉัน",
+          "จะ",
+          "ไป"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 2,
+    "lessonname": "Doing and Done Already",
+    "items": [
+      {
+        "thai": "ทำ",
+        "romanization": "tham",
+        "definition": "do; make",
+        "notes": "Basic verb “to do/make”; combines with the markers below (กำลังทำ, ทำอยู่, ทำแล้ว, จะทำ)",
+        "roots": [
+          "ทำ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กำลัง",
+        "romanization": "kam-lang",
+        "definition": "in the middle of (doing)",
+        "notes": "Marks ongoing action; usually before the verb (กำลังทำ = am doing)",
+        "roots": [
+          "กำลัง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อยู่",
+        "romanization": "yùu",
+        "definition": "continuous marker at the end of a sentence / be (located); live; be (in a state)",
+        "notes": "At end of the clause to show ongoing action (ทำอยู่ = am doing it right now) | For locations (“be at”), living somewhere, or ongoing state; also combines with ยัง for “still.”",
+        "roots": [
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แล้ว",
+        "romanization": "lɛ́ɛo",
+        "definition": "already; then",
+        "notes": "Can mean “already” or link clauses as “then / and then.” | After the verb to show completion (ทำแล้ว = already did it)",
+        "roots": [
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยัง",
+        "romanization": "yang",
+        "definition": "still; yet",
+        "notes": "With ไม่ for “not yet” (ยังไม่ทำ = haven’t done yet); alone can mean “still”",
+        "roots": [
+          "ยัง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เคย",
+        "romanization": "kheeuy",
+        "definition": "ever; used to",
+        "notes": "Before verb for past experience/habit (เคยทำ = have done before / used to do)",
+        "roots": [
+          "เคย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เพิ่ง",
+        "romanization": "phôeng",
+        "definition": "just; just now",
+        "notes": "Before verb for “just did” (เพิ่งทำ = just did it recently)",
+        "roots": [
+          "เพิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดี๋ยว",
+        "romanization": "dĭao",
+        "definition": "soon; in a moment",
+        "notes": "Often with จะ for near future (เดี๋ยวจะทำ = I’ll do it in a moment)",
+        "roots": [
+          "เดี๋ยว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กำลังกิน",
+        "romanization": "kam-lang gin",
+        "definition": "I am eating",
+        "notes": "กำลัง before a verb marks an action happening right now (present continuous)",
+        "roots": [
+          "กำลังกิน",
+          "กำลัง",
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยังกินอยู่",
+        "romanization": "yang gin yùu",
+        "definition": "I am still eating",
+        "notes": "ยัง before the verb = “still”; shows action not finished",
+        "roots": [
+          "ยังกินอยู่",
+          "ยัง",
+          "กิน",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กินแล้ว",
+        "romanization": "gin láew",
+        "definition": "I already ate",
+        "notes": "แล้ว after the verb marks completion / “already”",
+        "roots": [
+          "กินแล้ว",
+          "กิน",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไปกิน",
+        "romanization": "jà bpai gin",
+        "definition": "I will go eat",
+        "notes": "จะ before a verb = “will / going to” (future or intention)",
+        "roots": [
+          "จะไปกิน",
+          "จะ",
+          "ไป",
+          "กิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จะไปวิ่ง",
+        "romanization": "jà bpai wîng",
+        "definition": "I will go run",
+        "notes": "Same future marker จะ = “will”",
+        "roots": [
+          "จะไปวิ่ง",
+          "จะ",
+          "ไป",
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วิ่งแล้ว",
+        "romanization": "wîng láew",
+        "definition": "I already ran",
+        "notes": "Base verb “run”; past/completed because of แล้ว",
+        "roots": [
+          "วิ่งแล้ว",
+          "วิ่ง",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นั่งแล้ว",
+        "romanization": "nâng láew",
+        "definition": "I already sat",
+        "notes": "Verb “sit”; can also mean “sat down already”",
+        "roots": [
+          "นั่งแล้ว",
+          "นั่ง",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 3,
+    "lessonname": "Common Pronouns",
+    "items": [
+      {
+        "thai": "เรา",
+        "romanization": "rao",
+        "definition": "we / us",
+        "notes": "Used by any gender; in casual speech can also mean “I / me” with close people.",
+        "roots": [
+          "เรา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เขา",
+        "romanization": "kháo",
+        "definition": "he / she",
+        "notes": "Gender-neutral “he / she / they (singular)”; context gives the gender.",
+        "roots": [
+          "เขา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวก",
+        "romanization": "phûak",
+        "definition": "group of… / plural marker",
+        "notes": "Put before a pronoun or noun to make it plural (พวกเขา, พวกเรา, พวกคุณ).",
+        "roots": [
+          "พวก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มัน",
+        "romanization": "man",
+        "definition": "it",
+        "notes": "Refers to things/animals; can sound impolite or dismissive if used for people.",
+        "roots": [
+          "มัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกคุณ",
+        "romanization": "phûak khun",
+        "definition": "you all",
+        "notes": "Plural polite “you all / you guys,” using พวก + คุณ.",
+        "roots": [
+          "พวกคุณ",
+          "พวก",
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกเรา",
+        "romanization": "phûak rao",
+        "definition": "we all",
+        "notes": "“All of us / our group,” using พวก + เรา.",
+        "roots": [
+          "พวกเรา",
+          "พวก",
+          "เรา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกเขา",
+        "romanization": "phûak kháo",
+        "definition": "they",
+        "notes": "“They / those people,” using พวก + เขา.",
+        "roots": [
+          "พวกเขา",
+          "พวก",
+          "เขา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เราจะไปวิ่ง",
+        "romanization": "rao jà bpai wîng",
+        "definition": "we will go running",
+        "notes": "Shows เรา as “we” plus จะ (will), ไป (go), วิ่ง (run) for a future plan.",
+        "roots": [
+          "เราจะไปวิ่ง",
+          "เรา",
+          "จะ",
+          "ไป",
+          "วิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกเขายังเดินอยู่",
+        "romanization": "phûak kháo yang dern yùu",
+        "definition": "they are still walking",
+        "notes": "Uses พวกเขา with ยัง…อยู่ to show “still” doing the action.",
+        "roots": [
+          "พวกเขายังเดินอยู่",
+          "พวก",
+          "เขา",
+          "ยัง",
+          "เดิน",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกคุณยังกินอยู่ไหม",
+        "romanization": "phûak khun yang gin yùu mái",
+        "definition": "are all of you still eating?",
+        "notes": "Plural polite “you” with ยัง…อยู่ for “still” and ไหม for a yes/no question.",
+        "roots": [
+          "พวกคุณยังกินอยู่ไหม",
+          "พวก",
+          "คุณ",
+          "ยัง",
+          "กิน",
+          "อยู่",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณยังอ่านอยู่ไหม",
+        "romanization": "khun yang àan yùu mái",
+        "definition": "are you still reading?",
+        "notes": "Uses คุณ (polite “you”) with ยัง…อยู่ and ไหม to ask if the action is still happening.",
+        "roots": [
+          "คุณยังอ่านอยู่ไหม",
+          "คุณ",
+          "ยัง",
+          "อ่าน",
+          "อยู่",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พวกเขาจะไปวิ่งไหม",
+        "romanization": "phûak kháo jà bpai wîng mái",
+        "definition": "are they going to go running?",
+        "notes": "Combines พวกเขา with future marker จะ, ไป, วิ่ง and ไหม for a yes/no question.",
+        "roots": [
+          "พวกเขาจะไปวิ่งไหม",
+          "พวก",
+          "เขา",
+          "จะ",
+          "ไป",
+          "วิ่ง",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 4,
+    "lessonname": "Question Words",
+    "items": [
+      {
+        "thai": "อะไร",
+        "romanization": "a-rai",
+        "definition": "what",
+        "notes": "General “what”; can stand alone as a question (อะไร?) or follow a noun",
+        "roots": [
+          "อะไร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ที่ไหน",
+        "romanization": "thîi năi",
+        "definition": "where",
+        "notes": "“At what place”; common for “where?” questions",
+        "roots": [
+          "ที่ไหน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อไหร่",
+        "romanization": "mûa-rài",
+        "definition": "when",
+        "notes": "“When?” (past or future); often written เมื่อไร in text",
+        "roots": [
+          "เมื่อไหร่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ใคร",
+        "romanization": "khrai",
+        "definition": "who",
+        "notes": "Same word for “who” as subject or object",
+        "roots": [
+          "ใคร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไหน",
+        "romanization": "năi",
+        "definition": "which / which one",
+        "notes": "Used after the noun or alone for “which one?”",
+        "roots": [
+          "ไหน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทำไม",
+        "romanization": "tham-mai",
+        "definition": "why",
+        "notes": "General “why?”; works in most situations",
+        "roots": [
+          "ทำไม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยังไง",
+        "romanization": "yang ngai",
+        "definition": "how",
+        "notes": "Very common casual spoken “how?”",
+        "roots": [
+          "ยังไง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ได้",
+        "romanization": "dâai",
+        "definition": "can / possible / okay",
+        "notes": "Used with verbs and in questions like …ได้ไหม ?",
+        "roots": [
+          "ได้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หรือ",
+        "romanization": "rĕu",
+        "definition": "or? / or",
+        "notes": "“Or” between choices; also appears at the end of a question",
+        "roots": [
+          "หรือ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เท่าไหร่",
+        "romanization": "thâo-rài",
+        "definition": "how much / how many",
+        "notes": "Often used alone with money or amounts (เท่าไหร่?)",
+        "roots": [
+          "เท่าไหร่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กี่",
+        "romanization": "gìi",
+        "definition": "how many",
+        "notes": "Must be followed by a classifier (e.g., กี่คน, กี่อัน)",
+        "roots": [
+          "กี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คะ",
+        "romanization": "khá",
+        "definition": "polite particle (female)",
+        "notes": "Used at the end of most questions by women or in feminine politeness",
+        "roots": [
+          "คะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ก็",
+        "romanization": "gôr",
+        "definition": "also; then; so",
+        "notes": "Flexible linker; in ไหนก็ได้ it helps give the “any is fine” feeling",
+        "roots": [
+          "ก็"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไหนก็ได้",
+        "romanization": "năi gôr dâai",
+        "definition": "whichever / any is fine",
+        "notes": "Choice is open; “any is okay”",
+        "roots": [
+          "ไหนก็ได้",
+          "ไหน",
+          "ก็",
+          "ได้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ได้ไหมครับ",
+        "romanization": "dâai mái khráp",
+        "definition": "can (I/you)? / is it okay?",
+        "notes": "Male polite question",
+        "roots": [
+          "ได้ไหมครับ",
+          "ได้",
+          "ไหม",
+          "ครับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ได้ไหมคะ",
+        "romanization": "dâai mái khá",
+        "definition": "can (I/you)? / is it okay?",
+        "notes": "Female polite question",
+        "roots": [
+          "ได้ไหมคะ",
+          "ได้",
+          "ไหม",
+          "คะ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณทำอะไรอยู่",
+        "romanization": "khun tham à-rai yùu",
+        "definition": "what are you doing?",
+        "notes": "Ongoing action; polite “you”",
+        "roots": [
+          "คุณทำอะไรอยู่",
+          "คุณ",
+          "ทำ",
+          "อะไร",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เราจะไปไหน",
+        "romanization": "rao jà bpai năi",
+        "definition": "where will we go?",
+        "notes": "เรา = we/us here",
+        "roots": [
+          "เราจะไปไหน",
+          "เรา",
+          "จะ",
+          "ไป",
+          "ไหน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณจะไปเมื่อไหร่",
+        "romanization": "khun jà bpai mûa-rài",
+        "definition": "when will you go?",
+        "notes": "Polite “you”; future with จะ",
+        "roots": [
+          "คุณจะไปเมื่อไหร่",
+          "คุณ",
+          "จะ",
+          "ไป",
+          "เมื่อไหร่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ใครจะเล่น",
+        "romanization": "khrai jà lên",
+        "definition": "who will play?",
+        "notes": "ใคร as subject “who”",
+        "roots": [
+          "ใครจะเล่น",
+          "ใคร",
+          "จะ",
+          "เล่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทำไมคุณกินแล้ว",
+        "romanization": "tham-mai khun gin láew",
+        "definition": "why did you already eat?",
+        "notes": "แล้ว marks completed action “already”",
+        "roots": [
+          "ทำไมคุณกินแล้ว",
+          "ทำไม",
+          "คุณ",
+          "กิน",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณยังเดินอยู่ได้ยังไง",
+        "romanization": "khun yang dern yùu dâai yang ngai",
+        "definition": "how can you still be walking?",
+        "notes": "ยัง…อยู่ = still doing; ยังไง = how",
+        "roots": [
+          "คุณยังเดินอยู่ได้ยังไง",
+          "คุณ",
+          "ยัง",
+          "เดิน",
+          "อยู่",
+          "ได้",
+          "ยังไง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณวิ่งไหม",
+        "romanization": "khun wîng mái",
+        "definition": "did you run?",
+        "notes": "Yes/no; tense from context",
+        "roots": [
+          "คุณวิ่งไหม",
+          "คุณ",
+          "วิ่ง",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมกินได้ไหม",
+        "romanization": "phǒm gin dâai mái",
+        "definition": "can I eat?",
+        "notes": "Male “I”; women often use ฉัน",
+        "roots": [
+          "ผมกินได้ไหม",
+          "ผม",
+          "กิน",
+          "ได้",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณกินเท่าไหร่",
+        "romanization": "khun gin thâo-rài",
+        "definition": "how much did you eat?",
+        "notes": "Polite “you”",
+        "roots": [
+          "คุณกินเท่าไหร่",
+          "คุณ",
+          "กิน",
+          "เท่าไหร่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ก็ได้",
+        "romanization": "gôr dâai",
+        "definition": "that’s fine; okay; either is fine",
+        "notes": "Used to accept a suggestion or show that any option works; can sound neutral, casual, or slightly reluctant depending on tone. Often follows a choice, e.g. อันนี้ก็ได้ = “this one is fine too.”",
+        "roots": [
+          "ก็ได้",
+          "ก็",
+          "ได้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 5,
+    "lessonname": "A Few Things",
+    "items": [
+      {
+        "thai": "ไม่",
+        "romanization": "mâi",
+        "definition": "not; no",
+        "notes": "Main negation word placed before verbs/adjectives (ไม่ไป = not go, ไม่ดี = not good).",
+        "roots": [
+          "ไม่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อีก",
+        "romanization": "ìik",
+        "definition": "more; again; another",
+        "notes": "“More/another/again”; often used before a classifier or noun (อีกหนึ่งอัน = one more piece).",
+        "roots": [
+          "อีก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อย่าง",
+        "romanization": "yàang",
+        "definition": "kind; type; way",
+        "notes": "Classifier for “kind/type” and also “in this way” (แบบนี้อย่างไร = how like this?).",
+        "roots": [
+          "อย่าง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อัน",
+        "romanization": "an",
+        "definition": "classifier for small things",
+        "notes": "Classifier for small countable objects (หนึ่งอัน, สองอัน).",
+        "roots": [
+          "อัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หลาย",
+        "romanization": "lăai",
+        "definition": "many; several",
+        "notes": "Placed before a classifier or noun (หลายคน, หลายอย่าง).",
+        "roots": [
+          "หลาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บาง",
+        "romanization": "baang",
+        "definition": "some; certain",
+        "notes": "“Some / certain…” (บางคน, บางอย่าง); not used alone.",
+        "roots": [
+          "บาง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ของ",
+        "romanization": "khǎawng",
+        "definition": "thing; belongings; of / of; belonging to",
+        "notes": "Means “of / belonging to” and “things, stuff” (ของกิน = things to eat). | Core possessive marker; links owner to thing (บ้านของฉัน = my house).",
+        "roots": [
+          "ของ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หน่อย",
+        "romanization": "nòi",
+        "definition": "a little; a bit (please)",
+        "notes": "Softens requests (ช่วยด้วยหน่อย, รอแป๊บหนึ่งหน่อย); “a little bit.”",
+        "roots": [
+          "หน่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นิดหน่อย",
+        "romanization": "nít nòi",
+        "definition": "a little bit; a few",
+        "notes": "Common phrase for “a little / a bit / a few.”",
+        "roots": [
+          "นิดหน่อย",
+          "นิด",
+          "หน่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อีกนิดหน่อย",
+        "romanization": "ìik nít nòi",
+        "definition": "a little bit more",
+        "notes": "Used for asking/mentioning a bit more of something (กินอีกนิดหน่อย = eat a little bit more).",
+        "roots": [
+          "อีกนิดหน่อย",
+          "อีก",
+          "นิด",
+          "หน่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไม่กี่",
+        "romanization": "mâi gìi",
+        "definition": "not many; a few",
+        "notes": "Used before classifier/noun: “a few / not many” (ไม่กี่คน = a few people).",
+        "roots": [
+          "ไม่กี่",
+          "ไม่",
+          "กี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อีกไม่กี่อย่าง",
+        "romanization": "ìik mâi gìi yàang",
+        "definition": "just a few more things",
+        "notes": "Often about items to do/buy; literally “more not-many kinds/things.”",
+        "roots": [
+          "อีกไม่กี่อย่าง",
+          "อีก",
+          "ไม่",
+          "กี่",
+          "อย่าง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ของไม่กี่อย่าง",
+        "romanization": "khǎawng mâi gìi yàang",
+        "definition": "a few things (some stuff)",
+        "notes": "Literally “things not many kinds”; natural for “just a few things.”",
+        "roots": [
+          "ของไม่กี่อย่าง",
+          "ของ",
+          "ไม่",
+          "กี่",
+          "อย่าง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มีอีกไหม",
+        "romanization": "mii ìik mái",
+        "definition": "is there more?; any more?",
+        "notes": "Used when asking if there is more of something left (food, items, tasks).",
+        "roots": [
+          "มีอีกไหม",
+          "มี",
+          "อีก",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แค่นิดหน่อย",
+        "romanization": "khâe nít nòi",
+        "definition": "just a little; only a bit",
+        "notes": "Downplays quantity/degree; “only a little” (e.g. แค่นิดหน่อยเอง).",
+        "roots": [
+          "แค่นิดหน่อย",
+          "แค่",
+          "นิด",
+          "หน่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แค่นี้ก็พอ",
+        "romanization": "khâe níi gôr phor",
+        "definition": "this is enough; just this is fine",
+        "notes": "Literally “only this is enough”; used to say you don’t need more.",
+        "roots": [
+          "แค่นี้ก็พอ",
+          "แค่",
+          "นี้",
+          "ก็",
+          "พอ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นิด",
+        "romanization": "nít",
+        "definition": "a little; a bit",
+        "notes": "Base word in นิดหน่อย “a little bit”; means a small amount.",
+        "roots": [
+          "นิด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มี",
+        "romanization": "mii",
+        "definition": "have; there is/are",
+        "notes": "Core verb “to have / to exist”; used in มีอีกไหม “is there more?”.",
+        "roots": [
+          "มี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แค่",
+        "romanization": "khâe",
+        "definition": "only; just",
+        "notes": "Limits amount/degree: “only / just …”; used in แค่นิดหน่อย, แค่นี้ก็พอ.",
+        "roots": [
+          "แค่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นี้",
+        "romanization": "níi",
+        "definition": "this",
+        "notes": "Demonstrative “this”; used in แค่นี้ก็พอ “just this is enough”.",
+        "roots": [
+          "นี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พอ",
+        "romanization": "phor",
+        "definition": "enough; sufficient",
+        "notes": "Means “to be enough / sufficient,” both quantity and degree.",
+        "roots": [
+          "พอ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นั่น",
+        "romanization": "nân",
+        "definition": "that (over there)",
+        "notes": "Distal demonstrative paired with นี้ (this); often points to something a bit away from speaker.",
+        "roots": [
+          "นั่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทาง",
+        "romanization": "thaang",
+        "definition": "way; route; path",
+        "notes": "Can mean physical path/road, “way/method,” or “direction” depending on context.",
+        "roots": [
+          "ทาง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิ่ง",
+        "romanization": "sìng",
+        "definition": "thing; object; matter",
+        "notes": "Used for “thing(s)” in many compounds (สิ่งของ, สิ่งที่…, สิ่งแวดล้อม, etc.).",
+        "roots": [
+          "สิ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 6,
+    "lessonname": "Ways of Being",
+    "items": [
+      {
+        "thai": "เหนื่อย",
+        "romanization": "nùeai",
+        "definition": "tired",
+        "notes": "Feeling tired/exhausted, physically or mentally.",
+        "roots": [
+          "เหนื่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หิว",
+        "romanization": "hǐu",
+        "definition": "hungry",
+        "notes": "“Hungry”; often used in หิวข้าว (hungry for food).",
+        "roots": [
+          "หิว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อิ่ม",
+        "romanization": "ìm",
+        "definition": "full",
+        "notes": "“Full / have eaten enough”; opposite of หิว.",
+        "roots": [
+          "อิ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ป่วย",
+        "romanization": "bùai",
+        "definition": "sick",
+        "notes": "“Sick / ill”; used for being unwell in general.",
+        "roots": [
+          "ป่วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ร้อน",
+        "romanization": "ráawn",
+        "definition": "hot",
+        "notes": "Hot (temperature, weather, or feeling hot).",
+        "roots": [
+          "ร้อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนาว",
+        "romanization": "năao",
+        "definition": "cold",
+        "notes": "Cold (temperature, weather, or feeling cold).",
+        "roots": [
+          "หนาว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ว่าง",
+        "romanization": "wâang",
+        "definition": "free; not busy",
+        "notes": "“Free / available”; opposite of ยุ่ง.",
+        "roots": [
+          "ว่าง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยุ่ง",
+        "romanization": "yûng",
+        "definition": "busy",
+        "notes": "“Busy / tied up (with work, tasks, etc.).”",
+        "roots": [
+          "ยุ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พร้อม",
+        "romanization": "phróom",
+        "definition": "ready",
+        "notes": "“Ready / prepared”; often used with แล้ว to mean “all set now.”",
+        "roots": [
+          "พร้อม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มาก",
+        "romanization": "mâak",
+        "definition": "very; a lot",
+        "notes": "Intensifier meaning “very / a lot.”",
+        "roots": [
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เป็น",
+        "romanization": "bpen",
+        "definition": "to be (am / is / are)",
+        "notes": "Copula for identity/roles/characteristics (เป็นหมอ, เป็นคนไทย); not used for locations.",
+        "roots": [
+          "เป็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คือ",
+        "romanization": "khʉʉ",
+        "definition": "to be; is (equals)",
+        "notes": "Equative “is/equals”; used in explanations and definitions (นี่คือ…, ปัญหาคือ…).",
+        "roots": [
+          "คือ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อยู่",
+        "romanization": "yùu",
+        "definition": "continuous marker at the end of a sentence / be (located); live; be (in a state)",
+        "notes": "At end of the clause to show ongoing action (ทำอยู่ = am doing it right now) | For locations (“be at”), living somewhere, or ongoing state; also combines with ยัง for “still.”",
+        "roots": [
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมหิว",
+        "romanization": "phǒm hǐu",
+        "definition": "I’m hungry (male)",
+        "notes": "Male speaker saying “I’m hungry.”",
+        "roots": [
+          "ผมหิว",
+          "ผม",
+          "หิว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันหิว",
+        "romanization": "chǎn hǐu",
+        "definition": "I’m hungry (female)",
+        "notes": "Female speaker saying “I’m hungry.”",
+        "roots": [
+          "ฉันหิว",
+          "ฉัน",
+          "หิว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมเหนื่อย",
+        "romanization": "phǒm nùeai",
+        "definition": "I’m tired (male)",
+        "notes": "Male speaker; can be physically or mentally tired.",
+        "roots": [
+          "ผมเหนื่อย",
+          "ผม",
+          "เหนื่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันเหนื่อย",
+        "romanization": "chǎn nùeai",
+        "definition": "I’m tired (female)",
+        "notes": "Female speaker; same pattern as above.",
+        "roots": [
+          "ฉันเหนื่อย",
+          "ฉัน",
+          "เหนื่อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมอิ่มแล้ว",
+        "romanization": "phǒm ìm láew",
+        "definition": "I’m full already (male)",
+        "notes": "แล้ว marks completion / “already.”",
+        "roots": [
+          "ผมอิ่มแล้ว",
+          "ผม",
+          "อิ่ม",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมป่วย",
+        "romanization": "phǒm bùai",
+        "definition": "I’m sick (male)",
+        "notes": "Simple statement of being ill.",
+        "roots": [
+          "ผมป่วย",
+          "ผม",
+          "ป่วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมไม่สบาย",
+        "romanization": "phǒm mâi sà-baai",
+        "definition": "I’m not well (male)",
+        "notes": "Literally “I not comfortable/well”; polite/common way to say you’re unwell.",
+        "roots": [
+          "ผมไม่สบาย",
+          "ผม",
+          "ไม่",
+          "สบาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณหิวไหม",
+        "romanization": "khun hǐu mái",
+        "definition": "are you hungry?",
+        "notes": "Polite “you”; ไหม makes it a yes–no question.",
+        "roots": [
+          "คุณหิวไหม",
+          "คุณ",
+          "หิว",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณเหนื่อยไหม",
+        "romanization": "khun nùeai mái",
+        "definition": "are you tired?",
+        "notes": "Polite question about tiredness.",
+        "roots": [
+          "คุณเหนื่อยไหม",
+          "คุณ",
+          "เหนื่อย",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ร้อนมาก",
+        "romanization": "ráawn mâak",
+        "definition": "very hot",
+        "notes": "Often used for weather or how someone feels: “It’s very hot.”",
+        "roots": [
+          "ร้อนมาก",
+          "ร้อน",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนาวมาก",
+        "romanization": "năao mâak",
+        "definition": "very cold",
+        "notes": "“It’s very cold / I’m very cold.”",
+        "roots": [
+          "หนาวมาก",
+          "หนาว",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมยุ่งมาก",
+        "romanization": "phǒm yûng mâak",
+        "definition": "I’m very busy (male)",
+        "notes": "Adds มาก to intensify “busy.”",
+        "roots": [
+          "ผมยุ่งมาก",
+          "ผม",
+          "ยุ่ง",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมว่าง",
+        "romanization": "phǒm wâang",
+        "definition": "I’m free / I’m not busy (male)",
+        "notes": "Can mean free now or generally not busy; context gives time.",
+        "roots": [
+          "ผมว่าง",
+          "ผม",
+          "ว่าง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมพร้อมแล้ว",
+        "romanization": "phǒm phróom láew",
+        "definition": "I’m ready now (male)",
+        "notes": "พร้อมแล้ว = “ready now / all set already.”",
+        "roots": [
+          "ผมพร้อมแล้ว",
+          "ผม",
+          "พร้อม",
+          "แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณเป็นอะไร",
+        "romanization": "khun bpen à-rai",
+        "definition": "what’s wrong with you?",
+        "notes": "Very common pattern: “what’s the matter?” literally “you are what?”",
+        "roots": [
+          "คุณเป็นอะไร",
+          "คุณ",
+          "เป็น",
+          "อะไร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมยังอยู่",
+        "romanization": "phǒm yang yùu",
+        "definition": "I’m still here (male)",
+        "notes": "ยัง + อยู่ = “still be (here / around).”",
+        "roots": [
+          "ผมยังอยู่",
+          "ผม",
+          "ยัง",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณยังอยู่ไหม",
+        "romanization": "khun yang yùu mái",
+        "definition": "are you still here?",
+        "notes": "Uses ยังอยู่ for “still here” and ไหม for a yes–no question.",
+        "roots": [
+          "คุณยังอยู่ไหม",
+          "คุณ",
+          "ยัง",
+          "อยู่",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 7,
+    "lessonname": "Own It",
+    "items": [
+      {
+        "thai": "ของ",
+        "romanization": "khǎawng",
+        "definition": "thing; belongings; of / of; belonging to",
+        "notes": "Means “of / belonging to” and “things, stuff” (ของกิน = things to eat). | Core possessive marker; links owner to thing (บ้านของฉัน = my house).",
+        "roots": [
+          "ของ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เอง",
+        "romanization": "eeng",
+        "definition": "self; own",
+        "notes": "Adds sense of “oneself / (one’s) own” or emphasis (ทำเอง = do it myself).",
+        "roots": [
+          "เอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตัวเอง",
+        "romanization": "dtua eeng",
+        "definition": "oneself; (one’s) own",
+        "notes": "Stronger “self/own”; often used for “my own / your own / their own.”",
+        "roots": [
+          "ตัวเอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ชื่อ",
+        "romanization": "chûue",
+        "definition": "name",
+        "notes": "Used for names; pattern: ชื่อของ… = “the name of …”.",
+        "roots": [
+          "ชื่อ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความ",
+        "romanization": "khwaam",
+        "definition": "abstract noun prefix",
+        "notes": "Turns verbs/adjectives into nouns (e.g., ความเป็นเจ้าของ = ownership).",
+        "roots": [
+          "ความ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เจ้า",
+        "romanization": "jâo",
+        "definition": "owner; master",
+        "notes": "Root in เจ้าของ “owner”; here as part of the idea of ownership.",
+        "roots": [
+          "เจ้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "โทรศัพท์",
+        "romanization": "thoo-rá-sàp",
+        "definition": "phone",
+        "notes": "Telephone / mobile phone.",
+        "roots": [
+          "โทรศัพท์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กรุงเทพฯ",
+        "romanization": "grung-thêep",
+        "definition": "Bangkok",
+        "notes": "Capital city; often shortened from กรุงเทพมหานคร.",
+        "roots": [
+          "กรุงเทพฯ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าอี้",
+        "romanization": "gâo-îi",
+        "definition": "chair",
+        "notes": "A chair / seat.",
+        "roots": [
+          "เก้าอี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กระเป๋า",
+        "romanization": "grà-bpǎo",
+        "definition": "bag",
+        "notes": "Bag, purse, backpack; container you carry.",
+        "roots": [
+          "กระเป๋า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สตางค์",
+        "romanization": "sà-dtaang",
+        "definition": "small change; money",
+        "notes": "Unit of currency; in กระเป๋าสตางค์ it’s part of “wallet.”",
+        "roots": [
+          "สตางค์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทุก",
+        "romanization": "thúk",
+        "definition": "every; all",
+        "notes": "Used before classifier/noun (ทุกอย่าง, ทุกคน).",
+        "roots": [
+          "ทุก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ประเทศ",
+        "romanization": "bprà-thêt",
+        "definition": "country",
+        "notes": "Country / nation.",
+        "roots": [
+          "ประเทศ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ้าน",
+        "romanization": "bâan",
+        "definition": "house; home",
+        "notes": "House, home, household.",
+        "roots": [
+          "บ้าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "รถ",
+        "romanization": "rót",
+        "definition": "car; vehicle",
+        "notes": "Car or other wheeled vehicle.",
+        "roots": [
+          "รถ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "โทรศัพท์ของคุณไหม",
+        "romanization": "thoo-rá-sàp khǒng khun mái",
+        "definition": "is that your phone?",
+        "notes": "Literally “phone of you (yes/no)?”",
+        "roots": [
+          "โทรศัพท์ของคุณไหม",
+          "โทรศัพท์",
+          "ของ",
+          "คุณ",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เราจะไปกรุงเทพฯ",
+        "romanization": "rao jà bpai grung-thêep",
+        "definition": "we will go to Bangkok",
+        "notes": "Pattern = เรา (we) + จะไป (will go) + กรุงเทพฯ (Bangkok).",
+        "roots": [
+          "เราจะไปกรุงเทพฯ",
+          "เรา",
+          "จะ",
+          "ไป",
+          "กรุงเทพฯ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความเป็นเจ้าของ",
+        "romanization": "khwaam bpen jâo khǒng",
+        "definition": "ownership",
+        "notes": "Abstract noun built from เป็น + เจ้า + ของ.",
+        "roots": [
+          "ความเป็นเจ้าของ",
+          "ความ",
+          "เป็น",
+          "เจ้า",
+          "ของ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันทำเอง",
+        "romanization": "chǎn tham eeng",
+        "definition": "I did it myself",
+        "notes": "Emphasizes that the speaker did it without help.",
+        "roots": [
+          "ฉันทำเอง",
+          "ฉัน",
+          "ทำ",
+          "เอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าอี้ของฉัน",
+        "romanization": "gâo-îi khǒng chǎn",
+        "definition": "my chair",
+        "notes": "Literally “chair of me.”",
+        "roots": [
+          "เก้าอี้ของฉัน",
+          "เก้าอี้",
+          "ของ",
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กระเป๋าสตางค์ของคุณ",
+        "romanization": "grà-bpǎo sà-dtaang khǒng khun",
+        "definition": "your wallet",
+        "notes": "Literally “money-bag of you”; shows possession clearly.",
+        "roots": [
+          "กระเป๋าสตางค์ของคุณ",
+          "กระเป๋า",
+          "สตางค์",
+          "ของ",
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ชื่อของฉัน",
+        "romanization": "chûue khǒng chǎn",
+        "definition": "my name",
+        "notes": "Literally “name of me.”",
+        "roots": [
+          "ชื่อของฉัน",
+          "ชื่อ",
+          "ของ",
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทุกอย่างของเรา",
+        "romanization": "thúk yàang khǒng rao",
+        "definition": "all of our things",
+        "notes": "ทุกอย่าง = everything; ของเรา = of us.",
+        "roots": [
+          "ทุกอย่างของเรา",
+          "ทุก",
+          "อย่าง",
+          "ของ",
+          "เรา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ประเทศของฉัน",
+        "romanization": "bprà-thêt khǒng chǎn",
+        "definition": "my country",
+        "notes": "“Country of me”; used for talking about your home country.",
+        "roots": [
+          "ประเทศของฉัน",
+          "ประเทศ",
+          "ของ",
+          "ฉัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ้านของคุณ",
+        "romanization": "bâan khǒng khun",
+        "definition": "your house",
+        "notes": "“House of you”; standard possession pattern.",
+        "roots": [
+          "บ้านของคุณ",
+          "บ้าน",
+          "ของ",
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "รถของเขา",
+        "romanization": "rót khǒng khăo",
+        "definition": "his / her car",
+        "notes": "“Car of him/her”; เขา is gender-neutral.",
+        "roots": [
+          "รถของเขา",
+          "รถ",
+          "ของ",
+          "เขา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าอี้ของเขา",
+        "romanization": "gâo-îi khǒng khăo",
+        "definition": "his / her chair",
+        "notes": "“Chair of him/her.”",
+        "roots": [
+          "เก้าอี้ของเขา",
+          "เก้าอี้",
+          "ของ",
+          "เขา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 8,
+    "lessonname": "Liking Fun and Happiness",
+    "items": [
+      {
+        "thai": "ชอบ",
+        "romanization": "chôop",
+        "definition": "like",
+        "notes": "Verb “to like; be fond of” something or someone.",
+        "roots": [
+          "ชอบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สนุก",
+        "romanization": "sà-nùk",
+        "definition": "fun; to enjoy",
+        "notes": "Means “fun” and “to have fun / enjoy oneself.”",
+        "roots": [
+          "สนุก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สุข",
+        "romanization": "sùk",
+        "definition": "happiness; well-being",
+        "notes": "Root in ความสุข “happiness”; carries sense of being happy / well.",
+        "roots": [
+          "สุข"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความสุข",
+        "romanization": "khwaam sùk",
+        "definition": "happiness; joy",
+        "notes": "Literally “state of happiness”; common word for happiness/joy.",
+        "roots": [
+          "ความสุข",
+          "ความ",
+          "สุข"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ดีใจ",
+        "romanization": "dii jai",
+        "definition": "glad; happy",
+        "notes": "Emotional “happy/glad,” often about good news.",
+        "roots": [
+          "ดีใจ",
+          "ดี",
+          "ใจ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ใจ",
+        "romanization": "jai",
+        "definition": "heart; mind; feelings",
+        "notes": "Figurative “heart/mind”; shows up in many emotion words.",
+        "roots": [
+          "ใจ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บันเทิง",
+        "romanization": "ban-thoeng",
+        "definition": "entertainment; to be entertained",
+        "notes": "Can mean “entertainment” or “to be amused/entertained.”",
+        "roots": [
+          "บันเทิง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความบันเทิง",
+        "romanization": "khwaam ban-thoeng",
+        "definition": "entertainment",
+        "notes": "Abstract noun for “entertainment” as a concept.",
+        "roots": [
+          "ความบันเทิง",
+          "ความ",
+          "บันเทิง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เพลิน",
+        "romanization": "phloen",
+        "definition": "to enjoy; pleasantly absorbed",
+        "notes": "Enjoy something in a relaxed, absorbed way (กินเพลิน, ดูเพลิน).",
+        "roots": [
+          "เพลิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยิ้ม",
+        "romanization": "yím",
+        "definition": "to smile",
+        "notes": "The act of smiling.",
+        "roots": [
+          "ยิ้ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กับ",
+        "romanization": "gàp",
+        "definition": "with; together with",
+        "notes": "Preposition “with”; often used after verbs like สนุกกับ…",
+        "roots": [
+          "กับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เพื่อน",
+        "romanization": "phûean",
+        "definition": "friend",
+        "notes": "Friend; companion.",
+        "roots": [
+          "เพื่อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยินดี",
+        "romanization": "yin-dii",
+        "definition": "glad; pleased",
+        "notes": "Polite “glad / pleased,” often in greetings.",
+        "roots": [
+          "ยินดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความยินดี",
+        "romanization": "khwaam yin-dii",
+        "definition": "joy; pleasure",
+        "notes": "Literally “state of being pleased”; “joy / pleasure.”",
+        "roots": [
+          "ความยินดี",
+          "ความ",
+          "ยินดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สนุกมาก",
+        "romanization": "sà-nùk mâak",
+        "definition": "very fun",
+        "notes": "สนุก plus มาก “very / a lot.”",
+        "roots": [
+          "สนุกมาก",
+          "สนุก",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ชอบมาก",
+        "romanization": "chôop mâak",
+        "definition": "really like; like a lot",
+        "notes": "Stronger “like”; often used for favorites.",
+        "roots": [
+          "ชอบมาก",
+          "ชอบ",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมชอบ",
+        "romanization": "phǒm chôop",
+        "definition": "I like it (male)",
+        "notes": "Male speaker; object understood from context.",
+        "roots": [
+          "ผมชอบ",
+          "ผม",
+          "ชอบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันชอบ",
+        "romanization": "chǎn chôop",
+        "definition": "I like it (female)",
+        "notes": "Female speaker; same pattern.",
+        "roots": [
+          "ฉันชอบ",
+          "ฉัน",
+          "ชอบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมชอบมาก",
+        "romanization": "phǒm chôop mâak",
+        "definition": "I really like it (male)",
+        "notes": "Adds มาก for extra intensity.",
+        "roots": [
+          "ผมชอบมาก",
+          "ผม",
+          "ชอบ",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณชอบไหม",
+        "romanization": "khun chôop mǎi",
+        "definition": "do you like it?",
+        "notes": "Polite yes–no question about liking something.",
+        "roots": [
+          "คุณชอบไหม",
+          "คุณ",
+          "ชอบ",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมสนุกมาก",
+        "romanization": "phǒm sà-nùk mâak",
+        "definition": "I’m having a lot of fun (male)",
+        "notes": "Literally “I fun very.”",
+        "roots": [
+          "ผมสนุกมาก",
+          "ผม",
+          "สนุก",
+          "มาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สนุกกับเพื่อน",
+        "romanization": "sà-nùk gàp phûean",
+        "definition": "have fun with friends",
+        "notes": "Pattern: สนุกกับ + person/thing.",
+        "roots": [
+          "สนุกกับเพื่อน",
+          "สนุก",
+          "กับ",
+          "เพื่อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมมีความสุข",
+        "romanization": "phǒm mii khwaam sùk",
+        "definition": "I’m happy (male)",
+        "notes": "Literally “I have happiness”; basic “I’m happy” pattern.",
+        "roots": [
+          "ผมมีความสุข",
+          "ผม",
+          "มี",
+          "ความ",
+          "สุข"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณมีความสุขไหม",
+        "romanization": "khun mii khwaam sùk mǎi",
+        "definition": "are you happy?",
+        "notes": "Polite yes–no question about happiness.",
+        "roots": [
+          "คุณมีความสุขไหม",
+          "คุณ",
+          "มี",
+          "ความ",
+          "สุข",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมมีความสุขอยู่",
+        "romanization": "phǒm mii khwaam sùk yùu",
+        "definition": "I’m happy right now (male)",
+        "notes": "อยู่ marks it as a current, ongoing state (covers your yuu/yur idea).",
+        "roots": [
+          "ผมมีความสุขอยู่",
+          "ผม",
+          "มี",
+          "ความ",
+          "สุข",
+          "อยู่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ด้วย",
+        "romanization": "dûuai",
+        "definition": "with; also; too",
+        "notes": "Used after verbs/phrases to mean “also/too” or to soften; in ยินดีด้วย it’s like “(happy) with you.”",
+        "roots": [
+          "ด้วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยินดีด้วย",
+        "romanization": "yin-dii dûuai",
+        "definition": "congratulations; I’m happy for you",
+        "notes": "Said when someone has good news or success; literally “glad with (you).”",
+        "roots": [
+          "ยินดีด้วย",
+          "ยินดี",
+          "ด้วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 9,
+    "lessonname": "Here, There and Everywhere",
+    "items": [
+      {
+        "thai": "ที่นี่",
+        "romanization": "thîi nîi",
+        "definition": "here",
+        "notes": "Location word for “here / at this place.”",
+        "roots": [
+          "ที่นี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ที่นั่น",
+        "romanization": "thîi nân",
+        "definition": "there",
+        "notes": "Location word for “there / at that place (over there).”",
+        "roots": [
+          "ที่นั่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทุกที่",
+        "romanization": "thúk thîi",
+        "definition": "everywhere",
+        "notes": "Literally “every place”; means “everywhere.”",
+        "roots": [
+          "ทุกที่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้อง",
+        "romanization": "hâwng",
+        "definition": "room",
+        "notes": "A room; used in compounds like ห้องนอน (bedroom), ห้องน้ำ (bathroom).",
+        "roots": [
+          "ห้อง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ร้านอาหาร",
+        "romanization": "ráan aa-hăan",
+        "definition": "restaurant",
+        "notes": "Literally “food shop”; restaurant or eatery.",
+        "roots": [
+          "ร้านอาหาร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฟิตเนส",
+        "romanization": "fít-nét",
+        "definition": "gym; fitness center",
+        "notes": "Common loan word for “gym / fitness club.”",
+        "roots": [
+          "ฟิตเนส"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ที่ทำงาน",
+        "romanization": "thîi tham-ngaan",
+        "definition": "workplace; office",
+        "notes": "Literally “place of work”; workplace/office.",
+        "roots": [
+          "ที่ทำงาน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เที่ยว",
+        "romanization": "thîao",
+        "definition": "travel; go out for fun",
+        "notes": "To travel, go out, hang out for fun.",
+        "roots": [
+          "เที่ยว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันหยุด",
+        "romanization": "wan yùt",
+        "definition": "day off; vacation",
+        "notes": "Days off from work/school; a (short) vacation or break.",
+        "roots": [
+          "วันหยุด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มา",
+        "romanization": "maa",
+        "definition": "come",
+        "notes": "Verb “to come”; often used with จาก “from.”",
+        "roots": [
+          "มา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จาก",
+        "romanization": "jàak",
+        "definition": "from",
+        "notes": "Preposition “from,” used with places/people.",
+        "roots": [
+          "จาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กลับ",
+        "romanization": "glàp",
+        "definition": "to return; go back",
+        "notes": "To go back/return to a place, often home.",
+        "roots": [
+          "กลับ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กลับบ้าน",
+        "romanization": "glàp bâan",
+        "definition": "go back home",
+        "notes": "Very common phrase for “go home / return home.”",
+        "roots": [
+          "กลับบ้าน",
+          "กลับ",
+          "บ้าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ้านเพื่อน",
+        "romanization": "bâan phûean",
+        "definition": "friend’s house",
+        "notes": "Literally “friend’s house.”",
+        "roots": [
+          "บ้านเพื่อน",
+          "บ้าน",
+          "เพื่อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปบ้านเพื่อน",
+        "romanization": "bpai bâan phûean",
+        "definition": "go to a friend’s house",
+        "notes": "Visiting a friend at their home.",
+        "roots": [
+          "ไปบ้านเพื่อน",
+          "ไป",
+          "บ้าน",
+          "เพื่อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปฟิตเนส",
+        "romanization": "bpai fít-nét",
+        "definition": "go to the gym",
+        "notes": "Going to work out at the gym/fitness center.",
+        "roots": [
+          "ไปฟิตเนส",
+          "ไป",
+          "ฟิตเนส"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปเที่ยว",
+        "romanization": "bpai thîao",
+        "definition": "go travel; go out",
+        "notes": "General “go travel / go out to have fun.”",
+        "roots": [
+          "ไปเที่ยว",
+          "ไป",
+          "เที่ยว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไปเที่ยววันหยุด",
+        "romanization": "bpai thîao wan yùt",
+        "definition": "go on vacation",
+        "notes": "Literally “go travel on days off”; natural way to say “go on vacation.”",
+        "roots": [
+          "ไปเที่ยววันหยุด",
+          "ไป",
+          "เที่ยว",
+          "วันหยุด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมอยู่ที่นี่",
+        "romanization": "phǒm yùu thîi nîi",
+        "definition": "I’m here (male)",
+        "notes": "Male speaker; อยู่ marks location/state.",
+        "roots": [
+          "ผมอยู่ที่นี่",
+          "ผม",
+          "อยู่",
+          "ที่นี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันอยู่ที่นี่",
+        "romanization": "chǎn yùu thîi nîi",
+        "definition": "I’m here (female)",
+        "notes": "Female speaker; same pattern as above.",
+        "roots": [
+          "ฉันอยู่ที่นี่",
+          "ฉัน",
+          "อยู่",
+          "ที่นี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เขาอยู่ที่นั่น",
+        "romanization": "kháo yùu thîi nân",
+        "definition": "he / she is there",
+        "notes": "Uses ที่นั่น for “over there.”",
+        "roots": [
+          "เขาอยู่ที่นั่น",
+          "เขา",
+          "อยู่",
+          "ที่นั่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมอยู่บ้าน",
+        "romanization": "phǒm yùu bâan",
+        "definition": "I’m at home (male)",
+        "notes": "Saying you are at home.",
+        "roots": [
+          "ผมอยู่บ้าน",
+          "ผม",
+          "อยู่",
+          "บ้าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันอยู่ที่ทำงาน",
+        "romanization": "chǎn yùu thîi tham-ngaan",
+        "definition": "I’m at work (female)",
+        "notes": "“I am at the workplace / office.”",
+        "roots": [
+          "ฉันอยู่ที่ทำงาน",
+          "ฉัน",
+          "อยู่",
+          "ที่ทำงาน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เราเที่ยวทุกที่",
+        "romanization": "rao thîao thúk thîi",
+        "definition": "we travel everywhere",
+        "notes": "Slightly hyperbolic “we go/travel everywhere.”",
+        "roots": [
+          "เราเที่ยวทุกที่",
+          "เรา",
+          "เที่ยว",
+          "ทุกที่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณมาจากที่ไหน",
+        "romanization": "khun maa jàak thîi năi",
+        "definition": "where are you from?",
+        "notes": "Standard polite way to ask someone’s origin.",
+        "roots": [
+          "คุณมาจากที่ไหน",
+          "คุณ",
+          "มา",
+          "จาก",
+          "ที่ไหน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 10,
+    "lessonname": "People",
+    "items": [
+      {
+        "thai": "คน",
+        "romanization": "khon",
+        "definition": "person",
+        "notes": "General word for a person; also used as the classifier for people.",
+        "roots": [
+          "คน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เพื่อนๆ",
+        "romanization": "phûean phûean",
+        "definition": "friends",
+        "notes": "Reduplication of เพื่อน to emphasize plural “friends / all my friends.”",
+        "roots": [
+          "เพื่อนๆ",
+          "เพื่อน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เด็ก",
+        "romanization": "dèk",
+        "definition": "child; kid",
+        "notes": "General word for child/kid; can be singular or plural from context.",
+        "roots": [
+          "เด็ก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เด็กๆ",
+        "romanization": "dèk dèk",
+        "definition": "children; kids",
+        "notes": "Reduplication of เด็ก to emphasize “kids / children.”",
+        "roots": [
+          "เด็กๆ",
+          "เด็ก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผู้",
+        "romanization": "phûu",
+        "definition": "person who…",
+        "notes": "Prefix meaning “person who…” used in words like ผู้ชาย, ผู้หญิง.",
+        "roots": [
+          "ผู้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ชาย",
+        "romanization": "chaai",
+        "definition": "man; male",
+        "notes": "“Male / man”; appears in ผู้ชาย, ลูกชาย.",
+        "roots": [
+          "ชาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หญิง",
+        "romanization": "yǐng",
+        "definition": "woman; female",
+        "notes": "“Female / woman”; appears in ผู้หญิง, เด็กผู้หญิง.",
+        "roots": [
+          "หญิง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แม่",
+        "romanization": "mâe",
+        "definition": "mother",
+        "notes": "Mom/mother; very common everyday word.",
+        "roots": [
+          "แม่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พ่อ",
+        "romanization": "phâw",
+        "definition": "father",
+        "notes": "Dad/father; very common everyday word.",
+        "roots": [
+          "พ่อ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ลูก",
+        "romanization": "lûuk",
+        "definition": "child; offspring",
+        "notes": "Someone’s child (son or daughter); “offspring.”",
+        "roots": [
+          "ลูก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สาว",
+        "romanization": "sǎao",
+        "definition": "young woman; girl",
+        "notes": "“Young woman / girl”; appears in ลูกสาว.",
+        "roots": [
+          "สาว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ไทย",
+        "romanization": "thai",
+        "definition": "Thai",
+        "notes": "“Thai” as nationality/ethnicity (used in คนไทย).",
+        "roots": [
+          "ไทย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อเมริกัน",
+        "romanization": "a-mee-rí-gan",
+        "definition": "American",
+        "notes": "“American”; used in คนอเมริกัน.",
+        "roots": [
+          "อเมริกัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผู้ชาย",
+        "romanization": "phûu chaai",
+        "definition": "man; male person",
+        "notes": "Literally “male person”; also used for “boy” from teen age upward.",
+        "roots": [
+          "ผู้ชาย",
+          "ผู้",
+          "ชาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผู้หญิง",
+        "romanization": "phûu yǐng",
+        "definition": "woman; female person",
+        "notes": "Literally “female person”; also used for “girl” from teen age upward.",
+        "roots": [
+          "ผู้หญิง",
+          "ผู้",
+          "หญิง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เด็กผู้ชาย",
+        "romanization": "dèk phûu chaai",
+        "definition": "boy",
+        "notes": "Literally “child (who is) male”; specifically “boy.”",
+        "roots": [
+          "เด็กผู้ชาย",
+          "เด็ก",
+          "ผู้ชาย",
+          "ผู้",
+          "ชาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เด็กผู้หญิง",
+        "romanization": "dèk phûu yǐng",
+        "definition": "girl",
+        "notes": "Literally “child (who is) female”; specifically “girl.”",
+        "roots": [
+          "เด็กผู้หญิง",
+          "เด็ก",
+          "ผู้หญิง",
+          "ผู้",
+          "หญิง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ลูกชาย",
+        "romanization": "lûuk chaai",
+        "definition": "son",
+        "notes": "Literally “male child”; “son.”",
+        "roots": [
+          "ลูกชาย",
+          "ลูก",
+          "ชาย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ลูกสาว",
+        "romanization": "lûuk sǎao",
+        "definition": "daughter",
+        "notes": "Literally “female child”; “daughter.”",
+        "roots": [
+          "ลูกสาว",
+          "ลูก",
+          "สาว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทุกคน",
+        "romanization": "thúk khon",
+        "definition": "everyone; everybody",
+        "notes": "Literally “every person”; “everyone / everybody.”",
+        "roots": [
+          "ทุกคน",
+          "ทุก",
+          "คน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คนไทย",
+        "romanization": "khon thai",
+        "definition": "Thai person; Thai people",
+        "notes": "Can be singular or plural from context: “Thai person / Thai people.”",
+        "roots": [
+          "คนไทย",
+          "คน",
+          "ไทย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คนอเมริกัน",
+        "romanization": "khon a-mee-rí-gan",
+        "definition": "American; Americans",
+        "notes": "“American person / American people.”",
+        "roots": [
+          "คนอเมริกัน",
+          "คน",
+          "อเมริกัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เด็กทุกคน",
+        "romanization": "dèk thúk khon",
+        "definition": "all the kids",
+        "notes": "Literally “every child/person”; “all the kids.”",
+        "roots": [
+          "เด็กทุกคน",
+          "เด็ก",
+          "ทุก",
+          "คน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 11,
+    "lessonname": "Wanting, Needing, Helping",
+    "items": [
+      {
+        "thai": "ช่วย",
+        "romanization": "chûai",
+        "definition": "help; to help",
+        "notes": "Verb “to help / assist”; used a lot in requests: ช่วย…หน่อย",
+        "roots": [
+          "ช่วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อยาก",
+        "romanization": "yàak",
+        "definition": "want (to do)",
+        "notes": "Used before a verb: อยากกิน, อยากไป, อยากช่วย",
+        "roots": [
+          "อยาก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ต้อง",
+        "romanization": "dtông",
+        "definition": "must; have to",
+        "notes": "Shows necessity/obligation: ต้องไป = have to go",
+        "roots": [
+          "ต้อง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ต้องการ",
+        "romanization": "dtông gaan",
+        "definition": "need; want",
+        "notes": "Slightly more formal “want/need,” often with nouns or help",
+        "roots": [
+          "ต้องการ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ความช่วยเหลือ",
+        "romanization": "khwaam chûai-lʉ̌a",
+        "definition": "help; assistance (noun)",
+        "notes": "Noun “help/assistance”; more formal than just ช่วย",
+        "roots": [
+          "ความช่วยเหลือ",
+          "ความ",
+          "ช่วย",
+          "เหลือ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เหลือ",
+        "romanization": "lʉ̌a",
+        "definition": "to remain; be left (over)",
+        "notes": "“To be left / remain”; root in ความช่วยเหลือ",
+        "roots": [
+          "เหลือ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมอยากช่วยคุณ",
+        "romanization": "phǒm yàak chûai khun",
+        "definition": "I want to help you (male)",
+        "notes": "Male speaker; object “you” is คุณ",
+        "roots": [
+          "ผมอยากช่วยคุณ",
+          "ผม",
+          "อยาก",
+          "ช่วย",
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันอยากช่วยคุณ",
+        "romanization": "chǎn yàak chûai khun",
+        "definition": "I want to help you (female)",
+        "notes": "Female speaker version",
+        "roots": [
+          "ฉันอยากช่วยคุณ",
+          "ฉัน",
+          "อยาก",
+          "ช่วย",
+          "คุณ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณต้องการอะไร",
+        "romanization": "khun dtông gaan à-rai",
+        "definition": "what do you need?",
+        "notes": "Literally “you need what?”; polite",
+        "roots": [
+          "คุณต้องการอะไร",
+          "คุณ",
+          "ต้องการ",
+          "อะไร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณอยากได้อะไร",
+        "romanization": "khun yàak dâai à-rai",
+        "definition": "what do you want?",
+        "notes": "“Want to get/receive what?” – asking what someone wants",
+        "roots": [
+          "คุณอยากได้อะไร",
+          "คุณ",
+          "อยาก",
+          "ได้",
+          "อะไร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมช่วยคุณได้ยังไง",
+        "romanization": "phǒm chûai khun dâai yang ngai",
+        "definition": "how can I help? (male)",
+        "notes": "Literally “I help you can how?”",
+        "roots": [
+          "ผมช่วยคุณได้ยังไง",
+          "ผม",
+          "ช่วย",
+          "คุณ",
+          "ได้",
+          "ยังไง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณช่วยผมได้ไหม",
+        "romanization": "khun chûai phǒm dâai mái",
+        "definition": "will you help me? (male speaker)",
+        "notes": "Also “can you help me?”; polite",
+        "roots": [
+          "คุณช่วยผมได้ไหม",
+          "คุณ",
+          "ช่วย",
+          "ผม",
+          "ได้",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณช่วยฉันได้ไหม",
+        "romanization": "khun chûai chǎn dâai mái",
+        "definition": "will you help me? (female speaker)",
+        "notes": "Same pattern with ฉัน",
+        "roots": [
+          "คุณช่วยฉันได้ไหม",
+          "คุณ",
+          "ช่วย",
+          "ฉัน",
+          "ได้",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ช่วยผมหน่อยได้ไหม",
+        "romanization": "chûai phǒm nòi dâai mái",
+        "definition": "will you help me a bit? (male)",
+        "notes": "หน่อย softens the request: “please help me a bit”",
+        "roots": [
+          "ช่วยผมหน่อยได้ไหม",
+          "ช่วย",
+          "ผม",
+          "หน่อย",
+          "ได้",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ช่วยด้วย",
+        "romanization": "chûai dûuai",
+        "definition": "help!",
+        "notes": "Shouted when calling for help; also softer as “please help”",
+        "roots": [
+          "ช่วยด้วย",
+          "ช่วย",
+          "ด้วย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คุณอยากช่วยไหม",
+        "romanization": "khun yàak chûai mái",
+        "definition": "do you want to help?",
+        "notes": "Asks if they want to help (not just can)",
+        "roots": [
+          "คุณอยากช่วยไหม",
+          "คุณ",
+          "อยาก",
+          "ช่วย",
+          "ไหม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ผมต้องไปช่วยเขา",
+        "romanization": "phǒm dtông bpai chûai kháo",
+        "definition": "I have to go help him/her (male)",
+        "notes": "Combines ต้อง (must), ไป (go), ช่วย (help)",
+        "roots": [
+          "ผมต้องไปช่วยเขา",
+          "ผม",
+          "ต้อง",
+          "ไป",
+          "ช่วย",
+          "เขา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉันต้องการความช่วยเหลือ",
+        "romanization": "chǎn dtông gaan khwaam chûai-lʉ̌a",
+        "definition": "I need help (female, formal)",
+        "notes": "Literally “I need help/assistance”",
+        "roots": [
+          "ฉันต้องการความช่วยเหลือ",
+          "ฉัน",
+          "ต้องการ",
+          "ความช่วยเหลือ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 12,
+    "lessonname": "Numbers",
+    "items": [
+      {
+        "thai": "ศูนย์",
+        "romanization": "sǔun",
+        "definition": "0 (zero)",
+        "notes": "Number zero.",
+        "roots": [
+          "ศูนย์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่ง",
+        "romanization": "nʉ̀ng",
+        "definition": "1 (one)",
+        "notes": "Base number one; changes to เอ็ด in some positions.",
+        "roots": [
+          "หนึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สอง",
+        "romanization": "sǎawng",
+        "definition": "2 (two)",
+        "notes": "Base number two.",
+        "roots": [
+          "สอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สาม",
+        "romanization": "sǎam",
+        "definition": "3 (three)",
+        "notes": "Base number three.",
+        "roots": [
+          "สาม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่",
+        "romanization": "sìi",
+        "definition": "4 (four)",
+        "notes": "Base number four.",
+        "roots": [
+          "สี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้า",
+        "romanization": "hâa",
+        "definition": "5 (five)",
+        "notes": "Base number five.",
+        "roots": [
+          "ห้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หก",
+        "romanization": "hòk",
+        "definition": "6 (six)",
+        "notes": "Base number six.",
+        "roots": [
+          "หก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เจ็ด",
+        "romanization": "jèt",
+        "definition": "7 (seven)",
+        "notes": "Base number seven.",
+        "roots": [
+          "เจ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แปด",
+        "romanization": "bpàaet",
+        "definition": "8 (eight)",
+        "notes": "Base number eight.",
+        "roots": [
+          "แปด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้า",
+        "romanization": "gâo",
+        "definition": "9 (nine)",
+        "notes": "Base number nine.",
+        "roots": [
+          "เก้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบ",
+        "romanization": "sìp",
+        "definition": "10 (ten)",
+        "notes": "Base word for “ten”; used to build teens and tens.",
+        "roots": [
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยี่",
+        "romanization": "yîi",
+        "definition": "“yi” form of 2",
+        "notes": "Special “two” form only used in 20s (ยี่สิบ, ยี่สิบเอ็ด, etc.).",
+        "roots": [
+          "ยี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เอ็ด",
+        "romanization": "èt",
+        "definition": "“ed” form of 1",
+        "notes": "Special “one” form used in 11, 21, 31, etc. (สิบเอ็ด, ยี่สิบเอ็ด…).",
+        "roots": [
+          "เอ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ร้อย",
+        "romanization": "rɔ́ɔi",
+        "definition": "100 (hundred)",
+        "notes": "Base word for “hundred.” 100 = หนึ่งร้อย / ร้อย.",
+        "roots": [
+          "ร้อย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พัน",
+        "romanization": "phan",
+        "definition": "1,000 (thousand)",
+        "notes": "Base word for “thousand.”",
+        "roots": [
+          "พัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หมื่น",
+        "romanization": "mʉ̀ʉn",
+        "definition": "10,000 (ten thousand)",
+        "notes": "Base word for “ten thousand.”",
+        "roots": [
+          "หมื่น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แสน",
+        "romanization": "sǎen",
+        "definition": "100,000 (hundred thousand)",
+        "notes": "Base word for “hundred thousand.”",
+        "roots": [
+          "แสน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ล้าน",
+        "romanization": "láan",
+        "definition": "1,000,000 (million)",
+        "notes": "Base word for “million.”",
+        "roots": [
+          "ล้าน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบเอ็ด",
+        "romanization": "sìp èt",
+        "definition": "11 (eleven)",
+        "notes": "10 + special 1; สิบ + เอ็ด.",
+        "roots": [
+          "สิบเอ็ด",
+          "สิบ",
+          "เอ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบสี่",
+        "romanization": "sìp sìi",
+        "definition": "14 (fourteen)",
+        "notes": "10 + 4; สิบ + สี่.",
+        "roots": [
+          "สิบสี่",
+          "สิบ",
+          "สี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยี่สิบ",
+        "romanization": "yîi sìp",
+        "definition": "20 (twenty)",
+        "notes": "“yi” + ten; ยี่ + สิบ.",
+        "roots": [
+          "ยี่สิบ",
+          "ยี่",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยี่สิบเอ็ด",
+        "romanization": "yîi sìp èt",
+        "definition": "21 (twenty-one)",
+        "notes": "20 + special 1; ยี่สิบ + เอ็ด.",
+        "roots": [
+          "ยี่สิบเอ็ด",
+          "ยี่",
+          "สิบ",
+          "เอ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ยี่สิบหก",
+        "romanization": "yîi sìp hòk",
+        "definition": "26 (twenty-six)",
+        "notes": "20 + 6.",
+        "roots": [
+          "ยี่สิบหก",
+          "ยี่",
+          "สิบ",
+          "หก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สามสิบสอง",
+        "romanization": "sǎam sìp sǎawng",
+        "definition": "32 (thirty-two)",
+        "notes": "30 + 2.",
+        "roots": [
+          "สามสิบสอง",
+          "สาม",
+          "สิบ",
+          "สอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สามสิบเก้า",
+        "romanization": "sǎam sìp gâo",
+        "definition": "39 (thirty-nine)",
+        "notes": "30 + 9.",
+        "roots": [
+          "สามสิบเก้า",
+          "สาม",
+          "สิบ",
+          "เก้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่สิบเจ็ด",
+        "romanization": "sìi sìp jèt",
+        "definition": "47 (forty-seven)",
+        "notes": "40 + 7.",
+        "roots": [
+          "สี่สิบเจ็ด",
+          "สี่",
+          "สิบ",
+          "เจ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่สิบแปด",
+        "romanization": "sìi sìp bpàaet",
+        "definition": "48 (forty-eight)",
+        "notes": "40 + 8.",
+        "roots": [
+          "สี่สิบแปด",
+          "สี่",
+          "สิบ",
+          "แปด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าสิบ",
+        "romanization": "hâa sìp",
+        "definition": "50 (fifty)",
+        "notes": "5 × 10.",
+        "roots": [
+          "ห้าสิบ",
+          "ห้า",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าสิบห้า",
+        "romanization": "hâa sìp hâa",
+        "definition": "55 (fifty-five)",
+        "notes": "50 + 5.",
+        "roots": [
+          "ห้าสิบห้า",
+          "ห้า",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกสิบสาม",
+        "romanization": "hòk sìp sǎam",
+        "definition": "63 (sixty-three)",
+        "notes": "60 + 3.",
+        "roots": [
+          "หกสิบสาม",
+          "หก",
+          "สิบ",
+          "สาม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกสิบเจ็ด",
+        "romanization": "hòk sìp jèt",
+        "definition": "67 (sixty-seven)",
+        "notes": "60 + 7.",
+        "roots": [
+          "หกสิบเจ็ด",
+          "หก",
+          "สิบ",
+          "เจ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เจ็ดสิบสอง",
+        "romanization": "jèt sìp sǎawng",
+        "definition": "72 (seventy-two)",
+        "notes": "70 + 2.",
+        "roots": [
+          "เจ็ดสิบสอง",
+          "เจ็ด",
+          "สิบ",
+          "สอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เจ็ดสิบเก้า",
+        "romanization": "jèt sìp gâo",
+        "definition": "79 (seventy-nine)",
+        "notes": "70 + 9.",
+        "roots": [
+          "เจ็ดสิบเก้า",
+          "เจ็ด",
+          "สิบ",
+          "เก้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แปดสิบสี่",
+        "romanization": "bpàaet sìp sìi",
+        "definition": "84 (eighty-four)",
+        "notes": "80 + 4.",
+        "roots": [
+          "แปดสิบสี่",
+          "แปด",
+          "สิบ",
+          "สี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แปดสิบหก",
+        "romanization": "bpàaet sìp hòk",
+        "definition": "86 (eighty-six)",
+        "notes": "80 + 6.",
+        "roots": [
+          "แปดสิบหก",
+          "แปด",
+          "สิบ",
+          "หก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าสิบสาม",
+        "romanization": "gâo sìp sǎam",
+        "definition": "93 (ninety-three)",
+        "notes": "90 + 3.",
+        "roots": [
+          "เก้าสิบสาม",
+          "เก้า",
+          "สิบ",
+          "สาม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าสิบแปด",
+        "romanization": "gâo sìp bpàaet",
+        "definition": "98 (ninety-eight)",
+        "notes": "90 + 8.",
+        "roots": [
+          "เก้าสิบแปด",
+          "เก้า",
+          "สิบ",
+          "แปด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยสี่",
+        "romanization": "nʉ̀ng rɔ́ɔi sìi",
+        "definition": "104 (one hundred four)",
+        "notes": "100 + 4.",
+        "roots": [
+          "หนึ่งร้อยสี่",
+          "หนึ่ง",
+          "ร้อย",
+          "สี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยเก้า",
+        "romanization": "nʉ̀ng rɔ́ɔi gâo",
+        "definition": "109 (one hundred nine)",
+        "notes": "100 + 9.",
+        "roots": [
+          "หนึ่งร้อยเก้า",
+          "หนึ่ง",
+          "ร้อย",
+          "เก้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยสิบ",
+        "romanization": "nʉ̀ng rɔ́ɔi sìp",
+        "definition": "110 (one hundred ten)",
+        "notes": "100 + 10.",
+        "roots": [
+          "หนึ่งร้อยสิบ",
+          "หนึ่ง",
+          "ร้อย",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยสิบแปด",
+        "romanization": "nʉ̀ng rɔ́ɔi sìp bpàaet",
+        "definition": "118 (one hundred eighteen)",
+        "notes": "100 + 18.",
+        "roots": [
+          "หนึ่งร้อยสิบแปด",
+          "หนึ่ง",
+          "ร้อย",
+          "สิบ",
+          "แปด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยยี่สิบหก",
+        "romanization": "nʉ̀ng rɔ́ɔi yîi sìp hòk",
+        "definition": "126 (one hundred twenty-six)",
+        "notes": "100 + 26.",
+        "roots": [
+          "หนึ่งร้อยยี่สิบหก",
+          "หนึ่ง",
+          "ร้อย",
+          "ยี่",
+          "สิบ",
+          "หก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งร้อยยี่สิบเจ็ด",
+        "romanization": "nʉ̀ng rɔ́ɔi yîi sìp jèt",
+        "definition": "127 (one hundred twenty-seven)",
+        "notes": "100 + 27.",
+        "roots": [
+          "หนึ่งร้อยยี่สิบเจ็ด",
+          "หนึ่ง",
+          "ร้อย",
+          "ยี่",
+          "สิบ",
+          "เจ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สองร้อยห้าสิบเอ็ด",
+        "romanization": "sǎawng rɔ́ɔi hâa sìp èt",
+        "definition": "251 (two hundred fifty-one)",
+        "notes": "200 + 51.",
+        "roots": [
+          "สองร้อยห้าสิบเอ็ด",
+          "สอง",
+          "ร้อย",
+          "ห้า",
+          "สิบ",
+          "เอ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าร้อยสี่สิบแปด",
+        "romanization": "hâa rɔ́ɔi sìi sìp bpàaet",
+        "definition": "548 (five hundred forty-eight)",
+        "notes": "500 + 48.",
+        "roots": [
+          "ห้าร้อยสี่สิบแปด",
+          "ห้า",
+          "ร้อย",
+          "สี่",
+          "สิบ",
+          "แปด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งหมื่นสองร้อยสิบห้า",
+        "romanization": "nʉ̀ng mʉ̀ʉn sǎawng rɔ́ɔi sìp hâa",
+        "definition": "10,215 (ten thousand two hundred fifteen)",
+        "notes": "10,000 + 215.",
+        "roots": [
+          "หนึ่งหมื่นสองร้อยสิบห้า",
+          "หนึ่ง",
+          "หมื่น",
+          "สอง",
+          "ร้อย",
+          "สิบ",
+          "ห้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งหมื่นแปดพันเก้าร้อยสี่สิบเก้า",
+        "romanization": "nʉ̀ng mʉ̀ʉn bpàaet phan gâo rɔ́ɔi sìi sìp gâo",
+        "definition": "18,949 (eighteen thousand nine hundred forty-nine)",
+        "notes": "10,000 + 8,000 + 949.",
+        "roots": [
+          "หนึ่งหมื่นแปดพันเก้าร้อยสี่สิบเก้า",
+          "หนึ่ง",
+          "หมื่น",
+          "แปด",
+          "พัน",
+          "เก้า",
+          "ร้อย",
+          "สี่",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สามแสนสี่หมื่นแปดพันสี่ร้อยสิบห้า",
+        "romanization": "sǎam sǎen sìi mʉ̀ʉn bpàaet phan sìi rɔ́ɔi sìp hâa",
+        "definition": "348,415 (three hundred forty-eight thousand four hundred fifteen)",
+        "notes": "300,000 + 40,000 + 8,000 + 415.",
+        "roots": [
+          "สามแสนสี่หมื่นแปดพันสี่ร้อยสิบห้า",
+          "สาม",
+          "แสน",
+          "สี่",
+          "หมื่น",
+          "แปด",
+          "พัน",
+          "ร้อย",
+          "สิบ",
+          "ห้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เก้าแสนสี่หมื่นแปดพันห้าร้อยสิบสี่",
+        "romanization": "gâo sǎen sìi mʉ̀ʉn bpàaet phan hâa rɔ́ɔi sìp sìi",
+        "definition": "948,514 (nine hundred forty-eight thousand five hundred fourteen)",
+        "notes": "900,000 + 40,000 + 8,000 + 514.",
+        "roots": [
+          "เก้าแสนสี่หมื่นแปดพันห้าร้อยสิบสี่",
+          "เก้า",
+          "แสน",
+          "สี่",
+          "หมื่น",
+          "แปด",
+          "พัน",
+          "ห้า",
+          "ร้อย",
+          "สิบ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าล้านสี่แสนหกหมื่นห้าพันหนึ่งร้อยเจ็ดสิบสอง",
+        "romanization": "hâa láan sìi sǎen hòk mʉ̀ʉn hâa phan nʉ̀ng rɔ́ɔi jèt sìp sǎawng",
+        "definition": "5,465,172 (five million four hundred sixty-five thousand one hundred seventy-two)",
+        "notes": "5M + 400k + 60k + 5k + 172.",
+        "roots": [
+          "ห้าล้านสี่แสนหกหมื่นห้าพันหนึ่งร้อยเจ็ดสิบสอง",
+          "ห้า",
+          "ล้าน",
+          "สี่",
+          "แสน",
+          "หก",
+          "หมื่น",
+          "พัน",
+          "หนึ่ง",
+          "ร้อย",
+          "เจ็ด",
+          "สิบ",
+          "สอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เจ็ดล้านสี่แสนแปดหมื่นสี่พันห้าร้อยยี่สิบเอ็ด",
+        "romanization": "jèt láan sìi sǎen bpàaet mʉ̀ʉn sìi phan hâa rɔ́ɔi yîi sìp èt",
+        "definition": "7,484,521 (seven million four hundred eighty-four thousand five hundred twenty-one)",
+        "notes": "7M + 400k + 80k + 4k + 521.",
+        "roots": [
+          "เจ็ดล้านสี่แสนแปดหมื่นสี่พันห้าร้อยยี่สิบเอ็ด",
+          "เจ็ด",
+          "ล้าน",
+          "สี่",
+          "แสน",
+          "แปด",
+          "หมื่น",
+          "พัน",
+          "ห้า",
+          "ร้อย",
+          "ยี่",
+          "สิบ",
+          "เอ็ด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบห้าล้านเก้าแสนหนึ่งหมื่นห้าพันเก้าร้อยสี่สิบห้า",
+        "romanization": "sìp hâa láan gâo sǎen nʉ̀ng mʉ̀ʉn hâa phan gâo rɔ́ɔi sìi sìp hâa",
+        "definition": "15,915,945 (fifteen million nine hundred fifteen thousand nine hundred forty-five)",
+        "notes": "15M + 900k + 15k + 945.",
+        "roots": [
+          "สิบห้าล้านเก้าแสนหนึ่งหมื่นห้าพันเก้าร้อยสี่สิบห้า",
+          "สิบ",
+          "ห้า",
+          "ล้าน",
+          "เก้า",
+          "แสน",
+          "หนึ่ง",
+          "หมื่น",
+          "พัน",
+          "ร้อย",
+          "สี่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แปดสิบสี่ล้านหกแสนเจ็ดหมื่นห้าพันสี่ร้อยยี่สิบสาม",
+        "romanization": "bpàaet sìp sìi láan hòk sǎen jèt mʉ̀ʉn hâa phan sìi rɔ́ɔi yîi sìp sǎam",
+        "definition": "84,675,423 (eighty-four million six hundred seventy-five thousand four hundred twenty-three)",
+        "notes": "84M + 600k + 70k + 5k + 423.",
+        "roots": [
+          "แปดสิบสี่ล้านหกแสนเจ็ดหมื่นห้าพันสี่ร้อยยี่สิบสาม",
+          "แปด",
+          "สิบ",
+          "สี่",
+          "ล้าน",
+          "หก",
+          "แสน",
+          "เจ็ด",
+          "หมื่น",
+          "ห้า",
+          "พัน",
+          "ร้อย",
+          "ยี่",
+          "สาม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าร้อยสิบสี่ล้านหนึ่งแสนสี่หมื่นหนึ่งพันสองร้อยสี่สิบห้า",
+        "romanization": "hâa rɔ́ɔi sìp sìi láan nʉ̀ng sǎen sìi mʉ̀ʉn nʉ̀ng phan sǎawng rɔ́ɔi sìi sìp hâa",
+        "definition": "514,141,245 (five hundred fourteen million one hundred forty-one thousand two hundred forty-five)",
+        "notes": "514M + 100k + 40k + 1k + 245.",
+        "roots": [
+          "ห้าร้อยสิบสี่ล้านหนึ่งแสนสี่หมื่นหนึ่งพันสองร้อยสี่สิบห้า",
+          "ห้า",
+          "ร้อย",
+          "สิบ",
+          "สี่",
+          "ล้าน",
+          "หนึ่ง",
+          "แสน",
+          "หมื่น",
+          "พัน",
+          "สอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "แปดร้อยแปดสิบแปดล้านห้าแสนแปดหมื่นห้าพันสี่ร้อยห้าสิบหก",
+        "romanization": "bpàaet rɔ́ɔi bpàaet sìp bpàaet láan hâa sǎen bpàaet mʉ̀ʉn hâa phan sìi rɔ́ɔi hâa sìp hòk",
+        "definition": "888,585,456 (eight hundred eighty-eight million five hundred eighty-five thousand four hundred fifty-six)",
+        "notes": "888M + 500k + 80k + 5k + 456.",
+        "roots": [
+          "แปดร้อยแปดสิบแปดล้านห้าแสนแปดหมื่นห้าพันสี่ร้อยห้าสิบหก",
+          "แปด",
+          "ร้อย",
+          "สิบ",
+          "ล้าน",
+          "ห้า",
+          "แสน",
+          "หมื่น",
+          "พัน",
+          "สี่",
+          "หก"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 13,
+    "lessonname": "It's Time",
+    "items": [
+      {
+        "thai": "เวลา",
+        "romanization": "wee-laa",
+        "definition": "time; hour",
+        "notes": "General word for “time”; also used in questions about time (เวลาเท่าไหร่).",
+        "roots": [
+          "เวลา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นาฬิกา",
+        "romanization": "naa-lí-gaa",
+        "definition": "clock; watch",
+        "notes": "Clock or watch; in formal time-telling can follow numbers (เช่น 14 นาฬิกา).",
+        "roots": [
+          "นาฬิกา"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตอน",
+        "romanization": "dtaawn",
+        "definition": "time period; at (time)",
+        "notes": "Used before parts of the day (ตอนเช้า, ตอนเย็น) = “in the …”.",
+        "roots": [
+          "ตอน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เช้า",
+        "romanization": "cháo",
+        "definition": "morning",
+        "notes": "Early day, roughly sunrise to late morning.",
+        "roots": [
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เที่ยง",
+        "romanization": "thîiang",
+        "definition": "noon",
+        "notes": "12:00 midday; “noon.”",
+        "roots": [
+          "เที่ยง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่าย",
+        "romanization": "bàai",
+        "definition": "afternoon",
+        "notes": "After noon, ~1–3 pm; used in บ่ายสองโมง, บ่ายสามโมง.",
+        "roots": [
+          "บ่าย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เย็น",
+        "romanization": "yen",
+        "definition": "evening; late afternoon",
+        "notes": "About 4–6 pm; used in สี่โมงเย็น, หกโมงเย็น.",
+        "roots": [
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คืน",
+        "romanization": "kʉʉn",
+        "definition": "night",
+        "notes": "Night; used in กลางคืน, เที่ยงคืน.",
+        "roots": [
+          "คืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กลางคืน",
+        "romanization": "glaang-kʉʉn",
+        "definition": "night time",
+        "notes": "Literally “middle of the night”; the nighttime period.",
+        "roots": [
+          "กลางคืน",
+          "กลาง",
+          "คืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เที่ยงคืน",
+        "romanization": "thîiang-kʉʉn",
+        "definition": "midnight",
+        "notes": "12:00 at night; exactly midnight.",
+        "roots": [
+          "เที่ยงคืน",
+          "เที่ยง",
+          "คืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กลาง",
+        "romanization": "glaang",
+        "definition": "middle; center",
+        "notes": "Used in words like กลางคืน (nighttime), กลางวัน (daytime).",
+        "roots": [
+          "กลาง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "โมง",
+        "romanization": "moong",
+        "definition": "o’clock (spoken)",
+        "notes": "Classifier for hours in spoken Thai: หกโมง, สี่โมง, บ่ายสองโมง.",
+        "roots": [
+          "โมง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ทุ่ม",
+        "romanization": "thûm",
+        "definition": "o’clock at night",
+        "notes": "Used for 7–11 pm: หนึ่งทุ่ม (7 pm), สองทุ่ม (8 pm), etc.",
+        "roots": [
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "นาที",
+        "romanization": "naa-thii",
+        "definition": "minute",
+        "notes": "Unit for “minute”; follows numbers (ห้านาที, สิบนาที).",
+        "roots": [
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ครึ่ง",
+        "romanization": "khrʉ̂ng",
+        "definition": "half",
+        "notes": "In time, “:30” (โมงครึ่ง, ทุ่มครึ่ง).",
+        "roots": [
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตอนเช้า",
+        "romanization": "dtaawn-cháo",
+        "definition": "in the morning",
+        "notes": "Time period “in the morning.”",
+        "roots": [
+          "ตอนเช้า",
+          "ตอน",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตอนเย็น",
+        "romanization": "dtaawn-yen",
+        "definition": "in the evening",
+        "notes": "Time period “in the evening / late afternoon.”",
+        "roots": [
+          "ตอนเย็น",
+          "ตอน",
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตอนกลางคืน",
+        "romanization": "dtaawn-glaang-kʉʉn",
+        "definition": "at night",
+        "notes": "Time period “at night.”",
+        "roots": [
+          "ตอนกลางคืน",
+          "ตอน",
+          "กลางคืน",
+          "กลาง",
+          "คืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกโมงเช้า",
+        "romanization": "hòk moong cháo",
+        "definition": "6:00 am",
+        "notes": "Normal spoken way to say 6 am.",
+        "roots": [
+          "หกโมงเช้า",
+          "หก",
+          "โมง",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกโมงยี่สิบนาที",
+        "romanization": "hòk moong yîi sìp naa-thii",
+        "definition": "6:20 am",
+        "notes": "“six o’clock twenty minutes.”",
+        "roots": [
+          "หกโมงยี่สิบนาที",
+          "หก",
+          "โมง",
+          "ยี่",
+          "สิบ",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบโมงสามสิบสี่นาที",
+        "romanization": "sìp moong sǎam sìp sìi naa-thii",
+        "definition": "10:34 am",
+        "notes": "10 o’clock 34 minutes.",
+        "roots": [
+          "สิบโมงสามสิบสี่นาที",
+          "สิบ",
+          "โมง",
+          "สาม",
+          "สี่",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบเอ็ดโมงเช้า",
+        "romanization": "sìp-èt moong cháo",
+        "definition": "11:00 am",
+        "notes": "11 am in the morning.",
+        "roots": [
+          "สิบเอ็ดโมงเช้า",
+          "สิบ",
+          "เอ็ด",
+          "โมง",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิบเอ็ดโมงครึ่ง",
+        "romanization": "sìp-èt moong khrʉ̂ng",
+        "definition": "11:30 am",
+        "notes": "“eleven o’clock half.”",
+        "roots": [
+          "สิบเอ็ดโมงครึ่ง",
+          "สิบ",
+          "เอ็ด",
+          "โมง",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เที่ยงสิบห้านาที",
+        "romanization": "thîiang sìp-hâa naa-thii",
+        "definition": "12:15 pm",
+        "notes": "12:15 (quarter past noon).",
+        "roots": [
+          "เที่ยงสิบห้านาที",
+          "เที่ยง",
+          "สิบ",
+          "ห้า",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เที่ยงห้าสิบเอ็ดนาที",
+        "romanization": "thîiang hâa sìp èt naa-thii",
+        "definition": "12:51 pm",
+        "notes": "12:51 in the afternoon.",
+        "roots": [
+          "เที่ยงห้าสิบเอ็ดนาที",
+          "เที่ยง",
+          "ห้า",
+          "สิบ",
+          "เอ็ด",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่ายสองโมงครึ่ง",
+        "romanization": "bàai sǎawng moong khrʉ̂ng",
+        "definition": "2:30 pm",
+        "notes": "“afternoon two o’clock half.”",
+        "roots": [
+          "บ่ายสองโมงครึ่ง",
+          "บ่าย",
+          "สอง",
+          "โมง",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่ายสองโมงสี่สิบห้านาที",
+        "romanization": "bàai sǎawng moong sìi sìp hâa naa-thii",
+        "definition": "2:45 pm",
+        "notes": "2:45 in the afternoon.",
+        "roots": [
+          "บ่ายสองโมงสี่สิบห้านาที",
+          "บ่าย",
+          "สอง",
+          "โมง",
+          "สี่",
+          "สิบ",
+          "ห้า",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่ายสามโมง",
+        "romanization": "bàai sǎam moong",
+        "definition": "3:00 pm",
+        "notes": "“afternoon three o’clock.”",
+        "roots": [
+          "บ่ายสามโมง",
+          "บ่าย",
+          "สาม",
+          "โมง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่ายสามโมงสิบเก้านาที",
+        "romanization": "bàai sǎam moong sìp gâo naa-thii",
+        "definition": "3:19 pm",
+        "notes": "3:19 in the afternoon.",
+        "roots": [
+          "บ่ายสามโมงสิบเก้านาที",
+          "บ่าย",
+          "สาม",
+          "โมง",
+          "สิบ",
+          "เก้า",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่โมงเย็น",
+        "romanization": "sìi moong yen",
+        "definition": "4:00 pm",
+        "notes": "4 pm in the evening.",
+        "roots": [
+          "สี่โมงเย็น",
+          "สี่",
+          "โมง",
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่โมงครึ่ง",
+        "romanization": "sìi moong khrʉ̂ng",
+        "definition": "4:30 pm",
+        "notes": "4:30 (half past four).",
+        "roots": [
+          "สี่โมงครึ่ง",
+          "สี่",
+          "โมง",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่โมงสี่สิบสี่นาที",
+        "romanization": "sìi moong sìi sìp sìi naa-thii",
+        "definition": "4:44 pm",
+        "notes": "4:44 in the afternoon/evening.",
+        "roots": [
+          "สี่โมงสี่สิบสี่นาที",
+          "สี่",
+          "โมง",
+          "สิบ",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกโมงเย็น",
+        "romanization": "hòk moong yen",
+        "definition": "6:00 pm",
+        "notes": "6 pm in the evening.",
+        "roots": [
+          "หกโมงเย็น",
+          "หก",
+          "โมง",
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกโมงหนึ่งนาที",
+        "romanization": "hòk moong nʉ̀ng naa-thii",
+        "definition": "6:01 pm",
+        "notes": "6:01 pm.",
+        "roots": [
+          "หกโมงหนึ่งนาที",
+          "หก",
+          "โมง",
+          "หนึ่ง",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หกโมงสามสิบเอ็ดนาที",
+        "romanization": "hòk moong sǎam sìp èt naa-thii",
+        "definition": "6:31 pm",
+        "notes": "6:31 pm.",
+        "roots": [
+          "หกโมงสามสิบเอ็ดนาที",
+          "หก",
+          "โมง",
+          "สาม",
+          "สิบ",
+          "เอ็ด",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งทุ่ม",
+        "romanization": "nʉ̀ng thûm",
+        "definition": "7:00 pm",
+        "notes": "7 pm at night (one “thûm”).",
+        "roots": [
+          "หนึ่งทุ่ม",
+          "หนึ่ง",
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หนึ่งทุ่มครึ่ง",
+        "romanization": "nʉ̀ng thûm khrʉ̂ng",
+        "definition": "7:30 pm",
+        "notes": "7:30 pm.",
+        "roots": [
+          "หนึ่งทุ่มครึ่ง",
+          "หนึ่ง",
+          "ทุ่ม",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สองทุ่ม",
+        "romanization": "sǎawng thûm",
+        "definition": "8:00 pm",
+        "notes": "8 pm at night.",
+        "roots": [
+          "สองทุ่ม",
+          "สอง",
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สามทุ่ม",
+        "romanization": "sǎam thûm",
+        "definition": "9:00 pm",
+        "notes": "9 pm at night.",
+        "roots": [
+          "สามทุ่ม",
+          "สาม",
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สี่ทุ่ม",
+        "romanization": "sìi thûm",
+        "definition": "10:00 pm",
+        "notes": "10 pm at night.",
+        "roots": [
+          "สี่ทุ่ม",
+          "สี่",
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าทุ่ม",
+        "romanization": "hâa thûm",
+        "definition": "11:00 pm",
+        "notes": "11 pm at night.",
+        "roots": [
+          "ห้าทุ่ม",
+          "ห้า",
+          "ทุ่ม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าทุ่มครึ่ง",
+        "romanization": "hâa thûm khrʉ̂ng",
+        "definition": "11:30 pm",
+        "notes": "11:30 pm.",
+        "roots": [
+          "ห้าทุ่มครึ่ง",
+          "ห้า",
+          "ทุ่ม",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าทุ่มห้าสิบเก้านาที",
+        "romanization": "hâa thûm hâa sìp gâo naa-thii",
+        "definition": "11:59 pm",
+        "notes": "11:59 pm.",
+        "roots": [
+          "ห้าทุ่มห้าสิบเก้านาที",
+          "ห้า",
+          "ทุ่ม",
+          "สิบ",
+          "เก้า",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตีสาม",
+        "romanization": "dtii sǎam",
+        "definition": "3:00 am",
+        "notes": "3 am (pre-dawn time system using ตี + number).",
+        "roots": [
+          "ตีสาม",
+          "ตี",
+          "สาม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตีสี่ครึ่ง",
+        "romanization": "dtii sìi khrʉ̂ng",
+        "definition": "4:30 am",
+        "notes": "4:30 am (very early morning).",
+        "roots": [
+          "ตีสี่ครึ่ง",
+          "ตี",
+          "สี่",
+          "ครึ่ง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตีห้า",
+        "romanization": "dtii hâa",
+        "definition": "5:00 am",
+        "notes": "5 am early morning.",
+        "roots": [
+          "ตีห้า",
+          "ตี",
+          "ห้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ห้าโมงห้าสิบแปดนาที",
+        "romanization": "hâa moong hâa sìp bpàaet naa-thii",
+        "definition": "5:58 am",
+        "notes": "5:58 in the morning.",
+        "roots": [
+          "ห้าโมงห้าสิบแปดนาที",
+          "ห้า",
+          "โมง",
+          "สิบ",
+          "แปด",
+          "นาที"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เวลาเที่ยงคืน",
+        "romanization": "wee-laa thîiang-kʉʉn",
+        "definition": "midnight (time)",
+        "notes": "Uses เวลา + เที่ยงคืน explicitly as a “time of midnight.”",
+        "roots": [
+          "เวลาเที่ยงคืน",
+          "เวลา",
+          "เที่ยงคืน",
+          "เที่ยง",
+          "คืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตอนนี้กี่โมง",
+        "romanization": "dtaawn-níi gìi moong",
+        "definition": "what time is it now?",
+        "notes": "Everyday way to ask the time.",
+        "roots": [
+          "ตอนนี้กี่โมง",
+          "ตอน",
+          "นี้",
+          "กี่",
+          "โมง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เวลาเท่าไหร่",
+        "romanization": "wee-laa thâo-rài",
+        "definition": "what time? (formal-ish)",
+        "notes": "Slightly more formal / textbook way to ask “what time?”.",
+        "roots": [
+          "เวลาเท่าไหร่",
+          "เวลา",
+          "เท่าไหร่"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตี",
+        "romanization": "dtii",
+        "definition": "to hit; strike; (time) pre-dawn marker",
+        "notes": "Base verb “to hit/strike.” In time expressions, ตี + number is used for roughly 1–5 a.m. (ตีหนึ่ง, ตีสาม, ตีห้า).",
+        "roots": [
+          "ตี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "lessonnumber": 14,
+    "lessonname": "Calendar of Events",
+    "items": [
+      {
+        "thai": "งาน",
+        "romanization": "ngaan",
+        "definition": "event; function; work",
+        "notes": "General “event / function”; also means “work,” but here focus on events.",
+        "roots": [
+          "งาน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "งานเลี้ยง",
+        "romanization": "ngaan líang",
+        "definition": "party; banquet",
+        "notes": "Social gathering/party, often with food/drinks.",
+        "roots": [
+          "งานเลี้ยง",
+          "งาน",
+          "เลี้ยง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ฉลอง",
+        "romanization": "chà-lɔ̌ɔng",
+        "definition": "to celebrate",
+        "notes": "Verb “to celebrate”; used with events, birthdays, success.",
+        "roots": [
+          "ฉลอง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วัน",
+        "romanization": "wan",
+        "definition": "day",
+        "notes": "Unit “day”; used in many compounds (วันนี้, วันเกิด).",
+        "roots": [
+          "วัน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สัปดาห์",
+        "romanization": "sàp-daa",
+        "definition": "week",
+        "notes": "Formal word for “week.”",
+        "roots": [
+          "สัปดาห์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดือน",
+        "romanization": "dʉan",
+        "definition": "month",
+        "notes": "Unit “month.”",
+        "roots": [
+          "เดือน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ปี",
+        "romanization": "pii",
+        "definition": "year",
+        "notes": "Unit “year.”",
+        "roots": [
+          "ปี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อวาน",
+        "romanization": "mʉ̂a-waan",
+        "definition": "yesterday",
+        "notes": "“Yesterday”; can also hear เมื่อวานนี้.",
+        "roots": [
+          "เมื่อวาน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันนี้",
+        "romanization": "wan-níi",
+        "definition": "today",
+        "notes": "“Today”; literally “this day.”",
+        "roots": [
+          "วันนี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พรุ่งนี้",
+        "romanization": "phrûng-níi",
+        "definition": "tomorrow",
+        "notes": "“Tomorrow”; literally “next day.”",
+        "roots": [
+          "พรุ่งนี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "หน้า",
+        "romanization": "nâa",
+        "definition": "next; upcoming",
+        "notes": "Used after time words: ปีหน้า (next year), เดือนหน้า (next month).",
+        "roots": [
+          "หน้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ที่แล้ว",
+        "romanization": "thîi lɛ́ɛo",
+        "definition": "last; previous",
+        "notes": "Used after time words: ปีที่แล้ว (last year).",
+        "roots": [
+          "ที่แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "จันทร์",
+        "romanization": "jan",
+        "definition": "Monday",
+        "notes": "Short form of วันจันทร์.",
+        "roots": [
+          "จันทร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อังคาร",
+        "romanization": "ang-khaan",
+        "definition": "Tuesday",
+        "notes": "Short form of วันอังคาร.",
+        "roots": [
+          "อังคาร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พุธ",
+        "romanization": "phút",
+        "definition": "Wednesday",
+        "notes": "Short form of วันพุธ.",
+        "roots": [
+          "พุธ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พฤหัสบดี",
+        "romanization": "phá-rʉ́-hàt-sà-bɔɔ-dii",
+        "definition": "Thursday",
+        "notes": "Short form of วันพฤหัสบดี.",
+        "roots": [
+          "พฤหัสบดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ศุกร์",
+        "romanization": "sùk",
+        "definition": "Friday",
+        "notes": "Short form of วันศุกร์.",
+        "roots": [
+          "ศุกร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เสาร์",
+        "romanization": "săo",
+        "definition": "Saturday",
+        "notes": "Short form of วันเสาร์.",
+        "roots": [
+          "เสาร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อาทิตย์",
+        "romanization": "aa-thít",
+        "definition": "Sunday",
+        "notes": "Short form of วันอาทิตย์.",
+        "roots": [
+          "อาทิตย์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันจันทร์",
+        "romanization": "wan jan",
+        "definition": "Monday",
+        "notes": "Literally “day Monday.”",
+        "roots": [
+          "วันจันทร์",
+          "วัน",
+          "จันทร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันอังคาร",
+        "romanization": "wan ang-khaan",
+        "definition": "Tuesday",
+        "notes": "“day Tuesday.”",
+        "roots": [
+          "วันอังคาร",
+          "วัน",
+          "อังคาร"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันพุธ",
+        "romanization": "wan phút",
+        "definition": "Wednesday",
+        "notes": "“day Wednesday.”",
+        "roots": [
+          "วันพุธ",
+          "วัน",
+          "พุธ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันพฤหัสบดี",
+        "romanization": "wan phá-rʉ́-hàt-sà-bɔɔ-dii",
+        "definition": "Thursday",
+        "notes": "“day Thursday.”",
+        "roots": [
+          "วันพฤหัสบดี",
+          "วัน",
+          "พฤหัสบดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันศุกร์",
+        "romanization": "wan sùk",
+        "definition": "Friday",
+        "notes": "“day Friday.”",
+        "roots": [
+          "วันศุกร์",
+          "วัน",
+          "ศุกร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันเสาร์",
+        "romanization": "wan săo",
+        "definition": "Saturday",
+        "notes": "“day Saturday.”",
+        "roots": [
+          "วันเสาร์",
+          "วัน",
+          "เสาร์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันอาทิตย์",
+        "romanization": "wan aa-thít",
+        "definition": "Sunday",
+        "notes": "“day Sunday.”",
+        "roots": [
+          "วันอาทิตย์",
+          "วัน",
+          "อาทิตย์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มกราคม",
+        "romanization": "má-ga-raa-kom",
+        "definition": "January",
+        "notes": "Month name.",
+        "roots": [
+          "มกราคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กุมภาพันธ์",
+        "romanization": "gum-phaa-pan",
+        "definition": "February",
+        "notes": "Month name.",
+        "roots": [
+          "กุมภาพันธ์"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มีนาคม",
+        "romanization": "mii-naa-kom",
+        "definition": "March",
+        "notes": "Month name.",
+        "roots": [
+          "มีนาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมษายน",
+        "romanization": "mee-sǎa-yon",
+        "definition": "April",
+        "notes": "Month name.",
+        "roots": [
+          "เมษายน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พฤษภาคม",
+        "romanization": "phrʉ́t-sà-paa-kom",
+        "definition": "May",
+        "notes": "Month name.",
+        "roots": [
+          "พฤษภาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "มิถุนายน",
+        "romanization": "mí-thoo-naa-yon",
+        "definition": "June",
+        "notes": "Month name.",
+        "roots": [
+          "มิถุนายน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กรกฎาคม",
+        "romanization": "ga-rá-ga-daa-kom",
+        "definition": "July",
+        "notes": "Month name.",
+        "roots": [
+          "กรกฎาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สิงหาคม",
+        "romanization": "sǐng-hǎa-kom",
+        "definition": "August",
+        "notes": "Month name.",
+        "roots": [
+          "สิงหาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "กันยายน",
+        "romanization": "gan-yaa-yon",
+        "definition": "September",
+        "notes": "Month name.",
+        "roots": [
+          "กันยายน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ตุลาคม",
+        "romanization": "dtù-laa-kom",
+        "definition": "October",
+        "notes": "Month name.",
+        "roots": [
+          "ตุลาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พฤศจิกายน",
+        "romanization": "phrʉ́t-sà-jì-gaa-yon",
+        "definition": "November",
+        "notes": "Month name.",
+        "roots": [
+          "พฤศจิกายน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ธันวาคม",
+        "romanization": "than-waa-kom",
+        "definition": "December",
+        "notes": "Month name.",
+        "roots": [
+          "ธันวาคม"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ปฏิทิน",
+        "romanization": "bpà-dtì-tin",
+        "definition": "calendar",
+        "notes": "Wall/phone calendar.",
+        "roots": [
+          "ปฏิทิน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "อายุ",
+        "romanization": "aa-yú",
+        "definition": "age",
+        "notes": "Someone’s age in years.",
+        "roots": [
+          "อายุ"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "วันเกิด",
+        "romanization": "wan-gə̀ət",
+        "definition": "birthday",
+        "notes": "Literally “day of birth.”",
+        "roots": [
+          "วันเกิด",
+          "วัน",
+          "เกิด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สวัสดี",
+        "romanization": "sà-wàt-dii",
+        "definition": "hello",
+        "notes": "Used in greetings; combine with time of day (สวัสดีตอนเช้า).",
+        "roots": [
+          "สวัสดี"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อวานตอนเช้า",
+        "romanization": "mʉ̂a-waan dtaawn-cháo",
+        "definition": "yesterday morning",
+        "notes": "Literally “yesterday at-morning.”",
+        "roots": [
+          "เมื่อวานตอนเช้า",
+          "เมื่อวาน",
+          "ตอน",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อวานตอนบ่าย",
+        "romanization": "mʉ̂a-waan dtaawn-bàai",
+        "definition": "yesterday afternoon",
+        "notes": "“yesterday at-afternoon.”",
+        "roots": [
+          "เมื่อวานตอนบ่าย",
+          "เมื่อวาน",
+          "ตอน",
+          "บ่าย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อวานตอนเย็น",
+        "romanization": "mʉ̂a-waan dtaawn-yen",
+        "definition": "yesterday evening",
+        "notes": "“yesterday at-evening.”",
+        "roots": [
+          "เมื่อวานตอนเย็น",
+          "เมื่อวาน",
+          "ตอน",
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เมื่อคืน",
+        "romanization": "mʉ̂a-kʉʉn",
+        "definition": "last night",
+        "notes": "Common way to say “last night.”",
+        "roots": [
+          "เมื่อคืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สวัสดีตอนเช้า",
+        "romanization": "sà-wàt-dii dtaawn-cháo",
+        "definition": "good morning",
+        "notes": "Greeting used in the morning.",
+        "roots": [
+          "สวัสดีตอนเช้า",
+          "สวัสดี",
+          "ตอน",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เช้านี้",
+        "romanization": "cháo-níi",
+        "definition": "this morning",
+        "notes": "Literally “this morning.”",
+        "roots": [
+          "เช้านี้",
+          "เช้า",
+          "นี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "บ่ายนี้",
+        "romanization": "bàai-níi",
+        "definition": "this afternoon",
+        "notes": "“this afternoon.”",
+        "roots": [
+          "บ่ายนี้",
+          "บ่าย",
+          "นี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เย็นนี้",
+        "romanization": "yen-níi",
+        "definition": "this evening",
+        "notes": "“this evening / tonight (early evening).”",
+        "roots": [
+          "เย็นนี้",
+          "เย็น",
+          "นี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "คืนนี้",
+        "romanization": "kʉʉn-níi",
+        "definition": "tonight",
+        "notes": "“this night.”",
+        "roots": [
+          "คืนนี้",
+          "คืน",
+          "นี้"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พรุ่งนี้ตอนเช้า",
+        "romanization": "phrûng-níi dtaawn-cháo",
+        "definition": "tomorrow morning",
+        "notes": "“tomorrow at-morning.”",
+        "roots": [
+          "พรุ่งนี้ตอนเช้า",
+          "พรุ่งนี้",
+          "ตอน",
+          "เช้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พรุ่งนี้ตอนบ่าย",
+        "romanization": "phrûng-níi dtaawn-bàai",
+        "definition": "tomorrow afternoon",
+        "notes": "“tomorrow at-afternoon.”",
+        "roots": [
+          "พรุ่งนี้ตอนบ่าย",
+          "พรุ่งนี้",
+          "ตอน",
+          "บ่าย"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พรุ่งนี้ตอนเย็น",
+        "romanization": "phrûng-níi dtaawn-yen",
+        "definition": "tomorrow evening",
+        "notes": "“tomorrow at-evening.”",
+        "roots": [
+          "พรุ่งนี้ตอนเย็น",
+          "พรุ่งนี้",
+          "ตอน",
+          "เย็น"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "พรุ่งนี้ตอนกลางคืน",
+        "romanization": "phrûng-níi dtaawn-glaang-kʉʉn",
+        "definition": "tomorrow night",
+        "notes": "Literally “tomorrow at night-time.”",
+        "roots": [
+          "พรุ่งนี้ตอนกลางคืน",
+          "พรุ่งนี้",
+          "ตอน",
+          "กลางคืน"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สัปดาห์ที่แล้ว",
+        "romanization": "sàp-daa thîi lɛ́ɛo",
+        "definition": "last week",
+        "notes": "“week that passed = last week.”",
+        "roots": [
+          "สัปดาห์ที่แล้ว",
+          "สัปดาห์",
+          "ที่แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "สัปดาห์หน้า",
+        "romanization": "sàp-daa nâa",
+        "definition": "next week",
+        "notes": "“week next = next week.”",
+        "roots": [
+          "สัปดาห์หน้า",
+          "สัปดาห์",
+          "หน้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดือนที่แล้ว",
+        "romanization": "dʉan thîi lɛ́ɛo",
+        "definition": "last month",
+        "notes": "“month that passed.”",
+        "roots": [
+          "เดือนที่แล้ว",
+          "เดือน",
+          "ที่แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เดือนหน้า",
+        "romanization": "dʉan nâa",
+        "definition": "next month",
+        "notes": "“month next.”",
+        "roots": [
+          "เดือนหน้า",
+          "เดือน",
+          "หน้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ปีที่แล้ว",
+        "romanization": "pii thîi lɛ́ɛo",
+        "definition": "last year",
+        "notes": "“year that passed.”",
+        "roots": [
+          "ปีที่แล้ว",
+          "ปี",
+          "ที่แล้ว"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "ปีหน้า",
+        "romanization": "pii nâa",
+        "definition": "next year",
+        "notes": "“year next.”",
+        "roots": [
+          "ปีหน้า",
+          "ปี",
+          "หน้า"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เลี้ยง",
+        "romanization": "líang",
+        "definition": "to feed; to host a party",
+        "notes": "Verb for “feed/raise” (เลี้ยงหมา = raise a dog) and “treat/host” (เลี้ยงข้าว = treat someone to a meal, งานเลี้ยง = a party).",
+        "roots": [
+          "เลี้ยง"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      },
+      {
+        "thai": "เกิด",
+        "romanization": "gə̀ət",
+        "definition": "to be born; to happen",
+        "notes": "Used for birth (เกิดวันที่… = born on…) and events happening (เกิดอะไรขึ้น = what happened?).",
+        "roots": [
+          "เกิด"
+        ],
+        "confidence": 0,
+        "attempts": 0,
+        "correct": 0
+      }
+    ]
+  }
+]
