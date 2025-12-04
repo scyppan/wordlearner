@@ -245,154 +245,168 @@ function exportfullset() {
 }
 
 function showlessonimportmodal(defaultnum, defaultname, callback) {
-  lessonimportcallback = callback;
+  lessonimportcallback = callback
 
   if (!lessonimportmodal) {
-    lessonimportmodal = document.createElement("div");
-    lessonimportmodal.id = "lesson-import-modal";
-    lessonimportmodal.className = "import-modal";
+    lessonimportmodal = document.createElement('div')
+    lessonimportmodal.id = 'lesson-import-modal'
+    lessonimportmodal.className = 'import-modal'
 
-    var dialog = document.createElement("div");
-    dialog.className = "import-modal-dialog";
+    var dialog = document.createElement('div')
+    dialog.className = 'import-modal-dialog'
 
-    var header = document.createElement("div");
-    header.className = "import-modal-header";
+    var header = document.createElement('div')
+    header.className = 'import-modal-header'
 
-    var title = document.createElement("span");
-    title.className = "import-modal-title";
-    title.textContent = "Import lesson";
+    var title = document.createElement('span')
+    title.className = 'import-modal-title'
+    title.textContent = 'Import lesson'
 
-    var closebtn = document.createElement("button");
-    closebtn.type = "button";
-    closebtn.className = "import-modal-close";
-    closebtn.textContent = "×";
+    var closebtn = document.createElement('button')
+    closebtn.type = 'button'
+    closebtn.className = 'import-modal-close'
+    closebtn.textContent = '×'
 
-    header.appendChild(title);
-    header.appendChild(closebtn);
+    header.appendChild(title)
+    header.appendChild(closebtn)
 
-    var body = document.createElement("div");
-    body.className = "import-modal-body";
+    var body = document.createElement('div')
+    body.className = 'import-modal-body'
 
-    var row = document.createElement("div");
-    row.className = "lesson-import-row";
+    var row = document.createElement('div')
+    row.className = 'lesson-import-row'
 
-    var numfieldwrap = document.createElement("div");
-    numfieldwrap.className = "lesson-import-field lesson-import-number-field";
+    var numfieldwrap = document.createElement('div')
+    numfieldwrap.className = 'lesson-import-field lesson-import-number-field'
 
-    var numlabel = document.createElement("label");
-    numlabel.htmlFor = "lesson-import-number";
-    numlabel.textContent = "Lesson number";
+    var numlabel = document.createElement('label')
+    numlabel.htmlFor = 'lesson-import-number'
+    numlabel.textContent = 'Lesson number'
 
-    var numinput = document.createElement("input");
-    numinput.id = "lesson-import-number";
-    numinput.type = "text"; // allow values like "0.0.0", "25.10.215"
+    var numinput = document.createElement('input')
+    numinput.id = 'lesson-import-number'
+    numinput.type = 'text'   // allow values like "0.0.0", "25.10.215"
 
-    numfieldwrap.appendChild(numlabel);
-    numfieldwrap.appendChild(numinput);
+    numfieldwrap.appendChild(numlabel)
+    numfieldwrap.appendChild(numinput)
 
-    var namefieldwrap = document.createElement("div");
-    namefieldwrap.className = "lesson-import-field lesson-import-name-field";
+    var namefieldwrap = document.createElement('div')
+    namefieldwrap.className = 'lesson-import-field lesson-import-name-field'
 
-    var namelabel = document.createElement("label");
-    namelabel.htmlFor = "lesson-import-name";
-    namelabel.textContent = "Lesson name";
+    var namelabel = document.createElement('label')
+    namelabel.htmlFor = 'lesson-import-name'
+    namelabel.textContent = 'Lesson name'
 
-    var nameinput = document.createElement("input");
-    nameinput.id = "lesson-import-name";
-    nameinput.type = "text";
+    var nameinput = document.createElement('input')
+    nameinput.id = 'lesson-import-name'
+    nameinput.type = 'text'
 
-    namefieldwrap.appendChild(namelabel);
-    namefieldwrap.appendChild(nameinput);
+    namefieldwrap.appendChild(namelabel)
+    namefieldwrap.appendChild(nameinput)
 
-    row.appendChild(numfieldwrap);
-    row.appendChild(namefieldwrap);
-    body.appendChild(row);
+    row.appendChild(numfieldwrap)
+    row.appendChild(namefieldwrap)
+    body.appendChild(row)
 
-    var footer = document.createElement("div");
-    footer.className = "import-modal-footer";
+    var footer = document.createElement('div')
+    footer.className = 'import-modal-footer'
 
-    var cancelbtn = document.createElement("button");
-    cancelbtn.type = "button";
-    cancelbtn.className = "lesson-import-cancel";
-    cancelbtn.textContent = "Cancel";
+    var cancelbtn = document.createElement('button')
+    cancelbtn.type = 'button'
+    cancelbtn.className = 'lesson-import-cancel'
+    cancelbtn.textContent = 'Cancel'
 
-    var okbtn = document.createElement("button");
-    okbtn.type = "button";
-    okbtn.className = "lesson-import-ok";
-    okbtn.textContent = "Import lesson";
+    var okbtn = document.createElement('button')
+    okbtn.type = 'button'
+    okbtn.className = 'lesson-import-ok'
+    okbtn.textContent = 'Import lesson'
 
-    footer.appendChild(cancelbtn);
-    footer.appendChild(okbtn);
+    footer.appendChild(cancelbtn)
+    footer.appendChild(okbtn)
 
-    dialog.appendChild(header);
-    dialog.appendChild(body);
-    dialog.appendChild(footer);
-    lessonimportmodal.appendChild(dialog);
-    document.body.appendChild(lessonimportmodal);
+    dialog.appendChild(header)
+    dialog.appendChild(body)
+    dialog.appendChild(footer)
+    lessonimportmodal.appendChild(dialog)
+    document.body.appendChild(lessonimportmodal)
 
     function hidemodal() {
-      lessonimportmodal.classList.remove("is-open");
-      lessonimportcallback = null;
+      lessonimportmodal.classList.remove('is-open')
+      lessonimportcallback = null
     }
 
-    closebtn.addEventListener("click", function () {
-      hidemodal();
-    });
+    function handlekey(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault()
+        okbtn.click()
+      } else if (e.key === 'Escape') {
+        e.preventDefault()
+        cancelbtn.click()
+      }
+    }
 
-    cancelbtn.addEventListener("click", function () {
-      hidemodal();
-    });
+    closebtn.addEventListener('click', function () {
+      hidemodal()
+    })
 
-    okbtn.addEventListener("click", function () {
+    cancelbtn.addEventListener('click', function () {
+      hidemodal()
+    })
+
+    okbtn.addEventListener('click', function () {
       if (!lessonimportcallback) {
-        hidemodal();
-        return;
+        hidemodal()
+        return
       }
 
-      var numfield = document.getElementById("lesson-import-number");
-      var namefield = document.getElementById("lesson-import-name");
+      var numfield = document.getElementById('lesson-import-number')
+      var namefield = document.getElementById('lesson-import-name')
 
-      var rawnum = (numfield.value || "").trim();
-      var defnum = (numfield.getAttribute("data-default") || "").trim();
+      var rawnum = (numfield.value || '').trim()
+      var defnum = (numfield.getAttribute('data-default') || '').trim()
 
       // keep lessonnumber as a string (e.g., "0.0.0", "25.10.215")
-      var numval = rawnum || defnum || "0";
+      var numval = rawnum || defnum || '0'
 
-      var nameval = (namefield.value || "").trim();
+      var nameval = (namefield.value || '').trim()
       if (!nameval) {
-        nameval = namefield.getAttribute("data-default") || "New lesson";
+        nameval = namefield.getAttribute('data-default') || 'New lesson'
       }
 
-      var cb = lessonimportcallback;
-      lessonimportcallback = null;
-      hidemodal();
-      cb(numval, nameval);
-    });
+      var cb = lessonimportcallback
+      lessonimportcallback = null
+      hidemodal()
+      cb(numval, nameval)
+    })
+
+    // key handler on the modal (works for both inputs)
+    lessonimportmodal.addEventListener('keydown', handlekey)
   }
 
-  var numinputnode = document.getElementById("lesson-import-number");
-  var nameinputnode = document.getElementById("lesson-import-name");
+  var numinputnode = document.getElementById('lesson-import-number')
+  var nameinputnode = document.getElementById('lesson-import-name')
 
-  var effnumstr;
-  if (typeof defaultnum === "string") {
-    effnumstr = defaultnum;
-  } else if (typeof defaultnum === "number" && !isNaN(defaultnum)) {
-    effnumstr = String(defaultnum);
+  var effnumstr
+  if (typeof defaultnum === 'string') {
+    effnumstr = defaultnum
+  } else if (typeof defaultnum === 'number' && !isNaN(defaultnum)) {
+    effnumstr = String(defaultnum)
   } else {
-    effnumstr = "";
+    effnumstr = ''
   }
 
-  numinputnode.value = effnumstr;
-  numinputnode.setAttribute("data-default", effnumstr);
+  numinputnode.value = effnumstr
+  numinputnode.setAttribute('data-default', effnumstr)
 
-  nameinputnode.value = defaultname || "New lesson";
-  nameinputnode.setAttribute("data-default", defaultname || "New lesson");
+  nameinputnode.value = defaultname || 'New lesson'
+  nameinputnode.setAttribute('data-default', defaultname || 'New lesson')
 
-  lessonimportmodal.classList.add("is-open");
+  lessonimportmodal.classList.add('is-open')
 
-  numinputnode.focus();
-  numinputnode.select();
+  numinputnode.focus()
+  numinputnode.select()
 }
+
 
 function importlesson() {
   var input = document.createElement('input')
