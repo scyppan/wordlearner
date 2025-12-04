@@ -3,62 +3,63 @@
 //---------
 //ENTRY FUNCTION
 //---------
-var lessonimportmodal = null
-var lessonimportcallback = null
+var lessonimportmodal = null;
+var lessonimportcallback = null;
 
 function renderdata() {
-    clearmaincontent()
-    var main = document.querySelector('#maincontent')
-    if (!main) return
+  clearmaincontent();
+  var main = document.querySelector("#maincontent");
+  if (!main) return;
 
-    main.innerHTML = ''
+  main.innerHTML = "";
 
-    var container = document.createElement('div')
-    container.className = 'data-actions-container'
+  var container = document.createElement("div");
+  container.className = "data-actions-container";
 
-    // Import group
-    var importgroup = document.createElement('div')
-    importgroup.className = 'data-actions-group'
+  // Import group
+  var importgroup = document.createElement("div");
+  importgroup.className = "data-actions-group";
 
-    var importlabel = document.createElement('div')
-    importlabel.className = 'data-group-label'
-    importlabel.textContent = 'Import'
-    importgroup.appendChild(importlabel)
+  var importlabel = document.createElement("div");
+  importlabel.className = "data-group-label";
+  importlabel.textContent = "Import";
+  importgroup.appendChild(importlabel);
 
-    var importfullbtn = document.createElement('button')
-    importfullbtn.id = 'import-full-set-btn'
-    importfullbtn.textContent = 'Full Set'
-    importfullbtn.title = 'Import an entire dataset of lessons/items (replaces current full set).'
-    importfullbtn.onclick = importfullset
-    importgroup.appendChild(importfullbtn)
+  var importfullbtn = document.createElement("button");
+  importfullbtn.id = "import-full-set-btn";
+  importfullbtn.textContent = "Full Set";
+  importfullbtn.title =
+    "Import an entire dataset of lessons/items (replaces current full set).";
+  importfullbtn.onclick = importfullset;
+  importgroup.appendChild(importfullbtn);
 
-    var importlessonbtn = document.createElement('button')
-    importlessonbtn.id = 'import-lesson-btn'
-    importlessonbtn.textContent = 'Lesson'
-    importlessonbtn.title = 'Import data for a single lesson.'
-    importlessonbtn.onclick = importlesson
-    importgroup.appendChild(importlessonbtn)
+  var importlessonbtn = document.createElement("button");
+  importlessonbtn.id = "import-lesson-btn";
+  importlessonbtn.textContent = "Lesson";
+  importlessonbtn.title = "Import data for a single lesson.";
+  importlessonbtn.onclick = importlesson;
+  importgroup.appendChild(importlessonbtn);
 
-    // Export group
-    var exportgroup = document.createElement('div')
-    exportgroup.className = 'data-actions-group'
+  // Export group
+  var exportgroup = document.createElement("div");
+  exportgroup.className = "data-actions-group";
 
-    var exportlabel = document.createElement('div')
-    exportlabel.className = 'data-group-label'
-    exportlabel.textContent = 'Export'
-    exportgroup.appendChild(exportlabel)
+  var exportlabel = document.createElement("div");
+  exportlabel.className = "data-group-label";
+  exportlabel.textContent = "Export";
+  exportgroup.appendChild(exportlabel);
 
-    var exportfullbtn = document.createElement('button')
-    exportfullbtn.id = 'export-full-set-btn'
-    exportfullbtn.textContent = 'Full Set'
-    exportfullbtn.title = 'Export the entire lesson/item dataset.'
-    exportfullbtn.onclick = exportfullset
-    exportgroup.appendChild(exportfullbtn)
+  var exportfullbtn = document.createElement("button");
+  exportfullbtn.id = "export-full-set-btn";
+  exportfullbtn.textContent = "Full Set";
+  exportfullbtn.title = "Export the entire lesson/item dataset.";
+  exportfullbtn.onclick = exportfullset;
+  exportgroup.appendChild(exportfullbtn);
 
-    container.appendChild(importgroup)
-    container.appendChild(exportgroup)
+  container.appendChild(importgroup);
+  container.appendChild(exportgroup);
 
-    main.appendChild(container)
+  main.appendChild(container);
 }
 
 //---------
@@ -66,295 +67,331 @@ function renderdata() {
 //---------
 
 function importfullset() {
-    var input = document.createElement('input')
-    input.type = 'file'
-    input.accept = '.json,application/json'
+  var input = document.createElement("input");
+  input.type = "file";
+  input.accept = ".json,application/json";
 
-    input.onchange = function (event) {
-        var file = event.target.files[0]
-        if (!file) return
+  input.onchange = function (event) {
+    var file = event.target.files[0];
+    if (!file) return;
 
-        var reader = new FileReader()
-        reader.onload = function (e) {
-            try {
-                var parsed = JSON.parse(e.target.result)
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        var parsed = JSON.parse(e.target.result);
 
-                if (!Array.isArray(parsed)) {
-                    throw new Error('Top-level JSON must be an array (fullset).')
-                }
-
-                var cleaned = []
-                parsed.forEach(function (lessonraw, idx) {
-                    if (!lessonraw || typeof lessonraw !== 'object') return
-
-                    var lessonnumber = typeof lessonraw.lessonnumber === 'number'
-                        ? lessonraw.lessonnumber
-                        : (parseInt(lessonraw.lessonnumber, 10) || 0)
-
-                    var lessonname = typeof lessonraw.lessonname === 'string'
-                        ? lessonraw.lessonname
-                        : ('Lesson ' + (idx + 1))
-
-                    var items = Array.isArray(lessonraw.items) ? lessonraw.items : []
-
-                    var cleaneditems = items.map(function (it) {
-                        var thai = it && typeof it.thai === 'string' ? it.thai : ''
-                        var romanization = it && typeof it.romanization === 'string' ? it.romanization : ''
-                        var definition = it && typeof it.definition === 'string' ? it.definition : ''
-                        var notes = it && typeof it.notes === 'string' ? it.notes : ''
-
-                        var roots = []
-                        if (it && Array.isArray(it.roots)) {
-                            roots = it.roots
-                                .map(function (r) { return typeof r === 'string' ? r.trim() : '' })
-                                .filter(function (r) { return r !== '' })
-                        } else if (it && typeof it.roots === 'string') {
-                            roots = it.roots
-                                .split(',')
-                                .map(function (r) { return r.trim() })
-                                .filter(function (r) { return r !== '' })
-                        }
-
-                        // keep progress fields if present
-                        var confidence = typeof it.confidence === 'number' ? it.confidence : 0
-                        var attempts = typeof it.attempts === 'number' ? it.attempts : 0
-                        var correct = typeof it.correct === 'number' ? it.correct : 0
-
-                        return {
-                            thai: thai,
-                            romanization: romanization,
-                            definition: definition,
-                            notes: notes,
-                            roots: roots,
-                            confidence: confidence,
-                            attempts: attempts,
-                            correct: correct
-                        }
-                    })
-
-                    cleaned.push({
-                        lessonnumber: lessonnumber,
-                        lessonname: lessonname,
-                        items: cleaneditems
-                    })
-                })
-
-                if (!Array.isArray(cleaned) || cleaned.length === 0) {
-                    throw new Error('No valid lessons/items found in JSON.')
-                }
-
-                if (typeof fullset === 'undefined') {
-                    fullset = []
-                }
-
-                fullset = cleaned
-                if (typeof storedata === 'function') {
-                    storedata('fullset', fullset)
-                }
-
-                var totalitems = fullset.reduce(function (sum, l) {
-                    return sum + (Array.isArray(l.items) ? l.items.length : 0)
-                }, 0)
-
-                showquizstatusmodal(
-                    'Full set import complete.\n' +
-                    'Lessons: ' + fullset.length + '\n' +
-                    'Total items: ' + totalitems
-                )
-            } catch (err) {
-                console.error(err)
-                showquizstatusmodal('Invalid Full Set JSON format or structure.')
-            }
+        if (!Array.isArray(parsed)) {
+          throw new Error("Top-level JSON must be an array (fullset).");
         }
 
-        reader.readAsText(file, 'utf-8')
-    }
+        var cleaned = [];
+        parsed.forEach(function (lessonraw, idx) {
+          if (!lessonraw || typeof lessonraw !== "object") return;
 
-    input.click()
+          // always keep lessonnumber as a string
+          var lessonnumberraw = lessonraw.lessonnumber;
+          var lessonnumber = "";
+
+          if (typeof lessonnumberraw === "string") {
+            lessonnumber = lessonnumberraw.trim() || String(idx + 1);
+          } else if (
+            typeof lessonnumberraw === "number" &&
+            !isNaN(lessonnumberraw)
+          ) {
+            lessonnumber = String(lessonnumberraw);
+          } else {
+            lessonnumber = String(idx + 1);
+          }
+
+          var lessonname =
+            typeof lessonraw.lessonname === "string"
+              ? lessonraw.lessonname
+              : "Lesson " + (idx + 1);
+
+          var items = Array.isArray(lessonraw.items) ? lessonraw.items : [];
+
+          var cleaneditems = items.map(function (it) {
+            var thai = it && typeof it.thai === "string" ? it.thai : "";
+            var romanization =
+              it && typeof it.romanization === "string" ? it.romanization : "";
+            var definition =
+              it && typeof it.definition === "string" ? it.definition : "";
+            var notes = it && typeof it.notes === "string" ? it.notes : "";
+
+            var roots = [];
+            if (it && Array.isArray(it.roots)) {
+              roots = it.roots
+                .map(function (r) {
+                  return typeof r === "string" ? r.trim() : "";
+                })
+                .filter(function (r) {
+                  return r !== "";
+                });
+            } else if (it && typeof it.roots === "string") {
+              roots = it.roots
+                .split(",")
+                .map(function (r) {
+                  return r.trim();
+                })
+                .filter(function (r) {
+                  return r !== "";
+                });
+            }
+
+            // keep progress fields if present
+            var confidence =
+              typeof it.confidence === "number" ? it.confidence : 0;
+            var attempts = typeof it.attempts === "number" ? it.attempts : 0;
+            var correct = typeof it.correct === "number" ? it.correct : 0;
+
+            return {
+              thai: thai,
+              romanization: romanization,
+              definition: definition,
+              notes: notes,
+              roots: roots,
+              confidence: confidence,
+              attempts: attempts,
+              correct: correct,
+            };
+          });
+
+          cleaned.push({
+            lessonnumber: lessonnumber, // string
+            lessonname: lessonname,
+            items: cleaneditems,
+          });
+        });
+
+        if (!Array.isArray(cleaned) || cleaned.length === 0) {
+          throw new Error("No valid lessons/items found in JSON.");
+        }
+
+        if (typeof fullset === "undefined") {
+          fullset = [];
+        }
+
+        fullset = cleaned;
+        if (typeof storedata === "function") {
+          storedata("fullset", fullset);
+        }
+
+        var totalitems = fullset.reduce(function (sum, l) {
+          return sum + (Array.isArray(l.items) ? l.items.length : 0);
+        }, 0);
+
+        showquizstatusmodal(
+          "Full set import complete.\n" +
+            "Lessons: " +
+            fullset.length +
+            "\n" +
+            "Total items: " +
+            totalitems
+        );
+      } catch (err) {
+        console.error(err);
+        showquizstatusmodal("Invalid Full Set JSON format or structure.");
+      }
+    };
+
+    reader.readAsText(file, "utf-8");
+  };
+
+  input.click();
 }
 
 function exportfullset() {
-    if (typeof fullset === 'undefined' || !Array.isArray(fullset) || !fullset.length) {
-        showquizstatusmodal('No full set data to export.')
-        return
-    }
+  if (
+    typeof fullset === "undefined" ||
+    !Array.isArray(fullset) ||
+    !fullset.length
+  ) {
+    showquizstatusmodal("No full set data to export.");
+    return;
+  }
 
-    var data = fullset
+  var data = fullset;
 
-    var dataStr = JSON.stringify(data, null, 2)
-    var blob = new Blob([dataStr], { type: 'application/json' })
-    var url = URL.createObjectURL(blob)
+  var dataStr = JSON.stringify(data, null, 2);
+  var blob = new Blob([dataStr], { type: "application/json" });
+  var url = URL.createObjectURL(blob);
 
-    var now = new Date()
-    var yy = String(now.getFullYear()).slice(2)
-    var mm = String(now.getMonth() + 1).padStart(2, '0')
-    var dd = String(now.getDate()).padStart(2, '0')
-    var filename = 'Thai Full Set - ' + yy + '.' + mm + '.' + dd + '.json'
+  var now = new Date();
+  var yy = String(now.getFullYear()).slice(2);
+  var mm = String(now.getMonth() + 1).padStart(2, "0");
+  var dd = String(now.getDate()).padStart(2, "0");
+  var filename = "Thai Full Set - " + yy + "." + mm + "." + dd + ".json";
 
-    var a = document.createElement('a')
-    a.href = url
-    a.download = filename
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 
-    var totalitems = fullset.reduce(function (sum, l) {
-        return sum + (Array.isArray(l.items) ? l.items.length : 0)
-    }, 0)
+  var totalitems = fullset.reduce(function (sum, l) {
+    return sum + (Array.isArray(l.items) ? l.items.length : 0);
+  }, 0);
 
-    showquizstatusmodal(
-        'Exported full set.\n' +
-        'Lessons: ' + fullset.length + '\n' +
-        'Total items: ' + totalitems
-    )
+  showquizstatusmodal(
+    "Exported full set.\n" +
+      "Lessons: " +
+      fullset.length +
+      "\n" +
+      "Total items: " +
+      totalitems
+  );
 }
 
 function showlessonimportmodal(defaultnum, defaultname, callback) {
-  lessonimportcallback = callback
+  lessonimportcallback = callback;
 
   if (!lessonimportmodal) {
-    lessonimportmodal = document.createElement('div')
-    lessonimportmodal.id = 'lesson-import-modal'
-    lessonimportmodal.className = 'import-modal'
+    lessonimportmodal = document.createElement("div");
+    lessonimportmodal.id = "lesson-import-modal";
+    lessonimportmodal.className = "import-modal";
 
-    var dialog = document.createElement('div')
-    dialog.className = 'import-modal-dialog'
+    var dialog = document.createElement("div");
+    dialog.className = "import-modal-dialog";
 
-    var header = document.createElement('div')
-    header.className = 'import-modal-header'
+    var header = document.createElement("div");
+    header.className = "import-modal-header";
 
-    var title = document.createElement('span')
-    title.className = 'import-modal-title'
-    title.textContent = 'Import lesson'
+    var title = document.createElement("span");
+    title.className = "import-modal-title";
+    title.textContent = "Import lesson";
 
-    var closebtn = document.createElement('button')
-    closebtn.type = 'button'
-    closebtn.className = 'import-modal-close'
-    closebtn.textContent = '×'
+    var closebtn = document.createElement("button");
+    closebtn.type = "button";
+    closebtn.className = "import-modal-close";
+    closebtn.textContent = "×";
 
-    header.appendChild(title)
-    header.appendChild(closebtn)
+    header.appendChild(title);
+    header.appendChild(closebtn);
 
-    var body = document.createElement('div')
-    body.className = 'import-modal-body'
+    var body = document.createElement("div");
+    body.className = "import-modal-body";
 
-    var row = document.createElement('div')
-    row.className = 'lesson-import-row'
+    var row = document.createElement("div");
+    row.className = "lesson-import-row";
 
-    var numfieldwrap = document.createElement('div')
-    numfieldwrap.className = 'lesson-import-field lesson-import-number-field'
+    var numfieldwrap = document.createElement("div");
+    numfieldwrap.className = "lesson-import-field lesson-import-number-field";
 
-    var numlabel = document.createElement('label')
-    numlabel.htmlFor = 'lesson-import-number'
-    numlabel.textContent = 'Lesson number'
+    var numlabel = document.createElement("label");
+    numlabel.htmlFor = "lesson-import-number";
+    numlabel.textContent = "Lesson number";
 
-    var numinput = document.createElement('input')
-    numinput.id = 'lesson-import-number'
-    numinput.type = 'number'
-    numinput.min = '0'   // allow 0 as a valid lesson number
-    numinput.step = '1'
+    var numinput = document.createElement("input");
+    numinput.id = "lesson-import-number";
+    numinput.type = "text"; // allow values like "0.0.0", "25.10.215"
 
-    numfieldwrap.appendChild(numlabel)
-    numfieldwrap.appendChild(numinput)
+    numfieldwrap.appendChild(numlabel);
+    numfieldwrap.appendChild(numinput);
 
-    var namefieldwrap = document.createElement('div')
-    namefieldwrap.className = 'lesson-import-field lesson-import-name-field'
+    var namefieldwrap = document.createElement("div");
+    namefieldwrap.className = "lesson-import-field lesson-import-name-field";
 
-    var namelabel = document.createElement('label')
-    namelabel.htmlFor = 'lesson-import-name'
-    namelabel.textContent = 'Lesson name'
+    var namelabel = document.createElement("label");
+    namelabel.htmlFor = "lesson-import-name";
+    namelabel.textContent = "Lesson name";
 
-    var nameinput = document.createElement('input')
-    nameinput.id = 'lesson-import-name'
-    nameinput.type = 'text'
+    var nameinput = document.createElement("input");
+    nameinput.id = "lesson-import-name";
+    nameinput.type = "text";
 
-    namefieldwrap.appendChild(namelabel)
-    namefieldwrap.appendChild(nameinput)
+    namefieldwrap.appendChild(namelabel);
+    namefieldwrap.appendChild(nameinput);
 
-    row.appendChild(numfieldwrap)
-    row.appendChild(namefieldwrap)
-    body.appendChild(row)
+    row.appendChild(numfieldwrap);
+    row.appendChild(namefieldwrap);
+    body.appendChild(row);
 
-    var footer = document.createElement('div')
-    footer.className = 'import-modal-footer'
+    var footer = document.createElement("div");
+    footer.className = "import-modal-footer";
 
-    var cancelbtn = document.createElement('button')
-    cancelbtn.type = 'button'
-    cancelbtn.className = 'lesson-import-cancel'
-    cancelbtn.textContent = 'Cancel'
+    var cancelbtn = document.createElement("button");
+    cancelbtn.type = "button";
+    cancelbtn.className = "lesson-import-cancel";
+    cancelbtn.textContent = "Cancel";
 
-    var okbtn = document.createElement('button')
-    okbtn.type = 'button'
-    okbtn.className = 'lesson-import-ok'
-    okbtn.textContent = 'Import lesson'
+    var okbtn = document.createElement("button");
+    okbtn.type = "button";
+    okbtn.className = "lesson-import-ok";
+    okbtn.textContent = "Import lesson";
 
-    footer.appendChild(cancelbtn)
-    footer.appendChild(okbtn)
+    footer.appendChild(cancelbtn);
+    footer.appendChild(okbtn);
 
-    dialog.appendChild(header)
-    dialog.appendChild(body)
-    dialog.appendChild(footer)
-    lessonimportmodal.appendChild(dialog)
-    document.body.appendChild(lessonimportmodal)
+    dialog.appendChild(header);
+    dialog.appendChild(body);
+    dialog.appendChild(footer);
+    lessonimportmodal.appendChild(dialog);
+    document.body.appendChild(lessonimportmodal);
 
     function hidemodal() {
-      lessonimportmodal.classList.remove('is-open')
-      lessonimportcallback = null
+      lessonimportmodal.classList.remove("is-open");
+      lessonimportcallback = null;
     }
 
-    closebtn.addEventListener('click', function () {
-      hidemodal()
-    })
+    closebtn.addEventListener("click", function () {
+      hidemodal();
+    });
 
-    cancelbtn.addEventListener('click', function () {
-      hidemodal()
-    })
+    cancelbtn.addEventListener("click", function () {
+      hidemodal();
+    });
 
-    okbtn.addEventListener('click', function () {
+    okbtn.addEventListener("click", function () {
       if (!lessonimportcallback) {
-        hidemodal()
-        return
+        hidemodal();
+        return;
       }
 
-      var numfield = document.getElementById('lesson-import-number')
-      var namefield = document.getElementById('lesson-import-name')
+      var numfield = document.getElementById("lesson-import-number");
+      var namefield = document.getElementById("lesson-import-name");
 
-      var raw = numfield.value
-      var numval = parseInt(raw, 10)
+      var rawnum = (numfield.value || "").trim();
+      var defnum = (numfield.getAttribute("data-default") || "").trim();
 
-      // only fall back if not a number; 0 is allowed
-      if (isNaN(numval)) {
-        numval = parseInt(numfield.getAttribute('data-default') || '0', 10)
-      }
+      // keep lessonnumber as a string (e.g., "0.0.0", "25.10.215")
+      var numval = rawnum || defnum || "0";
 
-      var nameval = (namefield.value || '').trim()
+      var nameval = (namefield.value || "").trim();
       if (!nameval) {
-        nameval = namefield.getAttribute('data-default') || 'New lesson'
+        nameval = namefield.getAttribute("data-default") || "New lesson";
       }
 
-      var cb = lessonimportcallback
-      lessonimportcallback = null
-      hidemodal()
-      cb(numval, nameval)
-    })
+      var cb = lessonimportcallback;
+      lessonimportcallback = null;
+      hidemodal();
+      cb(numval, nameval);
+    });
   }
 
-  var numinputnode = document.getElementById('lesson-import-number')
-  var nameinputnode = document.getElementById('lesson-import-name')
+  var numinputnode = document.getElementById("lesson-import-number");
+  var nameinputnode = document.getElementById("lesson-import-name");
 
-  var effnum = (typeof defaultnum === 'number') ? defaultnum : 0
+  var effnumstr;
+  if (typeof defaultnum === "string") {
+    effnumstr = defaultnum;
+  } else if (typeof defaultnum === "number" && !isNaN(defaultnum)) {
+    effnumstr = String(defaultnum);
+  } else {
+    effnumstr = "";
+  }
 
-  numinputnode.value = String(effnum)
-  numinputnode.setAttribute('data-default', String(effnum))
+  numinputnode.value = effnumstr;
+  numinputnode.setAttribute("data-default", effnumstr);
 
-  nameinputnode.value = defaultname || 'New lesson'
-  nameinputnode.setAttribute('data-default', defaultname || 'New lesson')
+  nameinputnode.value = defaultname || "New lesson";
+  nameinputnode.setAttribute("data-default", defaultname || "New lesson");
 
-  lessonimportmodal.classList.add('is-open')
+  lessonimportmodal.classList.add("is-open");
 
-  numinputnode.focus()
-  numinputnode.select()
+  numinputnode.focus();
+  numinputnode.select();
 }
 
 function importlesson() {
@@ -618,19 +655,46 @@ function importlesson() {
           )
         }
 
-        var defaultnum = 1
-        if (fullset.length > 0) {
-          var maxnum = 0
-          for (var j = 0; j < fullset.length; j++) {
-            var ln = fullset[j] && typeof fullset[j].lessonnumber === 'number'
-              ? fullset[j].lessonnumber
-              : 0
-            if (ln > maxnum) maxnum = ln
+        // ---- NEW: parse lesson number/name from filename ----
+        var defaultnum = null
+        var defaultname = null
+
+        if (file && typeof file.name === 'string') {
+          var fname = file.name
+          var base = fname.replace(/\.[^.]+$/, '') // strip last extension only
+          base = base.trim()
+
+          // pattern: "0.0.0 - Greetings Vocab"
+          var m = base.match(/^([0-9]+(?:\.[0-9]+)*)\s*-\s*(.+)$/)
+          if (m) {
+            defaultnum = m[1].trim()
+            defaultname = m[2].trim()
+          } else if (base) {
+            // fallback: just use whole filename (no extension) as lesson name
+            defaultname = base
           }
-          defaultnum = maxnum + 1
         }
 
-        var defaultname = 'New lesson'
+        // if no explicit number from filename, fall back to numeric increment
+        if (defaultnum === null) {
+          defaultnum = 1
+          if (fullset.length > 0) {
+            var maxnum = 0
+            for (var j = 0; j < fullset.length; j++) {
+              var lnraw = fullset[j] ? fullset[j].lessonnumber : null
+              var ln = parseInt(lnraw, 10)
+              if (!isNaN(ln) && ln > maxnum) maxnum = ln
+            }
+            if (maxnum > 0) {
+              defaultnum = maxnum + 1
+            }
+          }
+        }
+
+        if (!defaultname) {
+          defaultname = 'New lesson'
+        }
+        // -----------------------------------------------------
 
         var duplicatemessage = ''
         if (duplicatewordlabels.length > 0) {
@@ -651,7 +715,7 @@ function importlesson() {
 
         showlessonimportmodal(defaultnum, defaultname, function (lessonnumber, lessonname) {
           var lesson = {
-            lessonnumber: lessonnumber,
+            lessonnumber: String(lessonnumber),  // store as string
             lessonname: lessonname,
             items: items
           }
@@ -659,8 +723,12 @@ function importlesson() {
           fullset.push(lesson)
 
           fullset.sort(function (a, b) {
-            var an = a && typeof a.lessonnumber === 'number' ? a.lessonnumber : 0
-            var bn = b && typeof b.lessonnumber === 'number' ? b.lessonnumber : 0
+            var an = parseInt(a && a.lessonnumber, 10)
+            var bn = parseInt(b && b.lessonnumber, 10)
+
+            if (isNaN(an) && isNaN(bn)) return 0
+            if (isNaN(an)) return 1
+            if (isNaN(bn)) return -1
             return an - bn
           })
 
