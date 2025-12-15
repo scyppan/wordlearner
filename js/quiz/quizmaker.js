@@ -100,6 +100,23 @@ function renderquizsession(quizindex, targetelem) {
     })
 
     tditem.appendChild(infobtn)
+
+    var morebtn = document.createElement('button')
+    morebtn.type = 'button'
+    morebtn.className = 'quiz-more-btn'
+    morebtn.title = 'show plain text'
+    morebtn.setAttribute('aria-label', 'show plain text for this item')
+    morebtn.dataset.itemnumber = String(item.itemnumber)
+    morebtn.dataset.itemtext = String(item.thai || '')
+    morebtn.textContent = '•'
+
+    morebtn.addEventListener('click', function (e) {
+      e.stopPropagation()
+      showquizitemtextmodal(this.dataset.itemnumber, this.dataset.itemtext)
+    })
+
+    tditem.appendChild(morebtn)
+
     tr.appendChild(tditem)
 
     var tdstatus = document.createElement('td')
@@ -687,4 +704,88 @@ function addrootstoquizplan(item) {
   if (typeof showquizstatusmodal === 'function') {
     showquizstatusmodal('Added to quiz planner:\n' + label)
   }
+}
+
+function showquizitemtextmodal(itemnumber, itemtext) {
+var modal = document.createElement('div')
+modal.className = 'import-modal is-open'
+
+var dialog = document.createElement('div')
+dialog.className = 'import-modal-dialog'
+
+var header = document.createElement('div')
+header.className = 'import-modal-header'
+
+var title = document.createElement('span')
+title.className = 'import-modal-title'
+title.textContent = 'Quiz item'
+
+var closebtn = document.createElement('button')
+closebtn.type = 'button'
+closebtn.className = 'import-modal-close'
+closebtn.textContent = '×'
+
+header.appendChild(title)
+header.appendChild(closebtn)
+
+var body = document.createElement('div')
+body.className = 'import-modal-body'
+
+var pre = document.createElement('pre')
+pre.className = 'quiz-item-plaintext'
+pre.textContent = 'Item ' + String(itemnumber || '') + '\n\n' + String(itemtext || '')
+body.appendChild(pre)
+
+var footer = document.createElement('div')
+footer.className = 'import-modal-footer'
+
+var okbtn = document.createElement('button')
+okbtn.type = 'button'
+okbtn.className = 'lesson-import-ok'
+okbtn.textContent = 'Close'
+
+footer.appendChild(okbtn)
+
+dialog.appendChild(header)
+dialog.appendChild(body)
+dialog.appendChild(footer)
+modal.appendChild(dialog)
+document.body.appendChild(modal)
+
+function hidemodal() {
+if (modal && modal.parentNode) {
+modal.parentNode.removeChild(modal)
+}
+}
+
+closebtn.addEventListener('click', hidemodal)
+okbtn.addEventListener('click', hidemodal)
+
+modal.addEventListener('click', function (e) {
+if (e.target === modal) {
+hidemodal()
+}
+})
+}
+
+function buildquizmorebtn(itemnumber, itemtext) {
+var btn = document.createElement('button')
+btn.type = 'button'
+btn.className = 'quiz-more-btn'
+btn.title = 'show plain text'
+btn.setAttribute('aria-label', 'show plain text for this item')
+
+btn.innerHTML =
+'<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+'<circle cx="5" cy="12" r="2"></circle>' +
+'<circle cx="12" cy="12" r="2"></circle>' +
+'<circle cx="19" cy="12" r="2"></circle>' +
+'</svg>'
+
+btn.addEventListener('click', function (e) {
+e.stopPropagation()
+showquizitemtextmodal(itemnumber, itemtext)
+})
+
+return btn
 }

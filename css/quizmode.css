@@ -413,3 +413,26 @@
   border-color: #a0a0a0;
   color: transparent; /* hide any text if present */
 }
+
+.quiz-more-btn {
+margin-left: 6px;
+width: 26px;
+height: 26px;
+border-radius: 8px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: transparent;
+border: 1px solid rgba(0, 0, 0, 0.15);
+cursor: pointer;
+padding: 0;
+}
+
+.quiz-more-btn svg {
+display: block;
+}
+
+.quiz-item-plaintext {
+margin: 0;
+white-space: pre-wrap;
+}
