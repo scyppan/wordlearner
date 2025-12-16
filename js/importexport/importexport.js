@@ -6,60 +6,65 @@
 var lessonimportmodal = null;
 var lessonimportcallback = null;
 
+
 function renderdata() {
-  clearmaincontent();
-  var main = document.querySelector("#maincontent");
-  if (!main) return;
+  clearmaincontent()
+  var main = document.querySelector('#maincontent')
+  if (!main) return
 
-  main.innerHTML = "";
+  main.innerHTML = ''
 
-  var container = document.createElement("div");
-  container.className = "data-actions-container";
+  var container = document.createElement('div')
+  container.className = 'data-actions-container'
 
-  // Import group
-  var importgroup = document.createElement("div");
-  importgroup.className = "data-actions-group";
+  var importgroup = document.createElement('div')
+  importgroup.className = 'data-actions-group'
 
-  var importlabel = document.createElement("div");
-  importlabel.className = "data-group-label";
-  importlabel.textContent = "Import";
-  importgroup.appendChild(importlabel);
+  var importlabel = document.createElement('div')
+  importlabel.className = 'data-group-label'
+  importlabel.textContent = 'Import'
+  importgroup.appendChild(importlabel)
 
-  var importfullbtn = document.createElement("button");
-  importfullbtn.id = "import-full-set-btn";
-  importfullbtn.textContent = "Full Set";
-  importfullbtn.title =
-    "Import an entire dataset of lessons/items (replaces current full set).";
-  importfullbtn.onclick = importfullset;
-  importgroup.appendChild(importfullbtn);
+  var importfullbtn = document.createElement('button')
+  importfullbtn.id = 'import-full-set-btn'
+  importfullbtn.textContent = 'Full Set'
+  importfullbtn.title = 'Import an entire dataset of lessons/items (replaces current full set).'
+  importfullbtn.onclick = importfullset
+  importgroup.appendChild(importfullbtn)
 
-  var importlessonbtn = document.createElement("button");
-  importlessonbtn.id = "import-lesson-btn";
-  importlessonbtn.textContent = "Lesson";
-  importlessonbtn.title = "Import data for a single lesson.";
-  importlessonbtn.onclick = importlesson;
-  importgroup.appendChild(importlessonbtn);
+  var importlessonbtn = document.createElement('button')
+  importlessonbtn.id = 'import-lesson-btn'
+  importlessonbtn.textContent = 'Lesson'
+  importlessonbtn.title = 'Import data for a single lesson.'
+  importlessonbtn.onclick = importlesson
+  importgroup.appendChild(importlessonbtn)
 
-  // Export group
-  var exportgroup = document.createElement("div");
-  exportgroup.className = "data-actions-group";
+  var updateitemsbtn = document.createElement('button')
+  updateitemsbtn.id = 'update-items-btn'
+  updateitemsbtn.textContent = 'Update defs/notes'
+  updateitemsbtn.title = "Import a TSV to update existing items' definition/notes (and romanization if included)."
+  updateitemsbtn.onclick = importitemupdates
+  importgroup.appendChild(updateitemsbtn)
 
-  var exportlabel = document.createElement("div");
-  exportlabel.className = "data-group-label";
-  exportlabel.textContent = "Export";
-  exportgroup.appendChild(exportlabel);
+  var exportgroup = document.createElement('div')
+  exportgroup.className = 'data-actions-group'
 
-  var exportfullbtn = document.createElement("button");
-  exportfullbtn.id = "export-full-set-btn";
-  exportfullbtn.textContent = "Full Set";
-  exportfullbtn.title = "Export the entire lesson/item dataset.";
-  exportfullbtn.onclick = exportfullset;
-  exportgroup.appendChild(exportfullbtn);
+  var exportlabel = document.createElement('div')
+  exportlabel.className = 'data-group-label'
+  exportlabel.textContent = 'Export'
+  exportgroup.appendChild(exportlabel)
 
-  container.appendChild(importgroup);
-  container.appendChild(exportgroup);
+  var exportfullbtn = document.createElement('button')
+  exportfullbtn.id = 'export-full-set-btn'
+  exportfullbtn.textContent = 'Full Set'
+  exportfullbtn.title = 'Export the entire lesson/item dataset.'
+  exportfullbtn.onclick = exportfullset
+  exportgroup.appendChild(exportfullbtn)
 
-  main.appendChild(container);
+  container.appendChild(importgroup)
+  container.appendChild(exportgroup)
+
+  main.appendChild(container)
 }
 
 //---------
@@ -406,7 +411,6 @@ function showlessonimportmodal(defaultnum, defaultname, callback) {
   numinputnode.focus()
   numinputnode.select()
 }
-
 
 function importlesson() {
   var input = document.createElement('input')
@@ -835,4 +839,192 @@ function importlesson() {
   }
 
   input.click()
+}
+
+
+
+function importitemupdates() {
+  if (typeof fullset === 'undefined' || !Array.isArray(fullset) || !fullset.length) {
+    if (typeof showquizstatusmodal === 'function') {
+      showquizstatusmodal('No dataset loaded. Import a Full Set first.')
+    }
+    return
+  }
+
+  var input = document.createElement('input')
+  input.type = 'file'
+  input.accept = '.tsv,text/tab-separated-values'
+
+  input.onchange = function (event) {
+    var file = event.target.files[0]
+    if (!file) return
+
+    var reader = new FileReader()
+    reader.onload = function (e) {
+      try {
+        var text = e.target.result
+        if (!text || !text.trim()) {
+          if (typeof showquizstatusmodal === 'function') {
+            showquizstatusmodal('TSV appears to be empty.')
+          }
+          return
+        }
+
+        var lines = text.split(/\r?\n/).filter(function (line) {
+          return line.trim() !== ''
+        })
+
+        if (lines.length < 2) {
+          if (typeof showquizstatusmodal === 'function') {
+            showquizstatusmodal('No data rows found in TSV.')
+          }
+          return
+        }
+
+        var headercells = lines[0].split('\t')
+        var cols = parseupdatecolumns(headercells)
+
+        if (cols.colthai === -1) {
+          if (typeof showquizstatusmodal === 'function') {
+            showquizstatusmodal('TSV header must include "THAI".')
+          }
+          return
+        }
+
+        if (cols.coldef === -1 && cols.colnotes === -1 && cols.colroman === -1) {
+          if (typeof showquizstatusmodal === 'function') {
+            showquizstatusmodal('TSV must include at least one of "DEFINITION", "NOTES", or "ROMANIZATION".')
+          }
+          return
+        }
+
+        var index = buildthaiindex(fullset)
+
+        var updatedrows = 0
+        var updateditems = 0
+        var notfound = 0
+        var notfoundlist = []
+        var skipped = 0
+
+        for (var r = 1; r < lines.length; r++) {
+          var row = lines[r].split('\t')
+          if (!row || !row.length) continue
+
+          var thai = getcell(row, cols.colthai)
+          if (!thai) {
+            skipped++
+            continue
+          }
+
+          var def = cols.coldef >= 0 ? getcell(row, cols.coldef) : ''
+          var notes = cols.colnotes >= 0 ? getcell(row, cols.colnotes) : ''
+          var roman = cols.colroman >= 0 ? getcell(row, cols.colroman) : ''
+
+          // no patch content in this row
+          if (!def && !notes && !roman) {
+            skipped++
+            continue
+          }
+
+          var matches = index[thai]
+          if (!matches || !matches.length) {
+            notfound++
+            if (notfoundlist.length < 25) notfoundlist.push(thai)
+            continue
+          }
+
+          updatedrows++
+
+          for (var i = 0; i < matches.length; i++) {
+            var item = matches[i]
+            if (!item || typeof item !== 'object') continue
+
+            // only overwrite fields that are actually provided (non-empty)
+            if (def) item.definition = def
+            if (notes) item.notes = notes
+            if (roman) item.romanization = roman
+
+            updateditems++
+          }
+        }
+
+        if (typeof storedata === 'function') {
+          storedata('fullset', fullset)
+        }
+
+        var msg =
+          'Hotfix applied.\n' +
+          'Rows applied: ' + updatedrows + '\n' +
+          'Items updated (including duplicates across lessons): ' + updateditems + '\n' +
+          'Not found: ' + notfound + '\n' +
+          'Skipped (blank/no patch content): ' + skipped
+
+        if (notfoundlist.length) {
+          msg += '\n\nFirst missing THAI values:\n' + notfoundlist.join(', ')
+          if (notfound > notfoundlist.length) msg += ' ...'
+        }
+
+        if (typeof showquizstatusmodal === 'function') {
+          showquizstatusmodal(msg)
+        }
+
+        // optional: refresh current view so you immediately see patched text
+        if (typeof renderlessonspanel === 'function') {
+          renderlessonspanel()
+        }
+      } catch (err) {
+        console.error(err)
+        if (typeof showquizstatusmodal === 'function') {
+          showquizstatusmodal('Error while importing hotfix TSV.')
+        }
+      }
+    }
+
+    reader.readAsText(file, 'utf-8')
+  }
+
+  input.click()
+}
+
+
+function parseupdatecolumns(headercells) {
+  var cols = { colthai: -1, coldef: -1, colnotes: -1, colroman: -1 }
+
+  for (var i = 0; i < headercells.length; i++) {
+    var h = String(headercells[i] || '').trim().toUpperCase()
+    if (h === 'THAI') cols.colthai = i
+    else if (h === 'DEFINITION') cols.coldef = i
+    else if (h === 'NOTES') cols.colnotes = i
+    else if (h === 'ROMANIZATION') cols.colroman = i
+  }
+
+  return cols
+}
+
+function buildthaiindex(fullsetarr) {
+  var index = {}
+
+  for (var li = 0; li < fullsetarr.length; li++) {
+    var lesson = fullsetarr[li]
+    if (!lesson || !Array.isArray(lesson.items)) continue
+
+    for (var ii = 0; ii < lesson.items.length; ii++) {
+      var item = lesson.items[ii]
+      if (!item || typeof item.thai !== 'string') continue
+
+      var thai = item.thai.trim()
+      if (!thai) continue
+
+      if (!index[thai]) index[thai] = []
+      index[thai].push(item)
+    }
+  }
+
+  return index
+}
+
+function getcell(row, idx) {
+  if (idx < 0) return ''
+  if (!row || idx >= row.length) return ''
+  return String(row[idx] || '').trim()
 }
