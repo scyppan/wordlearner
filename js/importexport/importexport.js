@@ -1033,3 +1033,169 @@ function getcell(row, idx) {
   if (!row || idx >= row.length) return ''
   return String(row[idx] || '').trim()
 }
+
+//---------
+//MAJOR FUNCTIONS
+//---------
+
+// removes an item from the dataset so it won't appear anywhere
+// deletes by THAI across ALL lessons (global delete)
+function deleteitemfromdataset(thai, romanization) {
+  var key = normalizethai(thai)
+  if (!key) return
+
+  var confirmtext =
+    'Delete this item from the dataset?\n\n' +
+    key +
+    (romanization ? ' (' + romanization + ')' : '') +
+    '\n\nThis removes it from ALL lessons. It can also purge it from existing quizzes.'
+
+  if (!window.confirm(confirmtext)) return
+
+  if (typeof fullset === 'undefined' || !Array.isArray(fullset) || !fullset.length) {
+    if (typeof showquizstatusmodal === 'function') {
+      showquizstatusmodal('No dataset loaded.')
+    }
+    return
+  }
+
+  var result = {
+    removedfromlessons: 0,
+    lessonsaffected: 0,
+    removedfromquizplan: 0,
+    quizzesaffected: 0,
+    removedfromquizzes: 0
+  }
+
+  removeitemfromfullsetbythai(key, result)
+  removeitemfromquizplanbythai(key, result)
+
+  // optional but recommended: purge from already-produced quizzes too
+  removeitemfromquizzesbythai(key, result)
+
+  if (typeof storedata === 'function') {
+    storedata('fullset', fullset)
+    if (typeof quizzes !== 'undefined' && Array.isArray(quizzes)) {
+      storedata('quizzes', quizzes)
+    }
+  }
+
+  if (typeof showquizstatusmodal === 'function') {
+    var msg =
+      'Item deleted.\n\n' +
+      'Removed from lessons: ' + result.removedfromlessons + '\n' +
+      'Lessons affected: ' + result.lessonsaffected + '\n' +
+      'Removed from quiz planner: ' + result.removedfromquizplan + '\n' +
+      'Quizzes affected: ' + result.quizzesaffected + '\n' +
+      'Removed from quizzes: ' + result.removedfromquizzes
+    showquizstatusmodal(msg)
+  }
+
+  // refresh whatever is currently visible (safe calls)
+  if (typeof renderlessonspanel === 'function') renderlessonspanel()
+  if (typeof refreshquizpanel === 'function') refreshquizpanel()
+  if (typeof renderquizzespanel === 'function') renderquizzespanel()
+}
+
+
+//---------
+//HELPER FUNCTIONS
+//---------
+
+function normalizethai(value) {
+  if (typeof value !== 'string') return ''
+  return value.trim()
+}
+
+function getitemthai(item) {
+  if (!item || typeof item !== 'object') return ''
+  if (typeof item.thai === 'string') return item.thai.trim()
+  if (typeof item.word === 'string') return item.word.trim()
+  if (typeof item.item === 'string') return item.item.trim()
+  return ''
+}
+
+function removeitemfromfullsetbythai(key, result) {
+  if (!Array.isArray(fullset)) return
+
+  for (var li = 0; li < fullset.length; li++) {
+    var lesson = fullset[li]
+    if (!lesson || !Array.isArray(lesson.items) || !lesson.items.length) continue
+
+    var before = lesson.items.length
+    var kept = []
+
+    for (var ii = 0; ii < lesson.items.length; ii++) {
+      var it = lesson.items[ii]
+      var itthai = getitemthai(it)
+      if (!itthai) continue
+
+      if (itthai === key) {
+        result.removedfromlessons++
+      } else {
+        kept.push(it)
+      }
+    }
+
+    if (kept.length !== before) {
+      lesson.items = kept
+      result.lessonsaffected++
+    }
+  }
+}
+
+function removeitemfromquizplanbythai(key, result) {
+  if (typeof quizplan === 'undefined' || !Array.isArray(quizplan) || !quizplan.length) return
+
+  var kept = []
+  for (var i = 0; i < quizplan.length; i++) {
+    var entry = quizplan[i]
+    if (!entry || typeof entry !== 'object') {
+      kept.push(entry)
+      continue
+    }
+
+    if (entry.kind === 'item' && normalizethai(entry.thai) === key) {
+      result.removedfromquizplan++
+      continue
+    }
+
+    kept.push(entry)
+  }
+
+  quizplan = kept
+}
+
+function removeitemfromquizzesbythai(key, result) {
+  if (typeof quizzes === 'undefined' || !Array.isArray(quizzes) || !quizzes.length) return
+
+  for (var qi = 0; qi < quizzes.length; qi++) {
+    var quiz = quizzes[qi]
+    if (!quiz || !Array.isArray(quiz.items) || !quiz.items.length) continue
+
+    var before = quiz.items.length
+    var kept = []
+
+    for (var ii = 0; ii < quiz.items.length; ii++) {
+      var it = quiz.items[ii]
+      var itthai = getitemthai(it)
+      if (!itthai) continue
+
+      if (itthai === key) {
+        result.removedfromquizzes++
+      } else {
+        kept.push(it)
+      }
+    }
+
+    if (kept.length !== before) {
+      quiz.items = kept
+      result.quizzesaffected++
+
+      // re-number if this quiz was already prepared
+      for (var j = 0; j < quiz.items.length; j++) {
+        quiz.items[j].itemnumber = j + 1
+      }
+    }
+  }
+}
