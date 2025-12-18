@@ -8,64 +8,69 @@ var lessonimportcallback = null;
 
 
 function renderdata() {
-  clearmaincontent()
-  var main = document.querySelector('#maincontent')
-  if (!main) return
+  clearmaincontent();
+  var main = document.querySelector("#maincontent");
+  if (!main) return;
 
-  main.innerHTML = ''
+  main.innerHTML = "";
 
-  var container = document.createElement('div')
-  container.className = 'data-actions-container'
+  var container = document.createElement("div");
+  container.className = "data-actions-container";
 
-  var importgroup = document.createElement('div')
-  importgroup.className = 'data-actions-group'
+  // Import group
+  var importgroup = document.createElement("div");
+  importgroup.className = "data-actions-group";
 
-  var importlabel = document.createElement('div')
-  importlabel.className = 'data-group-label'
-  importlabel.textContent = 'Import'
-  importgroup.appendChild(importlabel)
+  var importlabel = document.createElement("div");
+  importlabel.className = "data-group-label";
+  importlabel.textContent = "Import";
+  importgroup.appendChild(importlabel);
 
-  var importfullbtn = document.createElement('button')
-  importfullbtn.id = 'import-full-set-btn'
-  importfullbtn.textContent = 'Full Set'
-  importfullbtn.title = 'Import an entire dataset of lessons/items (replaces current full set).'
-  importfullbtn.onclick = importfullset
-  importgroup.appendChild(importfullbtn)
+  var importfullbtn = document.createElement("button");
+  importfullbtn.id = "import-full-set-btn";
+  importfullbtn.textContent = "Full Set";
+  importfullbtn.title =
+    "Import an entire dataset of lessons/items (replaces current full set).";
+  importfullbtn.onclick = importfullset;
+  importgroup.appendChild(importfullbtn);
 
-  var importlessonbtn = document.createElement('button')
-  importlessonbtn.id = 'import-lesson-btn'
-  importlessonbtn.textContent = 'Lesson'
-  importlessonbtn.title = 'Import data for a single lesson.'
-  importlessonbtn.onclick = importlesson
-  importgroup.appendChild(importlessonbtn)
+  var importlessonbtn = document.createElement("button");
+  importlessonbtn.id = "import-lesson-btn";
+  importlessonbtn.textContent = "Lesson";
+  importlessonbtn.title = "Import data for a single lesson.";
+  importlessonbtn.onclick = importlesson;
+  importgroup.appendChild(importlessonbtn);
 
-  var updateitemsbtn = document.createElement('button')
-  updateitemsbtn.id = 'update-items-btn'
-  updateitemsbtn.textContent = 'Update defs/notes'
-  updateitemsbtn.title = "Import a TSV to update existing items' definition/notes (and romanization if included)."
-  updateitemsbtn.onclick = importitemupdates
-  importgroup.appendChild(updateitemsbtn)
+  var removeitembtn = document.createElement("button");
+  removeitembtn.id = "remove-dataset-item-btn";
+  removeitembtn.textContent = "Remove item";
+  removeitembtn.title =
+    "Remove an item by THAI from lessons (fullset) and itemsdata, and also clear it from the quiz planner.";
+  removeitembtn.onclick = removedatasetitem;
+  importgroup.appendChild(removeitembtn);
 
-  var exportgroup = document.createElement('div')
-  exportgroup.className = 'data-actions-group'
+  // Export group
+  var exportgroup = document.createElement("div");
+  exportgroup.className = "data-actions-group";
 
-  var exportlabel = document.createElement('div')
-  exportlabel.className = 'data-group-label'
-  exportlabel.textContent = 'Export'
-  exportgroup.appendChild(exportlabel)
+  var exportlabel = document.createElement("div");
+  exportlabel.className = "data-group-label";
+  exportlabel.textContent = "Export";
+  exportgroup.appendChild(exportlabel);
 
-  var exportfullbtn = document.createElement('button')
-  exportfullbtn.id = 'export-full-set-btn'
-  exportfullbtn.textContent = 'Full Set'
-  exportfullbtn.title = 'Export the entire lesson/item dataset.'
-  exportfullbtn.onclick = exportfullset
-  exportgroup.appendChild(exportfullbtn)
+  var exportfullbtn = document.createElement("button");
+  exportfullbtn.id = "export-full-set-btn";
+  exportfullbtn.textContent = "Full Set";
+  exportfullbtn.title = "Export the entire lesson/item dataset.";
+  exportfullbtn.onclick = exportfullset;
+  exportgroup.appendChild(exportfullbtn);
 
-  container.appendChild(importgroup)
-  container.appendChild(exportgroup)
+  container.appendChild(importgroup);
+  container.appendChild(exportgroup);
 
-  main.appendChild(container)
+  main.appendChild(container);
 }
+
 
 //---------
 //MAJOR FUNCTIONS

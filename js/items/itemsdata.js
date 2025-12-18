@@ -150,6 +150,51 @@ function getphrasesforword(wordthai) {
 }
 
 
+function removeitemsbythai(thai) {
+  ensureitemsarray()
+
+  var t = (thai || '').trim()
+  if (!t) return 0
+
+  var removed = 0
+
+  for (var i = itemsdata.length - 1; i >= 0; i--) {
+    var item = itemsdata[i]
+    if (!item || typeof item.thai !== 'string') continue
+    if (item.thai.trim() === t) {
+      itemsdata.splice(i, 1)
+      removed++
+    }
+  }
+
+  return removed
+}
+
+function removeitembykey(thai, romanization, english) {
+  ensureitemsarray()
+
+  var idx = finditemindex(thai, romanization, english)
+  if (idx === -1) return null
+
+  return itemsdata.splice(idx, 1)[0] || null
+}
+
+function removeitembyid(id) {
+  ensureitemsarray()
+
+  var target = (id || '').trim()
+  if (!target) return null
+
+  for (var i = 0; i < itemsdata.length; i++) {
+    var item = itemsdata[i]
+    if (item && typeof item.id === 'string' && item.id.trim() === target) {
+      return itemsdata.splice(i, 1)[0] || null
+    }
+  }
+
+  return null
+}
+
 //---------
 //HELPER FUNCTIONS
 //---------
