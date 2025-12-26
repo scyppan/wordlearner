@@ -417,437 +417,6 @@ function showlessonimportmodal(defaultnum, defaultname, callback) {
   numinputnode.select()
 }
 
-function importlesson() {
-  var input = document.createElement('input')
-  input.type = 'file'
-  input.accept = '.tsv,text/tab-separated-values'
-
-  input.onchange = function (event) {
-    var file = event.target.files[0]
-    if (!file) return
-
-    var reader = new FileReader()
-    reader.onload = function (e) {
-      try {
-        var text = e.target.result
-        if (!text || !text.trim()) {
-          showquizstatusmodal('TSV appears to be empty.')
-          return
-        }
-
-        var lines = text.split(/\r?\n/).filter(function (line) {
-          return line.trim() !== ''
-        })
-        if (lines.length <= 1) {
-          showquizstatusmodal('No data rows found in TSV.')
-          return
-        }
-
-        var header = lines[0].split('\t')
-        var colthai = -1
-        var colroman = -1
-        var coldef = -1
-        var colnotes = -1
-        var colroots = -1
-
-        for (var i = 0; i < header.length; i++) {
-          var h = header[i].trim().toUpperCase()
-          if (h === 'THAI') colthai = i
-          else if (h === 'ROMANIZATION') colroman = i
-          else if (h === 'DEFINITION') coldef = i
-          else if (h === 'NOTES') colnotes = i
-          else if (h === 'ROOTS' || h === 'ROOT') colroots = i
-        }
-
-        if (colthai === -1 || colroman === -1 || coldef === -1) {
-          showquizstatusmodal('TSV header must include "THAI", "ROMANIZATION", and "DEFINITION" columns.')
-          return
-        }
-
-        if (!Array.isArray(fullset)) {
-          fullset = []
-        }
-
-        // existing items by thai from lessons before this import
-        var existingbythai = {}
-        for (var li = 0; li < fullset.length; li++) {
-          var lesson0 = fullset[li]
-          if (!lesson0 || !Array.isArray(lesson0.items)) continue
-          for (var ii = 0; ii < lesson0.items.length; ii++) {
-            var item0 = lesson0.items[ii]
-            if (!item0 || typeof item0.thai !== 'string') continue
-            var key0 = item0.thai.trim()
-            if (!key0) continue
-            if (!existingbythai[key0]) {
-              existingbythai[key0] = item0
-            }
-          }
-        }
-
-        // canonical items (existing + new from this TSV), keyed by thai
-        var canonicalbythai = {}
-        for (var key in existingbythai) {
-          if (Object.prototype.hasOwnProperty.call(existingbythai, key)) {
-            canonicalbythai[key] = existingbythai[key]
-          }
-        }
-
-        function mergefields(target, thai, roman, definition, notes, rootslist) {
-          if (!target) return
-
-          if (roman && (!target.romanization || target.romanization === '')) {
-            target.romanization = roman
-          }
-
-          if (definition) {
-            if (!target.definition || target.definition === '') {
-              target.definition = definition
-            } else if (target.definition.indexOf(definition) === -1) {
-              target.definition += ' / ' + definition
-            }
-          }
-
-          if (notes) {
-            if (!target.notes || target.notes === '') {
-              target.notes = notes
-            } else if (target.notes.indexOf(notes) === -1) {
-              target.notes += ' | ' + notes
-            }
-          }
-
-          if (!Array.isArray(target.roots)) {
-            target.roots = []
-          }
-
-          if (thai && target.roots.indexOf(thai) === -1) {
-            target.roots.push(thai)
-          }
-
-          if (Array.isArray(rootslist) && rootslist.length) {
-            for (var ri = 0; ri < rootslist.length; ri++) {
-              var raw = rootslist[ri]
-              if (typeof raw !== 'string') continue
-              var trimmed = raw.trim()
-              if (!trimmed) continue
-              if (target.roots.indexOf(trimmed) === -1) {
-                target.roots.push(trimmed)
-              }
-            }
-          }
-        }
-
-        var items = []
-        var duplicatewordset = {}
-        var duplicatewordlabels = []
-
-        var rootsmentioned = {}     // rootthai -> true
-        var rootsources = {}        // rootthai -> { anchorthai, anchorroman }
-        var importedthaimap = {}    // thai in this TSV
-
-        for (var r = 1; r < lines.length; r++) {
-          var row = lines[r].split('\t')
-          if (!row.length) continue
-
-          var thai = (row[colthai] || '').trim()
-          if (!thai) continue
-          importedthaimap[thai] = true
-
-          var roman = (colroman >= 0 ? row[colroman] : '').trim()
-          var definition = (coldef >= 0 ? row[coldef] : '').trim()
-          var notes = colnotes >= 0 ? (row[colnotes] || '').trim() : ''
-
-          var rootslist = []
-
-          if (colroots >= 0) {
-            var rootsraw = (row[colroots] || '').trim()
-            if (rootsraw) {
-              var parts = rootsraw.split(/[;,]/)
-              for (var pi = 0; pi < parts.length; pi++) {
-                var part = parts[pi]
-                if (typeof part !== 'string') continue
-                var rt = part.trim()
-                if (!rt) continue
-
-                var rtupper = rt.toUpperCase()
-                if (rtupper === 'ROOTS' || rtupper === 'ROOT') {
-                  continue
-                }
-
-                rootslist.push(rt)
-                rootsmentioned[rt] = true
-
-                if (!rootsources[rt]) {
-                  rootsources[rt] = {
-                    anchorthai: thai,
-                    anchorroman: roman
-                  }
-                }
-              }
-            }
-          }
-
-          if (rootslist.indexOf(thai) === -1) {
-            rootslist.push(thai)
-          }
-
-          var canonical = canonicalbythai[thai]
-
-          if (!canonical) {
-            canonical = {
-              thai: thai,
-              romanization: roman || '',
-              definition: definition || '',
-              notes: notes || '',
-              roots: [],
-              confidence: 0,
-              attempts: 0,
-              correct: 0
-            }
-            canonicalbythai[thai] = canonical
-            mergefields(canonical, thai, roman, definition, notes, rootslist)
-          } else {
-            mergefields(canonical, thai, roman, definition, notes, rootslist)
-
-            if (Object.prototype.hasOwnProperty.call(existingbythai, thai) && !duplicatewordset[thai]) {
-              duplicatewordset[thai] = true
-              var labelroman = canonical.romanization || roman
-              var wordlabel = labelroman
-                ? thai + ' (' + labelroman + ')'
-                : thai
-              duplicatewordlabels.push(wordlabel)
-            }
-          }
-
-          if (!Array.isArray(canonical.roots)) {
-            canonical.roots = []
-          }
-          if (canonical.roots.indexOf(thai) === -1) {
-            canonical.roots.push(thai)
-          }
-
-          if (items.indexOf(canonical) === -1) {
-            items.push(canonical)
-          }
-        }
-
-        if (items.length === 0) {
-          showquizstatusmodal('No valid items found in TSV.')
-          return
-        }
-
-        // build detailed list of roots that are not in existing items nor in this TSV word set
-        var unknownrootentries = []
-        var rootsmissinglines = []
-
-        for (var rootkey in rootsmentioned) {
-          if (!Object.prototype.hasOwnProperty.call(rootsmentioned, rootkey)) continue
-
-          // skip if root already existed before import
-          if (Object.prototype.hasOwnProperty.call(existingbythai, rootkey)) {
-            continue
-          }
-
-          // skip if root itself is one of the items in this imported TSV
-          if (Object.prototype.hasOwnProperty.call(importedthaimap, rootkey)) {
-            continue
-          }
-
-          var source = rootsources[rootkey] || { anchorthai: rootkey, anchorroman: '' }
-          var anchorthai = source.anchorthai || rootkey
-          var anchorroman = source.anchorroman || ''
-
-          // try to fill anchor roman from canonical if missing
-          if (!anchorroman && canonicalbythai[anchorthai] && typeof canonicalbythai[anchorthai].romanization === 'string') {
-            anchorroman = canonicalbythai[anchorthai].romanization
-          }
-
-          unknownrootentries.push({
-            root: rootkey,
-            anchorthai: anchorthai,
-            anchorroman: anchorroman
-          })
-
-          var anchorlabel = anchorroman
-            ? anchorthai + ' (' + anchorroman + ')'
-            : anchorthai
-
-          rootsmissinglines.push(
-            'Root: ' + rootkey +
-            ' in item ' + anchorlabel +
-            ' not found in existing items nor in this word set.'
-          )
-        }
-
-        // ---- NEW: parse lesson number/name from filename ----
-        var defaultnum = null
-        var defaultname = null
-
-        if (file && typeof file.name === 'string') {
-          var fname = file.name
-          var base = fname.replace(/\.[^.]+$/, '') // strip last extension only
-          base = base.trim()
-
-          // pattern: "0.0.0 - Greetings Vocab"
-          var m = base.match(/^([0-9]+(?:\.[0-9]+)*)\s*-\s*(.+)$/)
-          if (m) {
-            defaultnum = m[1].trim()
-            defaultname = m[2].trim()
-          } else if (base) {
-            // fallback: just use whole filename (no extension) as lesson name
-            defaultname = base
-          }
-        }
-
-        // if no explicit number from filename, fall back to numeric increment
-        if (defaultnum === null) {
-          defaultnum = 1
-          if (fullset.length > 0) {
-            var maxnum = 0
-            for (var j = 0; j < fullset.length; j++) {
-              var lnraw = fullset[j] ? fullset[j].lessonnumber : null
-              var ln = parseInt(lnraw, 10)
-              if (!isNaN(ln) && ln > maxnum) maxnum = ln
-            }
-            if (maxnum > 0) {
-              defaultnum = maxnum + 1
-            }
-          }
-        }
-
-        if (!defaultname) {
-          defaultname = 'New lesson'
-        }
-        // -----------------------------------------------------
-
-        var duplicatemessage = ''
-        if (duplicatewordlabels.length > 0) {
-          duplicatemessage =
-            'The following ' + duplicatewordlabels.length + ' item' +
-            (duplicatewordlabels.length > 1 ? 's already exist' : ' already exists') +
-            ' in your dataset. Existing records and this lesson item will be updated ' +
-            'to include any new definition/notes information:\n' +
-            duplicatewordlabels.join(', ')
-        }
-
-        var rootsmissingmessage = ''
-        if (rootsmissinglines.length > 0) {
-          rootsmissingmessage =
-            'These roots are not currently present in the existing items nor in this word set:\n' +
-            rootsmissinglines.join('\n')
-        }
-
-        showlessonimportmodal(defaultnum, defaultname, function (lessonnumber, lessonname) {
-          var lesson = {
-            lessonnumber: String(lessonnumber),  // store as string
-            lessonname: lessonname,
-            items: items
-          }
-
-          fullset.push(lesson)
-
-          fullset.sort(function (a, b) {
-            var an = parseInt(a && a.lessonnumber, 10)
-            var bn = parseInt(b && b.lessonnumber, 10)
-
-            if (isNaN(an) && isNaN(bn)) return 0
-            if (isNaN(an)) return 1
-            if (isNaN(bn)) return -1
-            return an - bn
-          })
-
-          if (typeof storedata === 'function') {
-            storedata('fullset', fullset)
-          }
-
-          var basemessage =
-            'Lesson import complete.\n' +
-            'Lesson ' + lessonnumber + ': ' + lessonname + '\n' +
-            'Items added to this lesson: ' + items.length
-
-          if (duplicatewordlabels.length > 0) {
-            basemessage +=
-              '\n\nDuplicates detected and merged for:\n' +
-              duplicatewordlabels.join(', ')
-          }
-
-          if (rootsmissingmessage) {
-            basemessage +=
-              '\n\n' + rootsmissingmessage
-          }
-
-          showquizstatusmodal(basemessage)
-
-          if (typeof renderlessonspanel === 'function') {
-            renderlessonspanel()
-          }
-        })
-
-        // IMPORTANT: reset notes in the modal body before adding new ones,
-        // so cancelling + reuploading starts with a clean slate.
-        var modal = document.getElementById('lesson-import-modal')
-        if (modal) {
-          var body = modal.querySelector('.import-modal-body')
-          if (body) {
-            var olddup = body.querySelector('.lesson-import-duplicates')
-            if (olddup && olddup.parentNode) {
-              olddup.parentNode.removeChild(olddup)
-            }
-
-            var oldroots = body.querySelector('.lesson-import-missing-roots')
-            if (oldroots && oldroots.parentNode) {
-              oldroots.parentNode.removeChild(oldroots)
-            }
-
-            if (duplicatemessage) {
-              var dupnote = document.createElement('div')
-              dupnote.className = 'lesson-import-duplicates'
-              dupnote.textContent = duplicatemessage
-              body.appendChild(dupnote)
-            }
-
-            if (unknownrootentries.length > 0) {
-              var rootsnote = document.createElement('div')
-              rootsnote.className = 'lesson-import-missing-roots'
-
-              var title = document.createElement('div')
-              title.textContent = 'These roots are not currently present in the existing items nor in this word set:'
-              rootsnote.appendChild(title)
-
-              var ul = document.createElement('ul')
-
-              for (var ur = 0; ur < unknownrootentries.length; ur++) {
-                var entry = unknownrootentries[ur]
-                var anchorlabel = entry.anchorroman
-                  ? entry.anchorthai + ' (' + entry.anchorroman + ')'
-                  : entry.anchorthai
-
-                var liroot = document.createElement('li')
-                liroot.textContent =
-                  'Root: ' + entry.root +
-                  ' in item ' + anchorlabel +
-                  ' not found in existing items nor in this word set.'
-                ul.appendChild(liroot)
-              }
-
-              rootsnote.appendChild(ul)
-              body.appendChild(rootsnote)
-            }
-          }
-        }
-      } catch (err) {
-        console.error(err)
-        showquizstatusmodal('Error while importing Lesson TSV.')
-      }
-    }
-
-    reader.readAsText(file, 'utf-8')
-  }
-
-  input.click()
-}
-
-
-
 function importitemupdates() {
   if (typeof fullset === 'undefined' || !Array.isArray(fullset) || !fullset.length) {
     if (typeof showquizstatusmodal === 'function') {
@@ -1199,3 +768,523 @@ function removeitemfromquizzesbythai(key, result) {
     }
   }
 }
+
+function importlesson() {
+  var input = document.createElement('input')
+  input.type = 'file'
+  input.accept = '.tsv,text/tab-separated-values'
+
+  input.onchange = function (event) {
+    var file = event.target.files[0]
+    if (!file) return
+
+    var reader = new FileReader()
+    reader.onload = function (e) {
+      try {
+        var text = e.target.result
+        if (!text || !text.trim()) {
+          showquizstatusmodal('TSV appears to be empty.')
+          return
+        }
+
+        var lines = text.split(/\r?\n/).filter(function (line) {
+          return line.trim() !== ''
+        })
+        if (lines.length <= 1) {
+          showquizstatusmodal('No data rows found in TSV.')
+          return
+        }
+
+        var header = lines[0].split('\t')
+        var colthai = -1
+        var colroman = -1
+        var coldef = -1
+        var colnotes = -1
+        var colroots = -1
+
+        for (var i = 0; i < header.length; i++) {
+          var h = header[i].trim().toUpperCase()
+          if (h === 'THAI') colthai = i
+          else if (h === 'ROMANIZATION') colroman = i
+          else if (h === 'DEFINITION') coldef = i
+          else if (h === 'NOTES') colnotes = i
+          else if (h === 'ROOTS' || h === 'ROOT') colroots = i
+        }
+
+        if (colthai === -1 || colroman === -1 || coldef === -1) {
+          showquizstatusmodal('TSV header must include "THAI", "ROMANIZATION", and "DEFINITION" columns.')
+          return
+        }
+
+        if (!Array.isArray(fullset)) {
+          fullset = []
+        }
+
+        // existing items by thai from lessons before this import
+        var existingbythai = {}
+        var existingstrictmap = {}
+        var existingloosemap = {}
+
+        // roots already present anywhere in the dataset (from item.roots arrays)
+        var rootspresentstrictmap = {}
+        var rootspresentloosemap = {}
+
+        for (var li = 0; li < fullset.length; li++) {
+          var lesson0 = fullset[li]
+          if (!lesson0 || !Array.isArray(lesson0.items)) continue
+
+          for (var ii = 0; ii < lesson0.items.length; ii++) {
+            var item0 = lesson0.items[ii]
+            if (!item0 || typeof item0.thai !== 'string') continue
+
+            var key0 = item0.thai.trim()
+            if (!key0) continue
+
+            if (!existingbythai[key0]) {
+              existingbythai[key0] = item0
+            }
+
+            var strict0 = makerootkeystrict(key0)
+            var loose0 = makerootkeyloose(key0)
+            if (strict0) existingstrictmap[strict0] = true
+            if (loose0) existingloosemap[loose0] = true
+
+            if (Array.isArray(item0.roots)) {
+              for (var ri0 = 0; ri0 < item0.roots.length; ri0++) {
+                var rawroot0 = item0.roots[ri0]
+                if (typeof rawroot0 !== 'string') continue
+                var r0 = rawroot0.trim()
+                if (!r0) continue
+                var r0s = makerootkeystrict(r0)
+                var r0l = makerootkeyloose(r0)
+                if (r0s) rootspresentstrictmap[r0s] = true
+                if (r0l) rootspresentloosemap[r0l] = true
+              }
+            }
+          }
+        }
+
+        // canonical items (existing + new from this TSV), keyed by thai
+        var canonicalbythai = {}
+        for (var key in existingbythai) {
+          if (Object.prototype.hasOwnProperty.call(existingbythai, key)) {
+            canonicalbythai[key] = existingbythai[key]
+          }
+        }
+
+        var items = []
+        var duplicatewordset = {}
+        var duplicatewordlabels = []
+
+        var rootsmentioned = {}     // rootthai -> true
+        var rootsources = {}        // rootthai -> { anchorthai, anchorroman }
+
+        var importedthaimap = {}    // exact thai in this TSV
+        var importedstrictmap = {}  // normalized strict key -> true
+        var importedloosemap = {}   // normalized loose key -> true
+
+        for (var r = 1; r < lines.length; r++) {
+          var row = lines[r].split('\t')
+          if (!row.length) continue
+
+          var thai = (row[colthai] || '').trim()
+          if (!thai) continue
+
+          importedthaimap[thai] = true
+
+          var importstrict = makerootkeystrict(thai)
+          var importloose = makerootkeyloose(thai)
+          if (importstrict) importedstrictmap[importstrict] = true
+          if (importloose) importedloosemap[importloose] = true
+
+          var roman = (colroman >= 0 ? row[colroman] : '').trim()
+          var definition = (coldef >= 0 ? row[coldef] : '').trim()
+          var notes = colnotes >= 0 ? (row[colnotes] || '').trim() : ''
+
+          var rootslist = []
+
+          if (colroots >= 0) {
+            var rootsraw = (row[colroots] || '').trim()
+            if (rootsraw) {
+              var parts = rootsraw.split(/[;,]/)
+              for (var pi = 0; pi < parts.length; pi++) {
+                var part = parts[pi]
+                if (typeof part !== 'string') continue
+                var rt = part.trim()
+                if (!rt) continue
+
+                var rtupper = rt.toUpperCase()
+                if (rtupper === 'ROOTS' || rtupper === 'ROOT') {
+                  continue
+                }
+
+                rootslist.push(rt)
+                rootsmentioned[rt] = true
+
+                if (!rootsources[rt]) {
+                  rootsources[rt] = {
+                    anchorthai: thai,
+                    anchorroman: roman
+                  }
+                }
+              }
+            }
+          }
+
+          if (rootslist.indexOf(thai) === -1) {
+            rootslist.push(thai)
+          }
+
+          var canonical = canonicalbythai[thai]
+
+          if (!canonical) {
+            canonical = {
+              thai: thai,
+              romanization: roman || '',
+              definition: definition || '',
+              notes: notes || '',
+              roots: [],
+              confidence: 0,
+              attempts: 0,
+              correct: 0
+            }
+            canonicalbythai[thai] = canonical
+            mergeitemfields(canonical, thai, roman, definition, notes, rootslist)
+          } else {
+            mergeitemfields(canonical, thai, roman, definition, notes, rootslist)
+
+            if (Object.prototype.hasOwnProperty.call(existingbythai, thai) && !duplicatewordset[thai]) {
+              duplicatewordset[thai] = true
+              var labelroman = canonical.romanization || roman
+              var wordlabel = labelroman ? thai + ' (' + labelroman + ')' : thai
+              duplicatewordlabels.push(wordlabel)
+            }
+          }
+
+          if (!Array.isArray(canonical.roots)) {
+            canonical.roots = []
+          }
+          if (canonical.roots.indexOf(thai) === -1) {
+            canonical.roots.push(thai)
+          }
+
+          if (items.indexOf(canonical) === -1) {
+            items.push(canonical)
+          }
+        }
+
+        if (items.length === 0) {
+          showquizstatusmodal('No valid items found in TSV.')
+          return
+        }
+
+        // add roots from imported canonical items into the "roots present anywhere" maps
+        for (var ai = 0; ai < items.length; ai++) {
+          var it = items[ai]
+          if (!it || typeof it !== 'object') continue
+
+          if (typeof it.thai === 'string' && it.thai.trim()) {
+            var its = makerootkeystrict(it.thai)
+            var itl = makerootkeyloose(it.thai)
+            if (its) rootspresentstrictmap[its] = true
+            if (itl) rootspresentloosemap[itl] = true
+          }
+
+          if (Array.isArray(it.roots)) {
+            for (var ari = 0; ari < it.roots.length; ari++) {
+              var rawroot = it.roots[ari]
+              if (typeof rawroot !== 'string') continue
+              var rr = rawroot.trim()
+              if (!rr) continue
+              var rrs = makerootkeystrict(rr)
+              var rrl = makerootkeyloose(rr)
+              if (rrs) rootspresentstrictmap[rrs] = true
+              if (rrl) rootspresentloosemap[rrl] = true
+            }
+          }
+        }
+
+        // build detailed list of roots that are not in existing items nor in this TSV word set
+        var unknownrootentries = []
+        var rootsmissinglines = []
+
+        for (var rootkey in rootsmentioned) {
+          if (!Object.prototype.hasOwnProperty.call(rootsmentioned, rootkey)) continue
+
+          var rootstrict = makerootkeystrict(rootkey)
+          var rootloose = makerootkeyloose(rootkey)
+          if (!rootstrict && !rootloose) continue
+
+          // exact match in dataset by thai (pre-import)
+          if (Object.prototype.hasOwnProperty.call(existingbythai, rootkey)) {
+            continue
+          }
+
+          // exact match in this TSV
+          if (Object.prototype.hasOwnProperty.call(importedthaimap, rootkey)) {
+            continue
+          }
+
+          // normalized match (thai) in dataset (pre-import)
+          if ((rootstrict && existingstrictmap[rootstrict]) || (rootloose && existingloosemap[rootloose])) {
+            continue
+          }
+
+          // normalized match (thai) in this TSV
+          if ((rootstrict && importedstrictmap[rootstrict]) || (rootloose && importedloosemap[rootloose])) {
+            continue
+          }
+
+          // root exists anywhere as a root on any item
+          if ((rootstrict && rootspresentstrictmap[rootstrict]) || (rootloose && rootspresentloosemap[rootloose])) {
+            continue
+          }
+
+          var source = rootsources[rootkey] || { anchorthai: rootkey, anchorroman: '' }
+          var anchorthai = source.anchorthai || rootkey
+          var anchorroman = source.anchorroman || ''
+
+          if (!anchorroman && canonicalbythai[anchorthai] && typeof canonicalbythai[anchorthai].romanization === 'string') {
+            anchorroman = canonicalbythai[anchorthai].romanization
+          }
+
+          unknownrootentries.push({
+            root: rootkey,
+            anchorthai: anchorthai,
+            anchorroman: anchorroman
+          })
+
+          var anchorlabel = anchorroman ? anchorthai + ' (' + anchorroman + ')' : anchorthai
+
+          rootsmissinglines.push(
+            'Root: ' + rootkey +
+            ' in item ' + anchorlabel +
+            ' not found in existing items nor in this word set.'
+          )
+        }
+
+        // ---- parse lesson number/name from filename ----
+        var defaultnum = null
+        var defaultname = null
+
+        if (file && typeof file.name === 'string') {
+          var fname = file.name
+          var base = fname.replace(/\.[^.]+$/, '')
+          base = base.trim()
+
+          var m = base.match(/^([0-9]+(?:\.[0-9]+)*)\s*-\s*(.+)$/)
+          if (m) {
+            defaultnum = m[1].trim()
+            defaultname = m[2].trim()
+          } else if (base) {
+            defaultname = base
+          }
+        }
+
+        if (defaultnum === null) {
+          defaultnum = 1
+          if (fullset.length > 0) {
+            var maxnum = 0
+            for (var j = 0; j < fullset.length; j++) {
+              var lnraw = fullset[j] ? fullset[j].lessonnumber : null
+              var ln = parseInt(lnraw, 10)
+              if (!isNaN(ln) && ln > maxnum) maxnum = ln
+            }
+            if (maxnum > 0) {
+              defaultnum = maxnum + 1
+            }
+          }
+        }
+
+        if (!defaultname) {
+          defaultname = 'New lesson'
+        }
+        // ---------------------------------------------
+
+        var duplicatemessage = ''
+        if (duplicatewordlabels.length > 0) {
+          duplicatemessage =
+            'The following ' + duplicatewordlabels.length + ' item' +
+            (duplicatewordlabels.length > 1 ? 's already exist' : ' already exists') +
+            ' in your dataset. Existing records and this lesson item will be updated ' +
+            'to include any new definition/notes information:\n' +
+            duplicatewordlabels.join(', ')
+        }
+
+        var rootsmissingmessage = ''
+        if (rootsmissinglines.length > 0) {
+          rootsmissingmessage =
+            'These roots are not currently present in the existing items nor in this word set:\n' +
+            rootsmissinglines.join('\n')
+        }
+
+        showlessonimportmodal(defaultnum, defaultname, function (lessonnumber, lessonname) {
+          var lesson = {
+            lessonnumber: String(lessonnumber),
+            lessonname: lessonname,
+            items: items
+          }
+
+          fullset.push(lesson)
+
+          fullset.sort(function (a, b) {
+            var an = parseInt(a && a.lessonnumber, 10)
+            var bn = parseInt(b && b.lessonnumber, 10)
+
+            if (isNaN(an) && isNaN(bn)) return 0
+            if (isNaN(an)) return 1
+            if (isNaN(bn)) return -1
+            return an - bn
+          })
+
+          if (typeof storedata === 'function') {
+            storedata('fullset', fullset)
+          }
+
+          var basemessage =
+            'Lesson import complete.\n' +
+            'Lesson ' + lessonnumber + ': ' + lessonname + '\n' +
+            'Items added to this lesson: ' + items.length
+
+          if (duplicatewordlabels.length > 0) {
+            basemessage +=
+              '\n\nDuplicates detected and merged for:\n' +
+              duplicatewordlabels.join(', ')
+          }
+
+          if (rootsmissingmessage) {
+            basemessage += '\n\n' + rootsmissingmessage
+          }
+
+          showquizstatusmodal(basemessage)
+
+          if (typeof renderlessonspanel === 'function') {
+            renderlessonspanel()
+          }
+        })
+
+        var modal = document.getElementById('lesson-import-modal')
+        if (modal) {
+          var body = modal.querySelector('.import-modal-body')
+          if (body) {
+            var olddup = body.querySelector('.lesson-import-duplicates')
+            if (olddup && olddup.parentNode) {
+              olddup.parentNode.removeChild(olddup)
+            }
+
+            var oldroots = body.querySelector('.lesson-import-missing-roots')
+            if (oldroots && oldroots.parentNode) {
+              oldroots.parentNode.removeChild(oldroots)
+            }
+
+            if (duplicatemessage) {
+              var dupnote = document.createElement('div')
+              dupnote.className = 'lesson-import-duplicates'
+              dupnote.textContent = duplicatemessage
+              body.appendChild(dupnote)
+            }
+
+            if (unknownrootentries.length > 0) {
+              var rootsnote = document.createElement('div')
+              rootsnote.className = 'lesson-import-missing-roots'
+
+              var title = document.createElement('div')
+              title.textContent = 'These roots are not currently present in the existing items nor in this word set:'
+              rootsnote.appendChild(title)
+
+              var ul = document.createElement('ul')
+
+              for (var ur = 0; ur < unknownrootentries.length; ur++) {
+                var entry = unknownrootentries[ur]
+                var anchorlabel2 = entry.anchorroman
+                  ? entry.anchorthai + ' (' + entry.anchorroman + ')'
+                  : entry.anchorthai
+
+                var liroot = document.createElement('li')
+                liroot.textContent =
+                  'Root: ' + entry.root +
+                  ' in item ' + anchorlabel2 +
+                  ' not found in existing items nor in this word set.'
+                ul.appendChild(liroot)
+              }
+
+              rootsnote.appendChild(ul)
+              body.appendChild(rootsnote)
+            }
+          }
+        }
+      } catch (err) {
+        console.error(err)
+        showquizstatusmodal('Error while importing Lesson TSV.')
+      }
+    }
+
+    reader.readAsText(file, 'utf-8')
+  }
+
+  input.click()
+}
+
+function mergeitemfields(target, thai, roman, definition, notes, rootslist) {
+  if (!target) return
+
+  if (roman && (!target.romanization || target.romanization === '')) {
+    target.romanization = roman
+  }
+
+  if (definition) {
+    if (!target.definition || target.definition === '') {
+      target.definition = definition
+    } else if (target.definition.indexOf(definition) === -1) {
+      target.definition += ' / ' + definition
+    }
+  }
+
+  if (notes) {
+    if (!target.notes || target.notes === '') {
+      target.notes = notes
+    } else if (target.notes.indexOf(notes) === -1) {
+      target.notes += ' | ' + notes
+    }
+  }
+
+  if (!Array.isArray(target.roots)) {
+    target.roots = []
+  }
+
+  if (thai && target.roots.indexOf(thai) === -1) {
+    target.roots.push(thai)
+  }
+
+  if (Array.isArray(rootslist) && rootslist.length) {
+    for (var ri = 0; ri < rootslist.length; ri++) {
+      var raw = rootslist[ri]
+      if (typeof raw !== 'string') continue
+      var trimmed = raw.trim()
+      if (!trimmed) continue
+      if (target.roots.indexOf(trimmed) === -1) {
+        target.roots.push(trimmed)
+      }
+    }
+  }
+}
+
+function makerootkeystrict(value) {
+  if (typeof value !== 'string') return ''
+  var s = value
+  try { s = s.normalize('NFC') } catch (e) {}
+  s = s.replace(/[\u200B-\u200D\uFEFF]/g, '')
+  s = s.trim().replace(/\s+/g, ' ')
+  return s
+}
+
+function makerootkeyloose(value) {
+  if (typeof value !== 'string') return ''
+  var s = value
+  try { s = s.normalize('NFC') } catch (e) {}
+  s = s.replace(/[\u200B-\u200D\uFEFF]/g, '')
+  s = s.trim().replace(/\s+/g, ' ')
+  s = s.replace(/[\u0E31\u0E34-\u0E3A\u0E47-\u0E4E]/g, '')
+  return s
+}
+
